@@ -1,0 +1,71 @@
+@charset 'utf-8';
+/* footer
+----------------------------------------------------------------- */
+// ここに書いてあるのは見本です。
+.l-footer {
+	position: relative;
+	text-align: center;
+	background-color: $color-white;
+	box-shadow: 0 0 2px rgba($color-black1, .16);
+	@media #{$pointM} {
+		text-align: left;
+	}
+	&_inner {
+		line-height: 1;
+		padding: 40px 0 35px;
+		@media #{$pointM} { padding: get_vw(55, $vwMd) get_vw(40, $vwMd) get_vw(53, $vwMd); }
+		@media #{$pointS} { padding: get_vw(28) get_vw(20) get_vw(27); }
+		small {
+			color: $color-gray;
+			font-size: 1.2rem;
+			font-weight: 500;
+			@media #{$pointM} {
+				font-size: get_vw(24, $vwMd);
+				line-height: 1.75;
+			}
+			@media #{$pointS} {@include fz_vw(10);}
+		}
+	}
+	&_pageTop {
+		position: absolute;
+		right: 80px;
+		bottom: 45px;
+		background-color: $color-white;
+		border-radius: 50%;
+		@media #{$pointM} {
+			right: get_vw(40, $vwMd);
+			bottom: get_vw(135, $vwMd);
+		}
+		@media #{$pointS} {
+			right: get_vw(20);
+			bottom: get_vw(68);
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			padding: 35px 0;
+			width: 30px;
+			@media #{$pointM} {
+				padding: get_vw(35, $vwMd) 0;
+				width: get_vw(30, $vwMd);
+			}
+			@media #{$pointS} {
+				padding: get_vw(17) 0;
+				width: get_vw(15);
+			}
+		}
+	}
+	&_pageTopAnchor {
+		display: block;
+		width: 88px;
+		height: 88px;
+		@media #{$pointM} {
+			width: get_vw(88, $vwMd);
+			height: get_vw(88, $vwMd);
+		}
+		@media #{$pointS} {
+			width: get_vw(44);
+			height: get_vw(44);
+		}
+	}
+}

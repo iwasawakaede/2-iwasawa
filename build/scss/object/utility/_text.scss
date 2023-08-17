@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* text
+----------------------------------------------------------------- */
+.u-text {
+	&-bold {
+		font-weight: bold;
+	}
+	&-center {
+		text-align: center;
+	}
+	//赤
+	&-color1 {
+		color: $color-red;//#f00
+	}
+}

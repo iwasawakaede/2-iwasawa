@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* margin, padding
+----------------------------------------------------------------- */
+.u-mg {
+	&-topXS   { @include spaceTopXS; }
+	&-topS    { @include spaceTopS; }
+	&-topM    { @include spaceTopM; }
+	&-topL    { @include spaceTopL; }
+	&-top2L   { @include spaceTop2L; }
+	&-top3L   { @include spaceTop3L; }
+	&-top4L   { @include spaceTop4L; }
+	&-top6L   { @include spaceTop6L; }
+	&-rightXS { @include spaceRightXS; }
+	&-rightS  { @include spaceRightS; }
+	&-rightM  { @include spaceRightM; }
+	&-leftXS  { @include spaceLeftXS; }
+	&-leftS   { @include spaceLeftS; }
+	&-leftM   { @include spaceLeftM; }
+	&-leftL   { @include spaceLeftL; }
+}

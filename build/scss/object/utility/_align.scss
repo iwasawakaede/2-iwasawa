@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* align
+----------------------------------------------------------------- */
+.u-align {
+	&-center {
+		text-align: center;
+	}
+	&-tabCenter {
+		@media #{$pointM} {
+			text-align: center;
+		}
+	}
+	&-spCenter {
+		@media #{$pointS} {
+			text-align: center;
+		}
+	}
+	&-right   { text-align: right; }
+	&-left    { text-align: left; }
+	&-justify { text-align: justify; }
+}

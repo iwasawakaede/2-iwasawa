@@ -1,0 +1,16 @@
+@charset 'utf-8';
+/* textBox
+----------------------------------------------------------------- */
+.c-textBox {
+	line-height: 1.5;
+	&_text {
+		font-size: 1.6rem;
+		word-break: normal;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+		}
+		@media #{$pointS} {
+			@include fz_vw(14);
+		}
+	}
+}

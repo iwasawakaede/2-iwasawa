@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* display
+---------------------------------------------------------------- */
+.u-display {
+	&-block {
+		display: block;
+	}
+	&-tabBlock {
+		@media #{$pointM} {
+			display: block;
+		}
+	}
+	&-spBlock {
+		@media #{$pointS} {
+			display: block;
+		}
+	}
+	&-inline {
+		display: inline;
+	}
+	&-tabInline {
+		@media #{$pointM} {
+			display: inline;
+		}
+	}
+	&-spInline {
+		@media #{$pointS} {
+			display: inline;
+		}
+	}
+	&-none {
+		display: none;
+	}
+	&-tabNone {
+		@media #{$pointM} {
+			display: none;
+		}
+	}
+	&-tabNoneSpBlock {
+		@media #{$pointM} {
+			display: none;
+		}
+		@media #{$pointS} {
+			display: block;
+		}
+	}
+	&-spNone {
+		@media #{$pointS} {
+			display: none;
+		}
+	}
+	&-noneTabBlock {
+		display: none;
+		@media #{$pointM} {
+			display: block;
+		}
+	}
+	&-noneSpBlock {
+		display: none;
+		@media #{$pointS} {
+			display: block;
+		}
+	}
+	&-tabBlockSpNone {
+		@media #{$pointM} {
+			display: block;
+		}
+		@media #{$pointS} {
+			display: none;
+		}
+	}
+}

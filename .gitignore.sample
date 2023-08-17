@@ -1,0 +1,2 @@
+.vscode/
+# 実際に使う際は、このファイルを複製し、ファイル名「.gitignore.sample」の「.sample」を外して使ってください

@@ -1,0 +1,21 @@
+@charset 'utf-8';
+/* list
+----------------------------------------------------------------- */
+.c-list {
+	width: 100%;
+	&-disc {
+		padding-left: 20px;
+		.c-list_item {
+			list-style-type: disc;
+		}
+	}
+	&-decimal {
+		padding-left: 18px;
+		.c-list_item {
+			list-style-type: decimal;
+		}
+	}
+	&_item {
+		width: 100%;
+	}
+}

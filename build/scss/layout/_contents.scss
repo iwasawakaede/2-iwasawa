@@ -1,0 +1,11 @@
+@charset 'utf-8';
+/* ============================== Wrapper ============================== */
+.l-wrapper {
+	width: 100%;
+	min-height: 100vh;
+	background-color: $color-white;
+}
+/* ============================ Contents ============================= */
+.l-contents {
+	margin: 0 auto;
+}

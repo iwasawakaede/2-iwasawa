@@ -1,0 +1,29 @@
+{
+	// ここに記述したことは、このワークスペースにしか適用されません
+	// ユーザーの設定にこれをコピーすれば、全てのプロジェクトでこの設定が適用になります
+	// ワークスペース → ローカル
+	// ユーザー → グローバル
+	// という感じです
+	// 今回も練習のために入れてますが、実務では.vscodeフォルダは.gitignoreに記述して除外してください
+	// 今回はSassを使うのでプラグイン「Live Sass Compiler」をインストールしてください。
+	// マニュアルのSassに書いてあるサイトなどを参考にしてください。
+	// 設定はこんな感じで書きます
+	//-------------------
+	//プラグイン「Live Sass Compiler」の設定
+	//-------------------
+	// Q.どのファイルをコンパイルする？
+	"liveSassCompile.settings.includeItems": [
+		"/**/scss/*.scss" // A. scssという名前のフォルダの中の.scssファイル
+	],
+	"liveSassCompile.settings.formats": [{
+		// Q どんな感じでコンパイルする？
+		"format": "compressed", // A. 圧縮されたcompressedってやつにする(他にnested,expanded,compactが選べるけどcompressedが一番軽い)それぞれの違いはググると出てきます
+		// Q コンパイルしたファイルの拡張子何にする？
+		"extensionName": ".css",
+		// Q コンパイルしたファイルはどこに入れる？
+		"savePath": "/htdocs/common/css", //A. htdocsの中のcommonの中のcssフォルダの中（cssフォルダが無ければ自動で作られる）
+    // "savePath": "~/../css",//←ちなみにsassフォルダと同階層のcssフォルダにコンパイルしてほしい場合はこう書く
+	}],
+	// Q. コンパイルする時一緒に.mapファイルは生成する？
+	"liveSassCompile.settings.generateMap": false, // A 生成する。これをtrueにするとstyle.min.css.mapというファイルがcssフォルダ内に自動生成されて開発に便利です
+}

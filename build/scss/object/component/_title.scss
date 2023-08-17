@@ -1,0 +1,16 @@
+@charset 'utf-8';
+/* title
+----------------------------------------------------------------- */
+.c-title {
+	text-align: center;
+	&_text {
+		font-size: 2.0rem;
+		font-weight: bold;
+		@media #{$pointM} {
+			font-size: get_vw(42, $vwMd);
+		}
+		@media #{$pointS} {
+			@include fz_vw(21);
+		}
+	}
+}

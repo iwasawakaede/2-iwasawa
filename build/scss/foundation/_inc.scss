@@ -1,0 +1,187 @@
+@charset 'utf-8';
+// ****************************************************************
+// inner
+// ****************************************************************
+@mixin innerWidth {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	@media #{$pointM} {
+		padding-left: 40px;
+		padding-right: 40px;
+		width: 100%;
+	}
+	@media #{$pointS} {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+// ****************************************************************
+// space
+// ****************************************************************
+@mixin spaceTopXS {
+	margin-top: 5px;
+	@media #{$pointM} { margin-top: get_vw(5, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(5); }
+}
+@mixin spaceTopS {
+	margin-top: 10px;
+	@media #{$pointM} { margin-top: get_vw(10, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(10); }
+}
+@mixin spaceTopM {
+	margin-top: 20px;
+	@media #{$pointM} { margin-top: get_vw(20, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(15); }
+}
+@mixin spaceTopL {
+	margin-top: 30px;
+	@media #{$pointM} { margin-top: get_vw(40, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(20); }
+}
+// top ヘッダーロゴ
+@mixin spaceTop2L {
+	margin-top: 40px;
+	@media #{$pointM} { margin-top: get_vw(40, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(20); }
+}
+@mixin spaceTop3L {
+	margin-top: 50px;
+	@media #{$pointM} { margin-top: get_vw(45, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(40); }
+}
+// top
+@mixin spaceTop4L {
+	margin-top: 60px;
+	@media #{$pointM} { margin-top: get_vw(80, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(40); }
+}
+@mixin spaceTop5L {
+	margin-top: 70px;
+	@media #{$pointM} { margin-top: get_vw(70, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(50); }
+}
+@mixin spaceTop6L {
+	margin-top: 80px;
+	@media #{$pointM} { margin-top: get_vw(70, $vwMd); }
+	@media #{$pointS} { margin-top: get_vw(60); }
+}
+
+@mixin spaceLeftXS {
+	margin-left: 5px;
+	@media #{$pointM} { margin-left: get_vw(5, $vwMd); }
+	@media #{$pointS} { margin-left: get_vw(5); }
+}
+@mixin spaceLeftS {
+	margin-left: 10px;
+	@media #{$pointM} { margin-left: get_vw(10, $vwMd); }
+	@media #{$pointS} { margin-left: get_vw(10); }
+}
+@mixin spaceLeftM {
+	margin-left: 20px;
+	@media #{$pointM} { margin-left: get_vw(20, $vwMd); }
+	@media #{$pointS} { margin-left: get_vw(15); }
+}
+@mixin spaceLeftL {
+	margin-left: 30px;
+	@media #{$pointM} { margin-left: get_vw(25, $vwMd); }
+	@media #{$pointS} { margin-left: get_vw(20); }
+}
+
+@mixin spaceRightXS {
+	margin-right: 5px;
+	@media #{$pointM} { margin-right: get_vw(5, $vwMd); }
+	@media #{$pointS} { margin-right: get_vw(5); }
+}
+@mixin spaceRightS {
+	margin-right: 10px;
+	@media #{$pointM} { margin-right: get_vw(10, $vwMd); }
+	@media #{$pointS} { margin-right: get_vw(10); }
+}
+@mixin spaceRightM {
+	margin-right: 20px;
+	@media #{$pointM} { margin-right: get_vw(20, $vwMd); }
+	@media #{$pointS} { margin-right: get_vw(15); }
+}
+@mixin spaceRightL {
+	margin-right: 30px;
+	@media #{$pointM} { margin-right: get_vw(25, $vwMd); }
+	@media #{$pointS} { margin-right: get_vw(20); }
+}
+// ****************************************************************
+// font-size
+// ****************************************************************
+@mixin font-sizeS {
+	font-size: 1.4rem;
+	@media #{$pointM} { font-size: get_vw(14, $vwMd); }
+	@media #{$pointS} {@include fz_vw(12);}
+}
+@mixin font-sizeM {
+	font-size: 1.6rem;
+	@media #{$pointM} { font-size: get_vw(16, $vwMd); }
+	@media #{$pointS} {@include fz_vw(14);}
+}
+// top 詳細ボタン、下層 リンクボタン
+@mixin font-sizeL {
+	font-size: 1.8rem;
+	@media #{$pointM} { font-size: get_vw(18, $vwMd); }
+	@media #{$pointS} { @include fz_vw(16); }
+}
+@mixin font-size2L {
+	font-size: 2.0rem;
+	@media #{$pointM} { font-size: get_vw(20, $vwMd); }
+	@media #{$pointS} { @include fz_vw(16); }
+}
+@mixin font-size3L {
+	font-size: 3.0rem;
+	@media #{$pointM} { font-size: get_vw(30, $vwMd); }
+	@media #{$pointS} { @include fz_vw(18); }
+}
+@mixin font-size4L {
+	font-size: 3.5rem;
+	@media #{$pointM} { font-size: get_vw(35, $vwMd); }
+	@media #{$pointS} { @include fz_vw(21); }
+}
+@mixin font-size5L {
+	font-size: 4.0rem;
+	@media #{$pointM} { font-size: get_vw(40, $vwMd); }
+	@media #{$pointS} { @include fz_vw(24); }
+}
+@mixin font-size6L {
+	font-size: 4.5rem;
+	@media #{$pointM} { font-size: get_vw(45, $vwMd); }
+	@media #{$pointS} { @include fz_vw(27); }
+}
+@mixin font-size7L {
+	font-size: 5.0rem;
+	@media #{$pointM} { font-size: get_vw(50, $vwMd); }
+	@media #{$pointS} { @include fz_vw(30); }
+}
+@mixin font-size8L {
+	font-size: 6.0rem;
+	@media #{$pointM} { font-size: get_vw(60, $vwMd); }
+	@media #{$pointS} { @include fz_vw(36); }
+}
+@mixin font-size9L {
+	font-size: 7.0rem;
+	@media #{$pointM} { font-size: get_vw(70, $vwMd); }
+	@media #{$pointS} { @include fz_vw(42); }
+}
+// ===================================================================
+// font-size → @include fz_vw(xx); （xxにはpixel相当の数値を入れる）
+// ===================================================================
+@function get_vw($size, $viewport:$vwSm) {
+	// $rate: 100 / $viewport;
+	$rate: calc(100 / $viewport);
+	@return $rate * $size * 1vw;
+}
+@function get_vh($size, $viewport:$vwSm) {
+	// $rate: 100 / $viewport;
+	$rate: calc(100 / $viewport);
+	@return $rate * $size * 1vh;
+}
+@mixin fz_vw($font_size:12) {
+	font-size: $font_size * 1px;
+	font-size: get_vw($font_size);
+}

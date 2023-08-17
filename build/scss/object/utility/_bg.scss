@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* background-color
+----------------------------------------------------------------- */
+.u-bg {
+	//白
+	&-color {
+		background-color: $color-white; //#fff
+	}
+}

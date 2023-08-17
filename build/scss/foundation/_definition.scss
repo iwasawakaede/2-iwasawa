@@ -1,0 +1,31 @@
+@charset 'utf-8';
+// ****************************************************************
+// frame
+// ****************************************************************
+//ブレイクポイント
+$pointS:  "only screen and (max-width: 428px)";
+$pointM:  "only screen and (max-width: 896px)";
+$pointL:  "only screen and (max-width: 1200px)";
+$point2L: "only screen and (max-width: 1440px)";
+// View point
+$vwSm:  428;
+$vwMd:  896;
+$vwLg:  1200;
+$vw2Lg: 1440;
+// ****************************************************************
+// font
+// ****************************************************************
+$font-mincho: 'Noto Serif JP', sans-serif;
+$font-gothic: 'ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;
+// ****************************************************************
+// color
+// ****************************************************************
+// 変数化する色コードはよく使う色のみにしてください。（フレーム、ベースなど）
+$color-white    : #FFF;
+$color-black    : #565656;
+$color-black1   : #000;
+$color-gray     : #B2B2B2;
+$color-gray1    : #707070;
+$color-red      : #EA545F;
+$color-red1     : #E85A6D;
+$color-pink     : #FFAFA8;

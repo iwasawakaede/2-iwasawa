@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* mc
+----------------------------------------------------------------- */
+.c-mc {
+	width: 100%;
+	&_inner {
+		@include innerWidth;
+		max-width: 1200px;
+		padding-top: 40px;
+		padding-bottom: 92px;
+		@media #{$pointM} {
+			padding-top: get_vw(220, $vwMd);
+			padding-bottom: get_vw(92, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(110);
+			padding-bottom: get_vw(92);
+		}
+	}
+}

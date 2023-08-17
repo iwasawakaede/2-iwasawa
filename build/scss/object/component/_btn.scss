@@ -1,0 +1,45 @@
+@charset 'utf-8';
+/* btn
+----------------------------------------------------------------- */
+.c-btn {
+	@include spaceTopL;
+	&-design {
+		margin-top: 50px;
+		@media #{$pointM} { margin-top: get_vw(60, $vwMd); }
+		@media #{$pointS} { margin-top: get_vw(30); }
+	}
+	&-design1 {
+		margin-top: 40px;
+		@media #{$pointM} { margin-top: get_vw(40, $vwMd); }
+		@media #{$pointS} { margin-top: get_vw(20); }
+	}
+	&_inner {
+		display: block;
+	}
+	&_anchor {
+		margin: 0 auto;
+		color: $color-black;
+		background-color: $color-white;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		border: 3px solid $color-red;
+		border-radius: 50px;
+		box-shadow: 0 3px 0 rgba($color-black1, .16);
+		padding: 18px 0;
+		max-width: 380px;
+		display: block;
+		position: relative;
+		font-size: 1.6rem;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+			padding: get_vw(22, $vwMd) 0;
+			width: 100%;
+			max-width: none;
+		}
+		@media #{$pointS} {
+			@include fz_vw(14);
+			padding: get_vw(11) 0;
+		}
+	}
+}

@@ -149,6 +149,7 @@ a {
 .l-headerMain {
 	background-color: rgba(255,255,255,0.6);
 	display: flex;
+	justify-content: space-between;
 	width: 1440px;
 
 	margin: 18px auto 0;
@@ -162,9 +163,13 @@ a {
 	width: 280px;
 	margin-right: 38px;
 }
+.l-headerNav {
+	margin-right: 230px;
+}
 .l-headerNumber {
 	display: flex;
 	align-items: center;
+	margin-top: 20px;
 	&_img {
     line-height: 0;
     vertical-align: baseline;
@@ -192,22 +197,26 @@ a {
 }
 .l-headerList {
 	display: flex;
-	&_item {
+	margin-top: -24px;
+	&_textLink {
+		display: block;
 		color: #333;
 		font-family: "Noto Sans CJ Kjp";
 		font-size: 18px;
 		font-weight: bold;
-	}
-	&_textLink {
-		display: block;
+		margin-left: 21px;
 	} 
+	&_textLink-left {
+		margin-left: 0;
+	}
 }
 .l-headerButton {
 	display: flex;
-	width: 270px;
+	justify-content: space-between;
+	width: 266px;
 }
 .l-headerButtonImg {
-	width: 77px;
+	width: 75px;
 }
 .l-headerButtonBlock {
 	&_link {
@@ -218,6 +227,7 @@ a {
 		font-weight: bold;
 		text-align: center;
 		border-radius: 20px;
+		width: 180px;
 		display: block;
 	}
 	&_text {

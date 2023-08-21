@@ -133,14 +133,27 @@
 // 	}
 // }
 .l-header {
-	&-div {
-		background-color: #1c4ca6;
-		&_p {
-			font-size: 12px;
-			color: #fffcf3;
-			font-weight: bold;
-			text-align: center;
-			font-family: "Noto Sans CJ Kjp";
-		}
+}
+.l-headerMain {
+	background-color: rgba(255,255,255,0.6);
+	display: flex;
+	width: 1430px;
+	opacity: 0.600;
+	margin: 0 auto;
+	&_headerTop {
+
+	}
+	&_img {
+
+	}
+}
+.l-headerTop {
+	background-color: #1c4ca6;
+ 	&_text {
+		font-size: 12px;
+		color: #fffcf3;
+		font-weight: bold;
+		text-align: center;
+		font-family: "Noto Sans CJ Kjp";
 	}
 }

@@ -133,8 +133,14 @@
 // 	}
 // }
 .l-header {
-	&_inner {
-		&-design {
+	&-div {
+		background-color: #1c4ca6;
+		&_p {
+			font-size: 12px;
+			color: #fffcf3;
+			font-weight: bold;
+			text-align: center;
+			font-family: "Noto Sans CJ Kjp";
 		}
 	}
 }

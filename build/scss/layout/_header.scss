@@ -150,9 +150,8 @@ a {
 	background-color: rgba(255,255,255,0.6);
 	display: flex;
 	width: 1440px;
-	@include spaceTopM;
-	margin-left: auto;
-	margin-right: auto;
+
+	margin: 18px auto 0;
 	// お手本の書き方
 	// &-headerTop {
 	// }
@@ -161,25 +160,35 @@ a {
 }
 .l-headerLogo {
 	width: 280px;
+	margin-right: 38px;
 }
-.l-headerNumeber {
+.l-headerNumber {
 	display: flex;
+	align-items: center;
 	&_img {
+    line-height: 0;
+    vertical-align: baseline;
 		width: 42px;
-		@include spaceTopM;
+		height: 23px;
 	}
 	&_text {
 		color: #333;
 		font-family: "Noto Sans CJ Kjp";
 		font-size: 24px;
 		font-weight: 800;
+		line-height: 0;
 	}
 	&_textS {
 		color: #333;
 		font-family: "Noto Sans CJ Kjp";
 		font-size: 14px;
 		text-align: center;
+		vertical-align: 2px;
+		margin-left: 11px;
 	}
+}
+.l-headerBlock {
+		margin-top: 18px;
 }
 .l-headerList {
 	display: flex;

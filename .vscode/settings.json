@@ -25,5 +25,8 @@
     // "savePath": "~/../css",//←ちなみにsassフォルダと同階層のcssフォルダにコンパイルしてほしい場合はこう書く
 	}],
 	// Q. コンパイルする時一緒に.mapファイルは生成する？
-	"liveSassCompile.settings.generateMap": false, // A 生成する。これをtrueにするとstyle.min.css.mapというファイルがcssフォルダ内に自動生成されて開発に便利です
+	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.autoprefix": [
+		
+	], // A 生成する。これをtrueにするとstyle.min.css.mapというファイルがcssフォルダ内に自動生成されて開発に便利です
 }

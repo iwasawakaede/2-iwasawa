@@ -132,30 +132,6 @@
 // 		}
 // 	}
 // }
-
-.l-headerMain {
-	background-color: rgba(255,255,255,0.6);
-	display: flex;
-	width: 1430px;
-	opacity: 0.600;
-	margin: 0 auto;
-	&-headerTop {
-
-	}
-	&_img {
-
-	}
-}
-.l-headerLogo {
-	width: 280px;
-	&_img {
-
-	}
-
-}
-.l-headerNumeber {
-	display: flex;
-}
 .l-headerTop {
 	background-color: #1c4ca6;
  	&_text {
@@ -164,5 +140,59 @@
 		font-weight: bold;
 		text-align: center;
 		font-family: "Noto Sans CJ Kjp";
+	}
+}
+.l-headerMain {
+	background-color: rgba(255,255,255,0.6);
+	display: flex;
+	width: 1430px;
+	opacity: 0.600;
+	margin: 0 auto;
+	// お手本の書き方
+	// &-headerTop {
+
+	// }
+	// &_img {
+
+	// }
+}
+.l-headerLogo {
+	width: 280px;
+}
+.l-headerNumeber {
+	display: flex;
+	&_img {
+		width: 42px;
+	}
+	&_text {
+		color: #333;
+		font-family: "Noto Sans CJ Kjp";
+		font-size: 24px;
+		font-weight: 800;
+	}
+	&_textS {
+		color: #333;
+		font-family: "Noto Sans CJ Kjp";
+		font-size: 14px;
+		text-align: center;
+	}
+}
+.l-headerList {
+	&_textLink {
+		color: #333;
+		font-family: "Noto Sans CJ Kjp";
+		font-size: 18px;
+	} 
+}
+.l-headerButton {
+	display: flex;
+	width: 270px;
+}
+.l-headerButtonImg {
+	width: 77px;
+}
+.l-headerButtonBlock {
+	&_link {
+		
 	}
 }

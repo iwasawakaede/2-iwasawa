@@ -190,9 +190,24 @@ a {
 	
 }
 .l-headerNav {
-	margin-right: 230px;
+	// margin-right: 230px;
 	@media #{$pointM} {
-		display: none;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: auto;
+			position: fixed;
+			z-index: 999;
+			/*ナビのスタート位置と形状*/
+			/*ナビの高さ*/
+			top: get_vw(66);
+			// 作成後にマイナスの値に変更して、表示しないようにする
+			right: 0;
+			width: 100%;
+			height: calc(100vh - 17.6vw);
+			background: #7f5f5f;
+			/*動き*/
+			transition: all 0.6s;
 	}
 }
 .l-headerNumber {
@@ -222,49 +237,35 @@ a {
 	}
 }
 .l-headerBlock {
-		margin-top: 18px;
-		@media #{$pointM} {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			overflow: auto;
-			position: fixed;
-			z-index: 999;
-			/*ナビのスタート位置と形状*/
-			/*ナビの高さ*/
-			top: get_vw(66);
-			right: -120%;
-			width: 100%;
-			height: calc(100vh - 17.6vw);
-			background: #fff;
-			/*動き*/
-			transition: all 0.6s;
-		}
+	margin-top: 18px;
 }
-.l-headerBlock.panelactive {
+.l-headerBlock {
+&.is-panelactive {
 	@media #{$pointM} {
-	right: 0;
+		display: block;
+		right: 0;
+	}
 }
 }
 .l-headerBlock.panelactive .l-headerMenu {
 	@media #{$pointM} {
-	width: 100%;
-}
+		width: 100%;
+	}
 }
 .l-headerList {
 	display: flex;
 	margin-top: -17px;
-	@media #{$pointM} {	
 	&_item {
-		color: #333;
-		font-weight: 700;
-		font-size: 4.27vw;
-		text-align: left;
-		line-height: 1.5;
-		list-style: none;
-		padding: 4.8vw 0 5.6vw;
+		@media #{$pointM} {	
+			color: #333;
+			font-weight: 700;
+			font-size: get_vw(16, $vwMd);
+			text-align: left;
+			line-height: 1.5;
+			list-style: none;
+			padding: get_vw(18, $vwMd) 0 get_vw(21, $vwMd);
+		}
 	}
-}
 	&_textLink {
 		color: #333;
 		font-family: "Noto Sans CJ jp";
@@ -285,8 +286,10 @@ a {
 		opacity: 0.6;
 	}
 	&_textLinkP {
-		width: 32vw;
-		margin-right: 8.53vw;
+		@media #{$pointM} {
+			width: get_vw(120, $vwMd);
+			margin-right: get_vw(32, $vwMd);
+		}
 	}
 }
 .l-headerButton {

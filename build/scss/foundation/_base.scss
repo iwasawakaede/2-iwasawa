@@ -16,9 +16,12 @@ body {
 	font-family: 'Noto Serif JP', sans-serif;
 	font-weight: 400;
 	line-height: 2;
-	min-width: 320px;
+	min-width: 1440px;
 	font-size: 1.6rem;
-	@media #{$pointM} { font-size: get_vw(16, $vwMd); }
+	@media #{$pointM} {
+		min-width: 320px;
+		font-size: get_vw(16, $vwMd);
+	}
 	@media #{$pointS} {@include fz_vw(14);}
 }
 a {

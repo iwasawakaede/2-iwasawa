@@ -138,42 +138,6 @@ a {
 .l-header {
 	width: 100%;
 }
-	.openbtn {
-		color: #50b1b2;
-		position: relative;
-		background: #fff;
-		cursor: pointer;
-		width: 10.13vw;
-		height: 10.13vw;
-		border-radius: 1.33vw;
-		display: flex;
-	}
-
-	.openbtn span {
-		display: inline-block;
-		transition: all .4s;
-		position: absolute;
-		left: 1.33vw;
-		height: 1px;
-		border-radius: 0.53vw;
-		background: #50b1b2;
-		width: 5.33vw;
-	}
-
-	.openbtn span:nth-of-type(1) {
-		top: 2.67vw;
-		left: 1.33vw;
-	}
-
-	.openbtn span:nth-of-type(2) {
-		top: 4.60vw;
-		left: 1.33vw;
-	}
-
-	.openbtn span:nth-of-type(3) {
-		top: 6.47vw;
-		left: 1.33vw;
-	}
 .l-headerTop {
 	background-color: #1c4ca6;
 	text-align: center;
@@ -306,3 +270,57 @@ a {
 		text-align: center;
 	}
 }
+	.l-headerButtonOpenbtn {
+		display: none;
+		@media #{$pointM} {
+		color: #50b1b2;
+		position: relative;
+		background: #fff;
+		cursor: pointer;
+		width: 10.13vw;
+		height: 10.13vw;
+		border-radius: 1.33vw;
+		display: flex;
+	}
+	}
+
+	.l-headerButtonOpenbtn span {
+		display: none;
+		@media #{$pointM} {
+		display: inline-block;
+		transition: all .4s;
+		position: absolute;
+		left: 1.33vw;
+		height: 1px;
+		border-radius: 0.53vw;
+		background: #50b1b2;
+		width: 5.33vw;
+	}
+	}
+
+	.l-headerButtonOpenbtn span:nth-of-type(1) {
+		display: none;
+		@media #{$pointM} {
+		display: block;
+		top: 2.67vw;
+		left: 1.33vw;
+	}
+	}
+
+	.l-headerButtonOpenbtn span:nth-of-type(2) {
+		display: none;
+		@media #{$pointM} {
+		display: block;	
+		top: 4.60vw;
+		left: 1.33vw;
+	}
+	}
+
+	.l-headerButtonOpenbtn span:nth-of-type(3) {
+		display: none;
+		@media #{$pointM} {
+		display: block;
+		top: 6.47vw;
+		left: 1.33vw;
+	}
+	}

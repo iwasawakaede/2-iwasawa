@@ -138,6 +138,42 @@ a {
 .l-header {
 	width: 100%;
 }
+	.openbtn {
+		color: #50b1b2;
+		position: relative;
+		background: #fff;
+		cursor: pointer;
+		width: 10.13vw;
+		height: 10.13vw;
+		border-radius: 1.33vw;
+		display: flex;
+	}
+
+	.openbtn span {
+		display: inline-block;
+		transition: all .4s;
+		position: absolute;
+		left: 1.33vw;
+		height: 1px;
+		border-radius: 0.53vw;
+		background: #50b1b2;
+		width: 5.33vw;
+	}
+
+	.openbtn span:nth-of-type(1) {
+		top: 2.67vw;
+		left: 1.33vw;
+	}
+
+	.openbtn span:nth-of-type(2) {
+		top: 4.60vw;
+		left: 1.33vw;
+	}
+
+	.openbtn span:nth-of-type(3) {
+		top: 6.47vw;
+		left: 1.33vw;
+	}
 .l-headerTop {
 	background-color: #1c4ca6;
 	text-align: center;
@@ -152,6 +188,12 @@ a {
 		color: #fffcf3;
 		font-weight: bold;
 		font-family: "Noto Sans jp";
+		@media #{$pointM} {
+			font-size: get_vw(10, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(10);
+		}
 	}
 }
 .l-headerMain {
@@ -170,9 +212,23 @@ a {
 .l-headerLogo {
 	width: 280px;
 	margin-right: 38px;
+	@media #{$pointM} {
+					width: get_vw(220, $vwMd);
+					height: get_vw(220, $vwMd);
+					margin-right: get_vw(12, $vwMd);
+				}
+	@media #{$pointS} {
+						width: get_vw(130);
+						height: get_vw(130);
+						margin-right: get_vw(6);
+					}
+	
 }
 .l-headerNav {
 	margin-right: 230px;
+	@media #{$pointM} {
+		display: none;
+	}
 }
 .l-headerNumber {
 	display: flex;

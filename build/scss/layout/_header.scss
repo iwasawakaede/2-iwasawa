@@ -132,6 +132,9 @@
 // 		}
 // 	}
 // }
+body * {
+	outline: red 1px solid;
+} 
 a {
 	color: inherit;
 }
@@ -165,20 +168,18 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 1440px;
-
 	margin: 18px auto 0;
-	// お手本の書き方
-	// &-headerTop {
-	// }
-	// &_img {
-	// }
+	@media #{$pointM} {
+		width: 100%;
+		padding: 0 get_vw(15, $vwMd);
+	}
 }
 .l-headerLogo {
 	width: 280px;
 	margin-right: 38px;
 	@media #{$pointM} {
 					width: get_vw(220, $vwMd);
-					height: get_vw(220, $vwMd);
+					// height: get_vw(220, $vwMd);
 					margin-right: get_vw(12, $vwMd);
 				}
 	@media #{$pointS} {
@@ -246,6 +247,9 @@ a {
 	justify-content: space-between;
 	width: 266px;
 	margin-top: 11px;
+	@media #{$pointM} {
+		display: none;
+	}
 }
 .l-headerButtonImg {
 	width: 75px;
@@ -273,54 +277,50 @@ a {
 	.l-headerButtonOpenbtn {
 		display: none;
 		@media #{$pointM} {
-		color: #50b1b2;
 		position: relative;
 		background: #fff;
 		cursor: pointer;
-		width: 10.13vw;
-		height: 10.13vw;
-		border-radius: 1.33vw;
+		width: get_vw(70, $vwMd);
+		height: get_vw(70, $vwMd);
+		border-radius: get_vw(5, $vwMd);
 		display: flex;
 	}
 	}
-
-	.l-headerButtonOpenbtn span {
+	.l-headerButtonOpenbtn_line {
 		display: none;
 		@media #{$pointM} {
 		display: inline-block;
 		transition: all .4s;
 		position: absolute;
-		left: 1.33vw;
-		height: 1px;
-		border-radius: 0.53vw;
-		background: #50b1b2;
-		width: 5.33vw;
+		left: get_vw(-5, $vwMd);
+		height: get_vw(3, $vwMd);
+		border-radius: get_vw(2, $vwMd);
+		background: #000;
+		width: get_vw(60, $vwMd);
 	}
 	}
-
-	.l-headerButtonOpenbtn span:nth-of-type(1) {
+	.l-headerButtonOpenbtn_line-top {
 		display: none;
 		@media #{$pointM} {
 		display: block;
-		top: 2.67vw;
-		left: 1.33vw;
+		top: get_vw(10, $vwMd);
+		left: get_vw(5, $vwMd);
 	}
 	}
-
-	.l-headerButtonOpenbtn span:nth-of-type(2) {
+	.l-headerButtonOpenbtn_line-middle {
 		display: none;
 		@media #{$pointM} {
 		display: block;	
-		top: 4.60vw;
-		left: 1.33vw;
+		top: get_vw(35, $vwMd);
+		left: get_vw(5, $vwMd);
 	}
 	}
 
-	.l-headerButtonOpenbtn span:nth-of-type(3) {
+	.l-headerButtonOpenbtn_line-bottom {
 		display: none;
 		@media #{$pointM} {
 		display: block;
-		top: 6.47vw;
-		left: 1.33vw;
+		top: get_vw(60, $vwMd);
+		left: get_vw(5, $vwMd);
 	}
 	}

@@ -266,11 +266,11 @@ a {
 	}
 }
 	&_textLink {
-		display: block;
 		color: #333;
 		font-family: "Noto Sans CJ jp";
 		font-size: 18px;
 		font-weight: bold;
+		display: block;
 		margin-left: 21px;
 		@media #{$pointM} {
 			display: flex;
@@ -376,21 +376,18 @@ a {
 		top: 9px;
 		left: 6px;
 		transform: translateY(6px) rotate(-45deg);
-		width: 50%;
 		}
 	}
-
-	.l-headerButtonOpenbtn.active .l-headerButtonOpenbtn_line-middle {
+	.l-headerButtonOpenbtn.active .l-headerButtonOpenbtn_line:nth-child(2) {
 		@media #{$pointM} {
 		opacity: 0;
 	}
 	}
-	.l-headerButtonOpenbtn.active .l-headerButtonOpenbtn_line-bottom {
+	.l-headerButtonOpenbtn.active .l-headerButtonOpenbtn_line:nth-child(3) {
 		@media #{$pointM} {
 		top: 21px;
 		left: 6px;
 		transform: translateY(-6px) rotate(45deg);
-		width: 50%;
 	}
 	}
 

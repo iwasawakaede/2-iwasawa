@@ -183,18 +183,30 @@ a {
 	margin-right: 38px;
 	@media #{$pointM} {
 					width: get_vw(220, $vwMd);
-					// height: get_vw(220, $vwMd);
 					margin-right: get_vw(12, $vwMd);
 				}
 	@media #{$pointS} {
 						width: get_vw(130);
-						height: get_vw(130);
 						margin-right: get_vw(6);
 					}
 	
 }
 .l-headerNav {
-
+	@media #{$pointM} {
+		overflow: auto;
+		position: fixed;
+		z-index: 999;
+		/*ナビのスタート位置と形状*/
+		/*ナビの高さ*/
+		top: get_vw(160, $vwMd);
+		// 作成後にマイナスの値に変更して、表示しないようにする
+		right: 0;
+		width: 100%;
+		height: calc(100vh - get_vw(160, $vwMd));
+		background: #7f5f5f;
+		/*動き*/
+		transition: all 0.6s;
+	}
 }
 .l-headerNumber {
 	display: flex;
@@ -228,21 +240,7 @@ a {
 .l-headerBlock {
 	margin-top: 18px;
 	@media #{$pointM} {
-		flex-direction: column;
-		justify-content: space-between;
-		overflow: auto;
-		position: fixed;
-		z-index: 999;
-		/*ナビのスタート位置と形状*/
-		/*ナビの高さ*/
-		top: get_vw(160, $vwMd);
-		// 作成後にマイナスの値に変更して、表示しないようにする
-		right: 0;
-		width: 100%;
-		height: calc(100vh - get_vw(160, $vwMd));
-		background: #7f5f5f;
-		/*動き*/
-		transition: all 0.6s;
+		margin-top: 0;
 	}
 }
 .l-headerBlock {
@@ -262,7 +260,8 @@ a {
 	display: flex;
 	margin-top: -17px;
 	@media #{$pointM} {
-
+		display: block;
+		margin-top: 0;
 	}
 	&_item {
 		@media #{$pointM} {	
@@ -270,6 +269,9 @@ a {
 			line-height: 1.5;
 			list-style: none;
 			padding: get_vw(18, $vwMd) 0 get_vw(21, $vwMd);
+		}
+		@media #{$pointS} {
+
 		}
 	}
 	&_textLink {

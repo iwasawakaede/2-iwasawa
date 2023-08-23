@@ -207,7 +207,7 @@ a {
 		/*ナビの高さ*/
 		top: 118px;
 		// 作成後にマイナスの値に変更して、表示しないようにする
-		right: 0;
+		right: -120%;
 		width: 100%;
 		height: calc(100vh - 117px);
 		background: #fff;
@@ -253,19 +253,15 @@ a {
 	@media #{$pointM} {
 		margin-top: 0;
 	}
+	
 }
-.l-headerBlock {
-&.is-panelactive {
+.l-headerNav {
+	&.is-panelactive {
 	@media #{$pointM} {
-		display: block;
+		// display: block;
 		right: 0;
 	}
 }
-}
-.l-headerBlock.is-panelactive .l-headerMenu {
-	@media #{$pointM} {
-		width: 100%;
-	}
 }
 .l-headerList {
 	display: flex;

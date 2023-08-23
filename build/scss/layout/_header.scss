@@ -132,9 +132,9 @@
 // 		}
 // 	}
 // }
-body * {
-	outline: red 1px solid;
-} 
+// body * {
+// 	outline: red 1px solid;
+// } 
 .fixed {
 	width: 100%;
 	height: 100%;
@@ -210,12 +210,11 @@ a {
 		right: 0;
 		width: 100%;
 		height: calc(100vh - 117px);
-		background: #7f5f5f;
+		background: #1eb9ee;
 		/*動き*/
 		transition: all 0.6s;
 	}
 	@media #{$pointS} {
-		background: #1eb9ee;
     height: calc(100vh - 86.5px);
     top: 88px;
 	}
@@ -280,7 +279,11 @@ a {
 			text-align: left;
 			line-height: 1.5;
 			list-style: none;
-			padding: get_vw(18, $vwMd) 0 get_vw(21, $vwMd);
+			padding: get_vw(45, $vwMd) get_vw(35, $vwMd);
+			border-bottom: solid 1px #fff;
+		}
+		@media #{$pointS} {	
+			padding: get_vw(40, $vwMd) get_vw(30, $vwMd);
 		}
 	}
 	&_textLink {
@@ -302,18 +305,35 @@ a {
 		opacity: 0.6;
 	}
 	&_textLinkP {
+		font-family: "Noto Sans jp";
+		color: #000;
+		font-size: 18px;
+		font-weight: bold;
 		@media #{$pointM} {
-			color: #000;
-			font-family: "Noto Sans jp";
-			font-size: get_vw(16, $vwMd);
-			font-weight: bold;
+			color: #fff;
+			font-size: get_vw(35, $vwMd);
+			font-weight: normal;
 			width: get_vw(120, $vwMd);
 			margin-right: get_vw(32, $vwMd);
 		}
-		@media #{$pointS} {	
+		@media #{$pointM} {	
 			margin-right: 0;
 			width: 100%;
 		}
+	}
+	&_textLinkPImg {
+		display: none;
+		@media #{$pointM} {	
+			display: block;
+		}
+	}
+}
+.fa-credit-card,
+.fa-gear,
+.fa-soap,
+.fa-broom {
+	@media #{$pointM} {
+		padding-right: get_vw(10, $vwMd);
 	}
 }
 .l-headerButton {

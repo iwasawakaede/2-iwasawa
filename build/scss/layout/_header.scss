@@ -333,10 +333,8 @@ a {
 		}
 	}
 }
-.fa-credit-card,
-.fa-gear,
-.fa-soap,
-.fa-broom {
+
+.fa-solid {
 	@media #{$point2L} {
 		display: none;
 	}
@@ -353,53 +351,46 @@ a {
 		bottom: 0;
 		left: 0;
 		z-index: 999;
+		padding: 10px;
 	}
 }
 .l-headerFixdList {
 	@media #{$pointM} {
-		background-color: #1eb9ee;
 		display: flex;
 		list-style: none;
-		padding:0;
-		margin:0;
 		width:100%;
 	}
 		&_link {
 		@media #{$pointM} {
-			justify-content: center;
-			align-items: center;
-			width: 50%;
-			padding:0;
-			margin:0;
-			font-size: 14px;
-			border-right: 1px solid #fff;
+			display: block;
+			padding: 10px;
 		} 
 	}
 }
-.l-headerFixdIcon_link-text {
+.l-headerFixdList_link-text {
 	@media #{$pointM} {
 		color: #fff;
-		font-family: "Noto Sans CJ jp";
-		font-size: 24px;
-		font-weight: 400;
+		background-color: #1eb9ee;
+		font-family: "Noto Sans jp";
+		font-size: get_vw(24, $vwMd);
+		font-weight: bold;
+		text-align: center;
+		width: 50%;
+		border: 1px solid #fff;
+		border-radius: 5px;
+    margin-right: get_vw(5, $vwMd);
 	}
 	}
-.l-headerFixdIcon_link-textLeft {
-	@media #{$pointM} {
-		background-color: #854747;
-	}
-	}
-	.l-headerFixdIcon_link-textRight {
-		@media #{$pointM} {
-			background-color: #981818;
-		}
-		}
-.l-headerFixdIcon_link {
-	@media #{$pointM} {
-
-	}
-}
-
+// .l-headerFixdList_link-textLeft {
+// 	@media #{$pointM} {
+// 		background-color: #1eb9ee;
+// 	}
+// 	}
+// 	.l-headerFixdList_link-textRight {
+// 		@media #{$pointM} {
+// 			background-color: #981818;
+// 		}
+// 		}
 .l-headerButton {
 	display: flex;
 	justify-content: space-between;

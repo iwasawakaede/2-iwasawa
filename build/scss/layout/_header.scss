@@ -146,7 +146,11 @@ a {
 .l-header {
 	width: 100%;
 	@media #{$pointM} {
+		height: 117px;
 		position: fixed;
+	}
+	@media #{$pointS} {
+		height: 86.5px;
 	}
 }
 .l-headerTop {
@@ -201,14 +205,19 @@ a {
 		z-index: 999;
 		/*ナビのスタート位置と形状*/
 		/*ナビの高さ*/
-		top: get_vw(160, $vwMd);
+		top: 118px;
 		// 作成後にマイナスの値に変更して、表示しないようにする
 		right: 0;
 		width: 100%;
-		height: calc(100vh - get_vw(160, $vwMd));
+		height: calc(100vh - 117px);
 		background: #7f5f5f;
 		/*動き*/
 		transition: all 0.6s;
+	}
+	@media #{$pointS} {
+		background: #1eb9ee;
+    height: calc(100vh - 86.5px);
+    top: 88px;
 	}
 }
 .l-headerNumber {
@@ -277,9 +286,17 @@ a {
 	&_textLink {
 		display: block;
 		margin-left: 21px;
+		@media #{$pointM} {	
+			margin-left: get_vw(10, $vwMd);
+			margin-right: get_vw(10, $vwMd);
+		}
 	} 
 	&_textLink-left {
 		margin-left: 0;
+		@media #{$pointM} {
+			margin-left: get_vw(10, $vwMd);
+			margin-right: get_vw(10, $vwMd);
+		}
 	}
 	&_textLink:hover {
 		opacity: 0.6;
@@ -292,6 +309,10 @@ a {
 			font-weight: bold;
 			width: get_vw(120, $vwMd);
 			margin-right: get_vw(32, $vwMd);
+		}
+		@media #{$pointS} {	
+			margin-right: 0;
+			width: 100%;
 		}
 	}
 }
@@ -383,6 +404,11 @@ a {
 		left: 6px;
 		transform: translateY(6px) rotate(-45deg);
 		}
+		@media #{$pointS} {
+	    top: 10px;
+			left: 3px;
+			transform: translateY(3px) rotate(-45deg);
+			}
 	}
 	.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(2) {
 		@media #{$pointM} {
@@ -395,8 +421,17 @@ a {
 		left: 6px;
 		transform: translateY(-6px) rotate(45deg);
 	}
+	@media #{$pointS} {
+    top: 17px;
+    left: 3px;
+    transform: translateY(-3px) rotate(45deg);
+		}
 	}
 
 	.l-contents {
 		height: 1000px;
+	}
+
+	.l-footer {
+		height: 100px;
 	}

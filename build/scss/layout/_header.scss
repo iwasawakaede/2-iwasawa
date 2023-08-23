@@ -210,7 +210,7 @@ a {
 		right: 0;
 		width: 100%;
 		height: calc(100vh - 117px);
-		background: #1eb9ee;
+		background: #fff;
 		/*動き*/
 		transition: all 0.6s;
 	}
@@ -280,10 +280,17 @@ a {
 			line-height: 1.5;
 			list-style: none;
 			padding: get_vw(45, $vwMd) get_vw(35, $vwMd);
-			border-bottom: solid 1px #fff;
+			border-bottom: solid 1px #1eb9ee;
 		}
 		@media #{$pointS} {	
 			padding: get_vw(40, $vwMd) get_vw(30, $vwMd);
+		}
+	}
+	&_item-top {
+		display: none;
+		@media #{$pointM} {
+			display: block;
+			border-top: solid 1px #1eb9ee;
 		}
 	}
 	&_textLink {
@@ -310,9 +317,7 @@ a {
 		font-size: 18px;
 		font-weight: bold;
 		@media #{$pointM} {
-			color: #fff;
 			font-size: get_vw(35, $vwMd);
-			font-weight: normal;
 			width: get_vw(120, $vwMd);
 			margin-right: get_vw(32, $vwMd);
 		}
@@ -332,10 +337,69 @@ a {
 .fa-gear,
 .fa-soap,
 .fa-broom {
+	@media #{$point2L} {
+		display: none;
+	}
 	@media #{$pointM} {
+		display: inline-block;
 		padding-right: get_vw(10, $vwMd);
 	}
 }
+.l-headerFixd {
+	@media #{$pointM} {
+		width: 100%;
+		background-color: #1c4ca6;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+	}
+}
+.l-headerFixdList {
+	@media #{$pointM} {
+		background-color: #1eb9ee;
+		display: flex;
+		list-style: none;
+		padding:0;
+		margin:0;
+		width:100%;
+	}
+		&_link {
+		@media #{$pointM} {
+			justify-content: center;
+			align-items: center;
+			width: 50%;
+			padding:0;
+			margin:0;
+			font-size: 14px;
+			border-right: 1px solid #fff;
+		} 
+	}
+}
+.l-headerFixdIcon_link-text {
+	@media #{$pointM} {
+		color: #fff;
+		font-family: "Noto Sans CJ jp";
+		font-size: 24px;
+		font-weight: 400;
+	}
+	}
+.l-headerFixdIcon_link-textLeft {
+	@media #{$pointM} {
+		background-color: #854747;
+	}
+	}
+	.l-headerFixdIcon_link-textRight {
+		@media #{$pointM} {
+			background-color: #981818;
+		}
+		}
+.l-headerFixdIcon_link {
+	@media #{$pointM} {
+
+	}
+}
+
 .l-headerButton {
 	display: flex;
 	justify-content: space-between;
@@ -447,11 +511,6 @@ a {
     transform: translateY(-3px) rotate(45deg);
 		}
 	}
-
 	.l-contents {
 		height: 1000px;
-	}
-
-	.l-footer {
-		height: 100px;
 	}

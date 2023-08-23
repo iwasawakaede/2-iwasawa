@@ -287,7 +287,6 @@ a {
 		}
 	}
 	&_item-top {
-		display: none;
 		@media #{$pointM} {
 			display: block;
 			border-top: solid 1px #1eb9ee;
@@ -311,7 +310,7 @@ a {
 	&_textLink:hover {
 		opacity: 0.6;
 	}
-	&_textLinkP {
+	&_textLinkSub {
 		font-family: "Noto Sans jp";
 		color: #000;
 		font-size: 18px;
@@ -325,25 +324,19 @@ a {
 			margin-right: 0;
 			width: 100%;
 		}
-	}
-	&_textLinkPImg {
-		display: none;
-		@media #{$pointM} {	
-			display: block;
+		.fa-regular,
+		.fa-solid {
+				display: none;
+			@media #{$pointM} {
+				display: inline-block;
+				padding-right: get_vw(10, $vwMd);
+			}
 		}
 	}
 }
 
-.fa-solid {
-	@media #{$point2L} {
-		display: none;
-	}
-	@media #{$pointM} {
-		display: inline-block;
-		padding-right: get_vw(10, $vwMd);
-	}
-}
-.l-headerFixd {
+
+.l-headerFixed {
 	@media #{$pointM} {
 		width: 100%;
 		background-color: #1c4ca6;
@@ -351,10 +344,10 @@ a {
 		bottom: 0;
 		left: 0;
 		z-index: 999;
-		padding: 10px;
+		padding: get_vw(10, $vwMd);
 	}
 }
-.l-headerFixdList {
+.l-headerFixedList {
 	@media #{$pointM} {
 		display: flex;
 		list-style: none;
@@ -363,11 +356,11 @@ a {
 		&_link {
 		@media #{$pointM} {
 			display: block;
-			padding: 10px;
+			padding: get_vw(10, $vwMd);
 		} 
 	}
 }
-.l-headerFixdList_link-text {
+.l-headerFixedList_link-text {
 	@media #{$pointM} {
 		color: #fff;
 		background-color: #1eb9ee;
@@ -380,17 +373,12 @@ a {
 		border-radius: 5px;
     margin-right: get_vw(5, $vwMd);
 	}
+	@media #{$pointS} {
+		color: #fff;
+		font-size: get_vw(32, $vwMd);
 	}
-// .l-headerFixdList_link-textLeft {
-// 	@media #{$pointM} {
-// 		background-color: #1eb9ee;
-// 	}
-// 	}
-// 	.l-headerFixdList_link-textRight {
-// 		@media #{$pointM} {
-// 			background-color: #981818;
-// 		}
-// 		}
+	}
+
 .l-headerButton {
 	display: flex;
 	justify-content: space-between;

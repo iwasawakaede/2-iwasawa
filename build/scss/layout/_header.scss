@@ -182,21 +182,21 @@ a {
 	width:100%;
   z-index: 999;
 }
-/*　上に上がる動き　*/
+/*　上に消える動き*/
 .l-headerTopJs.UpMove {
 	animation: UpAnime 0.5s forwards;
 }
 @keyframes UpAnime{
   from {
-    opacity: 1;
-	transform: translateY(0);
+		opacity: 1;
+		transform: translateY(0);
   }
   to {
-    opacity: 0;
-	transform: translateY(-100px);
+		opacity: 0;
+		transform: translateY(-100px);
   }
 }
-/*　下に下がる動き　*/
+/*　下に出てくる動き　*/
 .l-headerTopJs.DownMove{
 	animation: DownAnime 0.5s forwards;
 }

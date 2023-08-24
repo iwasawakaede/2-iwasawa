@@ -7,5 +7,9 @@
 }
 /* ============================ Contents ============================= */
 .l-contents {
+	height: 700px;
 	margin: 0 auto;
+	&-sample {
+		height: 100px;
+	}
 }

@@ -11,19 +11,28 @@ $(function () {
 
 //スクロール途中でヘッダーが消え、上にスクロールすると復活する設定を関数にまとめる
 function ScrollAnime() {
-    var elemTop = $('#area-2').offset().top;//#area-2の位置まできたら
+	console.log("1");
+    var elemTop = $('.l-contents').offset().top;//.l-contentsSampleの垂直（縦）位置を取得したら
+		console.log("2");
 	var scroll = $(window).scrollTop();
-    //ヘッダーの出し入れをする
+	console.log("3");
+    //ヘッダーの出し入れをする（画面のスクロール位置を取得する）
     if(scroll == beforePos) {
+			console.log("4");
 		//IE11対策で処理を入れない
     }else if(elemTop > scroll || 0 > scroll - beforePos){
+			console.log("5");
 		//ヘッダーが上から出現する
-		$('#header').removeClass('UpMove');	//#headerにUpMoveというクラス名を除き
-		$('#header').addClass('DownMove');//#headerにDownMoveのクラス名を追加
+		$('.l-headerTopJs').removeClass('.UpMove');	//.l-headerTopJsにUpMoveというクラス名を除き
+		console.log("6");
+		$('.l-headerTopJs').addClass('.DownMove');//.l-headerTopJsにDownMoveのクラス名を追加
+		console.log("7");
     }else {
 		//ヘッダーが上に消える
-        $('#header').removeClass('DownMove');//#headerにDownMoveというクラス名を除き
-		$('#header').addClass('UpMove');//#headerにUpMoveのクラス名を追加
+        $('.l-headerTopJs').removeClass('.DownMove');//.l-headerTopJsにDownMoveというクラス名を除き(下に下がる動き)
+				console.log("8");
+		$('.l-headerTopJs').addClass('.UpMove');//.l-headerTopJsにUpMoveのクラス名を追加(上に上がる動き)
+		console.log("9");
     }
     
     beforePos = scroll;//現在のスクロール値を比較用のbeforePosに格納

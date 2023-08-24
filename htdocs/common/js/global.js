@@ -13,7 +13,7 @@ $(function () {
 function ScrollAnime() {
 	//console.log("1");
     var elemTop = $('.l-contents').offset().top;//.l-contentsのスクロール位置を取得する
-		// ① 
+	// ① 
 		console.log(elemTop);
 	var scroll = $(window).scrollTop();
 	// ②
@@ -38,7 +38,10 @@ if(elemTop < scroll){
 		$('.l-headerTopJs').addClass('DownMove');//.l-headerTopJsにDownMoveのクラス名を追加
 		// console.log("7");
     }
-    
+    $(".l-headerButtonOpenbtn").click(function () {//ボタンがクリックされたら
+			$(this).toggleClass('is-active');//ボタン自身に activeクラスを付与し
+			$(".l-headerNav").toggleClass('is-panelactive');//ナビゲーションにpanelactiveクラスを付与
+		});
     beforePos = scroll;//５→現在のスクロール値として、比較用のbeforePosに格納される（１へ戻り、繰り返し）
 }
 
@@ -46,5 +49,21 @@ if(elemTop < scroll){
 // 1→マウスを1回スクロールすると、2の関数を呼び出す（）
 $(window).scroll(function () {
 	ScrollAnime();
+});
+
+// スクロールすると高さが小さくなる
+$(function () {
+  $(window).on('load scroll', function () {
+		console.log('最初のスクロールの値',scroll);
+    var $header = $('l-headerMain');
+
+    // 202以上スクロールしたら処理
+    if ($(window).scrollTop() > 202) {
+
+      $header.addClass('sticky');
+    } else {
+      $header.removeClass('sticky');
+    }
+  });
 });
 });

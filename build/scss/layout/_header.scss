@@ -175,12 +175,47 @@ a {
 		}
 	}
 }
+.l-headerTopJs {
+	position: fixed;
+	top: 0;
+	height: 20px;
+	width:100%;
+  z-index: 999;
+}
+/*　上に上がる動き　*/
+.l-headerTopJs.UpMove {
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+	transform: translateY(-100px);
+  }
+}
+/*　下に下がる動き　*/
+.l-headerTopJs.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 0;
+		transform: translateY(-100px);
+  }
+  to {
+  	opacity: 1;
+		transform: translateY(0);
+  }
+}
 .l-headerMain {
 	background-color: rgba(255,255,255,0.6);
 	display: flex;
 	justify-content: space-between;
 	width: 1440px;
-	margin: 18px auto;
+	margin: 38px auto 18px;
 	@media #{$pointM} {
 		width: 100%;
 		padding: 0 get_vw(15, $vwMd);

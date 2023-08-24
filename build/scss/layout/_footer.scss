@@ -69,3 +69,38 @@
 // 		}
 // 	}
 // }
+
+.l-footer {
+	background-color: #fff;
+	width: 100%;
+	padding: 40px 0;
+	&-picture {
+		width: 345px;
+		margin: 0 auto;
+	}
+	&-text {
+		color: #1eb9ee;
+		font-family: "Noto Sans Kjp";
+		font-size: 24px;
+		font-weight: bold;
+		letter-spacing: 5px;
+		text-align: center;
+	}
+	font-size: 18px;
+color: #333333;
+font-family: "Noto Sans jp";
+text-align: center;
+}
+.l-footerWordList {
+	&-footerWordList {
+		display: flex;
+		width: 197px;
+		margin: 0 auto;
+	}
+	&_text {
+		color: #333333;
+		font-size: 18px;
+		font-family: "Noto Sans jp";
+		text-align: center;
+	}
+}

@@ -144,18 +144,49 @@ a {
 	color: inherit;
 }
 .l-header {
-	width: 100%;
+	width:100%;
 	@media #{$pointM} {
 		height: 117px;
-		position: fixed;
 	}
 	@media #{$pointS} {
 		height: 86.5px;
 	}
 }
+/*　上に上がる動き　*/
+.l-headerTop.UpMove {
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+  opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  opacity: 0;
+	transform: translateY(-100px);
+  }
+}
+/*　下に下がる動き　*/
+.l-headerTopJs{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 0;
+	transform: translateY(-100px);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+}
 .l-headerTop {
 	background-color: #1c4ca6;
 	text-align: center;
+	position: fixed;
+	height: 20px;
+	width:100%;
+  z-index: 999;
 	@media #{$pointM} {
 		padding: 0 get_vw(10, $vwMd);
 	}

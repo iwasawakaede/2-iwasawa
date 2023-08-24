@@ -147,7 +147,11 @@ a {
 	color: inherit;
 }
 .l-header {
+	background-color: rgba(255,255,255,0.6);
+	top: 0;
+	left: 0;
 	width: 100%;
+	position: fixed;
 	@media #{$pointM} {
 		height: 117px;
 		position: fixed;
@@ -158,6 +162,8 @@ a {
 }
 
 .l-headerTop {
+	height: 24px;
+	width:100%;
 	background-color: #1c4ca6;
 	text-align: center;
 	@media #{$pointM} {
@@ -179,53 +185,52 @@ a {
 		}
 	}
 }
-.l-headerTopJs {
-	position: fixed;
-	top: 0;
-	height: 20px;
-	width:100%;
-  z-index: 999;
-}
+// .l-headerTop.js-headerTop {
+// 	position: fixed;
+// 	top: 0;
+// 	height: 20px;
+// 	width:100%;
+//   z-index: 999;
+// }
 /*　上に消える動き*/
-.l-headerTopJs.UpMove {
+.l-headerTop.is-upMove {
 	animation: UpAnime 0.5s forwards;
 }
 @keyframes UpAnime{
   from {
 		opacity: 1;
-		transform: translateY(0);
+		margin-top: 0;
   }
   to {
 		opacity: 0;
-		transform: translateY(-100px);
+		margin-top: -24px;
   }
 }
 /*　下に出てくる動き　*/
-.l-headerTopJs.DownMove{
+.l-headerTop.is-downMove{
 	animation: DownAnime 0.5s forwards;
 }
 @keyframes DownAnime{
   from {
   	opacity: 0;
-		transform: translateY(-100px);
+		margin-top: -24px;
   }
   to {
-  	opacity: 1;
-		transform: translateY(0);
+		opacity: 1;
+		margin-top: 0;
   }
 }
 .l-headerMain {
-	background-color: rgba(209, 85, 85, 0.6);
-	// rgba(255,255,255,0.6)
 	display: flex;
 	justify-content: space-between;
 	width: 1440px;
 	height: 202px;
-	position: fixed;
-	margin: 38px auto 18px;
+	// position: fixed;
+	// margin: 38px auto 18px;
+	margin: 0 auto;
 
-  top: -100px;/* 配置調整（重要！） */
-  margin-top: 100px;/* 配置調整（重要！） */
+  // top: -100px;/* 配置調整（重要！） */
+  // margin-top: 100px;/* 配置調整（重要！） */
   transition: top 300ms;
 	@media #{$pointM} {
 		width: 100%;

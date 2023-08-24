@@ -27,15 +27,15 @@ if(elemTop < scroll){
 // ↑上の式だと下の分岐点にはどちらも当てはまらない×ので、結果は何も起こらない・・・
 			// console.log("5");
 		//4（大きい）→ヘッダーが上に消えて、見えなくなる
-		$('.l-headerTopJs').removeClass('.DownMove');//.l-headerTopJsにDownMoveというクラス名を除き(下に下がる動き)
+		$('.l-headerTopJs').removeClass('DownMove');//.l-headerTopJsにDownMoveというクラス名を除き(下に下がる動き)
 		// console.log("8");
-		$('.l-headerTopJs').addClass('.UpMove');//.l-headerTopJsにUpMoveのクラス名を追加(上に上がる動き)
+		$('.l-headerTopJs').addClass('UpMove');//.l-headerTopJsにUpMoveのクラス名を追加(上に上がる動き)
 // console.log("9");
     }else {
 		// 4（小さい）→（下にスクロールすると、）ヘッダーが上から出現する
-		$('.l-headerTopJs').removeClass('.UpMove');	//.l-headerTopJsにUpMoveというクラス名を除き
+		$('.l-headerTopJs').removeClass('UpMove');	//.l-headerTopJsにUpMoveというクラス名を除き
 		// console.log("6");
-		$('.l-headerTopJs').addClass('.DownMove');//.l-headerTopJsにDownMoveのクラス名を追加
+		$('.l-headerTopJs').addClass('DownMove');//.l-headerTopJsにDownMoveのクラス名を追加
 		// console.log("7");
     }
     

@@ -97,9 +97,44 @@ text-align: center;
 		width: 197px;
 		margin: 0 auto;
 	}
-	&_text {
+	&_textLink {
 		color: #333333;
 		font-size: 18px;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		display: block;
+	}
+}
+.l-footerWordTell {
+	width: 1002px;
+	margin: 0 auto;
+	&_text {
+		color: #ffffff;
+		font-size: 26px;
+		font-weight: bold;
+		font-family: "Noto Sans jp";
+		text-align: center;
+	}
+}
+.l-footerWordTellBlock {
+	&_number {
+		color: #ffffff;
+		font-size: 58px;
+		font-weight: 800;
+		font-family: "Noto Sans jp";
+	}
+}
+.l-footerWordTellBlock {
+	&_text {
+		color: #ffffff;
+		font-size: 16px;
+		font-family: "Noto Sans jp";
+		text-align: center;
+	}
+	&_time {
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
 	}

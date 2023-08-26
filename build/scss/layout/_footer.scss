@@ -74,35 +74,53 @@
 	background-color: #fff;
 	width: 100%;
 	padding: 40px 0;
-	&-picture {
-		width: 345px;
-		margin: 0 auto;
+}
+.l-footeImage {
+	width: 350px;
+	margin: 0 auto;
+	@media #{$pointM} {
+		width: get_vw(380, $vwMd);
 	}
-	&-text {
+	@media #{$pointS} {
+		width: get_vw(300);
+	}
+	&_text {
 		color: #1eb9ee;
 		font-family: "Noto Sans Kjp";
 		font-size: 24px;
 		font-weight: bold;
 		letter-spacing: 5px;
 		text-align: center;
+		padding-top: 23px;
+		@media #{$pointM} {
+			font-size: get_vw(28, $vwMd);
+			letter-spacing: get_vw(3, $vwMd);
+			padding-top: get_vw(5, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(20);
+			letter-spacing: get_vw(3);
+			padding-top: get_vw(5);
+		}
 	}
-	font-size: 18px;
-color: #333333;
-font-family: "Noto Sans jp";
-text-align: center;
+}
+.l-footerWord {
+	width: 920px;
+	margin: 0 auto;
+	padding: 35px 0;
 }
 .l-footerWordList {
-	&-footerWordList {
 		display: flex;
-		width: 197px;
-		margin: 0 auto;
-	}
+		justify-content: space-between;
 	&_textLink {
 		color: #333333;
 		font-size: 18px;
 		font-family: "Noto Sans jp";
 		text-align: center;
 		display: block;
+	}
+	&_textLink:hover {
+		opacity: 0.6;
 	}
 }
 .l-footerWordTell {
@@ -123,8 +141,6 @@ text-align: center;
 		font-weight: 800;
 		font-family: "Noto Sans jp";
 	}
-}
-.l-footerWordTellBlock {
 	&_text {
 		color: #ffffff;
 		font-size: 16px;
@@ -137,5 +153,14 @@ text-align: center;
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
+	}
+}
+.l-footerWordCopy {
+	background-color: #1eb9ee;
+	&_text {
+		color: #ffffff;
+		font-family: "Noto Sans CJ Kjp";
+		font-size: 14px;
+		text-align: center;	
 	}
 }

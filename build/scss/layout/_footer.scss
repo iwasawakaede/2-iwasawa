@@ -108,23 +108,40 @@
 	width: 920px;
 	margin: 0 auto;
 	padding: 35px 0;
+	@media #{$pointM} {
+		width: 100%;
+		padding: get_vw(20, $vwMd);
+	}
 }
 .l-footerWordList {
 		display: flex;
 		justify-content: space-between;
+		@media #{$pointM} {
+			flex-direction: column;
+		}
 	&_textLink {
 		color: #333333;
-		font-size: 18px;
 		font-family: "Noto Sans jp";
+		font-weight: bold;
+		font-size: 18px;
 		text-align: center;
 		display: block;
+		@media #{$pointM} {
+			font-size: get_vw(30, $vwMd);
+			text-align: left;
+		}
+		@media #{$pointS} {
+
+		}
 	}
 	&_textLink:hover {
 		opacity: 0.6;
 	}
 }
 .l-footerWordTell {
+	background-color: #f6ab00;
 	width: 1002px;
+	border-radius: 10px;
 	margin: 0 auto;
 	&_text {
 		color: #ffffff;

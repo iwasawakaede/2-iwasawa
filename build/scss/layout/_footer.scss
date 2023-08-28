@@ -74,7 +74,7 @@
 	background-color: #fff;
 	width: 100%;
 	@media #{$pointM} {
-		padding-bottom: get_vw(70, $vwMd);
+		padding-bottom: get_vw(80, $vwMd);
 	}
 }
 .l-footerTop {
@@ -115,15 +115,15 @@
 	padding: 15px 0 35px;
 	@media #{$pointM} {
 		width: 100%;
-		padding: get_vw(20, $vwMd);
+		padding: get_vw(20, $vwMd) 0;
 	}
 }
 .l-footerWordList {
-		display: flex;
-		justify-content: space-between;
-		@media #{$pointM} {
-			flex-direction: column;
-		}
+	display: flex;
+	justify-content: space-between;
+	@media #{$pointM} {
+		flex-direction: column;
+	}
 	&_textLink {
 		color: #333333;
 		font-family: "Noto Sans jp";
@@ -132,8 +132,14 @@
 		text-align: center;
 		display: block;
 		@media #{$pointM} {
+			color: #fff;
+			background-color: #1eb9ee;
 			font-size: get_vw(30, $vwMd);
+			line-height: 1;
 			text-align: left;
+			border-radius: get_vw(10, $vwMd);
+			padding: 10px 5px;
+			margin-bottom: get_vw(5, $vwMd);
 		}
 	}
 	&_textLink:hover {

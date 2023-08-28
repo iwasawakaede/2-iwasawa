@@ -73,7 +73,6 @@
 .l-footer {
 	background-color: #fff;
 	width: 100%;
-	padding: 40px 0;
 }
 .l-footeImage {
 	width: 350px;
@@ -149,12 +148,22 @@
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
+		padding: 25px 0;
 	}
 }
 .l-footerWordTellBlock {
-	&_icon {
+	display: flex;
+	&_tellnumber {
 		display: flex;
-		width: 42px;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 485px;
+	}
+	&_iconImg {
+		width: 70px;
+		height: 40px;
+		line-height: 0;
+    vertical-align: baseline;
 	}
 	&_number {
 		color: #ffffff;
@@ -162,12 +171,18 @@
 		font-weight: 800;
 		font-family: "Noto Sans jp";
 	}
+}
+.l-footerWordTellBlockInner {
+	display: flex;
+	width: 365px;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
 	&_text {
 		color: #ffffff;
 		font-size: 16px;
 		font-family: "Noto Sans jp";
 		text-align: center;
-		padding: 25px 0;
+		padding: 12px 20px;
 	}
 	&_time {
 		color: #ffffff;
@@ -175,6 +190,7 @@
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
+		padding: 12px 10px;
 	}
 }
 .l-footerWordCopy {

@@ -73,6 +73,12 @@
 .l-footer {
 	background-color: #fff;
 	width: 100%;
+	@media #{$pointM} {
+		padding-bottom: get_vw(70, $vwMd);
+	}
+}
+.l-footerTop {
+	padding: 10px;
 }
 .l-footeImage {
 	width: 350px;
@@ -129,9 +135,6 @@
 			font-size: get_vw(30, $vwMd);
 			text-align: left;
 		}
-		@media #{$pointS} {
-
-		}
 	}
 	&_textLink:hover {
 		opacity: 0.6;
@@ -143,13 +146,16 @@
 	border-radius: 10px;
 	padding: 25px 10px 35px;
 	margin: 0 auto 20px;
+	@media #{$pointM} {
+		width: 100%;
+		padding: get_vw(30, $vwMd);
+	}
 	&_text {
 		color: #ffffff;
 		font-size: 26px;
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
-		padding: 25px 0;
 	}
 }
 .l-footerWordTellBlock {

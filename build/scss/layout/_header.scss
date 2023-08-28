@@ -319,7 +319,6 @@ a {
 .l-headerNav {
 	&.is-panelactive {
 	@media #{$pointM} {
-		// display: block;
 		right: 0;
 	}
 }
@@ -459,6 +458,7 @@ a {
 		border-radius: 20px;
 		width: 180px;
 		display: block;
+		padding-top: 5px;
 	}
 	&_text {
 		color: #f6ab00;

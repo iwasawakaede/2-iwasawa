@@ -106,7 +106,7 @@
 .l-footerWord {
 	width: 920px;
 	margin: 0 auto;
-	padding: 35px 0;
+	padding: 15px 0 35px;
 	@media #{$pointM} {
 		width: 100%;
 		padding: get_vw(20, $vwMd);
@@ -141,7 +141,8 @@
 	background-color: #f6ab00;
 	width: 1002px;
 	border-radius: 10px;
-	margin: 0 auto;
+	padding: 25px 10px 35px;
+	margin: 0 auto 20px;
 	&_text {
 		color: #ffffff;
 		font-size: 26px;
@@ -153,11 +154,16 @@
 }
 .l-footerWordTellBlock {
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
 	&_tellnumber {
+		line-height: 1;
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
 		width: 485px;
+		margin-right: 5px;
 	}
 	&_iconImg {
 		width: 70px;
@@ -174,15 +180,28 @@
 }
 .l-footerWordTellBlockInner {
 	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 	width: 365px;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
+	position: relative;
 	&_text {
 		color: #ffffff;
 		font-size: 16px;
 		font-family: "Noto Sans jp";
 		text-align: center;
 		padding: 12px 20px;
+	}
+	&_text::after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 64px;
+    position: absolute;
+    margin-left: 80px;
+		margin-top: -49px;
 	}
 	&_time {
 		color: #ffffff;

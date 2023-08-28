@@ -152,6 +152,10 @@
 	}
 }
 .l-footerWordTellBlock {
+	&_icon {
+		display: flex;
+		width: 42px;
+	}
 	&_number {
 		color: #ffffff;
 		font-size: 58px;
@@ -163,6 +167,7 @@
 		font-size: 16px;
 		font-family: "Noto Sans jp";
 		text-align: center;
+		padding: 25px 0;
 	}
 	&_time {
 		color: #ffffff;

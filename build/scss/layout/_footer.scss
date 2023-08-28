@@ -133,6 +133,7 @@
 		display: block;
 		@media #{$pointM} {
 			color: #fff;
+			border: 2px solid #1eb9ee;
 			background-color: #1eb9ee;
 			font-size: get_vw(30, $vwMd);
 			line-height: 1;
@@ -141,9 +142,23 @@
 			padding: 10px 5px;
 			margin-bottom: get_vw(5, $vwMd);
 		}
-	}
-	&_textLink:hover {
-		opacity: 0.6;
+		&:hover {
+			opacity: 0.6;
+			color: #1eb9ee;
+			background-color: #fff;
+			.material-symbols-outlined.l-footerWordList_textLinkBefore {
+				// display: none;
+			}
+			.material-symbols-outlined.l-footerWordList_textLinkAfter {
+				// display: inline-block;
+			}
+		}
+		.material-symbols-outlined.l-footerWordList_textLinkAfter {
+			// display: none;
+		}
+		.material-symbols-outlined.l-footerWordList_textLinkBefore {
+			// display: inline-block;
+		}
 	}
 }
 .l-footerWordTell {

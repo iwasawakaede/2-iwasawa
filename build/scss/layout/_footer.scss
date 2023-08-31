@@ -143,21 +143,21 @@
 			margin-bottom: get_vw(5, $vwMd);
 		}
 		&:hover {
+			@media #{$pointM} {
 			opacity: 0.6;
 			color: #1eb9ee;
 			background-color: #fff;
-			.material-symbols-outlined.l-footerWordList_textLinkBefore {
-				// display: none;
-			}
 			.material-symbols-outlined.l-footerWordList_textLinkAfter {
-				// display: inline-block;
+				display: none;
+				@media #{$pointM} {
+					display: block;
+					// display: inline-block;
+				}
 			}
 		}
+	}
 		.material-symbols-outlined.l-footerWordList_textLinkAfter {
 			// display: none;
-		}
-		.material-symbols-outlined.l-footerWordList_textLinkBefore {
-			// display: inline-block;
 		}
 	}
 }

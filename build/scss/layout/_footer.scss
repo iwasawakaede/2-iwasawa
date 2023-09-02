@@ -79,6 +79,9 @@
 }
 .l-footerTop {
 	padding: 10px;
+	@media #{$pointM} {
+		padding: get_vw(30, $vwMd);
+	}
 }
 .l-footeImage {
 	width: 350px;
@@ -133,16 +136,25 @@
 		display: block;
 		@media #{$pointM} {
 			color: #fff;
-			border: 2px solid #1eb9ee;
 			background-color: #1eb9ee;
-			font-size: get_vw(30, $vwMd);
+			font-weight: normal;
+			font-size: get_vw(26, $vwMd);
 			line-height: 1;
 			text-align: left;
+			border: 2px solid #1eb9ee;
 			border-radius: get_vw(10, $vwMd);
-			padding: 10px 5px;
-			margin-bottom: get_vw(5, $vwMd);
+			display: flex;
+			justify-content: space-between;
+			padding: get_vw(10, $vwMd) get_vw(10, $vwMd);
+			margin-bottom: get_vw(15, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(25);
+			padding: get_vw(15) get_vw(10);
+			margin-bottom: get_vw(15);
 		}
 		&:hover {
+			opacity: 0.65;
 			@media #{$pointM} {
 				opacity: 0.6;
 				color: #1eb9ee;

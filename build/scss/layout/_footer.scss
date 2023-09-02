@@ -176,8 +176,12 @@
 	padding: 25px 10px 35px;
 	margin: 0 auto 20px;
 	@media #{$pointM} {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 		width: 100%;
-		padding: get_vw(30, $vwMd);
+		padding: get_vw(15, $vwMd);
 	}
 	&_text {
 		color: #ffffff;
@@ -185,6 +189,9 @@
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
+		@media #{$pointM} {
+			font-size: get_vw(25, $vwMd);
+		}
 	}
 }
 .l-footerWordTellBlock {
@@ -192,6 +199,11 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
+	@media #{$pointM} {
+		flex-direction: column;
+		margin-top: 0;
+	}
+
 	&_tellnumber {
 		line-height: 1;
 		display: flex;
@@ -199,18 +211,29 @@
 		align-items: baseline;
 		width: 485px;
 		margin-right: 5px;
+		@media #{$pointM} {
+			justify-content: center;
+			width: 100%;
+		}
 	}
 	&_iconImg {
 		width: 70px;
 		height: 40px;
 		line-height: 0;
     vertical-align: baseline;
+		@media #{$pointM} {
+			width: get_vw(50, $vwMd);
+			height: auto;
+		}
 	}
 	&_number {
 		color: #ffffff;
 		font-size: 58px;
 		font-weight: 800;
 		font-family: "Noto Sans jp";
+		@media #{$pointM} {
+			font-size: get_vw(45, $vwMd);
+		}
 	}
 }
 .l-footerWordTellBlockInner {
@@ -220,13 +243,24 @@
 	width: 365px;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
-	position: relative;
+	@media #{$pointM} {
+		line-height: 1;
+		width: 100%;
+	}
+	@media #{$pointS} {
+		display: block;
+	}
 	&_text {
 		color: #ffffff;
 		font-size: 16px;
 		font-family: "Noto Sans jp";
 		text-align: center;
 		padding: 12px 20px;
+		@media #{$pointM} {
+			font-size: get_vw(14, $vwMd);
+			width: 30%;
+			padding: 0;
+		}
 	}
 	&_text::after {
     background-color: #fff;
@@ -237,6 +271,9 @@
     position: absolute;
     margin-left: 80px;
 		margin-top: -49px;
+		@media #{$pointS} {
+			display: none;
+		}
 	}
 	&_time {
 		color: #ffffff;
@@ -245,6 +282,11 @@
 		font-family: "Noto Sans jp";
 		text-align: center;
 		padding: 12px 10px;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			width: 70%;
+			padding: 0;
+		}
 	}
 }
 .l-footerWordCopy {

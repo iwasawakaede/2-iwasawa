@@ -257,9 +257,11 @@
 		text-align: center;
 		padding: 12px 20px;
 		@media #{$pointM} {
-			font-size: get_vw(14, $vwMd);
+			font-size: get_vw(18, $vwMd);
+			line-height: 1.5;
 			width: 30%;
-			padding: 0;
+			padding: get_vw(4, $vwMd) get_vw(6, $vwMd) get_vw(6, $vwMd);
+			position: relative;
 		}
 	}
 	&_text::after {
@@ -271,6 +273,9 @@
     position: absolute;
     margin-left: 80px;
 		margin-top: -49px;
+		@media #{$pointM} {
+			top: 10px;
+		}
 		@media #{$pointS} {
 			display: none;
 		}
@@ -284,8 +289,9 @@
 		padding: 12px 10px;
 		@media #{$pointM} {
 			font-size: get_vw(18, $vwMd);
+			line-height: 1.5;
 			width: 70%;
-			padding: 0;
+			padding: get_vw(4, $vwMd) get_vw(6, $vwMd) get_vw(6, $vwMd);
 		}
 	}
 }

@@ -150,9 +150,9 @@ a {
 	background-color: rgba(255,255,255,0.6);
 	top: 0;
 	left: 0;
-	width: 100%;
 	position: fixed;
 	@media #{$pointM} {
+		width: 100%;
 		height: 117px;
 		position: fixed;
 	}
@@ -160,7 +160,6 @@ a {
 		height: 86.5px;
 	}
 }
-
 .l-headerTop {
 	height: 24px;
 	width:100%;
@@ -185,13 +184,6 @@ a {
 		}
 	}
 }
-// .l-headerTop.js-headerTop {
-// 	position: fixed;
-// 	top: 0;
-// 	height: 20px;
-// 	width:100%;
-//   z-index: 999;
-// }
 /*　上に消える動き*/
 .l-headerTop.is-upMove {
 	animation: UpAnime 0.5s forwards;
@@ -221,19 +213,20 @@ a {
   }
 }
 .l-headerMain {
+	background-color: #ca5c5c;
 	display: flex;
 	justify-content: space-between;
 	width: 1440px;
 	height: 202px;
-	// position: fixed;
-	// margin: 38px auto 18px;
 	margin: 0 auto;
-
-  // top: -100px;/* 配置調整（重要！） */
-  // margin-top: 100px;/* 配置調整（重要！） */
   transition: top 300ms;
 	@media #{$pointM} {
 		width: 100%;
+		height: 70px;
+		padding: 0 get_vw(15, $vwMd);
+	}
+	@media #{$pointS} {
+		height: 50px;
 		padding: 0 get_vw(15, $vwMd);
 	}
 }
@@ -251,8 +244,8 @@ a {
 	width: 280px;
 	margin-right: 38px;
 	@media #{$pointM} {
-					width: get_vw(220, $vwMd);
-					margin-right: get_vw(12, $vwMd);
+					width: get_vw(200, $vwMd);
+					margin: get_vw(10, $vwMd) get_vw(12, $vwMd) 0 0;
 				}
 	@media #{$pointS} {
 						width: get_vw(130);
@@ -480,6 +473,7 @@ a {
 		height: get_vw(70, $vwMd);
 		border-radius: get_vw(5, $vwMd);
 		display: flex;
+		margin-top: get_vw(5, $vwMd);
 	}
 	}
 	.l-headerButtonOpenbtn_line {
@@ -489,15 +483,19 @@ a {
 		transition: all .4s;
 		position: absolute;
 		left: get_vw(-5, $vwMd);
-		height: get_vw(3, $vwMd);
+		height: get_vw(4, $vwMd);
 		border-radius: get_vw(2, $vwMd);
 		background: #000;
 		width: get_vw(60, $vwMd);
+	}
+	@media #{$pointS} {
+		height: get_vw(3, $vwMd);
 	}
 	}
 	.l-headerButtonOpenbtn_line:nth-child(1) {
 		display: none;
 		@media #{$pointM} {
+		background: #757777;
 		display: block;
 		top: get_vw(10, $vwMd);
 		left: get_vw(5, $vwMd);
@@ -506,6 +504,7 @@ a {
 	.l-headerButtonOpenbtn_line:nth-child(2) {
 		display: none;
 		@media #{$pointM} {
+		background: #757777;
 		display: block;	
 		top: get_vw(35, $vwMd);
 		left: get_vw(5, $vwMd);
@@ -515,6 +514,7 @@ a {
 	.l-headerButtonOpenbtn_line:nth-child(3) {
 		display: none;
 		@media #{$pointM} {
+		background: #757777;
 		display: block;
 		top: get_vw(60, $vwMd);
 		left: get_vw(5, $vwMd);

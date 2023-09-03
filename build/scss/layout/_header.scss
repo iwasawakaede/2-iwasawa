@@ -151,7 +151,10 @@ a {
 	top: 0;
 	left: 0;
 	position: fixed;
+	min-width: 1440px;
+	width: 100%;
 	@media #{$pointM} {
+		min-width: initial;
 		width: 100%;
 		height: 117px;
 		position: fixed;
@@ -217,7 +220,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 1440px;
-	height: 202px;
+	height: 95px;
 	margin: 0 auto;
   transition: top 300ms;
 	@media #{$pointM} {
@@ -384,8 +387,10 @@ a {
 	}
 }
 .l-headerFixed {
+	display: none;
 	@media #{$pointM} {
 		background-color: #1c4ca6;
+		display: block;
 		width: 100%;
 		height: get_vw(80, $vwMd);
 		display: flex;
@@ -466,6 +471,7 @@ a {
 	.l-headerButtonOpenbtn {
 		display: none;
 		@media #{$pointM} {
+		display: block;
 		position: relative;
 		background: #fff;
 		cursor: pointer;

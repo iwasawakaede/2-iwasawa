@@ -16,12 +16,19 @@
 .c-btnReserve {
 	background-color: #f6ab00;
 	border-radius: 20px;
-	display: flex;
 	width: 750px;
 	margin: 0 auto;
 	height: 140px;
+	&_link {
+		display: flex;
+		justify-content: space-evenly;
+	}
 }
 .c-btnReserveText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	&_form {
 		color: #ffffff;
 		font-family: "Noto Sans CJ Kjp";
@@ -29,6 +36,9 @@
 		font-weight: bold;
 		text-align: center;
 		line-height: 1;
+		&-spacetop {
+			margin-top: 5px;
+		}
 	}
 	&_sub {
 		color: #ffffff;
@@ -36,13 +46,17 @@
 		font-size: 28px;
 		text-align: center;
 		letter-spacing: 3px;
+		line-height: 1;
+		&-speacetop {
+			margin-top: 8px;
+		}
 	}
 }
 .c-btnReserveSpaceTop {
 	margin-top: 60px;
 }
 .c-btnReservePic {
-	&-image {
+	&_image {
 		padding-top: 8px;
 	}
 }

@@ -4,6 +4,56 @@
 .p-top {
 	width: 100%;
 }
-.p-topPoint {
-	
+.p-topBanner {
+	&_inner {
+		width: 1002px;
+		margin: 0 auto;
+	}
+	&-space {
+		margin-top: 110px;
+	}
 }
+.c-btnReserve {
+	background-color: #f6ab00;
+	border-radius: 20px;
+	display: flex;
+	width: 750px;
+	margin: 0 auto;
+	height: 140px;
+}
+.c-btnReserveText {
+	&_form {
+		color: #ffffff;
+		font-family: "Noto Sans CJ Kjp";
+		font-size: 54px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1;
+	}
+	&_sub {
+		color: #ffffff;
+		font-family: "Noto Sans CJ Kjp";
+		font-size: 28px;
+		text-align: center;
+		letter-spacing: 3px;
+	}
+}
+.c-btnReserveSpaceTop {
+	margin-top: 60px;
+}
+.c-btnReservePic {
+	&-image {
+		padding-top: 8px;
+	}
+}
+// .banner__hoge-top--space
+// .banner_hogeTop-space
+// B_E-M
+// bem
+// .banner__hoge-top__hoge--space
+// B        E         E     M
+// beem
+// .banner__hoge-top__hoge_hoge2--space
+// B E E E M
+// .banner_hogeTopHeader-space
+// BEM

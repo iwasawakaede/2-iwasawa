@@ -9,30 +9,3 @@
 .l-contents {
 	margin: 0 auto;
 }
-.P-topBanner {
-	&_inner {
-		width: 1002px;
-		margin: 0 auto;
-	}
-	&_inner-space {
-		margin: 110px;
-	}
-}
-.C-btnReserve {
-	background-color: #f6ab00;
-	border-radius: 20px;
-	display: flex;
-}
-.C-btnReserveText {
-	&_form {
-		font-size: 54px;
-		line-height: 152px;
-		color: #ffffff;
-		font-weight: bold;
-		font-family: "Noto Sans CJ Kjp";
-		text-align: center;
-	}
-}
-.C-btnReserveSpaceTop {
-	margin-top: 60px;
-}

@@ -224,6 +224,7 @@ a {
 	margin: 0 auto;
   transition: top 300ms;
 	@media #{$pointM} {
+		align-items: center;
 		width: 100%;
 		height: 70px;
 		padding: 0 get_vw(15, $vwMd);
@@ -252,6 +253,9 @@ a {
 	@media #{$pointS} {
 						width: get_vw(130);
 						margin-right: get_vw(6);
+					}
+					&_img {
+						vertical-align: baseline;
 					}
 }
 .l-headerNav {
@@ -474,11 +478,10 @@ a {
 		position: relative;
 		background: #fff;
 		cursor: pointer;
-		width: get_vw(70, $vwMd);
-		height: get_vw(70, $vwMd);
+		width: 70px;
+		height: 70px;
 		border-radius: get_vw(5, $vwMd);
 		display: flex;
-		margin-top: get_vw(5, $vwMd);
 	}
 	}
 	.l-headerButtonOpenbtn_line {
@@ -502,8 +505,9 @@ a {
 		@media #{$pointM} {
 		background: #757777;
 		display: block;
-		top: get_vw(10, $vwMd);
-		left: get_vw(5, $vwMd);
+    top: 10px;
+    left: 8px;
+    width: 43px;
 	}
 	}
 	.l-headerButtonOpenbtn_line:nth-child(2) {
@@ -511,8 +515,9 @@ a {
 		@media #{$pointM} {
 		background: #757777;
 		display: block;	
-		top: get_vw(35, $vwMd);
-		left: get_vw(5, $vwMd);
+    top: 27px;
+    left: 8px;
+    width: 43px;
 	}
 	}
 
@@ -521,8 +526,9 @@ a {
 		@media #{$pointM} {
 		background: #757777;
 		display: block;
-		top: get_vw(60, $vwMd);
-		left: get_vw(5, $vwMd);
+		top: 46px;
+    left: 8px;
+    width: 43px;
 	}
 }
 	.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(1) {

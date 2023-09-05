@@ -4,11 +4,14 @@
 .p-top {
 	width: 100%;
 }
+// -----------------------------------------------
+// バナー・お申込み部分
+// -----------------------------------------------
 .p-topBanner {
 	&-space {
 		margin:110px auto 60px;
 		@media #{$pointM} {
-			margin: get_vw(50, $vwMd) auto get_vw(25, $vwMd);
+			margin: get_vw(50, $vwMd) auto get_vw(50, $vwMd);
 		}
 	}
 	&_inner {
@@ -29,6 +32,7 @@
 	margin-top: 60px;
 	@media #{$pointM} {
 		width: 85%;
+		margin-top: get_vw(50, $vwMd);
 	}
 	@media #{$pointS} {
 		margin-top: get_vw(22);
@@ -91,14 +95,6 @@
 			}
 		}
 }
-// .banner__hoge-top--space
-// .banner_hogeTop-space
-// B_E-M
-// bem
-// .banner__hoge-top__hoge--space
-// B        E         E     M
-// beem
-// .banner__hoge-top__hoge_hoge2--space
-// B E E E M
-// .banner_hogeTopHeader-space
-// BEM
+// -----------------------------------------------
+// ポイント部分
+// -----------------------------------------------

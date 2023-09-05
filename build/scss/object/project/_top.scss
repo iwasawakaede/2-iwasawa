@@ -120,6 +120,7 @@
 	}
 	&_left {
 		width: 845px;
+		padding-left: 21px;
 	}
 	&_titleText {
 		color: #2e59a7;
@@ -135,6 +136,9 @@
 		color: #333333;
 		font-size: 16px;
 		font-family: "Noto Sans jp";
+		&-top {
+			padding-top: 25px;
+		}
 	}
 	&_right {
 		width: 525px;
@@ -150,13 +154,16 @@
 	border-radius: 10px;
 	position: relative;
   display: inline-block;
-  margin: 1.5em 0;
-  padding: 8px 10px 3px;
+  margin: 0 0 1.5em;
+  padding: 5px 10px 9px;
   width: 165px;
+	&-speace {
+		margin-left: -21px;
+	}
 	&_text {
 		color: #ffff00;
 		font-family: "Noto Sans jp";
-		font-size: 30px;
+		font-size: 32px;
 		font-weight: bold;
 		line-height: 1;
 		&-number {

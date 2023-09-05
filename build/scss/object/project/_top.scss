@@ -5,12 +5,20 @@
 	width: 100%;
 }
 .p-topBanner {
+	&-space {
+		margin:110px auto 60px;
+		@media #{$pointM} {
+		}
+	}
 	&_inner {
 		width: 1002px;
 		margin: 0 auto;
-	}
-	&-space {
-		margin-top: 110px;
+		@media #{$pointM} {
+			width: 100%;
+		}
+		&-inspace {
+			padding: 20px 10px;
+		}
 	}
 }
 .c-btnReserve {

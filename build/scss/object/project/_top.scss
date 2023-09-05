@@ -12,12 +12,10 @@
 	}
 	&_inner {
 		width: 1002px;
+		padding: 20px 10px;
 		margin: 0 auto;
 		@media #{$pointM} {
 			width: 100%;
-		}
-		&-inspace {
-			padding: 20px 10px;
 		}
 	}
 }
@@ -27,45 +25,44 @@
 	width: 750px;
 	margin: 0 auto;
 	height: 140px;
+	margin-top: 60px;
 	&_link {
 		display: flex;
 		justify-content: space-evenly;
 	}
-}
-.c-btnReserveText {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	&_form {
-		color: #ffffff;
-		font-family: "Noto Sans CJ Kjp";
-		font-size: 54px;
-		font-weight: bold;
-		text-align: center;
-		line-height: 1;
-		&-spacetop {
-			margin-top: 5px;
-		}
+	&_textBox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
-	&_sub {
-		color: #ffffff;
-		font-family: "Noto Sans CJ Kjp";
-		font-size: 28px;
-		text-align: center;
-		letter-spacing: 3px;
-		line-height: 1;
-		&-speacetop {
-			margin-top: 8px;
+		&_textBoxText {
+			color: #ffffff;
+			font-family: "Noto Sans jp";
+			font-size: 54px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1;
+			&-sub {
+				color: #ffffff;
+				font-family: "Noto Sans jp";
+				font-size: 28px;
+				text-align: center;
+				letter-spacing: 3px;
+				line-height: 1;
+				margin-top: 8px;
+			}
 		}
-	}
 }
+
 .c-btnReserveSpaceTop {
 	margin-top: 60px;
 }
 .c-btnReservePic {
-	&_image {
-		padding-top: 8px;
+	&_pic {
+		&_picImage {
+			padding-top: 8px;
+		}
 	}
 }
 // .banner__hoge-top--space

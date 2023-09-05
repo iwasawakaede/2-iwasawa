@@ -101,7 +101,7 @@
 .p-topBlock{
 	&_inner {
 		width: 1445px;
-		margin: 0 auto;
+		margin: 75px auto;
 	}
 }
 .p-topBlockList {
@@ -114,6 +114,12 @@
 .p-topPoint{
 	display: flex;
 	justify-content: space-between;
+	&-reverse {
+		flex-direction: row-reverse;
+	}
+	&_left {
+		width: 845px;
+	}
 	&_titleText {
 		color: #2e59a7;
 		font-family: "Noto Sans jp";
@@ -125,5 +131,40 @@
 		font-size: 16px;
 		font-family: "Noto Sans jp";
 	}
+	&_right {
+		width: 525px;
+	}
 }
-
+// 吹き出し
+// 角丸長方形
+.p-topBlockObject{
+  color: #555;
+  background: #ff5267;
+  font-size: 16px;
+	text-align: center;
+	border-radius: 10px;
+	position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  width: 140px;
+	&_text {
+		color: #ffff00;
+		font-family: "Futura PT";
+		font-size: 30px;
+		font-weight: bold;
+		&-number {
+			color: #fff;
+		}
+	}
+}
+// 三角部分
+.p-topBlockObject::before{
+	content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 4px solid transparent;
+  border-top: 4px solid #ff5267;
+}

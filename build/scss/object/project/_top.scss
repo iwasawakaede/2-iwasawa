@@ -98,3 +98,32 @@
 // -----------------------------------------------
 // ポイント部分
 // -----------------------------------------------
+.p-topBlock{
+	&_inner {
+		width: 1445px;
+		margin: 0 auto;
+	}
+}
+.p-topBlockList {
+	&_item {
+		&-second {
+			padding-top: 47px;
+		}
+	}
+}
+.p-topPoint{
+	display: flex;
+	justify-content: space-between;
+	&_titleText {
+		color: #2e59a7;
+		font-family: "Noto Sans jp";
+		font-size: 33px;
+		font-weight: bold;
+	}
+	&_textBoxText {
+		color: #333333;
+		font-size: 16px;
+		font-family: "Noto Sans jp";
+	}
+}
+

@@ -139,7 +139,8 @@
 			display: block;
 		}
 	}
-	&_left {
+	// 元クラス名.left→position-widthに変更
+	&-widthLeft {
 		width: 845px;
 		padding-left: 21px;
 		@media #{$pointM} {
@@ -200,7 +201,8 @@
 		}
 
 	}
-	&_right {
+		// 元クラス名_right→position-widthに変更
+	&_position {
 		width: 525px;
 		@media #{$pointM} {
 			width: 70%;

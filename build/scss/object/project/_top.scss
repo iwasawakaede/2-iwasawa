@@ -40,7 +40,7 @@
 		margin-top: get_vw(25, $vwMd);
 	}
 	@media #{$pointS} {
-		margin-top: get_vw(22);
+		margin-top: get_vw(20);
 	}
 	&_link {
 		display: flex;
@@ -49,7 +49,7 @@
 		@media #{$pointM}  {
 			padding: get_vw(5, $vwMd) get_vw(25, $vwMd) 0 get_vw(5, $vwMd);
 		}
-		@media #{$pointS}  {
+		@media #{$pointS} {
 			padding-top: 0;
 		}
 	}
@@ -105,8 +105,8 @@
 // -----------------------------------------------
 .p-topBlock{
 	&_inner {
-		width: 1445px;
-		padding: 30px 45px;
+		width: 1440px;
+		padding: 30px 20px;
 		margin: 75px auto;
 		@media #{$pointM} {
 			width: 100%;
@@ -116,7 +116,7 @@
 		@media #{$pointS} {
 			width: 100%;
 			padding: 0 get_vw(10);
-			margin: get_vw(5) auto;
+			margin: get_vw(-8) auto;
 		}
 	}
 }
@@ -124,6 +124,9 @@
 	&_item {
 		&-second {
 			padding-top: 47px;
+			@media #{$pointM} {
+				padding-top: get_vw(25, $vwMd);
+			}
 		}
 	}
 }
@@ -140,7 +143,7 @@
 		}
 	}
 	&_textBig {
-		width: 845px;
+		width: 816px;
 		padding-left: 21px;
 		@media #{$pointM} {
 			width: 100%;
@@ -156,8 +159,8 @@
 	&_imgBox {
 		width: 525px;
 		@media #{$pointM} {
-			width: 70%;
-			margin: 27px auto;
+			width: 100%;
+			margin: get_vw(27, $vwMd) auto 0;
 		}
 		&-reverse {
 			width: 725px;
@@ -216,6 +219,9 @@
 			@media #{$pointM} {
 				padding-top: get_vw(20, $vwMd);
 				}
+				@media #{$pointS} {
+					padding-top: get_vw(8);
+					}
 		}
 
 	}
@@ -242,6 +248,9 @@
 		margin-left: -21px;
 		@media #{$pointM} {
 			margin-left: 0;
+		}
+		@media #{$pointS} {
+			margin: get_vw(5) 0 get_vw(4);
 		}
 	}
 	&_text {

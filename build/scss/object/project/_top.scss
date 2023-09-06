@@ -116,7 +116,7 @@
 		@media #{$pointS} {
 			width: 100%;
 			padding: 0 get_vw(10);
-			margin: 0 auto;
+			margin: get_vw(5) auto;
 		}
 	}
 }
@@ -139,13 +139,31 @@
 			display: block;
 		}
 	}
-	// 元クラス名.left→position-widthに変更
-	&-widthLeft {
+	&_textBig {
 		width: 845px;
 		padding-left: 21px;
 		@media #{$pointM} {
 			width: 100%;
 			padding-left: 0;
+		}
+		&-reverse {
+			width: 600px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+	}
+	&_imgBox {
+		width: 525px;
+		@media #{$pointM} {
+			width: 70%;
+			margin: 27px auto;
+		}
+		&-reverse {
+			width: 725px;
+			@media #{$pointM} {
+				width: 100%;
+			}
 		}
 	}
 	&_titleText {
@@ -200,20 +218,6 @@
 				}
 		}
 
-	}
-		// 元クラス名_right→position-widthに変更
-	&_position {
-		width: 525px;
-		@media #{$pointM} {
-			width: 70%;
-			margin: 27px auto;
-		}
-		&-reverse {
-			width: 725px;
-			@media #{$pointM} {
-				width: 100%;
-			}
-		}
 	}
 }
 // 吹き出し

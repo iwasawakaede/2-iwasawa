@@ -8,9 +8,9 @@
 // バナー・お申込み部分
 // -----------------------------------------------
 
- body * {
-	outline: red 1px solid;
-} 
+//  body * {
+// 	outline: red 1px solid;
+// } 
 
 .p-topBanner {
 	&-space {
@@ -115,8 +115,8 @@
 		}
 		@media #{$pointS} {
 			width: 100%;
-			padding: 0 get_vw(20);
-			margin: get_vw(50) auto;
+			padding: 0 get_vw(10);
+			margin: 0 auto;
 		}
 	}
 }
@@ -146,12 +146,6 @@
 			width: 100%;
 			padding-left: 0;
 		}
-		&-reverse {
-			width: 600px;
-			@media #{$pointM} {
-				width: 100%;
-			}
-		}
 	}
 	&_titleText {
 		color: #2e59a7;
@@ -159,18 +153,30 @@
 		font-size: 33px;
 		font-weight: bold;
 		line-height: 1.4;
-				@media #{$pointM} {
-				font-size: get_vw(27, $vwMd);
+			@media #{$pointM} {
+			font-size: get_vw(27, $vwMd);
 			}
+		&-break {
+			@media #{$pointM} {
+				display: none;
+			}
+		}
 	}
 	&_textBox {
 		position: relative;
 		padding-top: 30px;
+		@media #{$pointM} {
+			padding-top: get_vw(32, $vwMd);
+		}
 	}
 	&_textBoxText {
 		color: #333333;
 		font-size: 16px;
 		font-family: "Noto Sans jp";
+		@media #{$pointM} {
+			font-size: get_vw(14, $vwMd);
+			line-height: 1.6;
+		}
 		&::before {
 		background-color: #f6ab00;
 		content: "";
@@ -180,16 +186,25 @@
 		position: absolute;
 		top: 13px;
     left: 0px;
+		@media #{$pointM} {
+			width: get_vw(50, $vwMd);
+			height: get_vw(4, $vwMd);
+			top: get_vw(13, $vwMd);
+			}
 	}
 		&-top {
 			padding-top: 25px;
+			@media #{$pointM} {
+				padding-top: get_vw(20, $vwMd);
+				}
 		}
 
 	}
 	&_right {
 		width: 525px;
 		@media #{$pointM} {
-			width: 100%;
+			width: 70%;
+			margin: 27px auto;
 		}
 		&-reverse {
 			width: 725px;

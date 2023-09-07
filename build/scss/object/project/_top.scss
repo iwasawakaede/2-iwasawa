@@ -283,13 +283,25 @@
 		background-color: #1c4ca6;
 	}
 	&_number {
+		color: #333333;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		font-size: 35px;
+		font-weight: 600;
+		&-big {
+			font-size: 60px;
+			font-weight: 800;
+		}
+	}
+	&_number,
+	&_price {
 		border-bottom: 3px solid #1c4ca6;
 		&-decoration {
 			border-bottom: none;
 		}
 	}
 	&_number:nth-child(1),
-	&_number:nth-child(2) {
+	&_price:nth-child(2) {
 		border-right: 3px dotted #1c4ca6;
 	}
 }

@@ -251,12 +251,45 @@
 			padding-top: 20px;
 		}
 	}
-	.p-topTableb {
-		&_table {
-			background-color: #ffffff;
-			border-radius: 10px;
-			border: 3px solid #1c4ca6;
-			width: 1195px;
+}
+.p-topTablebox {
+	&_table {
+		background-color: #ffffff;
+		text-align: center;
+		border-radius: 10px;
+		border-collapse: separate;
+		border: 3px solid #1c4ca6;
+		width: 1195px;
+	}
+	&_tableText {
+		color: #fff;
+		font-family: "Noto Sans jp";
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		border-bottom: 3px solid #1c4ca6;
+	}
+	&_tableText:nth-child(1),
+	&_tableText:nth-child(2) {
+		border-right: 3px dotted #1c4ca6;
+	}
+	&_tableText:nth-child(1) {
+		background-color: #69c08a;
+	}
+	&_tableText:nth-child(2) {
+		background-color: #1eb9ee;
+	}
+	&_tableText:nth-child(3) {
+		background-color: #1c4ca6;
+	}
+	&_number {
+		border-bottom: 3px solid #1c4ca6;
+		&-decoration {
+			border-bottom: none;
 		}
+	}
+	&_number:nth-child(1),
+	&_number:nth-child(2) {
+		border-right: 3px dotted #1c4ca6;
 	}
 }

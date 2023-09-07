@@ -50,6 +50,10 @@
 			padding: 0 get_vw(10);
 			margin: get_vw(-8) auto get_vw(12);
 		}
+		&-width {
+			width: 1220px;
+			margin: 0 auto;
+		}
 	}
 }
 .p-topBlockList {
@@ -220,5 +224,31 @@
 // PRICE
 // -----------------------------------------------
 .p-topTitile {
-	
+	&_text {
+		color: #1eb9ee;
+		font-size: 90px;
+		font-weight: 500;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		line-height: 1;
+	}
+	&_titile {
+		color: #1c4ca6;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		line-height: 1;
+		&::after {
+			background-color: #f6ab00;
+			content: "";
+			display: block;
+			width: 60px;
+			height: 5px;
+			margin: 22px auto 0;
+		}
+		&-top {
+			padding-top: 20px;
+		}
+	}
 }

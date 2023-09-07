@@ -2,70 +2,337 @@
 /* footer
 ----------------------------------------------------------------- */
 // ここに書いてあるのは見本です。
+// .l-footer {
+// 	position: relative;
+// 	text-align: center;
+// 	background-color: $color-white;
+// 	box-shadow: 0 0 2px rgba($color-black1, .16);
+// 	@media #{$pointM} {
+// 		text-align: left;
+// 	}
+// 	&_inner {
+// 		line-height: 1;
+// 		padding: 40px 0 35px;
+// 		@media #{$pointM} { padding: get_vw(55, $vwMd) get_vw(40, $vwMd) get_vw(53, $vwMd); }
+// 		@media #{$pointS} { padding: get_vw(28) get_vw(20) get_vw(27); }
+// 		small {
+// 			color: $color-gray;
+// 			font-size: 1.2rem;
+// 			font-weight: 500;
+// 			@media #{$pointM} {
+// 				font-size: get_vw(24, $vwMd);
+// 				line-height: 1.75;
+// 			}
+// 			@media #{$pointS} {@include fz_vw(10);}
+// 		}
+// 	}
+// 	&_pageTop {
+// 		position: absolute;
+// 		right: 80px;
+// 		bottom: 45px;
+// 		background-color: $color-white;
+// 		border-radius: 50%;
+// 		@media #{$pointM} {
+// 			right: get_vw(40, $vwMd);
+// 			bottom: get_vw(135, $vwMd);
+// 		}
+// 		@media #{$pointS} {
+// 			right: get_vw(20);
+// 			bottom: get_vw(68);
+// 		}
+// 		img {
+// 			display: block;
+// 			margin: 0 auto;
+// 			padding: 35px 0;
+// 			width: 30px;
+// 			@media #{$pointM} {
+// 				padding: get_vw(35, $vwMd) 0;
+// 				width: get_vw(30, $vwMd);
+// 			}
+// 			@media #{$pointS} {
+// 				padding: get_vw(17) 0;
+// 				width: get_vw(15);
+// 			}
+// 		}
+// 	}
+// 	&_pageTopAnchor {
+// 		display: block;
+// 		width: 88px;
+// 		height: 88px;
+// 		@media #{$pointM} {
+// 			width: get_vw(88, $vwMd);
+// 			height: get_vw(88, $vwMd);
+// 		}
+// 		@media #{$pointS} {
+// 			width: get_vw(44);
+// 			height: get_vw(44);
+// 		}
+// 	}
+// }
+
 .l-footer {
-	position: relative;
-	text-align: center;
-	background-color: $color-white;
-	box-shadow: 0 0 2px rgba($color-black1, .16);
+	background-color: #fff;
+	width: 100%;
 	@media #{$pointM} {
-		text-align: left;
+		padding-bottom: get_vw(80, $vwMd);
 	}
-	&_inner {
-		line-height: 1;
-		padding: 40px 0 35px;
-		@media #{$pointM} { padding: get_vw(55, $vwMd) get_vw(40, $vwMd) get_vw(53, $vwMd); }
-		@media #{$pointS} { padding: get_vw(28) get_vw(20) get_vw(27); }
-		small {
-			color: $color-gray;
-			font-size: 1.2rem;
-			font-weight: 500;
-			@media #{$pointM} {
-				font-size: get_vw(24, $vwMd);
-				line-height: 1.75;
-			}
-			@media #{$pointS} {@include fz_vw(10);}
-		}
+}
+.l-footerTop {
+	padding: 10px;
+	@media #{$pointM} {
+		padding: get_vw(12, $vwMd);
 	}
-	&_pageTop {
-		position: absolute;
-		right: 80px;
-		bottom: 45px;
-		background-color: $color-white;
-		border-radius: 50%;
+	@media #{$pointS} {
+		padding: get_vw(12);
+	}
+}
+.l-footeImage {
+	width: 350px;
+	margin: 0 auto;
+	@media #{$pointM} {
+		width: get_vw(250, $vwMd);
+	}
+	@media #{$pointS} {
+		width: get_vw(150);
+	}
+	&_text {
+		color: #1eb9ee;
+		font-family: "Noto Sans Kjp";
+		font-size: 24px;
+		font-weight: bold;
+		letter-spacing: 5px;
+		text-align: center;
+		padding-top: 23px;
 		@media #{$pointM} {
-			right: get_vw(40, $vwMd);
-			bottom: get_vw(135, $vwMd);
+			font-size: get_vw(14, $vwMd);
+			letter-spacing: get_vw(3, $vwMd);
+			line-height: 1;
+			padding-top: get_vw(15, $vwMd);
 		}
 		@media #{$pointS} {
-			right: get_vw(20);
-			bottom: get_vw(68);
-		}
-		img {
-			display: block;
-			margin: 0 auto;
-			padding: 35px 0;
-			width: 30px;
-			@media #{$pointM} {
-				padding: get_vw(35, $vwMd) 0;
-				width: get_vw(30, $vwMd);
-			}
-			@media #{$pointS} {
-				padding: get_vw(17) 0;
-				width: get_vw(15);
-			}
+			font-size: get_vw(12);
+			letter-spacing: get_vw(3);
+			padding-top: get_vw(5);
 		}
 	}
-	&_pageTopAnchor {
+}
+.l-footerWord {
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px 0 35px;
+	@media #{$pointM} {
+		width: 100%;
+		padding: get_vw(12, $vwMd) 0 0;
+	}
+	@media #{$pointS} {
+		padding: get_vw(10) 0 0;
+	}
+}
+.l-footerWordList {
+	display: flex;
+	justify-content: space-between;
+	@media #{$pointM} {
+		flex-direction: column;
+	}
+	&_textLink {
+		color: #333333;
+		font-family: "Noto Sans jp";
+		font-weight: bold;
+		font-size: 18px;
+		text-align: center;
 		display: block;
-		width: 88px;
-		height: 88px;
 		@media #{$pointM} {
-			width: get_vw(88, $vwMd);
-			height: get_vw(88, $vwMd);
+			color: #fff;
+			background-color: #1eb9ee;
+			font-weight: normal;
+			font-size: get_vw(17, $vwMd);
+			line-height: 1;
+			text-align: left;
+			border: 2px solid #1eb9ee;
+			border-radius: get_vw(10, $vwMd);
+			display: flex;
+			justify-content: space-between;
+			padding: get_vw(10, $vwMd) get_vw(10, $vwMd);
+			margin-bottom: get_vw(10, $vwMd);
 		}
 		@media #{$pointS} {
-			width: get_vw(44);
-			height: get_vw(44);
+			font-size: get_vw(15);
+			padding: get_vw(5);
+			margin-bottom: get_vw(10);
+		}
+		&:hover {
+			opacity: 0.65;
+			@media #{$pointM} {
+				opacity: 0.6;
+				color: #1eb9ee;
+				background-color: #fff;
+			}
+		}
+		.fa-solid {
+			display: none;
+			@media #{$pointM} {
+				display: inline-block;
+			}
+	}
+}
+}
+.l-footerWordTell {
+	background-color: #f6ab00;
+	width: 1002px;
+	border-radius: 10px;
+	padding: 25px 10px 35px;
+	margin: 0 auto 20px;
+	@media #{$pointM} {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+		width: 100%;
+		padding: get_vw(12, $vwMd) get_vw(10, $vwMd) get_vw(15, $vwMd);
+		margin-bottom: 0;
+	}
+	@media #{$pointS} {
+		width: 100%;
+		padding: get_vw(13) get_vw(5) get_vw(12);
+	}
+	&_text {
+		color: #ffffff;
+		font-size: 26px;
+		font-weight: bold;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		@media #{$pointM} {
+			font-size: get_vw(20, $vwMd);
+			line-height: 1;
+		}
+		@media #{$pointS} {
+			font-size: get_vw(15);
+		}
+	}
+.l-footerWordTellBlock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	@media #{$pointM} {
+		flex-direction: column;
+		margin-top: 0;
+	}
+	&_tellnumber {
+		line-height: 1;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 485px;
+		margin-right: 5px;
+		@media #{$pointM} {
+			justify-content: center;
+			width: 100%;
+			padding-top: get_vw(5, $vwMd);
+		}
+		@media #{$pointS} {
+			justify-content: center;
+			width: 100%;
+			padding-top: get_vw(7);
+		}
+	}
+	&_iconImg {
+		width: 70px;
+		height: 40px;
+		line-height: 0;
+    vertical-align: baseline;
+		@media #{$pointM} {
+			width: get_vw(50, $vwMd);
+			height: auto;
+		}
+		@media #{$pointM} {
+			width: get_vw(25);
+			height: auto;
+		}
+	}
+	&_number {
+		color: #ffffff;
+		font-size: 58px;
+		font-weight: 800;
+		font-family: "Noto Sans jp";
+		@media #{$pointM} {
+			font-size: get_vw(45, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(22);
+		}
+	}
+}
+}
+.l-footerWordTellBlockInner {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	width: 365px;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	@media #{$pointM} {
+		line-height: 1;
+		white-space: nowrap;
+		border: 1px solid #fff;
+		width: 100%;
+		margin-top: get_vw(10, $vwMd);
+	}
+	@media #{$pointS} {
+		margin-top: get_vw(10);
+	}
+	&_text {
+		color: #ffffff;
+		font-size: 16px;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		padding: 12px 20px;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			line-height: 1.5;
+			white-space: nowrap;
+			border-right: 1px solid #fff;
+			width: 30%;
+			padding: get_vw(4, $vwMd) get_vw(6, $vwMd) get_vw(6, $vwMd);
+		}
+	}
+	&_text::after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 64px;
+    position: absolute;
+    margin-left: 80px;
+		margin-top: -49px;
+		@media #{$pointM} {
+			display: none;
+		}
+	}
+	&_time {
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		padding: 12px 10px;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			line-height: 1.5;
+			width: 70%;
+			padding: get_vw(4, $vwMd) get_vw(5, $vwMd) get_vw(6, $vwMd) get_vw(15, $vwMd);
+		}
+	}
+}
+.l-footerWordCopy {
+	background-color: #1eb9ee;
+	&_text {
+		color: #ffffff;
+		font-family: "Noto Sans CJ Kjp";
+		font-size: 14px;
+		text-align: center;
+		@media #{$pointM} {
+			font-size: get_vw(12, $vwMd);
 		}
 	}
 }

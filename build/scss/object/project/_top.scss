@@ -126,15 +126,6 @@
 		@media #{$pointM} {
 			padding-top: get_vw(32, $vwMd);
 		}
-	}
-	&_textBoxText {
-		color: #333333;
-		font-size: 16px;
-		font-family: "Noto Sans jp";
-		@media #{$pointM} {
-			font-size: get_vw(14, $vwMd);
-			line-height: 1.6;
-		}
 		&::before {
 			background-color: #f6ab00;
 			content: "";
@@ -149,6 +140,15 @@
 			height: get_vw(4, $vwMd);
 			top: get_vw(13, $vwMd);
 			}
+		}
+	}
+	&_textBoxText {
+		color: #333333;
+		font-size: 16px;
+		font-family: "Noto Sans jp";
+		@media #{$pointM} {
+			font-size: get_vw(14, $vwMd);
+			line-height: 1.6;
 		}
 		&-top {
 			padding-top: 25px;
@@ -249,6 +249,14 @@
 		}
 		&-top {
 			padding-top: 20px;
+		}
+	}
+	.p-topTableb {
+		&_table {
+			background-color: #ffffff;
+			border-radius: 10px;
+			border: 3px solid #1c4ca6;
+			width: 1195px;
 		}
 	}
 }

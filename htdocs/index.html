@@ -11,13 +11,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-	<!-- style sheet -->
+	<!-- style sheet -->header
 	<link rel="stylesheet" href="common/css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<!-- font awesome -->
 	<script src="https://kit.fontawesome.com/7b6f40b1bc.js" crossorigin="anonymous"></script>
   <!-- jQuery -->
+	<script src="common/js/lazysizes.min.js"></script>
   <script src="common/js/common/jquery-3.6.0.min.js"></script>
 	<script src="common/js/global.js"></script>
 </head>
@@ -115,8 +116,113 @@
 		</div>
 	</header>
 	<div class="l-contents"><!-- CONTENTS -->
-		コンテンツ部分
+		<div class="p-imgVisual">
+			<picture class="l-contentsPicture">
+				<source type="image/webp" media="(min-width:897px)" srcset="./common/img/top/main-hero-pc.webp">
+				<source media="(min-width:897px)" srcset="./common/img/top/main-hero-pc.png">
+				<source type="image/webp" media="(min-width:429px)" srcset="./common/img/top/main-hero-tab.webp">
+				<source media="(min-width:429px)" srcset="./common/img/top/main-hero-tab.png">
+				<source type="image/webp" srcset="./common/img/top/main-hero-sp.webp">
+				<img src="./common/img/top/main-hero-sp.png" alt="エアコンを分解し徹底洗浄！！エアコンをオーバーホールして、ニオイ・カビなどのトラブルを解決します！東京都近郊対応　賃貸の清掃可能！" loading="lazyload">
+			</picture>
+		</div>
+		<div class="p-topBanner p-topBanner-space">
+			<div class="p-topBanner_inner">
+				<picture>
+					<source type="image/webp" media="(min-width:897px)" data-srcset="./common/img/top/campaign-banner.webp">
+					<source media="(min-width:897px)" data-srcset="./common/img/top/campaign-banner.png">
+					<source type="image/webp" media="(min-width:429px)" data-srcset="./common/img/top/campaign-banner.webp">
+					<source media="(min-width:429px)" data-srcset="./common/img/top/campaign-banner.webp">
+					<img src="./common/img/top/campaign-banner.png" data-src="./common/img/top/campaign-banner.png" alt="">
+				</picture>
+				<div class="c-btnReserve">
+					<a href="#" class="c-btnReserve_link">
+						<picture class="c-btnReserve_pic">
+							<source media="(min-width:897px)" srcset="./common/img/top/main-btn.png">
+							<source media="(min-width:429px)" srcset="./common/img/top/main-btn.png">
+							<img src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage">
+						</picture>
+						<div class="c-btnReserve_textBox">
+							<p class="c-btnReserve_textBoxText">お申し込みはこちら</p>
+							<p class="c-btnReserve_textBoxText c-btnReserve_textBoxText-sub">RESERVE INSTALLATION</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-topBlock">
+			<div class="p-topBlock_inner">
+				<ul class="p-topBlockList">
+					<li class="p-topBlockList_item">
+						<div class="p-topPoint">
+							<div class="p-topPoint_textBig">
+								<div class="p-topBlockObject p-topBlockObject-speace">
+									<p class="p-topBlockObject_text">
+										POINT
+										<span class="p-topBlockObject_text-number">
+											&#10102;
+										</span>
+									</p>
+								</div>
+								<div class="p-topPoint_title">
+									<h2 class="p-topPoint_titleText">
+										スプレー洗浄、壁掛け洗浄では<br class="p-topPoint_titleText-break">取れないエアコン内部の汚れ
+									</h2>
+								</div>
+								<div class="p-topPoint_textBox">
+									<p class="p-topPoint_textBoxText">
+										エアコンの簡単なお掃除なら市販のエアコンクリーナーなどを使ってスプレー洗浄ができますが、しっかりと清掃していくのなら業者にクリーニングをお願いすると安心でしょう。
+									</p>
+									<p class="p-topPoint_textBoxText p-topPoint_textBoxText-top">
+										しかし、一般的に業者にエアコンのクリーニングを頼むと壁にエアコンを取り付けたままの壁掛け洗浄になってきます。壁掛け洗浄は簡単に取り外せるパネル・フィルターなどの部品は外すものの、ほとんどの部品はそのままに高圧洗浄することがほとんどです。これではエアコン内部の汚れ、ニオイの元やカビを完全に除去することは難しいです。スプレー洗浄も壁掛け洗浄も簡易的なクリーニングとしては問題ありませんが、エアコン内部の汚れを完全に洗浄するには部品を分解してクリーニングする必要があります。
+									</p>
+								</div>
+							</div>
+							<div class="p-topPoint_imgBox">
+								<picture>
+									<source media="(min-width:897px)" srcset="./common/img/top/point-img1.png">
+									<source media="(min-width:429px)" srcset="./common/img/top/point-img1.png">
+									<img src="./common/img/top/point-img1.png" alt="" class="p-topPoint_rightImg">
+								</picture>
+							</div>
+						</div>
+					</li>
+					<li class="p-topBlockList_item p-topBlockList_item-second">
+						<div class="p-topPoint p-topPoint-reverse" style="flex-direction: row-reverse;">
+							<div class="p-topPoint_textBig p-topPoint_textBig-reverse">
+								<div class="p-topBlockObject p-topBlockObject-speace">
+									<p class="p-topBlockObject_text">
+										POINT
+										<span class="p-topBlockObject_text-number">
+											&#10103;
+										</span>
+									</p>
+								</div>
+								<div class="p-topPoint_title">
+									<h2 class="p-topPoint_titleText">
+										ブンクリならエアコン内部の汚れも<br class="p-topPoint_titleText-break">除去できます！
+									</h2>
+								</div>
+								<div class="p-topPoint_textBox">
+									<p class="p-topPoint_textBoxText">
+										エアコン分解クリーニング「ブンクリ」は、お客様宅から取り外したエアコンを専用工場に持ち帰り、部品単位で分解し、フィルターはもちろん、エアコン内部の細かいところすべてを特殊な洗浄液を使って洗浄し、完全に乾燥させることで汚れ、ニオイの元やカビなどを綺麗に除菌します。
+									</p>
+								</div>
+							</div>
+							<div class="p-topPoint_imgBox p-topPoint_imgBox-reverse">
+								<picture>
+									<source media="(min-width:897px)" srcset="./common/img/top/point-img2.png">
+									<source media="(min-width:429px)" srcset="./common/img/top/point-img2.png">
+									<img src="./common/img/top/point-img2.png" alt="" class="p-topPoint_rightImg">
+								</picture>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div><!-- CONTENTS -->
+
 	<footer class="l-footer">
 		<div class="l-footerBlock">
 			<div class="l-footerTop">

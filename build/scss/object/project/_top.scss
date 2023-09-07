@@ -304,4 +304,10 @@
 	&_price:nth-child(2) {
 		border-right: 3px dotted #1c4ca6;
 	}
+	&_numberText {
+		&-big {
+			font-size: 60px;
+			font-weight: 800;
+		}
+	}
 }

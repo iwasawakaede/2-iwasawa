@@ -243,7 +243,18 @@
 		text-align: center;
 		line-height: 1;
 		@media #{$pointM} {
-			font-size: get_vw(70, $vwMd);
+			font-size: get_vw(50, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(25);
+		}
+		&-speace {
+			@media #{$pointM} {
+				padding-top: get_vw(50, $vwMd);
+			}
+			@media #{$pointM} {
+				padding-top: get_vw(25);
+			}
 		}
 	}
 	&_titile {
@@ -253,6 +264,12 @@
 		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(22, $vwMd);
+		}
+		@media #{$pointM} {
+			padding-top: get_vw(25);
+		}
 		&::after {
 			background-color: #f6ab00;
 			content: "";
@@ -260,11 +277,22 @@
 			width: 60px;
 			height: 5px;
 			margin: 22px auto 0;
+			@media #{$pointM} {
+				width: get_vw(50, $vwMd);
+				height: get_vw(4, $vwMd);
+				margin: get_vw(17, $vwMd) auto 0;
+			}
+			@media #{$pointS} {
+				margin: get_vw(7) auto 0;
+			}
 		}
 		&-top {
 			padding-top: 20px;
 			@media #{$pointM} {
-				padding-top: get_vw(15, $vwMd);
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(5);
 			}
 		}
 	}

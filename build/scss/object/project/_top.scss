@@ -60,11 +60,20 @@
 	}
 	&_textBox {
 		padding-top: 17px;
+		@media #{$pointM} {
+			padding-top: get_vw(16, $vwMd);
+		}
 	}
 	&_textBoxText {
 		color: #333333;
 		font-size: 16px;
 		font-family: "Noto Sans jp";
+		@media #{$pointM} {
+			font-size: get_vw(17, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(9);
+		}
 	}
 }
 .p-topBlockList {
@@ -330,7 +339,7 @@
 			font-size: get_vw(16, $vwMd);
 			width: 33%;
 		}
-		@media #{$pointM} {
+		@media #{$pointS} {
 			font-size: get_vw(14);
 		}
 		&-space {

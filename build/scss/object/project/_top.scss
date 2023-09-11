@@ -308,7 +308,15 @@
 		border-collapse: separate;
 		border: 3px solid #1c4ca6;
 		width: 1195px;
-		margin-top: 60px;
+		@media #{$pointM} {
+			width: 100%;
+		}
+		&-speace {
+			margin-top: 60px;
+			@media #{$pointM} {
+				margin-top: get_vw(50, $vwMd);
+			}
+		}
 	}
 	&_tableText {
 		color: #fff;
@@ -318,6 +326,10 @@
 		text-align: center;
 		border-bottom: 3px solid #1c4ca6;
 		width: 394px;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+			width: 33%;
+		}
 	}
 	&_tableText:nth-child(1),
 	&_tableText:nth-child(2) {
@@ -340,6 +352,10 @@
 		font-weight: 600;
     line-height: 1;
 		padding: 50px 0px;
+		@media #{$pointM} {
+			font-size: get_vw(50, $vwMd);
+			padding: get_vw(25, $vwMd) 0;
+		}
 		&-big {
 			font-size: 55px;
 			font-weight: 800;

@@ -125,61 +125,61 @@
 			}
 		}
 	}
-	&_titleText {
-		color: #2e59a7;
-		font-family: "Noto Sans jp";
-		font-size: 33px;
-		font-weight: bold;
-		line-height: 1.4;
-		@media #{$pointM} {
-			font-size: get_vw(27, $vwMd);
-		}
-		&-break {
-			@media #{$pointM} {
-				display: none;
-			}
-		}
-	}
-	&_textBox {
-		position: relative;
-		padding-top: 30px;
-		@media #{$pointM} {
-			padding-top: get_vw(32, $vwMd);
-		}
-		&::before {
-			background-color: #f6ab00;
-			content: "";
-			display: block;
-			width: 60px;
-			height: 5px;
-			position: absolute;
-			top: 13px;
-			left: 0px;
-		@media #{$pointM} {
-			width: get_vw(50, $vwMd);
-			height: get_vw(4, $vwMd);
-			top: get_vw(13, $vwMd);
-			}
-		}
-	}
-	&_textBoxText {
-		color: #333333;
-		font-size: 16px;
-		font-family: "Noto Sans jp";
-		@media #{$pointM} {
-			font-size: get_vw(14, $vwMd);
-			line-height: 1.6;
-		}
-		&-top {
-			padding-top: 25px;
-			@media #{$pointM} {
-				padding-top: get_vw(20, $vwMd);
-			}
-			@media #{$pointS} {
-				padding-top: get_vw(8);
-			}
-		}
-	}
+	// &_titleText {
+	// 	color: #2e59a7;
+	// 	font-family: "Noto Sans jp";
+	// 	font-size: 33px;
+	// 	font-weight: bold;
+	// 	line-height: 1.4;
+	// 	@media #{$pointM} {
+	// 		font-size: get_vw(27, $vwMd);
+	// 	}
+	// 	&-break {
+	// 		@media #{$pointM} {
+	// 			display: none;
+	// 		}
+	// 	}
+	// }
+	// &_textBox {
+	// 	position: relative;
+	// 	padding-top: 30px;
+	// 	@media #{$pointM} {
+	// 		padding-top: get_vw(32, $vwMd);
+	// 	}
+	// 	&::before {
+	// 		background-color: #f6ab00;
+	// 		content: "";
+	// 		display: block;
+	// 		width: 60px;
+	// 		height: 5px;
+	// 		position: absolute;
+	// 		top: 13px;
+	// 		left: 0px;
+	// 	@media #{$pointM} {
+	// 		width: get_vw(50, $vwMd);
+	// 		height: get_vw(4, $vwMd);
+	// 		top: get_vw(13, $vwMd);
+	// 		}
+	// 	}
+	// }
+	// &_textBoxText {
+	// 	color: #333333;
+	// 	font-size: 16px;
+	// 	font-family: "Noto Sans jp";
+	// 	@media #{$pointM} {
+	// 		font-size: get_vw(14, $vwMd);
+	// 		line-height: 1.6;
+	// 	}
+	// 	&-top {
+	// 		padding-top: 25px;
+	// 		@media #{$pointM} {
+	// 			padding-top: get_vw(20, $vwMd);
+	// 		}
+	// 		@media #{$pointS} {
+	// 			padding-top: get_vw(8);
+	// 		}
+	// 	}
+	// }
 }
 // 吹き出し
 // 角丸長方形

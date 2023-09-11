@@ -330,6 +330,20 @@
 			font-size: get_vw(16, $vwMd);
 			width: 33%;
 		}
+		@media #{$pointM} {
+			font-size: get_vw(14);
+		}
+		&-space {
+			@media #{$pointM} {
+				padding: get_vw(9, $vwMd);
+			}
+		}
+		&-break {
+			display: none;
+			@media #{$pointS} {
+				display: block;
+			}
+		}
 	}
 	&_tableText:nth-child(1),
 	&_tableText:nth-child(2) {
@@ -353,12 +367,24 @@
     line-height: 1;
 		padding: 50px 0px;
 		@media #{$pointM} {
-			font-size: get_vw(50, $vwMd);
+			font-size: get_vw(18, $vwMd);
 			padding: get_vw(25, $vwMd) 0;
+		}
+		@media #{$pointS} {
+			font-size: get_vw(11);
+			padding: get_vw(25) 0;
 		}
 		&-big {
 			font-size: 55px;
 			font-weight: 800;
+			@media #{$pointM} {
+				font-size: get_vw(22, $vwMd);
+				padding: get_vw(25, $vwMd) 0;
+			}
+			@media #{$pointS} {
+				font-size: get_vw(14);
+				padding: get_vw(25) 0;
+			}
 		}
 	}
 	&_number,
@@ -370,6 +396,12 @@
 	}
 	&_price {
 		padding: 32px 78px;
+		@media #{$pointM} {
+			padding: get_vw(9, $vwMd) get_vw(17, $vwMd) get_vw(8, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(9) 0 get_vw(8);
+		}
 	}
 	&_number:nth-child(1),
 	&_price:nth-child(2) {
@@ -388,6 +420,9 @@
 		font-size: 35px;
 		font-weight: 600;
 		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+		}
 	}
 	&_priceTextBig {
 		color: #ff5267;
@@ -395,11 +430,18 @@
 		font-weight: 800;
 		font-family: "Noto Sans jp";
 		text-align: right;
+		@media #{$pointM} {
+			font-size: get_vw(28, $vwMd);
+		}
 	}
 	&_priceSmall {
 		color: #333333;
 		font-size: 18px;
 		font-family: "Noto Sans jp";
 		text-align: right;
+		@media #{$pointM} {
+			font-size: get_vw(13, $vwMd);
+			margin-right: get_vw(50, $vwMd);
+		}
 	}
 }

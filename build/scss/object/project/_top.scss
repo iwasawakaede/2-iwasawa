@@ -53,7 +53,18 @@
 		&-width {
 			width: 1220px;
 			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
 		}
+	}
+	&_textBox {
+		padding-top: 17px;
+	}
+	&_textBoxText {
+		color: #333333;
+		font-size: 16px;
+		font-family: "Noto Sans jp";
 	}
 }
 .p-topBlockList {
@@ -231,6 +242,9 @@
 		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(70, $vwMd);
+		}
 	}
 	&_titile {
 		color: #1c4ca6;
@@ -249,10 +263,16 @@
 		}
 		&-top {
 			padding-top: 20px;
+			@media #{$pointM} {
+				padding-top: get_vw(15, $vwMd);
+			}
 		}
 	}
 }
 .p-topTablebox {
+	@media #{$pointM} {
+		width: 100%;
+	}
 	&_table {
 		background-color: #ffffff;
 		text-align: center;
@@ -260,6 +280,7 @@
 		border-collapse: separate;
 		border: 3px solid #1c4ca6;
 		width: 1195px;
+		margin-top: 60px;
 	}
 	&_tableText {
 		color: #fff;
@@ -268,6 +289,7 @@
 		font-weight: bold;
 		text-align: center;
 		border-bottom: 3px solid #1c4ca6;
+		width: 394px;
 	}
 	&_tableText:nth-child(1),
 	&_tableText:nth-child(2) {
@@ -288,8 +310,10 @@
 		text-align: center;
 		font-size: 35px;
 		font-weight: 600;
+    line-height: 1;
+		padding: 50px 0px;
 		&-big {
-			font-size: 60px;
+			font-size: 55px;
 			font-weight: 800;
 		}
 	}
@@ -300,6 +324,9 @@
 			border-bottom: none;
 		}
 	}
+	&_price {
+		padding: 32px 78px;
+	}
 	&_number:nth-child(1),
 	&_price:nth-child(2) {
 		border-right: 3px dotted #1c4ca6;
@@ -309,5 +336,26 @@
 			font-size: 60px;
 			font-weight: 800;
 		}
+	}
+	&_priceText {
+		color: #333;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		font-size: 35px;
+		font-weight: 600;
+		line-height: 1;
+	}
+	&_priceTextBig {
+		color: #ff5267;
+		font-size: 55px;
+		font-weight: 800;
+		font-family: "Noto Sans jp";
+		text-align: right;
+	}
+	&_priceSmall {
+		color: #333333;
+		font-size: 18px;
+		font-family: "Noto Sans jp";
+		text-align: right;
 	}
 }

@@ -20,7 +20,7 @@
 	&-spaceTopM    { @include spaceTopM; }
 	&-spaceTopL    { @include spaceTopL; }
 		@media #{$pointM} {
-			padding-top: get_vw(32, $vwMd);
+			padding-top: get_vw(20, $vwMd);
 		}
 	&_text {
 		color: #333333;

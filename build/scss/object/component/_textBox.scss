@@ -1,67 +1,44 @@
 @charset 'utf-8';
 /* textBox
 ----------------------------------------------------------------- */
-// .c-textBox {
 // 	line-height: 1.5;
 // 	&_text {
-// 		font-size: 1.6rem;
-// 		word-break: normal;
-// 		@media #{$pointM} {
-// 			font-size: get_vw(16, $vwMd);
-// 		}
-// 		@media #{$pointS} {
-// 			@include fz_vw(14);
-// 		}
-// 	}
-// }
-.c-topPoint {
-	&_titleText {
-		color: #2e59a7;
-		font-family: "Noto Sans jp";
-		font-size: 33px;
-		font-weight: bold;
-		line-height: 1.4;
-		position: relative;
-		@media #{$pointM} {         
-			font-size: get_vw(27, $vwMd);
+	// 		font-size: 1.6rem;
+	// 		word-break: normal;
+	// 		@media #{$pointM} {
+		// 			font-size: get_vw(16, $vwMd);
+		// 		}
+		// 		@media #{$pointS} {
+			// 			@include fz_vw(14);
+			// 		}
+			// 	}
+			// }
+.c-textBox {
+	&-spaceTopXS   { @include spaceTopXS; }
+	&-spaceTopS    { @include spaceTopS; }
+	&-spaceTopM    { @include spaceTopM; }
+	&-spaceTopL    { @include spaceTopL; }
+		@media #{$pointM} {
+			padding-top: get_vw(32, $vwMd);
 		}
-		&::before {
-			background-color: #f6ab00;
-			content: "";
-			display: block;
-			width: 60px;
-			height: 5px;
-			position: absolute;
-			top: 13px;
-			left: 0px;
-			@media #{$pointM} {
-				width: get_vw(50, $vwMd);
-				height: get_vw(4, $vwMd);
-				top: get_vw(13, $vwMd);
-				}
-			}
-		&-break {
-			@media #{$pointM} {
-				display: none;
-			}
-		}
-	}
-	&_textBoxText {
+	&_text {
 		color: #333333;
-		font-size: 16px;
-		font-family: "Noto Sans jp";
+		font-size: 1.6rem;
+		padding-top: 25px;
+		// テキストを表示するためのcssは書いてOK！
+		// ある程度テキストが固まってるので、余白はセットで入れてよい
 		@media #{$pointM} {
 			font-size: get_vw(14, $vwMd);
 			line-height: 1.6;
+			padding-top: get_vw(20, $vwMd);
 		}
-		&-top {
-			padding-top: 25px;
-			@media #{$pointM} {
-				padding-top: get_vw(20, $vwMd);
-			}
-			@media #{$pointS} {
-				padding-top: get_vw(8);
-			}
+		@media #{$pointS} {
+			@include fz_vw(14);
+			padding-top: get_vw(8);
 		}
+	}
+	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
+	&_text:first-child {
+		padding-top: 0;
 	}
 }

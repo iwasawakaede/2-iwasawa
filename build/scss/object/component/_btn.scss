@@ -51,6 +51,7 @@
 	margin: 0 auto;
 	margin-top: 60px;
 	@media #{$pointM} {
+		border-radius: 10px;
 		width: 85%;
 		margin-top: get_vw(25, $vwMd);
 	}
@@ -97,7 +98,7 @@
 				@media #{$pointM} {
 					font-size: get_vw(20, $vwMd);
 				}
-				@media #{$pointM} {
+				@media #{$pointS} {
 					font-size: get_vw(10);
 				}
 			}

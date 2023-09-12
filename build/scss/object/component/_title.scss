@@ -27,6 +27,9 @@
 		@media #{$pointM} {
 			padding-bottom: get_vw(15, $vwMd);
 		}
+		@media #{$pointS} {
+			padding-bottom: get_vw(15);
+		}
 		&::after {
 			background-color: #f6ab00;
 			content: "";
@@ -37,10 +40,13 @@
 			bottom: 15px;
 			left: 0px;
 				@media #{$pointM} {
-				width: get_vw(50, $vwMd);
-				height: get_vw(4, $vwMd);
+				width: get_vw(60, $vwMd);
 				bottom: get_vw(5, $vwMd);
 				}
+				@media #{$pointS} {
+					width: get_vw(60);
+					bottom: get_vw(5);
+					}
 		}
 	}
 }

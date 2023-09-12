@@ -9,10 +9,10 @@
 		font-weight: bold;
 		line-height: 1.4;
 		@media #{$pointM} {
-			font-size: get_vw(33, $vwMd);
+			font-size: get_vw(27, $vwMd);
 		}
 		@media #{$pointS} {
-			@include fz_vw(33);
+			@include fz_vw(20);
 		}
 		&-break {
 			@media #{$pointM} {
@@ -24,6 +24,9 @@
 	&-line {
 		position: relative;
 		padding-bottom: 38px;
+		@media #{$pointM} {
+			padding-bottom: get_vw(30, $vwMd);
+		}
 		&::after {
 			background-color: #f6ab00;
 			content: "";
@@ -33,6 +36,11 @@
 			position: absolute;
 			bottom: 15px;
 			left: 0px;
+				@media #{$pointM} {
+				width: get_vw(50, $vwMd);
+				height: get_vw(4, $vwMd);
+				bottom: get_vw(15, $vwMd);
+				}
 		}
 	}
 }

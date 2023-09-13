@@ -153,6 +153,7 @@ a {
 	position: fixed;
 	min-width: 1440px;
 	width: 100%;
+	z-index: 999;
 	@media #{$pointM} {
 		min-width: initial;
 		width: 100%;
@@ -261,7 +262,6 @@ a {
 	@media #{$pointM} {
 		overflow: auto;
 		position: fixed;
-		z-index: 999;
 		/*ナビのスタート位置と形状*/
 		/*ナビの高さ*/
 		top: 118px;
@@ -333,11 +333,7 @@ a {
 			text-align: left;
 			line-height: 1.5;
 			list-style: none;
-			padding: get_vw(45, $vwMd) get_vw(35, $vwMd);
 			border-bottom: solid 1px #1eb9ee;
-		}
-		@media #{$pointS} {	
-			padding: get_vw(40, $vwMd) get_vw(30, $vwMd);
 		}
 	}
 	&_item-top {
@@ -346,10 +342,11 @@ a {
 			border-top: solid 1px #1eb9ee;
 		}
 	}
-	&_textLink {
+	&_itemLink {
 		display: block;
-		margin-left: 21px;
-		@media #{$pointM} {	
+		@media #{$pointM} {
+			display: block;
+			padding: get_vw(45, $vwMd) get_vw(35, $vwMd);
 			margin-left: get_vw(10, $vwMd);
 			margin-right: get_vw(10, $vwMd);
 		}
@@ -364,7 +361,7 @@ a {
 	&_textLink:hover {
 		opacity: 0.6;
 	}
-	&_textLinkSub {
+	&_itemLinkSub {
 		font-family: "Noto Sans jp";
 		color: #000;
 		font-size: 18px;

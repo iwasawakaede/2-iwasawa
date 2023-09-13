@@ -37,9 +37,6 @@
 			@include fz_vw(14);
 			padding-top: get_vw(8);
 		}
-		&-color {
-				color: #ff5267;
-		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
 	&_text:first-child {

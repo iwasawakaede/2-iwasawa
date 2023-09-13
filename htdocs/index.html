@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-	<!-- style sheet -->header
+	<!-- style sheet -->
 	<link rel="stylesheet" href="common/css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -320,7 +320,12 @@
 			<div class="c-title">
 				<div class="p-topBlock_pic">
 					<picture>
-						<img src="./common/img/top/option-title.png" alt="OPTION" class="p-topBlock_picImg">
+						<source type="image/webp" media="(min-width:429px)" srcset="./common/img/top/option-title.webp">
+						<source media="(min-width:897px)" srcset="./common/img/top/option-title.png">
+						<source type="image/webp" media="(min-width:429px)" srcset="./common/img/top/option-title.webp">
+						<source media="(min-width:429px)" srcset="./common/img/top/option-title.png">
+						<source type="image/webp" media="(min-width:429px)" data-srcset="./common/img/top/option-title.webp">
+						<img data-src="./common/img/top/option-title.png" src="./common/img/top/option-title.png" alt="OPTION" class="p-topBlock_picImg" loading="lazyload">
 					</picture>
 				</div>
 				<h2 class="c-title_text">オプション料金</h2>
@@ -335,7 +340,7 @@
 								<source media="(min-width:897px)" data-srcset="./common/img/top/option-img1.png">
 								<source type="image/webp" media="(min-width:429px)" data-srcset="./common/img/top/option-img1.webp">
 								<source media="(min-width:429px)" data-srcset="./common/img/top/option-img1.png">
-								<img src="./common/img/top/option-img1.png" data-src="./common/img/top/option-img1.png" alt="" class="p-topBlockOption_pic" loading="lazyload">
+								<img data-src="./common/img/top/option-img1.png" src="./common/img/top/option-img1.png" alt="" class="p-topBlockOption_pic" loading="lazyload">
 							</picture>
 						</div>
 						<div class="p-topBlockOption_textBox">
@@ -346,7 +351,7 @@
 							</div>
 							<div class="c-textBox">
 								<p class="c-textBox_text">
-									エアコンの分解クリーニング後にエアコン内部に<span class="c-textBox_text-color">抗菌加工と防カビ加工のコーティング</span>を行います。これにより<span class="c-textBox_text-color">防臭・防菌・防カビ</span>の高い効果があり、<span class="c-textBox_text-color">エアコンを細菌やカビから守り、快適な空気を維持</span>することができます。
+									エアコンの分解クリーニング後にエアコン内部に<span class="u-text-color1">抗菌加工と防カビ加工のコーティング</span>を行います。これにより<span class="u-text-color1">防臭・防菌・防カビ</span>の高い効果があり、<span class="u-text-color1">エアコンを細菌やカビから守り、快適な空気を維持</span>することができます。
 								</p>
 								<p class="c-textBox_text">エアコン分解クリーニングをする際にこちらのオプションもお試しください。</p>
 							</div>
@@ -383,9 +388,11 @@
 							<div class="c-textBox">
 								<p class="c-textBox_text">
 									エアコンの排水ホース（ドレンホース）は屋外に出ており、室内のエアコンと繋がっています。<br class="c-title_text-break">排水管口は内径14～16mm程度あるため、それより小さい虫が入ることができ、
-									排水ホースから入った虫はエアコンを通り室内へ侵入することがあります。<br class="c-title_text-break">
-									虫の室内侵入を防ぐためにエアーカットバルブを排水ホースの中間に<br class="c-title_text-break">
-									取り付ける事で、エアコンの排水時に弁が開き、屋外からは弁が閉まっている状態になるため虫の侵入を防ぐことができます。<br class="c-title_text-break">
+									<span class="u-text-color1">排水ホースから入った虫はエアコンを通り室内へ侵入すること</span>があります。<br class="c-title_text-break">
+									虫の室内侵入を防ぐために<span class="u-text-color1">
+										エアーカットバルブを排水ホースの中間に<br class="c-title_text-break">
+										取り付ける
+									</span>事で、エアコンの排水時に弁が開き、屋外からは弁が閉まっている状態になるため<span class="u-text-color1">虫の侵入を防ぐことができます</span>。<br class="c-title_text-break">
 									ブンクリのオプションで分解クリーニング後、お客様宅へ再度取付を行う際にエアーカットバルブの取り付けを行うことができます。
 								</p>
 							</div>
@@ -434,7 +441,7 @@
 							<source media="(min-width:897px)" data-srcset="./common/img/top/option-img3-sp.png">
 							<source type="image/webp" media="(min-width:429px)" data-srcset="./common/img/top/option-img3-sp.webp">
 							<source media="(min-width:429px)" data-srcset="./common/img/top/option-img3-sp.png">
-							<img src="./common/img/top/option-img3-sp.png" data-src="./common/img/top/option-img3-sp.png" alt="" class="p-topBlockOption_icon">
+							<img src="./common/img/top/option-img3-sp.png" data-src="./common/img/top/option-img3-sp.png" alt="" class="p-topBlockOption_icon" loading="lazyload">
 						</div>
 					</div>
 				</li>

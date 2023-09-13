@@ -442,7 +442,10 @@
 		font-family: "Noto Sans jp";
 		text-align: right;
 		@media #{$pointM} {
-			font-size: get_vw(28, $vwMd);
+			font-size: get_vw(30, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(24);
 		}
 	}
 	&_tdTextSmall {
@@ -454,9 +457,11 @@
 			font-size: get_vw(13, $vwMd);
 			margin-right: get_vw(50, $vwMd);
 		}
+		@media #{$pointS} {
+			font-size: get_vw(13);
+		}
 	}
 }
-
 // -----------------------------------------------
 // OPTION
 // -----------------------------------------------

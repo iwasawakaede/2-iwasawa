@@ -147,7 +147,7 @@ a {
 	color: inherit;
 }
 .l-header {
-	background-color: rgba(255,255,255);
+	background-color: rgba(255,255,255,0.6);
 	top: 0;
 	left: 0;
 	position: fixed;
@@ -163,6 +163,9 @@ a {
 	@media #{$pointS} {
 		height: 86.5px;
 	}
+}
+.background {
+	background-color: rgba(255,255,255);
 }
 .l-headerTop {
 	height: 24px;
@@ -325,6 +328,7 @@ a {
 	display: flex;
 	margin-top: -17px;
 	@media #{$pointM} {
+		border-top: solid 1px #1eb9ee;
 		display: block;
 		margin-top: 0;
 	}
@@ -332,58 +336,40 @@ a {
 		@media #{$pointM} {	
 			text-align: left;
 			line-height: 1.5;
-			list-style: none;
 			border-bottom: solid 1px #1eb9ee;
 		}
 	}
-	&_item-top {
-		@media #{$pointM} {
-			display: block;
-			border-top: solid 1px #1eb9ee;
-		}
-	}
+	// &_item-top {
+	// 	@media #{$pointM} {
+	// 		display: block;
+	// 		border-top: solid 1px #1eb9ee;
+	// 	}
+	// }
 	&_itemLink {
+		color: #000;
+		font-size: 18px;
+		font-weight: bold;
 		display: block;
 		@media #{$pointM} {
+			width: 100%;
 			display: block;
 			padding: get_vw(45, $vwMd) get_vw(35, $vwMd);
 			margin-left: get_vw(10, $vwMd);
 			margin-right: get_vw(10, $vwMd);
 		}
 	} 
-	&_textLink-left {
-		margin-left: 0;
-		@media #{$pointM} {
-			margin-left: get_vw(10, $vwMd);
-			margin-right: get_vw(10, $vwMd);
-		}
-	}
 	&_textLink:hover {
 		opacity: 0.6;
 	}
-	&_itemLinkSub {
-		font-family: "Noto Sans jp";
-		color: #000;
-		font-size: 18px;
-		font-weight: bold;
-		@media #{$pointM} {
-			font-size: get_vw(35, $vwMd);
-			width: get_vw(120, $vwMd);
-			margin-right: get_vw(32, $vwMd);
-		}
-		@media #{$pointM} {	
-			margin-right: 0;
-			width: 100%;
-		}
 		.fa-regular,
 		.fa-solid {
 				display: none;
 			@media #{$pointM} {
+				color: #1eb9ee;
 				display: inline-block;
 				padding-right: get_vw(10, $vwMd);
 			}
 		}
-	}
 }
 .l-headerFixed {
 	display: none;
@@ -472,7 +458,7 @@ a {
 		@media #{$pointM} {
 		display: block;
 		position: relative;
-		background: #fff;
+		background: rgba(255,255,255,0.6);
 		cursor: pointer;
     width: 40px;
     height: 40px;

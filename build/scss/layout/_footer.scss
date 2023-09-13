@@ -78,7 +78,7 @@
 		padding-bottom: get_vw(80, $vwMd);
 	}
 }
-.l-footerTop {
+&_inner {
 	padding: 10px;
 	@media #{$pointM} {
 		padding: get_vw(12, $vwMd);

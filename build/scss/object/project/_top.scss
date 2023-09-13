@@ -260,7 +260,7 @@
 			@media #{$pointM} {
 				padding-top: get_vw(50, $vwMd);
 			}
-			@media #{$pointM} {
+			@media #{$pointS} {
 				padding-top: get_vw(25);
 			}
 		}
@@ -276,6 +276,7 @@
 			font-size: get_vw(22, $vwMd);
 		}
 		@media #{$pointM} {
+			font-size: get_vw(22);
 			padding-top: get_vw(25);
 		}
 		&::after {
@@ -306,27 +307,22 @@
 	}
 }
 .p-topTablebox {
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 10px;
+	border-collapse: separate;
+	border: 3px solid #1c4ca6;
+	width: 1195px;
 	@media #{$pointM} {
 		width: 100%;
 	}
-	&_table {
-		background-color: #ffffff;
-		text-align: center;
-		border-radius: 10px;
-		border-collapse: separate;
-		border: 3px solid #1c4ca6;
-		width: 1195px;
+	&-speace {
+		margin-top: 60px;
 		@media #{$pointM} {
-			width: 100%;
-		}
-		&-speace {
-			margin-top: 60px;
-			@media #{$pointM} {
-				margin-top: get_vw(50, $vwMd);
-			}
+			margin-top: get_vw(50, $vwMd);
 		}
 	}
-	&_tableText {
+	&_thTitle {
 		color: #fff;
 		font-family: "Noto Sans jp";
 		font-size: 30px;
@@ -353,20 +349,20 @@
 			}
 		}
 	}
-	&_tableText:nth-child(1),
-	&_tableText:nth-child(2) {
+	&_thTitle:nth-child(1),
+	&_thTitle:nth-child(2) {
 		border-right: 3px dotted #1c4ca6;
 	}
-	&_tableText:nth-child(1) {
+	&_thTitle:nth-child(1) {
 		background-color: #69c08a;
 	}
-	&_tableText:nth-child(2) {
+	&_thTitle:nth-child(2) {
 		background-color: #1eb9ee;
 	}
-	&_tableText:nth-child(3) {
+	&_thTitle:nth-child(3) {
 		background-color: #1c4ca6;
 	}
-	&_number {
+	&_thText {
 		color: #333333;
 		font-family: "Noto Sans jp";
 		text-align: center;
@@ -379,60 +375,67 @@
 			padding: get_vw(25, $vwMd) 0;
 		}
 		@media #{$pointS} {
-			font-size: get_vw(11);
-			padding: get_vw(25) 0;
-		}
-		&-big {
-			font-size: 55px;
-			font-weight: 800;
-			@media #{$pointM} {
-				font-size: get_vw(22, $vwMd);
-				padding: get_vw(25, $vwMd) 0;
-			}
-			@media #{$pointS} {
-				font-size: get_vw(14);
-				padding: get_vw(25) 0;
-			}
+			font-size: get_vw(18);
+			padding: 0 get_vw(5);
 		}
 	}
-	&_number,
-	&_price {
+	&_thTextBig {
+		font-size: 55px;
+		font-weight: 800;
+		@media #{$pointM} {
+			font-size: get_vw(22, $vwMd);
+			padding: get_vw(25, $vwMd) 0;
+		}
+		@media #{$pointS} {
+			font-size: get_vw(22);
+			padding: get_vw(25) 0;
+		}
+	}
+	&_thText,
+	&_tdText {
 		border-bottom: 3px solid #1c4ca6;
 		&-decoration {
 			border-bottom: none;
 		}
 	}
-	&_price {
-		padding: 32px 78px;
-		@media #{$pointM} {
-			padding: get_vw(9, $vwMd) get_vw(17, $vwMd) get_vw(8, $vwMd);
-		}
-		@media #{$pointS} {
-			padding: get_vw(9) 0 get_vw(8);
-		}
-	}
-	&_number:nth-child(1),
-	&_price:nth-child(2) {
-		border-right: 3px dotted #1c4ca6;
-	}
-	&_numberText {
-		&-big {
-			font-size: 60px;
-			font-weight: 800;
-		}
-	}
-	&_priceText {
+	&_tdText {
 		color: #333;
 		font-family: "Noto Sans jp";
 		text-align: center;
 		font-size: 35px;
 		font-weight: 600;
 		line-height: 1;
+		padding: 32px 78px;
 		@media #{$pointM} {
 			font-size: get_vw(18, $vwMd);
+			padding: get_vw(9, $vwMd) get_vw(17, $vwMd) get_vw(8, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(9) 0 get_vw(8);
 		}
 	}
-	&_priceTextBig {
+	&_thText:nth-child(1),
+	&_tdText:nth-child(2) {
+		border-right: 3px dotted #1c4ca6;
+	}
+	// &_numberText {
+	// 	&-big {
+	// 		font-size: 60px;
+	// 		font-weight: 800;
+	// 	}
+	// }
+	// &_priceText {
+	// 	color: #333;
+	// 	font-family: "Noto Sans jp";
+	// 	text-align: center;
+	// 	font-size: 35px;
+	// 	font-weight: 600;
+	// 	line-height: 1;
+	// 	@media #{$pointM} {
+	// 		font-size: get_vw(18, $vwMd);
+	// 	}
+	// }
+	&_tdTextBig {
 		color: #ff5267;
 		font-size: 55px;
 		font-weight: 800;
@@ -442,7 +445,7 @@
 			font-size: get_vw(28, $vwMd);
 		}
 	}
-	&_priceSmall {
+	&_tdTextSmall {
 		color: #333333;
 		font-size: 18px;
 		font-family: "Noto Sans jp";

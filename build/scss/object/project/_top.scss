@@ -425,15 +425,26 @@
 		width: 560px;
 	}
 }
+.p-topBlockList {
+	&_item {
+		&-topspace {
+			margin-top: 85px;
+		}
+		&-space {
+			margin-top: 52px;
+		}
+	}
+}
 .p-topBlockOptionPrice {
 	border: 3px solid #1eb9ee;
 	border-radius: 10px;
 	width: 502px;
 	display: flex;
-	margin-top: 44px;
+	margin: 72px 0 0 178px;
+	margin-left: 178px;
 	&_textBolck {
 		background-color: #1eb9ee;
-		width: 150px;
+		width: 157px;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
@@ -443,24 +454,29 @@
 		font-size: 2rem;
 	}
 	&_priceBox {
-		width: 357px;
+		color: #ff5267;
+		font-size: 40px;
+		font-weight: 800;
+		width: 350px;
 		display: flex;
+		align-items: baseline;
 		justify-content: center;
 	}
 	&_priceBoxText {
-		color: #ff5267;
+		color: #333333;
 		font-weight: 800;
-		font-size: 4rem;
+		font-size: 3rem;
 		line-height: 1.5;
 	}
 	&_priceBoxTextBig {
 		color: #ff5267;
 		font-weight: 800;
-		// text-align: right;
 		font-size: 4rem;
+		margin-left: 26px;
 	}
 	&_priceBoxTextSmall {
 		color: #333333;
 		font-size: 1.8rem;
+		font-weight: 500;
 	}
 }

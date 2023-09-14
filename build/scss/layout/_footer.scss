@@ -86,7 +86,6 @@
 			padding: get_vw(12);
 		}
 	}
-}
 .l-footeImage {
 	width: 350px;
 	margin: 0 auto;
@@ -99,7 +98,7 @@
 	&_text {
 		color: #1eb9ee;
 		font-family: "Noto Sans Kjp";
-		font-size: 24px;
+		font-size: 2.4rem;
 		font-weight: bold;
 		letter-spacing: 5px;
 		text-align: center;
@@ -117,7 +116,7 @@
 		}
 	}
 }
-.l-footerWordList {
+.l-footerList {
 	width: 920px;
 	display: flex;
 	justify-content: space-between;
@@ -134,8 +133,8 @@
 	&_textLink {
 		color: #333333;
 		font-family: "Noto Sans jp";
-		font-weight: bold;
-		font-size: 18px;
+		font-weight: 500;
+		font-size: 1.8rem;
 		text-align: center;
 		display: block;
 		@media #{$pointM} {
@@ -173,7 +172,7 @@
 	}
 }
 }
-.l-footerWordTell {
+.l-footerTell {
 	background-color: #f6ab00;
 	width: 1002px;
 	border-radius: 10px;
@@ -194,7 +193,7 @@
 	}
 	&_text {
 		color: #ffffff;
-		font-size: 26px;
+		font-size: 2.6rem;
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
@@ -207,7 +206,7 @@
 			font-size: get_vw(15);
 		}
 	}
-.l-footerWordTellBlock {
+.l-footerTellBlock {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -250,7 +249,7 @@
 	}
 	&_number {
 		color: #ffffff;
-		font-size: 58px;
+		font-size: 5.8rem;
 		font-weight: 800;
 		font-family: "Noto Sans jp";
 		@media #{$pointM} {
@@ -262,7 +261,7 @@
 	}
 }
 }
-.l-footerWordTellBlockInner {
+.l-footerTellBlockInner {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
@@ -282,7 +281,7 @@
 	}
 	&_text {
 		color: #ffffff;
-		font-size: 16px;
+		font-size: 1.6rem;
 		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
@@ -311,7 +310,7 @@
 	}
 	&_time {
 		color: #ffffff;
-		font-size: 20px;
+		font-size: 2rem;
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
@@ -325,15 +324,16 @@
 		}
 	}
 }
-.l-footerWordCopy {
+	.l-footerCopy {
 	background-color: #1eb9ee;
 	&_text {
 		color: #ffffff;
 		font-family: "Noto Sans CJ Kjp";
-		font-size: 14px;
+		font-size: 1.4rem;
 		text-align: center;
 		@media #{$pointM} {
 			font-size: get_vw(12, $vwMd);
+			}
 		}
 	}
 }

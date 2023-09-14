@@ -158,7 +158,6 @@ a {
 	@media #{$pointM} {
 		min-width: initial;
 		width: 100%;
-		position: fixed;
 	}
 	@media #{$pointS} {
 		height: 86.5px;
@@ -179,7 +178,7 @@ a {
 		padding: 0 get_vw(10);
 	}
  	&_text {
-		font-size: 12px;
+		font-size: 1.2rem;
 		color: #fffcf3;
 		font-weight: bold;
 		font-family: "Noto Sans jp";
@@ -298,14 +297,14 @@ a {
 	&_text {
 		color: #333;
 		font-family: "Noto Sans CJ jp";
-		font-size: 24px;
+		font-size: 2.4rem;
 		font-weight: 800;
 		line-height: 0;
 	}
 	&_textS {
 		color: #333;
 		font-family: "Noto Sans CJ jp";
-		font-size: 14px;
+		font-size: 1.4rem;
 		text-align: center;
 		vertical-align: 2px;
 		margin-left: 11px;
@@ -340,15 +339,9 @@ a {
 			border-bottom: solid 1px #1eb9ee;
 		}
 	}
-	// &_item-top {
-	// 	@media #{$pointM} {
-	// 		display: block;
-	// 		border-top: solid 1px #1eb9ee;
-	// 	}
-	// }
 	&_itemLink {
 		color: #000;
-		font-size: 18px;
+		font-size: 1.8rem;
 		font-weight: bold;
 		display: block;
 		padding-right: 20px;
@@ -446,14 +439,14 @@ a {
 	}
 	&_linkForm {
 		color: #fff;
-		font-size: 22px;
+		font-size: 2.2rem;
 		font-weight: bold;
 		line-height: 1.1;
 		padding: 6px 0 8px;
 	}
 	&_text {
 		color: #f6ab00;
-		font-size: 14px;
+		font-size: 1.4rem;
 		font-weight: bold;
 		text-align: center;
 		line-height: 1;

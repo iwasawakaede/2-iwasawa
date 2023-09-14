@@ -158,7 +158,6 @@ a {
 	@media #{$pointM} {
 		min-width: initial;
 		width: 100%;
-		height: 117px;
 		position: fixed;
 	}
 	@media #{$pointS} {
@@ -222,6 +221,7 @@ a {
 }
 .l-headerMain {
 	display: flex;
+	align-items: center;
 	width: 1440px;
 	height: 95px;
 	margin: 0 auto;
@@ -425,6 +425,7 @@ a {
 .l-headerButton {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-end;
 		width: 266px;
 		margin-top: 11px;
 		margin: 11px 0 0 220px;
@@ -437,23 +438,26 @@ a {
 }
 .l-headerButtonBlock {
 	&_link {
-		color: #fff;
 		background-color: #f6ab00;
-		font-family: "Noto Sans CJ jp";
-		font-size: 22px;
-		font-weight: bold;
 		text-align: center;
 		border-radius: 20px;
 		width: 180px;
 		display: block;
-		padding-top: 5px;
+	}
+	&_linkForm {
+		color: #fff;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 1.1;
+		padding: 6px 0 8px;
 	}
 	&_text {
 		color: #f6ab00;
-		font-family: "Noto Sans CJ jp";
 		font-size: 14px;
 		font-weight: bold;
 		text-align: center;
+		line-height: 1;
+		padding-top: 6px;
 	}
 }
 	.l-headerButtonOpenbtn {

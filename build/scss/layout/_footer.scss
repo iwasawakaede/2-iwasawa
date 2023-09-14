@@ -77,14 +77,14 @@
 	@media #{$pointM} {
 		padding-bottom: get_vw(80, $vwMd);
 	}
-}
-&_inner {
-	padding: 10px;
-	@media #{$pointM} {
-		padding: get_vw(12, $vwMd);
-	}
-	@media #{$pointS} {
-		padding: get_vw(12);
+	&_inner {
+		padding: 10px;
+		@media #{$pointM} {
+			padding: get_vw(12, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(12);
+		}
 	}
 }
 .l-footeImage {
@@ -117,23 +117,19 @@
 		}
 	}
 }
-.l-footerWord {
+.l-footerWordList {
 	width: 920px;
+	display: flex;
+	justify-content: space-between;
 	margin: 0 auto;
 	padding: 15px 0 35px;
 	@media #{$pointM} {
 		width: 100%;
+		flex-direction: column;
 		padding: get_vw(12, $vwMd) 0 0;
 	}
 	@media #{$pointS} {
 		padding: get_vw(10) 0 0;
-	}
-}
-.l-footerWordList {
-	display: flex;
-	justify-content: space-between;
-	@media #{$pointM} {
-		flex-direction: column;
 	}
 	&_textLink {
 		color: #333333;
@@ -202,6 +198,7 @@
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
+		line-height: 1;
 		@media #{$pointM} {
 			font-size: get_vw(20, $vwMd);
 			line-height: 1;
@@ -272,12 +269,13 @@
 	width: 365px;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
+	margin-left: 16px;
 	@media #{$pointM} {
 		line-height: 1;
 		white-space: nowrap;
 		border: 1px solid #fff;
 		width: 100%;
-		margin-top: get_vw(10, $vwMd);
+		margin: get_vw(10, $vwMd) 0 0 0;
 	}
 	@media #{$pointS} {
 		margin-top: get_vw(10);
@@ -287,6 +285,7 @@
 		font-size: 16px;
 		font-family: "Noto Sans jp";
 		text-align: center;
+		line-height: 1;
 		padding: 12px 20px;
 		@media #{$pointM} {
 			font-size: get_vw(18, $vwMd);
@@ -302,10 +301,10 @@
     display: block;
     content: "";
     width: 1px;
-    height: 64px;
+    height: 45px;
     position: absolute;
     margin-left: 80px;
-		margin-top: -49px;
+		margin-top: -32px;
 		@media #{$pointM} {
 			display: none;
 		}
@@ -316,6 +315,7 @@
 		font-weight: bold;
 		font-family: "Noto Sans jp";
 		text-align: center;
+		line-height: 1;
 		padding: 12px 10px;
 		@media #{$pointM} {
 			font-size: get_vw(18, $vwMd);

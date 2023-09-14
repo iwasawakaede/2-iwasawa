@@ -428,26 +428,39 @@
 .p-topBlockOptionPrice {
 	border: 3px solid #1eb9ee;
 	border-radius: 10px;
-	width: 509px;
+	width: 502px;
 	display: flex;
+	margin-top: 44px;
 	&_textBolck {
 		background-color: #1eb9ee;
 		width: 150px;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-		&_textBolcktext {
-			color: #fff;
-			font-size: 2rem;
-			&_priceBoxText {
-				color: #ff5267;
-				font-weight: 800;
-				text-align: right;
-				font-size: 4rem;
-			}
-		}
+	}
+	&_textBolcktext {
+		color: #fff;
+		font-size: 2rem;
 	}
 	&_priceBox {
-		width: 350px;
+		width: 357px;
+		display: flex;
+		justify-content: center;
+	}
+	&_priceBoxText {
+		color: #ff5267;
+		font-weight: 800;
+		font-size: 4rem;
+		line-height: 1.5;
+	}
+	&_priceBoxTextBig {
+		color: #ff5267;
+		font-weight: 800;
+		// text-align: right;
+		font-size: 4rem;
+	}
+	&_priceBoxTextSmall {
+		color: #333333;
+		font-size: 1.8rem;
 	}
 }

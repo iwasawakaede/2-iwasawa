@@ -154,6 +154,7 @@ a {
 	position: fixed;
 	min-width: 1440px;
 	width: 100%;
+	z-index: 999;
 	@media #{$pointM} {
 		min-width: initial;
 		width: 100%;
@@ -163,6 +164,9 @@ a {
 	@media #{$pointS} {
 		height: 86.5px;
 	}
+}
+.bgcolor {
+	background-color: rgba(255,255,255);
 }
 .l-headerTop {
 	height: 24px;
@@ -218,12 +222,12 @@ a {
 }
 .l-headerMain {
 	display: flex;
-	justify-content: space-between;
 	width: 1440px;
 	height: 95px;
 	margin: 0 auto;
   transition: top 300ms;
 	@media #{$pointM} {
+		justify-content: space-between;
 		align-items: center;
 		width: 100%;
 		height: 60px;
@@ -245,7 +249,7 @@ a {
 }
 .l-headerLogo {
 	width: 280px;
-	margin-right: 38px;
+	margin-right: 35px;
 	@media #{$pointM} {
 					width: get_vw(200, $vwMd);
 					margin: get_vw(10, $vwMd) get_vw(12, $vwMd) 0 0;
@@ -262,7 +266,6 @@ a {
 	@media #{$pointM} {
 		overflow: auto;
 		position: fixed;
-		z-index: 999;
 		/*ナビのスタート位置と形状*/
 		/*ナビの高さ*/
 		top: 118px;
@@ -326,6 +329,7 @@ a {
 	display: flex;
 	margin-top: -17px;
 	@media #{$pointM} {
+		border-top: solid 1px #1eb9ee;
 		display: block;
 		margin-top: 0;
 	}
@@ -333,61 +337,41 @@ a {
 		@media #{$pointM} {	
 			text-align: left;
 			line-height: 1.5;
-			list-style: none;
-			padding: get_vw(45, $vwMd) get_vw(35, $vwMd);
 			border-bottom: solid 1px #1eb9ee;
 		}
-		@media #{$pointS} {	
-			padding: get_vw(40, $vwMd) get_vw(30, $vwMd);
-		}
 	}
-	&_item-top {
-		@media #{$pointM} {
-			display: block;
-			border-top: solid 1px #1eb9ee;
-		}
-	}
-	&_textLink {
+	// &_item-top {
+	// 	@media #{$pointM} {
+	// 		display: block;
+	// 		border-top: solid 1px #1eb9ee;
+	// 	}
+	// }
+	&_itemLink {
+		color: #000;
+		font-size: 18px;
+		font-weight: bold;
 		display: block;
-		margin-left: 21px;
-		@media #{$pointM} {	
+		padding-right: 20px;
+		@media #{$pointM} {
+			width: 100%;
+			display: block;
+			padding: get_vw(45, $vwMd) get_vw(35, $vwMd);
 			margin-left: get_vw(10, $vwMd);
 			margin-right: get_vw(10, $vwMd);
 		}
 	} 
-	&_textLink-left {
-		margin-left: 0;
-		@media #{$pointM} {
-			margin-left: get_vw(10, $vwMd);
-			margin-right: get_vw(10, $vwMd);
-		}
-	}
 	&_textLink:hover {
 		opacity: 0.6;
 	}
-	&_textLinkSub {
-		font-family: "Noto Sans jp";
-		color: #000;
-		font-size: 18px;
-		font-weight: bold;
-		@media #{$pointM} {
-			font-size: get_vw(35, $vwMd);
-			width: get_vw(120, $vwMd);
-			margin-right: get_vw(32, $vwMd);
-		}
-		@media #{$pointM} {	
-			margin-right: 0;
-			width: 100%;
-		}
 		.fa-regular,
 		.fa-solid {
 				display: none;
 			@media #{$pointM} {
+				color: #1eb9ee;
 				display: inline-block;
 				padding-right: get_vw(10, $vwMd);
 			}
 		}
-	}
 }
 .l-headerFixed {
 	display: none;
@@ -443,6 +427,7 @@ a {
 		justify-content: space-between;
 		width: 266px;
 		margin-top: 11px;
+		margin: 11px 0 0 220px;
 	@media #{$pointM} {
 		display: none;
 	}
@@ -476,7 +461,6 @@ a {
 		@media #{$pointM} {
 		display: block;
 		position: relative;
-		background: #fff;
 		cursor: pointer;
     width: 40px;
     height: 40px;

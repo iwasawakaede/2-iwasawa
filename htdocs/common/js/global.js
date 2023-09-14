@@ -1,10 +1,11 @@
 $(function () {
 	// alert('OK!');
 	console.log("start");
-	$(".l-headerButtonOpenbtn").click(function () {//ボタンがクリックされたら
+	$(".js-button").click(function () {//ボタンがクリックされたら
 		$(this).toggleClass('is-active');//ボタン自身に activeクラスを付与し
 		$(".l-headerNav").toggleClass('is-panelactive');//ナビゲーションにpanelactiveクラスを付与
 		$("body").toggleClass('fixed');//bodyにfixedクラスを付与
+		$(".l-header").toggleClass('bgcolor');
 	});
 
 	var beforePos = 0;//スクロールの値の比較用の設定
@@ -29,13 +30,13 @@ if(elemTop < scroll){
 		//4（大きい）→ヘッダーが上に消えて、見えなくなる
 		$('.js-headerTop').removeClass('is-downMove');//.js-headerTopにis-downMoveというクラス名を除き(下に下がる動き)
 		// console.log("8");
-		$('.js-headerTop').addClass('is-upMove');//.js-headerTopにis-upMoveのクラス名を追加(上に上がる動き)
+		$('.js-headerTop').addClass('is-upMove');//.js-headerTopに.is-upMove.opacityのクラス名を追加(上に上がる動き)
 // console.log("9");
     }else {
 		// 4（小さい）→（下にスクロールすると、）ヘッダーが上から出現する
 		$('.js-headerTop').removeClass('is-upMove');	//.js-headerTopにis-upMoveというクラス名を除き
 		// console.log("6");
-		$('.js-headerTop').addClass('is-downMove');//.js-headerTopにis-downMoveのクラス名を追加
+		$('.js-headerTop').addClass('is-downMove');//.js-headerTopに.is-downMove.opacityのクラス名を追加
 		// console.log("7");
     }
     beforePos = scroll;//５→現在のスクロール値として、比較用のbeforePosに格納される（１へ戻り、繰り返し）
@@ -45,4 +46,5 @@ if(elemTop < scroll){
 $(window).scroll(function () {
 	ScrollAnime();
 });
+
 });

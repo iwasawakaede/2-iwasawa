@@ -11,10 +11,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-	<!-- style sheet -->
+	<!-- style sheet -->header
 	<link rel="stylesheet" href="common/css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="common/css/style.css">
 	<!-- font awesome -->
 	<script src="https://kit.fontawesome.com/7b6f40b1bc.js" crossorigin="anonymous"></script>
   <!-- jQuery -->
@@ -31,7 +32,7 @@
 		<div class="l-headerMain">
 			<div class="l-headerLogo">
 				<picture>
-					<source media="(max-width: 896px)" date-srcset="./common/img/header-logo.png">
+					<source media="(min-width: 896px)" date-srcset="./common/img/header-logo.png">
 					<img date-src="./common/img/header-logo.png" src="./common/img/header-logo.png" alt="ブンクリ" class="l-headerLogo_img lazyload">
 				</picture>
 			</div>
@@ -47,36 +48,28 @@
 				<div class="l-headerBlock">
 					<nav class="l-headerMenu">
 						<ul class="l-headerList">
-							<li class="l-headerList_item l-headerList_item-top">
-								<a class="l-headerList_textLink l-headerList_textLink-left" href="#">
-									<p class="l-headerList_textLinkSub">
-										<i class="fa-regular fa-credit-card" style="color: #1eb9ee;"></i>
-										料金
-									</p>
+							<li class="l-headerList_item">
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-regular fa-credit-card"></i>
+									料金
 								</a>
 							</li>
 							<li class="l-headerList_item">
-								<a class="l-headerList_textLink" href="#">
-									<p class="l-headerList_textLinkSub">
-										<i class="fa-solid fa-gear" style="color: #1eb9ee;"></i>
-										ブンクリの流れ
-									</p>
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-solid fa-gear"></i>
+									ブンクリの流れ
 								</a>
 							</li>
 							<li class="l-headerList_item">
-								<a class="l-headerList_textLink" href="#">
-									<p class="l-headerList_textLinkSub">
-										<i class="fa-solid fa-soap" style="color: #1eb9ee;"></i>
-										壁掛け洗浄と分解洗浄の違い
-									</p>
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-solid fa-soap"></i>
+									壁掛け洗浄と分解洗浄の違い
 								</a>
 							</li>
 							<li class="l-headerList_item">
-								<a class="l-headerList_textLink" href="#">
-									<p class="l-headerList_textLinkSub">
-										<i class="fa-solid fa-broom" style="color: #1eb9ee;"></i>
-										作業完了までの流れ
-									</p>
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-solid fa-broom"></i>
+									作業完了までの流れ
 								</a>
 							</li>
 						</ul>
@@ -108,7 +101,7 @@
 					<p class="l-headerButtonBlock_text">RESERVE INSTALLATION</p>
 				</div>
 			</div>
-			<div class="l-headerButtonOpenbtn active">
+			<div class="l-headerButtonOpenbtn js-button">
 				<span class="l-headerButtonOpenbtn_line"></span>
 				<span class="l-headerButtonOpenbtn_line"></span>
 				<span class="l-headerButtonOpenbtn_line"></span>
@@ -452,73 +445,71 @@
 	</div>
 
 	<footer class="l-footer">
-		<div class="l-footerBlock">
-			<div class="l-footerTop">
-				<div class="l-footeImage">
-					<picture class="l-footerImage_picture">
-						<source media="(max-width: 865px)" date-srcset="./common/img/footer-logo-sp.png">
-						<img date-src="./common/img/footer-logo.png" src="./common/img/footer-logo.png" alt="エアコン名人ブンクリ" class="l-footerImage_pictureImg lazyload">
-					</picture>
-					<p class="l-footeImage_text">ブンクリ</p>
-				</div>
-				<div class="l-footerWord">
-					<ul class="l-footerWordList">
-						<li class="l-footerWordList_text">
-							<a href="#" class="l-footerWordList_textLink">料金
-								<i class="fa-solid fa-circle-arrow-right"></i>
-							</a>
-						</li>
-						<li class="l-footerWordList_text">
-							<a href="#" class="l-footerWordList_textLink">ブンクリの流れ
-								<i class="fa-solid fa-circle-arrow-right"></i>
-							</a>
-						</li>
-						<li class="l-footerWordList_text">
-							<a href="#" class="l-footerWordList_textLink">壁掛け洗浄と分解洗浄の違い
-								<i class="fa-solid fa-circle-arrow-right"></i>
-							</a>
-						</li>
-						<li class="l-footerWordList_text">
-							<a href="#" class="l-footerWordList_textLink">作業完了までの流れ
-								<i class="fa-solid fa-circle-arrow-right"></i>
-							</a>
-						</li>
-						<li class="l-footerWordList_text">
-							<a href="#" class="l-footerWordList_textLink">お申し込み
-								<i class="fa-solid fa-circle-arrow-right"></i>
-							</a>
-						</li>
-						<li class="l-footerWordList_text">
-							<a href="#" class="l-footerWordList_textLink">エアコン名人会社概要
-								<i class="fa-solid fa-up-right-from-square"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="l-footerWordTell">
-					<p class="l-footerWordTell_text">お電話でのお問い合わせ</p>
-					<div class="l-footerWordTellBlock">
-						<div class="l-footerWordTellBlock_tellnumber">
-							<picture class="l-footerWordTellBlock_icon">
-								<source media="(max-width: 896px)" date-srcset="./common/img/footer-icon.png">
-								<img date-src="./common/img/footer-icon.png" src="./common/img/footer-icon.png" alt="" class="l-footerWordTellBlock_iconImg">
-							</picture>
-							<p class="l-footerWordTellBlock_number">0120-79-5959</p>
-						</div>
-						<div class="l-footerWordTellBlockInner">
-							<p class="l-footerWordTellBlockInner_text">
-								受付時間
-							</p>
-							<p class="l-footerWordTellBlockInner_time">9:00～19:00（年中無休）</p>
-						</div>
+		<div class="l-footerTop_inner">
+			<div class="l-footeImage">
+				<picture class="l-footerImage_picture">
+					<source media="(min-width: 897px)" date-srcset="./common/img/footer-logo-sp.png">
+					<source media="(min-width: 429px)" date-srcset="./common/img/footer-logo-sp.png">
+					<img date-src="./common/img/footer-logo.png" src="./common/img/footer-logo.png" alt="エアコン名人ブンクリ" class="l-footerImage_pictureImg lazyload">
+				</picture>
+				<p class="l-footeImage_text">ブンクリ</p>
+			</div>
+			<ul class="l-footerWordList">
+				<li class="l-footerWordList_text">
+					<a href="#" class="l-footerWordList_textLink">料金
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerWordList_text">
+					<a href="#" class="l-footerWordList_textLink">ブンクリの流れ
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerWordList_text">
+					<a href="#" class="l-footerWordList_textLink">壁掛け洗浄と分解洗浄の違い
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerWordList_text">
+					<a href="#" class="l-footerWordList_textLink">作業完了までの流れ
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerWordList_text">
+					<a href="#" class="l-footerWordList_textLink">お申し込み
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerWordList_text">
+					<a href="#" class="l-footerWordList_textLink">エアコン名人会社概要
+						<i class="fa-solid fa-up-right-from-square"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="l-footerWordTell">
+				<p class="l-footerWordTell_text">お電話でのお問い合わせ</p>
+				<div class="l-footerWordTellBlock">
+					<div class="l-footerWordTellBlock_tellnumber">
+						<picture class="l-footerWordTellBlock_icon">
+							<source media="(min-width: 897px)" date-srcset="./common/img/footer-icon.png">
+							<source media="(min-width: 429px)" date-srcset="./common/img/footer-icon.png">
+							<img date-src="./common/img/footer-icon.png" src="./common/img/footer-icon.png" alt="" class="l-footerWordTellBlock_iconImg">
+						</picture>
+						<p class="l-footerWordTellBlock_number">0120-79-5959</p>
+					</div>
+					<div class="l-footerWordTellBlockInner">
+						<p class="l-footerWordTellBlockInner_text">
+							受付時間
+						</p>
+						<p class="l-footerWordTellBlockInner_time">9:00～19:00（年中無休）</p>
 					</div>
 				</div>
 			</div>
-			<div class="l-footerWordCopy">
-				<p class="l-footerWordCopy_text">
-					Copyright©2021 ブンクリ Co.,Ltd.All rights reserved
-				</p>
-			</div>
+		</div>
+		<div class="l-footerWordCopy">
+			<p class="l-footerWordCopy_text">
+				Copyright©2021 ブンクリ Co.,Ltd.All rights reserved
+			</p>
 		</div>
 	</footer>
 </div><!-- / WRAPPER  -->

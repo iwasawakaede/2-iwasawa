@@ -131,6 +131,11 @@
 			width: 100%;
 			margin: get_vw(27, $vwMd) auto 0;
 		}
+	&_rightImg {
+		@media #{$pointM} {
+			width: get_vw(262.5, $vwMd);
+		}
+	}
 		&-reverse {
 			width: 725px;
 			@media #{$pointM} {

@@ -112,7 +112,7 @@
 		padding-top: 8px;
 		@media #{$pointM} {
 			position: unset;
-			width: get_vw(150, $vwMd);
+			width: get_vw(99, $vwMd);
 		}
 	}
 }

@@ -444,7 +444,7 @@
 		margin: 0 auto;
 		@media #{$pointM} {
 			width: 100%;
-			padding: get_vw(20, $vwMd);
+			padding: get_vw(20, $vwMd) get_vw(20, $vwMd) 0 get_vw(20, $vwMd);
 		}
 	}
 	&_triangle {
@@ -491,7 +491,7 @@
 		align-items: center;
 		padding-top: 5px;
 		@media #{$pointM} {
-			padding-top: get_vw(15, $vwMd);;
+			padding-top: get_vw(15, $vwMd);
 		}
 		@media #{$pointS} {
 			padding-top: get_vw(5);
@@ -507,32 +507,74 @@
 		display: inline-block;
 		padding: 5px 10px 9px;
 		margin-right: 12px;
+		@media #{$pointM} {
+			border-radius: 5px;
+    	width: get_vw(75, $vwMd);
+    	padding: get_vw(2.5, $vwMd)get_vw(5, $vwMd)get_vw(4.5, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(5);
+		}
 	}
 	&_sellBlockText {
 		font-size: 2.2rem;
 		color: #ffff00;
 		font-weight: bold;
 		line-height: 1;
+		@media #{$pointM} {
+    	font-size: get_vw(18, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(18);
+		}
 	}
 	&_sellText {
 		color: #ff5267;
 		font-weight: 800;
 		font-size: 4.5rem;
 		line-height: 1;
+		@media #{$pointM} {
+    	font-size: get_vw(40, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(40);
+		}
 	}
 	&_sellTextSmall {
 		font-size: 20px;
 		font-weight: bold;
 		padding: 0 2px;
+		@media #{$pointM} {
+    	font-size: get_vw(18, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(18);
+		}
 	}
 	&_sellTextMIddle {
 		font-size: 3.1rem;
+		@media #{$pointM} {
+    	font-size: get_vw(28, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(28);
+		}
 	}
 	&_text {
 		width: 465px;
+		@media #{$pointM} {
+    	width: 100%;
+		}
 	}
 	&_image {
 		width: 444px;
+		@media #{$pointM} {
+			width: 50%;
+    	margin: 0 auto;
+		}
+		@media #{$pointS} {
+    	margin: 0 auto;
+		}
 	}
 	&_frame {
 		background-color: #f5ab00;
@@ -542,6 +584,15 @@
 		justify-content: center;
     padding: 10px;
 		margin-top: 30px;
+		@media #{$pointM} {
+			width: 70%;
+			padding: get_vw(8, $vwMd);
+    	margin: get_vw(15, $vwMd) auto;
+		}
+		@media #{$pointS} {
+			padding: get_vw(8);
+    	margin: get_vw(15) auto;
+		}
 	}
 	&_frameBoxText {
 		color: #ffffff;
@@ -559,12 +610,12 @@
 .p-topBlockOptionPrice {
 	border: 3px solid #1eb9ee;
 	border-radius: 10px;
-	width: 502px;
+	width: 507px;
 	display: flex;
 	margin: 72px 0 0 178px;
 	@media #{$pointM} {
 		border-radius: 5px;
-		width: 70%;
+		width: 65%;
 		margin: get_vw(21, $vwMd) auto get_vw(10, $vwMd);
 	}
 	&-second {
@@ -579,6 +630,9 @@
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
+		@media #{$pointM} {
+			width: 30%;
+		}
 	}
 	&_textBolcktext {
 		color: #fff;
@@ -592,12 +646,15 @@
 	}
 	&_priceBox {
 		color: #ff5267;
-		font-size: 40px;
 		font-weight: 800;
 		width: 350px;
 		display: flex;
 		align-items: baseline;
 		justify-content: center;
+		@media #{$pointM} {
+			// display: block;
+			width: 70%;
+		}
 	}
 	&_priceBoxText {
 		color: #333333;
@@ -605,7 +662,7 @@
 		font-size: 3rem;
 		line-height: 1.5;
 		@media #{$pointM} {
-			font-size: get_vw(15, $vwMd);
+			font-size: get_vw(28, $vwMd);
 		}
 		@media #{$pointS} {
 			font-size: get_vw(15);
@@ -615,11 +672,23 @@
 		color: #ff5267;
 		font-weight: 800;
 		font-size: 4rem;
-		margin-left: 26px;
+		// margin-left: 26px;
+		@media #{$pointM} {
+			font-size: get_vw(38, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(30);
+		}
 	}
 	&_priceBoxTextSmall {
 		color: #333333;
 		font-size: 1.8rem;
 		font-weight: 500;
+		@media #{$pointM} {
+			font-size: get_vw(17, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(17);
+		}
 	}
 }

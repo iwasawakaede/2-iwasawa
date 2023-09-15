@@ -46,6 +46,12 @@
 			color: #ff5267;
 			font-weight: bold;
 			font-size: 3rem;
+			@media #{$pointM} {
+				font-size: get_vw(27, $vwMd);
+			}
+			@media #{$pointS} {
+				@include fz_vw(20);
+			}
 		}
 	}
 	// アンダーラインがあるバージョン

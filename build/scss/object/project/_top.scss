@@ -82,13 +82,20 @@
 				padding-top: get_vw(25, $vwMd);
 			}
 		}
-	}
-	&_item {
 		&-topspace {
 			margin-top: 85px;
+			@media #{$pointM} {
+				margin-top: get_vw(25, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(40);
+			}
 		}
 		&-space {
 			margin-top: 52px;
+			@media #{$pointM} {
+				margin-top: get_vw(25, $vwMd);
+			}
 		}
 	}
 }
@@ -425,6 +432,9 @@
 	}
 	&-second {
 		padding: 25px 33px 25px 33px;
+		@media #{$pointM} {
+			padding: get_vw(20, $vwMd);
+		}
 	}
 	&-middle {
 		border: 4px solid #f6ab00;
@@ -434,6 +444,7 @@
 		margin: 0 auto;
 		@media #{$pointM} {
 			width: 100%;
+			padding: get_vw(20, $vwMd);
 		}
 	}
 	&_triangle {
@@ -451,11 +462,16 @@
 		@media #{$pointM} {
 			width: 100%;
 			margin: 0 auto;
-		}
+			padding-top: get_vw(62, $vwMd);
 		&-second {
 			width: 427px;
+			@media #{$pointM} {
+				width: 100%;
+				margin: 0 auto;
+			}
 		}
 	}
+}
 	&_textBox {
 		width: 560px;
 		@media #{$pointM} {
@@ -474,12 +490,18 @@
 		display: flex;
 		align-items: center;
 		padding-top: 5px;
+		@media #{$pointM} {
+			padding-top: get_vw(15, $vwMd);;
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(5);
+		}
 	}
 	&_sellBlock {
 		color: #555;
 		background: #ff5267;
 		text-align: center;
-		border-radius: 5px;
+		border-radius: 10px;
 		width: 75px;
 		position: relative;
 		display: inline-block;
@@ -540,8 +562,16 @@
 	width: 502px;
 	display: flex;
 	margin: 72px 0 0 178px;
+	@media #{$pointM} {
+		border-radius: 5px;
+		width: 70%;
+		margin: get_vw(21, $vwMd) auto get_vw(10, $vwMd);
+	}
 	&-second {
 		margin: 20px 0 0 198px;
+		@media #{$pointM} {
+			margin: get_vw(21, $vwMd) auto get_vw(10, $vwMd);
+		}
 	}
 	&_textBolck {
 		background-color: #1eb9ee;
@@ -553,6 +583,12 @@
 	&_textBolcktext {
 		color: #fff;
 		font-size: 2rem;
+		@media #{$pointM} {
+			font-size: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(18);
+		}
 	}
 	&_priceBox {
 		color: #ff5267;
@@ -568,6 +604,12 @@
 		font-weight: 800;
 		font-size: 3rem;
 		line-height: 1.5;
+		@media #{$pointM} {
+			font-size: get_vw(15, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(15);
+		}
 	}
 	&_priceBoxTextBig {
 		color: #ff5267;

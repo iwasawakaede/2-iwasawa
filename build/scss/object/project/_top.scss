@@ -283,6 +283,19 @@
 		@media #{$pointS} {
 			font-size: get_vw(14);
 		}
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-right: 3px dotted #1c4ca6;
+		}
+		&:nth-child(1) {
+			background-color: #69c08a;
+		}
+		&:nth-child(2) {
+			background-color: #1eb9ee;
+		}
+		&:nth-child(3) {
+			background-color: #1c4ca6;
+		}
 		&-space {
 			@media #{$pointM} {
 				padding: get_vw(9, $vwMd);
@@ -294,19 +307,6 @@
 				display: block;
 			}
 		}
-	}
-	&_thTitle:nth-child(1),
-	&_thTitle:nth-child(2) {
-		border-right: 3px dotted #1c4ca6;
-	}
-	&_thTitle:nth-child(1) {
-		background-color: #69c08a;
-	}
-	&_thTitle:nth-child(2) {
-		background-color: #1eb9ee;
-	}
-	&_thTitle:nth-child(3) {
-		background-color: #1c4ca6;
 	}
 	&_thText {
 		color: #333333;
@@ -419,7 +419,7 @@
 		border: 4px solid #f6ab00;
 		border-radius: 10px;
 		width: 1000px;
-		padding: 37px 36px 21px;
+		padding: 37px 36px 0;
 		margin: 0 auto;
 	}
 	&_triangle {
@@ -447,6 +447,7 @@
 	&_sell {
 		display: flex;
 		align-items: center;
+		padding-top: 5px;
 	}
 	&_sellBlock {
 		color: #555;
@@ -478,6 +479,33 @@
 	}
 	&_sellTextMIddle {
 		font-size: 3.1rem;
+	}
+	&_text {
+		width: 465px;
+	}
+	&_image {
+		width: 444px;
+	}
+	&_frame {
+		background-color: #f5ab00;
+		border-radius: 25px;
+		width: 350px;
+		display: flex;
+		justify-content: center;
+    padding: 10px;
+		margin-top: 30px;
+	}
+	&_frameBoxText {
+		color: #ffffff;
+		font-size: 1.6rem;
+		letter-spacing: 5px;
+	}
+	&_pic2 {
+		width: 24px;
+		margin-left: 18px;
+	}
+	&_picImg {
+		margin-bottom: 2px;
 	}
 }
 .p-topBlockList {

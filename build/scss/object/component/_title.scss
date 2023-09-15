@@ -19,8 +19,14 @@
 				display: none;
 			}
 		}
-		&-sizeXS {
+		&-size {
 			font-size: 2.4rem;
+			@media #{$pointM} {
+				font-size: get_vw(30, $vwMd);
+			}
+			@media #{$pointS} {
+				@include fz_vw(20);
+			}
 		}
 		&-sizeS {
 			font-size: 3rem;

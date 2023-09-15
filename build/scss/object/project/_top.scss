@@ -13,11 +13,9 @@
 // } 
 
 .p-topBanner {
-	&-space {
-		margin:110px auto 60px;
-		@media #{$pointM} {
-			margin: get_vw(50, $vwMd) auto get_vw(50, $vwMd);
-		}
+	margin:110px auto 60px;
+	@media #{$pointM} {
+		margin: get_vw(50, $vwMd) auto get_vw(50, $vwMd);
 	}
 	&_inner {
 		width: 1002px;
@@ -42,7 +40,7 @@
 		margin: 75px auto;
 		@media #{$pointM} {
 			width: 100%;
-			padding: 0 get_vw(20, $vwMd);
+			padding: 0 get_vw(20, $vwMd) get_vw(20, $vwMd);
 			margin: get_vw(50, $vwMd) auto get_vw(20, $vwMd);
 		}
 		@media #{$pointS} {
@@ -135,26 +133,17 @@
 	border-radius: 10px;
 	position: relative;
   display: inline-block;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5em -21px;
   padding: 5px 10px 9px;
   width: 165px;
 	@media #{$pointM} {
 		border-radius: get_vw(10, $vwMd);
-		margin: 0 0 get_vw(16, $vwMd);
+		margin: 0 0 get_vw(16, $vwMd) 0;
 		padding: get_vw(5, $vwMd) get_vw(10, $vwMd) get_vw(9, $vwMd);
 		width: get_vw(140, $vwMd);
 	}
 	@media #{$pointS} {
 		padding: get_vw(2) get_vw(5) get_vw(2);
-	}
-	&-speace {
-		margin-left: -21px;
-		@media #{$pointM} {
-			margin-left: 0;
-		}
-		@media #{$pointS} {
-			// margin: get_vw(10) 0 get_vw(4);
-		}
 	}
 	&_text {
 		color: #ffff00;
@@ -252,7 +241,7 @@
 		}
 	}
 }
-.p-topTablebox {
+.p-topTable {
 	background-color: #ffffff;
 	text-align: center;
 	border-radius: 10px;
@@ -270,6 +259,7 @@
 	}
 	&_thTitle {
 		color: #fff;
+		background-color: #69c08a;
 		font-family: "Noto Sans jp";
 		font-size: 3rem;
 		font-weight: bold;
@@ -279,6 +269,7 @@
 		@media #{$pointM} {
 			font-size: get_vw(16, $vwMd);
 			width: 33%;
+			padding: get_vw(9, $vwMd);
 		}
 		@media #{$pointS} {
 			font-size: get_vw(14);
@@ -287,18 +278,14 @@
 		&:nth-child(2) {
 			border-right: 3px dotted #1c4ca6;
 		}
-		&:nth-child(1) {
-			background-color: #69c08a;
-		}
-		&:nth-child(2) {
+		&-bgcolor2 {
 			background-color: #1eb9ee;
 		}
-		&:nth-child(3) {
+		&-bgcolor3 {
 			background-color: #1c4ca6;
 		}
 		&-space {
 			@media #{$pointM} {
-				padding: get_vw(9, $vwMd);
 			}
 		}
 		&-break {
@@ -324,17 +311,17 @@
 			font-size: get_vw(18);
 			padding: 0 get_vw(5);
 		}
-	}
-	&_thTextBig {
-		font-size: 5.5rem;
-		font-weight: 800;
-		@media #{$pointM} {
-			font-size: get_vw(22, $vwMd);
-			padding: get_vw(25, $vwMd) 0;
-		}
-		@media #{$pointS} {
-			font-size: get_vw(22);
-			padding: get_vw(25) 0;
+		&-big {
+			font-size: 5.5rem;
+			font-weight: 800;
+			@media #{$pointM} {
+				font-size: get_vw(22, $vwMd);
+				padding: get_vw(25, $vwMd) 0;
+			}
+			@media #{$pointS} {
+				font-size: get_vw(22);
+				padding: get_vw(25) 0;
+			}
 		}
 	}
 	&_thText,
@@ -359,36 +346,36 @@
 		@media #{$pointS} {
 			padding: get_vw(9) 0 get_vw(8);
 		}
+		&-big {
+			color: #ff5267;
+			font-size: 5.5rem;
+			font-weight: 800;
+			font-family: "Noto Sans jp";
+			text-align: right;
+			@media #{$pointM} {
+				font-size: get_vw(30, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(24);
+			}
+		}
+		&-small {
+			color: #333333;
+			font-size: 1.8rem;
+			font-family: "Noto Sans jp";
+			text-align: right;
+			@media #{$pointM} {
+				font-size: get_vw(13, $vwMd);
+				margin-right: get_vw(50, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(13);
+			}
+		}
 	}
 	&_thText:nth-child(1),
 	&_tdText:nth-child(2) {
 		border-right: 3px dotted #1c4ca6;
-	}
-	&_tdTextBig {
-		color: #ff5267;
-		font-size: 5.5rem;
-		font-weight: 800;
-		font-family: "Noto Sans jp";
-		text-align: right;
-		@media #{$pointM} {
-			font-size: get_vw(30, $vwMd);
-		}
-		@media #{$pointS} {
-			font-size: get_vw(24);
-		}
-	}
-	&_tdTextSmall {
-		color: #333333;
-		font-size: 1.8rem;
-		font-family: "Noto Sans jp";
-		text-align: right;
-		@media #{$pointM} {
-			font-size: get_vw(13, $vwMd);
-			margin-right: get_vw(50, $vwMd);
-		}
-		@media #{$pointS} {
-			font-size: get_vw(13);
-		}
 	}
 }
 // -----------------------------------------------
@@ -398,10 +385,17 @@
 	&_width {
 		width: 1248px;
 		margin: 0 auto;
+		@media #{$pointM} {
+			width: 100%;
+		}
 	}
 	&_pic {
 		width: 479px;
+		padding-top: 20px;
 		margin: 0 auto;
+		@media #{$pointM} {
+			width: 50%;
+		} 
 	}
 }
 .p-topBlockOption {
@@ -412,6 +406,9 @@
 	justify-content: space-between;
 	position: relative;
 	padding: 25px 146px 20px 36px;
+	@media #{$pointM} {
+		width: 100%;
+	}
 	&-second {
 		padding: 25px 33px 25px 33px;
 	}

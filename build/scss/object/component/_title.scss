@@ -19,17 +19,28 @@
 				display: none;
 			}
 		}
-		&-size {
+		&-content {
 			font-size: 2.4rem;
+			text-align: center;
+			padding-top: 10px;
 			@media #{$pointM} {
-				font-size: get_vw(30, $vwMd);
+				font-size: get_vw(40, $vwMd);
+				padding-top: get_vw(12, $vwMd);
 			}
 			@media #{$pointS} {
-				@include fz_vw(20);
+				@include fz_vw(5);
 			}
 		}
-		&-sizeS {
+		&-tabtext {
 			font-size: 3rem;
+			@media #{$pointM} {
+				font-size: get_vw(32, $vwMd);
+				padding-top: get_vw(10, $vwMd);
+
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18);
+			}
 		}
 		&-color {
 			color: #ff5267;

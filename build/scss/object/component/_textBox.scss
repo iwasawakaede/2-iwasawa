@@ -29,12 +29,12 @@
 		// テキストを表示するためのcssは書いてOK！
 		// ある程度テキストが固まってるので、余白はセットで入れてよい
 		@media #{$pointM} {
-			font-size: get_vw(14, $vwMd);
+			font-size: get_vw(15, $vwMd);
 			line-height: 1.6;
 			padding-top: get_vw(20, $vwMd);
 		}
 		@media #{$pointS} {
-			@include fz_vw(14);
+			@include fz_vw(15);
 			padding-top: get_vw(8);
 		}
 		&-weight {
@@ -44,5 +44,8 @@
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
 	&_text:first-child {
 		padding-top: 0;
+	}
+	&-tabtext {
+		padding-top: get_vw(10, $vwMd);
 	}
 }

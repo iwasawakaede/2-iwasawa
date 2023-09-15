@@ -83,6 +83,14 @@
 			}
 		}
 	}
+	&_item {
+		&-topspace {
+			margin-top: 85px;
+		}
+		&-space {
+			margin-top: 52px;
+		}
+	}
 }
 .p-topPoint{
 	display: flex;
@@ -382,7 +390,7 @@
 // OPTION
 // -----------------------------------------------
 .p-topBlock{
-	&_width {
+	&_inner {
 		width: 1248px;
 		margin: 0 auto;
 		@media #{$pointM} {
@@ -395,6 +403,10 @@
 		margin: 0 auto;
 		@media #{$pointM} {
 			width: 50%;
+			padding-top: get_vw(20, $vwMd);
+		} 
+		@media #{$pointS} {
+			padding-top: get_vw(18);
 		} 
 	}
 }
@@ -408,6 +420,8 @@
 	padding: 25px 146px 20px 36px;
 	@media #{$pointM} {
 		width: 100%;
+		display: block;
+		padding: get_vw(20, $vwMd);
 	}
 	&-second {
 		padding: 25px 33px 25px 33px;
@@ -418,6 +432,9 @@
 		width: 1000px;
 		padding: 37px 36px 0;
 		margin: 0 auto;
+		@media #{$pointM} {
+			width: 100%;
+		}
 	}
 	&_triangle {
 		position: absolute;
@@ -431,14 +448,26 @@
 	}
 	&_img {
 		width: 458px;
+		@media #{$pointM} {
+			width: 100%;
+			margin: 0 auto;
+		}
 		&-second {
 			width: 427px;
 		}
 	}
 	&_textBox {
 		width: 560px;
+		@media #{$pointM} {
+			width: 100%;
+			margin: 0 auto;
+		}
 		&-width {
 			width: 690px;
+			@media #{$pointM} {
+				width: 100%;
+				margin: 0 auto;
+			}
 		}
 	}
 	&_sell {
@@ -503,16 +532,6 @@
 	}
 	&_picImg {
 		margin-bottom: 2px;
-	}
-}
-.p-topBlockList {
-	&_item {
-		&-topspace {
-			margin-top: 85px;
-		}
-		&-space {
-			margin-top: 52px;
-		}
 	}
 }
 .p-topBlockOptionPrice {

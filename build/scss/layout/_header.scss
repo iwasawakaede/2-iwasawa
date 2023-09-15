@@ -264,18 +264,18 @@ a {
 		position: fixed;
 		/*ナビのスタート位置と形状*/
 		/*ナビの高さ*/
-		top: 118px;
+		top: 84px;
 		// 作成後にマイナスの値に変更して、表示しないようにする
 		right: -120%;
 		width: 100%;
-		height: calc(100vh - 117px);
+		height: calc(100vh - 84px);
 		background: #fff;
 		/*動き*/
 		transition: all 0.6s;
 	}
 	@media #{$pointS} {
-    height: calc(100vh - 86.5px);
-    top: 88px;
+    height: calc(100vh - 64px);
+    top: 64px;
 	}
 }
 .l-headerNumber {

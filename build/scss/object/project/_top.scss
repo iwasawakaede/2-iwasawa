@@ -346,6 +346,9 @@
 		&-decoration {
 			border-bottom: none;
 		}
+		&-none {
+		border-bottom: none;
+		}
 	}
 	&_tdText {
 		color: #333;
@@ -391,6 +394,9 @@
 				margin-right: 0;
 			}
 		}
+		&-none {
+			border-bottom: none;
+			}
 	}
 	&_thText:nth-child(1),
 	&_tdText:nth-child(2) {

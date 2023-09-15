@@ -28,7 +28,7 @@
 				padding-top: get_vw(12, $vwMd);
 			}
 			@media #{$pointS} {
-				@include fz_vw(5);
+				@include fz_vw(25);
 			}
 		}
 		&-tabtext {
@@ -39,7 +39,7 @@
 
 			}
 			@media #{$pointS} {
-				font-size: get_vw(18);
+				font-size: get_vw(20);
 			}
 		}
 		&-color {
@@ -75,10 +75,12 @@
 			left: 0px;
 				@media #{$pointM} {
 				width: get_vw(60, $vwMd);
+				height: 4px;
 				bottom: get_vw(5, $vwMd);
 				}
 				@media #{$pointS} {
 					width: get_vw(60);
+					height: 3px;
 					bottom: get_vw(5);
 					}
 		}

@@ -453,8 +453,24 @@
 		right: 0;
 		border-bottom: 85px solid transparent;
 		border-right: 85px solid #2e59a7;
+		@media #{$pointM} {
+			border-bottom: 40px solid transparent;
+			border-right: 40px solid #2e59a7;
+		}
+		@media #{$pointS} {
+			border-bottom: 30px solid transparent;
+			border-right: 30px solid #2e59a7;
+		}
 		&-color {
 			border-right: 85px solid #f6ab00;
+			@media #{$pointM} {
+				border-bottom: 40px solid transparent;
+				border-right: 40px solid #f6ab00;
+			}
+			@media #{$pointS} {
+				border-bottom: 30px solid transparent;
+				border-right: 30px solid #f6ab00;
+			}
 		}
 	}
 	&_img {
@@ -585,7 +601,7 @@
     padding: 10px;
 		margin-top: 30px;
 		@media #{$pointM} {
-			width: 70%;
+			width: 60%;
 			padding: get_vw(8, $vwMd);
     	margin: get_vw(15, $vwMd) auto;
 		}
@@ -598,13 +614,32 @@
 		color: #ffffff;
 		font-size: 1.6rem;
 		letter-spacing: 5px;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+			letter-spacing: get_vw(5, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(14);
+		}
 	}
 	&_pic2 {
 		width: 24px;
 		margin-left: 18px;
+		@media #{$pointM} {
+			width: get_vw(24, $vwMd);
+		}
+		@media #{$pointS} {
+			width: get_vw(24);
+		}
 	}
 	&_picImg {
 		margin-bottom: 2px;
+		@media #{$pointM} {
+			width: get_vw(2, $vwMd);
+		}
+		@media #{$pointS} {
+			width: get_vw(2);
+		}
 	}
 }
 .p-topBlockOptionPrice {
@@ -617,6 +652,10 @@
 		border-radius: 5px;
 		width: 65%;
 		margin: get_vw(21, $vwMd) auto get_vw(10, $vwMd);
+	}
+	@media #{$pointS} {
+		width: 95%;
+		margin: get_vw(21) auto get_vw(10);
 	}
 	&-second {
 		margin: 20px 0 0 198px;
@@ -641,7 +680,7 @@
 			font-size: get_vw(20, $vwMd);
 		}
 		@media #{$pointS} {
-			font-size: get_vw(18);
+			font-size: get_vw(17);
 		}
 	}
 	&_priceBox {
@@ -652,7 +691,6 @@
 		align-items: baseline;
 		justify-content: center;
 		@media #{$pointM} {
-			// display: block;
 			width: 70%;
 		}
 	}
@@ -672,12 +710,11 @@
 		color: #ff5267;
 		font-weight: 800;
 		font-size: 4rem;
-		// margin-left: 26px;
 		@media #{$pointM} {
 			font-size: get_vw(38, $vwMd);
 		}
 		@media #{$pointS} {
-			font-size: get_vw(30);
+			font-size: get_vw(29);
 		}
 	}
 	&_priceBoxTextSmall {

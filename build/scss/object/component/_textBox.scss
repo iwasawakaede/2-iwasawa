@@ -41,7 +41,12 @@
 			font-weight: 600;
 		}
 		&-tabtop {
-			padding-top: get_vw(10, $vwMd);
+			@media #{$pointM} {
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(10);
+			}
 		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。

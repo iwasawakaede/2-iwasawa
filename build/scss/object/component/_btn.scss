@@ -110,7 +110,7 @@
 		position: relative;
 		top: 10px;
 		padding-top: 8px;
-		@media #{$pointM} {
+		@media #{$pointS} {
 			position: unset;
 			width: get_vw(99, $vwMd);
 		}

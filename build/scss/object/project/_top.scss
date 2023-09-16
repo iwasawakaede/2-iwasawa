@@ -140,7 +140,7 @@
 			margin: get_vw(27, $vwMd) auto 0;
 		}
 	&_rightImg {
-		@media #{$pointM} {
+		@media #{$pointS} {
 			width: get_vw(262.5, $vwMd);
 		}
 	}
@@ -440,7 +440,7 @@
 		} 
 	}
 	&_picImg {
-		@media #{$pointM} {
+		@media #{$pointS} {
 			width: get_vw(229, $vwMd);
 		} 
 	}
@@ -510,20 +510,13 @@
 			padding-top: get_vw(62, $vwMd);
 		&-second {
 			width: 427px;
-			@media #{$pointM} {
-				width: 100%;
+			@media #{$pointS} {
+				width: get_vw(213.5, $vwMd);
 				margin: 0 auto;
 			}
 		}
 	}
 }
-	&_pic {
-		width: 427px;
-		margin: 0 auto;
-		@media #{$pointM} {
-			width: get_vw(213.5, $vwMd);
-		}
-	}
 	&_textBox {
 		width: 560px;
 		@media #{$pointM} {

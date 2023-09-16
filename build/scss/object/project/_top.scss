@@ -198,6 +198,17 @@
     width: 190px;
 		padding: 4px 10px 9px;
 		margin: 0px 0 1.5em 3px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 58%;
+			left: 49%;
+			margin-left: -15px;
+			border-top: 70px solid #ff5267;
+			transform: rotate(-39deg);
+			border-left: 30px solid transparent;
+			z-index: -1;
+		}
 	}
 }
 // 三角部分
@@ -215,6 +226,55 @@
 		border-top: get_vw(13, $vwMd) solid #ff5267;
 	}
 }
+.p-topBlockObjectRoll {
+	color: #555;
+  background: #ff5267;
+	text-align: center;
+	border-radius: 10px;
+	position: relative;
+  display: inline-block;
+  margin: 0px 0 1.5em 3px;
+  padding: 4px 10px 9px;
+  width: 190px;
+	z-index: 1;
+	@media #{$pointM} {
+		border-radius: get_vw(10, $vwMd);
+		margin: 0 0 get_vw(16, $vwMd) 0;
+		padding: get_vw(5, $vwMd) get_vw(10, $vwMd) get_vw(9, $vwMd);
+		width: get_vw(140, $vwMd);
+	}
+	@media #{$pointS} {
+		width: 20%;
+		padding: get_vw(2) get_vw(5) get_vw(2);
+	}
+	&_text {
+		color: #ffff00;
+		font-size: 3.6rem;
+		font-weight: bold;
+		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(27, $vwMd);
+		}
+		&-sizeL {
+			font-size: 3.6rem;
+		}
+		&-number {
+			color: #fff;
+		}
+	}
+}
+.p-topBlockObjectRoll::before {
+	content: "";
+	position: absolute;
+	top: 61%;
+	left: 31%;
+	margin-left: -15px;
+	border-top: 55px solid #ff5267;
+	border-left: 49px solid transparent;
+	transform: rotate(-20deg);
+	z-index: -1;
+}
+
 // -----------------------------------------------
 // PRICE
 // -----------------------------------------------

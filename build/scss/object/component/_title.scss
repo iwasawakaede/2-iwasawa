@@ -53,6 +53,9 @@
 				@include fz_vw(20);
 			}
 		}
+		&-sizeS {
+			font-size: 2.5rem;
+		}
 	}
 	// アンダーラインがあるバージョン
 	&-line {

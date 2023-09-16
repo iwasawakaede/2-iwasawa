@@ -55,6 +55,9 @@
 				width: 100%;
 			}
 		}
+		&-frame {
+			width: 1445px;
+		}
 	}
 	&_textBox {
 		padding-top: 17px;
@@ -72,6 +75,20 @@
 		@media #{$pointS} {
 			font-size: get_vw(9);
 		}
+	}
+	&_innerFlex {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		row-gap: 95px;
+		width: 1445px;
+	}
+	&_content {
+		background-color: #ffffff;
+		border: 3px solid #1eb9ee;
+		border-radius: 10px;
+		width: 683px;
+		padding: 20px 26px;
 	}
 }
 .p-topBlockList {
@@ -173,6 +190,14 @@
 		&-number {
 			color: #fff;
 		}
+		&-sizeL {
+			font-size: 3.6rem;
+		}
+	}
+	&-just {
+    width: 190px;
+		padding: 4px 10px 9px;
+		margin: 0px 0 1.5em 3px;
 	}
 }
 // 三角部分

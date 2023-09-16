@@ -274,8 +274,8 @@ a {
 		transition: all 0.6s;
 	}
 	@media #{$pointS} {
-    height: calc(100vh - 74px);
-    top: 74px;
+		height: calc(100vh - 74px);
+		top: 74px;
 	}
 }
 .l-headerNumber {
@@ -286,8 +286,8 @@ a {
 		display: none;
 	}
 	&_img {
-    line-height: 0;
-    vertical-align: baseline;
+		line-height: 0;
+		vertical-align: baseline;
 		width: 42px;
 		height: 23px;
 	}

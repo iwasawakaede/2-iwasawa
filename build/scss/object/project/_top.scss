@@ -139,11 +139,10 @@
 			width: 100%;
 			margin: get_vw(27, $vwMd) auto 0;
 		}
-	&_rightImg {
 		@media #{$pointS} {
-			width: get_vw(262.5, $vwMd);
+			width: get_vw(262.5);
+			margin: 0 auto;
 		}
-	}
 		&-reverse {
 			width: 725px;
 			@media #{$pointM} {
@@ -151,6 +150,16 @@
 			}
 		}
 	}
+	&_rightImg {
+		@media #{$pointS} {
+			width: get_vw(262.5);
+		}
+	}
+		&_rightImg2 {
+		@media #{$pointS} {
+			width:  get_vw(362.5);
+	}
+}
 }
 // 吹き出し
 // 角丸長方形
@@ -441,7 +450,7 @@
 	}
 	&_picImg {
 		@media #{$pointS} {
-			width: get_vw(229, $vwMd);
+			width: get_vw(229);
 		} 
 	}
 }
@@ -505,18 +514,23 @@
 		width: 458px;
 		margin: 0 auto;
 		@media #{$pointM} {
-			width: get_vw(229, $vwMd);
+			width: get_vw(458, $vwMd);
 			margin: 0 auto;
 			padding-top: get_vw(62, $vwMd);
+		}
 		&-second {
 			width: 427px;
 			@media #{$pointS} {
-				width: get_vw(213.5, $vwMd);
+				width: get_vw(213.5);
 				margin: 0 auto;
 			}
 		}
+		&_pic1 {
+			@media #{$pointS} {
+				width: get_vw(229);
+			}
+		}
 	}
-}
 	&_textBox {
 		width: 560px;
 		@media #{$pointM} {
@@ -615,11 +629,12 @@
 	&_image {
 		width: 444px;
 		@media #{$pointM} {
-			width: 100%;
-    	margin: 0 auto;
+			width: get_vw(222, $vwMd);
+			margin: 0 auto;
 		}
 		@media #{$pointS} {
-    	margin: 0 auto;
+			width: get_vw(100);
+			margin: 0 auto;
 		}
 	}
 	&_icon {
@@ -662,9 +677,6 @@
 	&_pic2 {
 		width: 24px;
 		margin-left: 18px;
-		@media #{$pointM} {
-			width: get_vw(24, $vwMd);
-		}
 		@media #{$pointS} {
 			width: get_vw(24);
 		}
@@ -673,7 +685,6 @@
 		width: 24px;
 		margin-bottom: 2px;
 		@media #{$pointM} {
-			width: get_vw(12, $vwMd);
 			margin-bottom: get_vw(2, $vwMd);
 		}
 		@media #{$pointS} {

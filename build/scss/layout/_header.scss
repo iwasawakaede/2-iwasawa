@@ -247,7 +247,7 @@ a {
 	width: 280px;
 	margin: 0 20px 0 15px;
 	@media #{$pointM} {
-					width: get_vw(140, $vwMd);
+					width: get_vw(200, $vwMd);
 					margin: get_vw(10, $vwMd) get_vw(12, $vwMd) 0 0;
 				}
 	@media #{$pointS} {

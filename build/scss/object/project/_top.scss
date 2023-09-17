@@ -80,7 +80,6 @@
 		width: 1445px;
 		margin: 0 auto;
 		padding-top: 65px;
-		position: relative;
 	}
 }
 .p-topBlockFlex {
@@ -89,12 +88,16 @@
 	justify-content: space-between;
 	row-gap: 95px;
 	width: 1445px;
+	position: relative;
 	&_item {
 		background-color: #ffffff;
 		border: 3px solid #1eb9ee;
 		border-radius: 10px;
 		width: 683px;
 		padding: 20px 26px;
+	}
+	&_content {
+		position: relative;
 	}
 	&_contentImg {
 		width: 550px;
@@ -103,8 +106,8 @@
 	&_image {
 		width: 311px;
 		position: absolute;
-		top: 0%;
-		left: 0%;
+		top: 49%;
+		left: 41%;
 	}
 }
 .p-topBlockList {
@@ -533,6 +536,7 @@
 		&-frame {
 			width: 1445px;
 			margin: 100px auto;
+			position: relative;
 		}
 	}
 	&_pic {

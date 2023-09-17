@@ -76,15 +76,20 @@
 			font-size: get_vw(9);
 		}
 	}
-	&_innerFlex {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		row-gap: 95px;
+	&_innerBox {
 		width: 1445px;
+		margin: 0 auto;
 		padding-top: 65px;
+		position: relative;
 	}
-	&_content {
+}
+.p-topBlockFlex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 95px;
+	width: 1445px;
+	&_item {
 		background-color: #ffffff;
 		border: 3px solid #1eb9ee;
 		border-radius: 10px;
@@ -93,7 +98,13 @@
 	}
 	&_contentImg {
 		width: 550px;
-    margin: 20px auto;
+		margin: 20px auto;
+	}
+	&_image {
+		width: 311px;
+		position: absolute;
+		top: 0%;
+		left: 0%;
 	}
 }
 .p-topBlockList {
@@ -253,6 +264,7 @@
 		padding: get_vw(2) get_vw(5) get_vw(2);
 	}
 	&::before {
+		content: "";
 		position: absolute;
 		top: 61%;
 		left: 31%;
@@ -264,6 +276,17 @@
 	}
 	&-rev {
 		margin: 0px 0 1.5em 440px;
+		&::before {
+			border-right: 49px solid transparent;
+			top: 73%;
+			left: unset;
+			right: 31%;
+			transform: rotate(20deg);
+			margin-left: -55px;
+			border-top: 45px solid #ff5267;
+			border-right: 37px solid transparent;
+			border-left: none;
+		}
 	}
 	&_text {
 		color: #ffff00;
@@ -281,23 +304,6 @@
 		}
 	}
 }
-.p-topBlockObjectRoll::before {
-	content: "";
-	position: absolute;
-	top: 61%;
-	left: 31%;
-	margin-left: -15px;
-	border-top: 55px solid #ff5267;
-	border-left: 49px solid transparent;
-	transform: rotate(-20deg);
-	z-index: -1;
-	&::before {
-		right: 31%;
-		border-right: 49px solid transparent;
-		transform: rotate(20deg);
-	}
-}
-
 // -----------------------------------------------
 // PRICE
 // -----------------------------------------------

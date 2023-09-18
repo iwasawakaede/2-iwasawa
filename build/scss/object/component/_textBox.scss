@@ -52,6 +52,9 @@
 			font-weight: 600;
 			line-height: 1.8;
 			margin-top: 7px;
+			@media #{$pointM} {
+				margin-top: 0;
+			}
 		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。

@@ -97,6 +97,9 @@
 			min-width: initial;
 			padding-top: get_vw(65, $vwMd);
 		}
+		@media #{$pointS} {
+			padding-top: get_vw(35);
+		}
 	}
 }
 .p-topBlockFlex {
@@ -115,6 +118,9 @@
 		width: 100%;
 		padding: 0 get_vw(15, $vwMd);
 	}
+	@media #{$pointS} {
+		padding: 0 get_vw(10);
+	}
 	&_item {
 		background-color: #ffffff;
 		border: 3px solid #1eb9ee;
@@ -124,6 +130,9 @@
 		@media #{$pointM} {
 			width: 100%;
 			padding: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(10);
 		}
 		&-tabspace {
 			@media #{$pointM} {
@@ -326,8 +335,8 @@
 		width: get_vw(140, $vwMd);
 	}
 	@media #{$pointS} {
-		width: 20%;
-		padding: get_vw(2) get_vw(5) get_vw(2);
+		width: 25%;
+		padding: get_vw(5) get_vw(4) get_vw(6);
 	}
 	&::before {
 		content: "";
@@ -343,6 +352,10 @@
 			border-top: get_vw(45, $vwMd) solid #ff5267;
 			border-left: get_vw(39, $vwMd) solid transparent;
 		}
+		@media #{$pointS} {
+			border-top: get_vw(25) solid #ff5267;
+			border-left: get_vw(19) solid transparent;
+		}
 	}
 	&-rev {
 		margin: 0px 0 1.5em 403px;
@@ -351,6 +364,10 @@
 			margin: 0 0 get_vw(16, $vwMd) 0;
 			padding: get_vw(5, $vwMd) get_vw(10, $vwMd) get_vw(9, $vwMd);
 			width: get_vw(140, $vwMd);
+		}
+		@media #{$pointS} {
+			width: 25%;
+			padding: get_vw(5) get_vw(4) get_vw(6);
 		}
 		&::before {
 			border-right: 49px solid transparent;
@@ -371,6 +388,10 @@
 				border-right: none;
 				margin-left: get_vw(-15, $vwMd);
 			}
+			@media #{$pointS} {
+				border-top: get_vw(25) solid #ff5267;
+				border-left: get_vw(19) solid transparent;
+			}
 		}
 	}
 	&_text {
@@ -380,6 +401,9 @@
 		line-height: 1;
 		@media #{$pointM} {
 			font-size: get_vw(27, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(20);
 		}
 		&-sizeL {
 			font-size: 3.6rem;
@@ -425,7 +449,7 @@
 		@media #{$pointM} {
 			font-size: get_vw(22, $vwMd);
 		}
-		@media #{$pointM} {
+		@media #{$pointS} {
 			font-size: get_vw(22);
 			padding-top: get_vw(25);
 		}
@@ -458,6 +482,9 @@
 			padding-top: 15px;
 			@media #{$pointM} {
 				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(5);
 			}
 		}
 	}

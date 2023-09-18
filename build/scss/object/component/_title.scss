@@ -58,6 +58,11 @@
 			padding-top: 6.5px;
 			@media #{$pointM} {
 				font-size: get_vw(27, $vwMd);
+				padding-top: get_vw(12, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(20);
+				padding-top: get_vw(12);
 			}
 		}
 	}

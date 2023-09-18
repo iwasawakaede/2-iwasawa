@@ -22,6 +22,9 @@
 		@media #{$pointM} {
 			padding-top: get_vw(20, $vwMd);
 		}
+		@media #{$pointS} {
+			padding-top: get_vw(5);
+		}
 	&_text {
 		color: #333333;
 		font-size: 1.6rem;

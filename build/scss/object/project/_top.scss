@@ -8,9 +8,9 @@
 // バナー・お申込み部分
 // -----------------------------------------------
 
-//  body * {
-// 	outline: red 1px solid;
-// } 
+ body * {
+	outline: red 1px solid;
+} 
 
 .p-topBanner {
 	margin:110px auto 60px;
@@ -31,11 +31,21 @@
 // ポイント部分
 // -----------------------------------------------
 .p-topBlock{
+	@media #{$pointM} {
+		width: 100%;
+	}
 	&-change {
 		background-color: #fffcf3;
 	}
 	&-topspace {
+		width: 1445px;
+		min-width: 1440px;
 		padding-top: 70px;
+		margin: 0 auto;
+		@media #{$pointM} {
+			min-width: initial;
+			width: 100%;
+		}
 	}
 	&_inner {
 		width: 1440px;
@@ -78,23 +88,39 @@
 	}
 	&_innerBox {
 		width: 1445px;
+		min-width: 1440px;
 		margin: 0 auto;
 		padding-top: 65px;
+		@media #{$pointM} {
+			width: 100%;
+			min-width: initial;
+		}
 	}
 }
 .p-topBlockFlex {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	row-gap: 95px;
+	gap: 95px 76px;
 	width: 1445px;
+	min-width: 1440px;
 	position: relative;
+	padding: 0 30px;
+	margin: 0 auto;
+	@media #{$pointM} {
+		display: block;
+		min-width: initial;
+		width: 100%;
+	}
 	&_item {
 		background-color: #ffffff;
 		border: 3px solid #1eb9ee;
 		border-radius: 10px;
-		width: 683px;
+		width: 47%;
 		padding: 20px 26px;
+		@media #{$pointM} {
+			width: 100%;
+		}
 	}
 	&_content {
 		position: relative;
@@ -104,10 +130,13 @@
 		margin: 20px auto;
 	}
 	&_image {
-		width: 311px;
+		min-width: 311px;
 		position: absolute;
-		top: 49%;
-		left: 41%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		-webkit-transform: translate(-50%);
+		-ms-transform: translate(-50%);
 	}
 }
 .p-topBlockList {
@@ -121,6 +150,7 @@
 		&-topspace {
 			margin-top: 85px;
 			@media #{$pointM} {
+				width: 100%;
 				margin-top: get_vw(25, $vwMd);
 			}
 			@media #{$pointS} {
@@ -278,7 +308,7 @@
 		z-index: -1;
 	}
 	&-rev {
-		margin: 0px 0 1.5em 440px;
+		margin: 0px 0 1.5em 403px;
 		&::before {
 			border-right: 49px solid transparent;
 			top: 73%;
@@ -530,13 +560,19 @@
 	&_inner {
 		width: 1248px;
 		margin: 0 auto;
+		padding: 30px 0;
 		@media #{$pointM} {
 			width: 100%;
 		}
 		&-frame {
 			width: 1445px;
+			min-width: 1440px;
 			margin: 100px auto;
 			position: relative;
+			@media #{$pointM} {
+				min-width: initial;
+				width: 100%;
+			}
 		}
 	}
 	&_pic {

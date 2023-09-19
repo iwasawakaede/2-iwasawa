@@ -80,12 +80,6 @@
 				padding-top: get_vw(12);
 			}
 		}
-		// &-marker {
-		// 	background-color: #ffff00;
-		// 	width: 436px;
-		// 	height: 10px;
-		// 	padding-top: 10px;
-		// }
 	}
 	// アンダーラインがあるバージョン
 	&-line {
@@ -116,6 +110,18 @@
 					height: 3px;
 					bottom: get_vw(5);
 					}
+		}
+	}
+	&-pc {
+		@media #{$pointM} {
+			display: none;
+		}
+	}
+	&-tab {
+		display: none;
+		@media #{$pointM} {
+			text-align: center;
+			display: block;
 		}
 	}
 }

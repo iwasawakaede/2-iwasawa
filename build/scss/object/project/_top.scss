@@ -113,7 +113,7 @@
 	padding: 0 30px;
 	margin: 0 auto;
 	@media #{$pointM} {
-		display: block;
+		// display: block;
 		min-width: initial;
 		width: 100%;
 		padding: 0 get_vw(15, $vwMd);
@@ -184,6 +184,45 @@
 		}
 	}
 }
+
+.p-topBlockFlex {
+	// slickをハックするcss
+	.slick-prev {
+		@media #{$pointM} {
+			left: 4%;
+			z-index: 10;
+		}
+		&::before {
+			@media #{$pointM} {
+				color: #000;
+				font-size: get_vw(32, $vwMd);
+			}
+		}
+	}
+	.slick-next {
+		@media #{$pointM} {
+			right: 4%;
+			z-index: 10;
+		}
+		&::before {
+			@media #{$pointM} {
+				color: #000;
+				font-size: get_vw(32, $vwMd);
+			}
+		}
+	}
+}
+
+// .slick-dotted {
+// 	@media #{$pointM} {
+// 		left: 71px;
+// 	}
+// }
+// .slick-dotted {
+// 	@media #{$pointM} {
+// 		color: #000;
+// 		}
+// }
 .p-topBlockList {
 	&_item {
 		&-second {

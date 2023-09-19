@@ -58,9 +58,9 @@ function checkBreakPoint() {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,
-			autoplay: true,
+			autoplay: false,
 			autoplaySpeed: 6000,
-			adaptiveHeight: true,
+			adaptiveHeight: false,
 		});
 	} else {
 		// PC向け

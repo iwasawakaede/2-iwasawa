@@ -113,7 +113,6 @@
 	padding: 0 30px;
 	margin: 0 auto;
 	@media #{$pointM} {
-		// display: block;
 		min-width: initial;
 		width: 100%;
 		padding: 0 get_vw(15, $vwMd);
@@ -137,6 +136,12 @@
 		&-tabspace {
 			@media #{$pointM} {
 				margin-top: get_vw(15, $vwMd);
+			}
+		}
+		&.slick-slide {
+			@media #{$pointM} {
+				min-height: 640px;
+				width: 700px;
 			}
 		}
 	}
@@ -197,6 +202,9 @@
 				color: #000;
 				font-size: get_vw(32, $vwMd);
 			}
+		}
+		.slick-track {
+			width: 600px;
 		}
 	}
 	.slick-next {

@@ -77,6 +77,10 @@
 		}
 		&-line {
 			padding-left: 82px;
+			@media #{$pointM} {
+				width: 50%;
+				padding: 0;
+			}
 		}
 	}
 	&_textBoxText {
@@ -106,8 +110,11 @@
 	}
 	&_image {
 		width: 433px;
+		@media #{$pointM} {
+			width: get_vw(216.5, $vwMd);
+		}
 		@media #{$pointS} {
-			padding-top: get_vw(216.5);
+			width: get_vw(216.5);
 		}
 	}
 }
@@ -711,6 +718,11 @@
 			min-width: 1440px;
 			padding: 0 30px;
 			margin: 45px auto 0;
+			@media #{$pointM} {
+				justify-content: space-evenly;
+				width: 100%;
+				min-width: initial;
+			}
 			}
 	}
 	&_pic {
@@ -1043,32 +1055,39 @@
 	position: relative;
 	display: inline-block;
 	margin: 1.5em 0 1.5em 15px;
-	padding: 7px 10px;
+	padding: 12px;
 	min-width: 120px;
 	max-width: 100%;
-	color: #555;
+	color: #1eb9ee;
 	font-size: 16px;
 	background: #FFF;
-	border: solid 3px #555;
+	border: solid 3px #1eb9ee;
 	box-sizing: border-box;
+	border-radius: 10px;
+	@media #{$pointM} {
+		font-size: get_vw(14, $vwMd);
+	}
+	@media #{$pointS} {
+		font-size: get_vw(14);
+	}
 	&::before {
 		content: "";
 		position: absolute;
-		top: 50%;
-		left: -24px;
-		margin-top: -12px;
+		top: 36%;
+		left: -104px;
 		border: 12px solid transparent;
-		border-right: 12px solid #fff;
+		border-right: 57px solid #fff;
+		border-left: 57px solid transparent;
 		z-index: 2;
 	}
 	&::after {
 		content: "";
 		position: absolute;
-		top: 50%;
-		left: -30px;
-		margin-top: -14px;
-		border: 14px solid transparent;
-		border-right: 14px solid #555;
+		top: 34%;
+		left: -119px;
+		border: 13px solid transparent;
+		border-right: 58px solid #1eb9ee;
+		border-left: 58px solid transparent;
 		z-index: 1;
 	}
 }

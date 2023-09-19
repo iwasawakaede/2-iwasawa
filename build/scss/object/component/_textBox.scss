@@ -59,6 +59,10 @@
 				margin-top: 0;
 			}
 		}
+		&-boldM {
+			font-size: 1.8rem;
+			font-weight: bold;
+		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
 	&_text:first-child {

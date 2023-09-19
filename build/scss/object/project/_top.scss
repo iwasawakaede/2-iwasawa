@@ -101,6 +101,12 @@
 			padding-top: get_vw(35);
 		}
 	}
+	&_image {
+		width: 433px;
+		@media #{$pointS} {
+			padding-top: get_vw(216.5);
+		}
+	}
 }
 .p-topBlockFlex {
 	display: flex;
@@ -140,8 +146,11 @@
 		}
 		&.slick-slide {
 			@media #{$pointM} {
-				min-height: 640px;
+				min-height: 1000px;
 				width: 700px;
+			}
+			@media #{$pointS} {
+				min-height: 320px;
 			}
 		}
 	}
@@ -189,7 +198,6 @@
 		}
 	}
 }
-
 .p-topBlockFlex {
 	// slickをハックするcss
 	.slick-prev {
@@ -220,17 +228,6 @@
 		}
 	}
 }
-
-// .slick-dotted {
-// 	@media #{$pointM} {
-// 		left: 71px;
-// 	}
-// }
-// .slick-dotted {
-// 	@media #{$pointM} {
-// 		color: #000;
-// 		}
-// }
 .p-topBlockList {
 	&_item {
 		&-second {
@@ -686,6 +683,11 @@
 // OPTION
 // -----------------------------------------------
 .p-topBlock{
+	&-bg {
+		background-image: url(/htdocs/common/img/top/guarantee-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	&_inner {
 		width: 1248px;
 		margin: 0 auto;
@@ -705,6 +707,13 @@
 				margin: 0 auto;
 			}
 		}
+		&-content {
+			display: flex;
+			width: 1445px;
+			min-width: 1440px;
+			padding: 20px 0;
+			margin: 100px auto;
+			}
 	}
 	&_pic {
 		width: 479px;

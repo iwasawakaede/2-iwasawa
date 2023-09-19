@@ -65,6 +65,27 @@
 				padding-top: get_vw(12);
 			}
 		}
+		&-sizeM {
+			color: #ff5267;
+			font-size: 3rem;
+			display: inline;
+			padding-top: 6.5px;
+			background: linear-gradient(transparent 79%, #ffff00 60%);
+			@media #{$pointM} {
+				font-size: get_vw(27, $vwMd);
+				padding-top: get_vw(12, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(20);
+				padding-top: get_vw(12);
+			}
+		}
+		// &-marker {
+		// 	background-color: #ffff00;
+		// 	width: 436px;
+		// 	height: 10px;
+		// 	padding-top: 10px;
+		// }
 	}
 	// アンダーラインがあるバージョン
 	&-line {

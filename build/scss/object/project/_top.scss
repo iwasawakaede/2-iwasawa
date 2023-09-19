@@ -121,7 +121,7 @@
 	@media #{$pointM} {
 		min-width: initial;
 		width: 100%;
-		padding: 0 get_vw(15, $vwMd);
+		padding: 0;
 	}
 	@media #{$pointS} {
 		padding: 0 get_vw(10);
@@ -146,8 +146,8 @@
 		}
 		&.slick-slide {
 			@media #{$pointM} {
-				min-height: 1000px;
-				width: 700px;
+				min-height: 700px;
+				margin: 0 get_vw(90, $vwMd);
 			}
 			@media #{$pointS} {
 				min-height: 320px;
@@ -202,13 +202,13 @@
 	// slickをハックするcss
 	.slick-prev {
 		@media #{$pointM} {
-			left: 4%;
+			left: 2%;
 			z-index: 10;
 		}
 		&::before {
 			@media #{$pointM} {
 				color: #000;
-				font-size: get_vw(32, $vwMd);
+				font-size: get_vw(50, $vwMd);
 			}
 		}
 		.slick-track {
@@ -217,13 +217,13 @@
 	}
 	.slick-next {
 		@media #{$pointM} {
-			right: 4%;
+			right: 5%;
 			z-index: 10;
 		}
 		&::before {
 			@media #{$pointM} {
 				color: #000;
-				font-size: get_vw(32, $vwMd);
+				font-size: get_vw(50, $vwMd);
 			}
 		}
 	}
@@ -711,8 +711,8 @@
 			display: flex;
 			width: 1445px;
 			min-width: 1440px;
-			padding: 20px 0;
-			margin: 100px auto;
+			padding: 0 30px;
+			margin: 45px auto 0;
 			}
 	}
 	&_pic {
@@ -1039,5 +1039,38 @@
 		@media #{$pointS} {
 			font-size: get_vw(18);
 		}
+	}
+}
+.p-topBlockWord {
+	position: relative;
+	display: inline-block;
+	margin: 1.5em 0 1.5em 15px;
+	padding: 7px 10px;
+	min-width: 120px;
+	max-width: 100%;
+	color: #555;
+	font-size: 16px;
+	background: #FFF;
+	border: solid 3px #555;
+	box-sizing: border-box;
+	.balloon2-left:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: -24px;
+		margin-top: -12px;
+		border: 12px solid transparent;
+		border-right: 12px solid #fff;
+		z-index: 2;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: -30px;
+		margin-top: -14px;
+		border: 14px solid transparent;
+		border-right: 14px solid #555;
+		z-index: 1;
 	}
 }

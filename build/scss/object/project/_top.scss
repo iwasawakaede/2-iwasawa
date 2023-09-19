@@ -75,6 +75,9 @@
 		@media #{$pointM} {
 			padding-top: get_vw(16, $vwMd);
 		}
+		&-line {
+			padding-left: 82px;
+		}
 	}
 	&_textBoxText {
 		color: #333333;
@@ -139,18 +142,13 @@
 		@media #{$pointS} {
 			padding: get_vw(10);
 		}
-		&-tabspace {
-			@media #{$pointM} {
-				margin-top: get_vw(15, $vwMd);
-			}
-		}
 		&.slick-slide {
 			@media #{$pointM} {
 				min-height: 700px;
 				margin: 0 get_vw(90, $vwMd);
 			}
 			@media #{$pointS} {
-				min-height: 320px;
+				min-height: 400px;
 			}
 		}
 	}
@@ -1053,7 +1051,7 @@
 	background: #FFF;
 	border: solid 3px #555;
 	box-sizing: border-box;
-	.balloon2-left:before {
+	&::before {
 		content: "";
 		position: absolute;
 		top: 50%;
@@ -1063,7 +1061,7 @@
 		border-right: 12px solid #fff;
 		z-index: 2;
 	}
-	&:before {
+	&::after {
 		content: "";
 		position: absolute;
 		top: 50%;

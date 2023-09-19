@@ -47,4 +47,31 @@ $(window).scroll(function () {
 	ScrollAnime();
 });
 
+// スライドさせる
+function checkBreakPoint() {
+	w = $(window).width();
+	if (w <= 896) {
+		// タブレット・スマホ向け（767px以下のとき）
+		$('.js-slick').not('.slick-initialized').slick({
+			//スライドさせる
+			dots: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 6000,
+			adaptiveHeight: true,
+		});
+	} else {
+		// PC向け
+		$('.js-slick.slick-initialized').slick('unslick');
+	}
+}
+// ウインドウがリサイズする度にチェック
+$(window).resize(function(){
+	checkBreakPoint();
+});
+// 初回チェック
+checkBreakPoint();
+
 });

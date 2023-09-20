@@ -82,7 +82,7 @@
 				padding: 0;
 			}
 			@media #{$pointS} {
-				width: 50%;
+				width: 88%;
 				padding: 0;
 			}
 		}
@@ -118,8 +118,9 @@
 			width: 49%;
 		}
 		@media #{$pointS} {
-			width: 100%;
+			width: 90%;
 			padding-top: get_vw(20,$vwSm);	
+			margin: 0 auto;
 		}
 	}
 }
@@ -1130,6 +1131,8 @@
 	}
 	@media #{$pointS} {
 		font-size: get_vw(14);
+		display: block;
+		margin-top: 0;
 	}
 	&::before {
 		content: "";
@@ -1141,12 +1144,19 @@
 		border-right: 49px solid #fff;
 		transform: rotate(-4deg);
 		z-index: 2;
+		@media #{$pointM} {
+			border-top: get_vw(25, $vwMd) solid transparent;
+			border-left: get_vw(43, $vwMd) solid transparent;
+			border-right: get_vw(49, $vwMd) solid #fff;
+			left: get_vw(-89, $vwMd);
+		}
 		@media #{$pointS} {
-			top: -24px;
-			left: 50%;
-			border: 12px solid transparent;
-			border-bottom: 12px solid #fff;
-			margin-left: -15px;
+			top: -41px;
+			left: 44%;
+			border: 16px solid transparent;
+			border-bottom: 28px solid #fff;
+			margin-left: get_vw(-15, $vwMd);
+			transform: none;
 		}
 	}
 	&::after {
@@ -1159,11 +1169,19 @@
 		border-right: 50px solid #1eb9ee;
 		transform: rotate(-2deg);
 		z-index: 1;
+		@media #{$pointM} {
+			top: 34%;
+			left: get_vw(-90, $vwMd);
+			border-top: get_vw(34, $vwMd) solid transparent;
+			border-left: get_vw(38, $vwMd) solid transparent;
+			border-right: get_vw(50, $vwMd) solid #1eb9ee;
+		}
 		@media #{$pointS} {
-			top: -30px;
-			left: 41%;
-			border: 14px solid transparent;
-			border-bottom: 14px solid #1eb9ee;
+			top: -46px;
+			left: 42%;
+			border: 16px solid transparent;
+			border-bottom: 28px solid #1eb9ee;
+			transform: none;
 		}
 	}
 }

@@ -155,7 +155,7 @@
 		}
 		&.slick-slide {
 			@media #{$pointM} {
-				min-height: 700px;
+				min-height: 600px;
 				margin: 0 get_vw(90, $vwMd);
 			}
 			@media #{$pointS} {
@@ -165,10 +165,13 @@
 	}
 	&_content {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	&_contentImg {
-		width: 550px;
-		margin: 20px auto;
+		// width: 550px;
+		// margin: 0 auto;
 		@media #{$pointM} {
 			width: 100%;
 			margin: get_vw(10, $vwMd) auto;
@@ -191,6 +194,16 @@
 		&-spimg4 {
 			@media #{$pointS} {
 				width: get_vw(313, $vwMd);
+			}
+		}
+		&-image {
+			object-fit: contain;
+			width: 600px;
+			height: 300px;
+			@media #{$pointM} {
+				width: get_vw(300, $vwMd);
+				margin: 0 auto;
+				height: get_vw(150, $vwMd);
 			}
 		}
 	}
@@ -719,8 +732,7 @@
 		}
 		&-content {
 			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			width: 1445px;
 			min-width: 1440px;
 			padding: 0 30px;
@@ -733,7 +745,7 @@
 				margin-top: get_vw(7, $vwMd);
 			}
 			@media #{$pointS} {
-				width: 100%;
+				flex-direction: column;
 				padding: 0;
 			}
 		}

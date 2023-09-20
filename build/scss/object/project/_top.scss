@@ -119,6 +119,7 @@
 		}
 		@media #{$pointS} {
 			width: get_vw(216.5);
+			padding-top: get_vw(20);	
 		}
 	}
 }
@@ -155,11 +156,16 @@
 		}
 		&.slick-slide {
 			@media #{$pointM} {
-				min-height: 600px;
-				margin: 0 get_vw(90, $vwMd);
+			min-height: get_vw(550, $vwMd);
+			margin: 0 get_vw(90, $vwMd);
 			}
 			@media #{$pointS} {
-				min-height: 400px;
+			min-height: 400px;
+			}
+		}
+		.slick-track {
+			@media #{$pointM} {
+			height: 300px;
 			}
 		}
 	}
@@ -176,34 +182,46 @@
 			width: 100%;
 			margin: get_vw(10, $vwMd) auto;
 		}
-		&-spimg1 {
-			@media #{$pointS} {
-				width: get_vw(275, $vwMd);
-			}
-		}
-		&-spimg2 {
-			@media #{$pointS} {
-				width: get_vw(296.5, $vwMd);
-			}
-		}
-		&-spimg3 {
-			@media #{$pointS} {
-				width: get_vw(304.5, $vwMd);
-			}
-		}
-		&-spimg4 {
-			@media #{$pointS} {
-				width: get_vw(313, $vwMd);
-			}
-		}
+		// &-spimg1 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(275, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(275, $vwSm);
+		// 	}
+		// }
+		// &-spimg2 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(296.5, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(296.5, $vwSm);
+		// 	}
+		// }
+		// &-spimg3 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(304.5, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(304.5, $vwSm);
+		// 	}
+		// }
+		// &-spimg4 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(313, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(313, $vwSm);
+		// 	}
+		// }
 		&-image {
 			object-fit: contain;
 			width: 600px;
 			height: 300px;
 			@media #{$pointM} {
-				width: get_vw(300, $vwMd);
-				margin: 0 auto;
-				height: get_vw(150, $vwMd);
+				width: 100%;
+				// margin: 0 auto;
+				height: auto;
 			}
 		}
 	}
@@ -235,6 +253,7 @@
 		}
 		.slick-track {
 			width: 600px;
+			height: 300px;
 		}
 	}
 	.slick-next {

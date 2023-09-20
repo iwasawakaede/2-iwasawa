@@ -309,6 +309,17 @@
 				margin-top: get_vw(25, $vwMd);
 			}
 		}
+		&-topspaceM {
+			padding-top: 86px;
+			@media #{$pointM} {
+				margin-top: get_vw(86, $vwMd);
+			}
+		}
+		&-sidespaceM {
+			@media #{$pointM} {
+				padding: 0 get_vw(20, $vwMd);
+			}
+		}
 	}
 }
 .p-topPoint{
@@ -336,6 +347,18 @@
 				width: 100%;
 			}
 		}
+		&-width {
+			width: 894px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		} 
+		&-second {
+			width: 898px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
 	}
 	&_imgBox {
 		width: 525px;
@@ -345,6 +368,18 @@
 		}
 		&-reverse {
 			width: 725px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-image3 {
+			width: 440px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-second {
+			width: 439px;
 			@media #{$pointM} {
 				width: 100%;
 			}
@@ -782,6 +817,12 @@
 			@media #{$pointS} {
 				flex-direction: column;
 				padding: 0;
+			}
+		}
+		&-widthL {
+			width: 1420px;
+			@media #{$pointM} {
+				width: 100%;
 			}
 		}
 	}

@@ -125,7 +125,7 @@
 			padding-top: get_vw(30, $vwMd);
 		}
 		@media #{$pointS} {
-			padding-top: get_vw(30);
+			padding-top: get_vw(32,$vwSm);
 		}
 	}
 }

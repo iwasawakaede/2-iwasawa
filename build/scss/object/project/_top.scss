@@ -78,6 +78,10 @@
 		&-line {
 			padding-left: 82px;
 			@media #{$pointM} {
+				width: 51%;
+				padding: 0;
+			}
+			@media #{$pointS} {
 				width: 50%;
 				padding: 0;
 			}
@@ -111,7 +115,7 @@
 	&_image {
 		width: 433px;
 		@media #{$pointM} {
-			width: get_vw(216.5, $vwMd);
+			width: 49%;
 		}
 		@media #{$pointS} {
 			width: get_vw(216.5);
@@ -689,6 +693,7 @@
 // -----------------------------------------------
 .p-topBlock{
 	&-bg {
+		background-color: #fffcf3;
 		background-image: url(/htdocs/common/img/top/guarantee-bg.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -719,12 +724,18 @@
 			padding: 0 30px;
 			margin: 45px auto 0;
 			@media #{$pointM} {
-				justify-content: space-evenly;
+				justify-content: space-between;
+				align-items: center;
 				width: 100%;
 				min-width: initial;
+				padding: 0 get_vw(19, $vwMd);
+				margin-top: get_vw(7, $vwMd);
+			}
+			@media #{$pointS} {
+				width: 100%;
 				padding: 0;
 			}
-			}
+		}
 	}
 	&_pic {
 		width: 479px;
@@ -1067,6 +1078,8 @@
 	border-radius: 10px;
 	@media #{$pointM} {
 		font-size: get_vw(14, $vwMd);
+		padding: get_vw(27, $vwMd) get_vw(10, $vwMd);
+		margin: get_vw(15, $vwMd) 0;
 	}
 	@media #{$pointS} {
 		font-size: get_vw(14);
@@ -1074,21 +1087,23 @@
 	&::before {
 		content: "";
 		position: absolute;
-		top: 36%;
-		left: -104px;
-		border: 12px solid transparent;
-		border-right: 57px solid #fff;
-		border-left: 57px solid transparent;
+		top: 37%;
+		left: -89px;
+		border-top: 27px solid transparent;
+		border-left: 41px solid transparent;
+		border-right: 49px solid #fff;
+		transform: rotate(-4deg);
 		z-index: 2;
 	}
 	&::after {
 		content: "";
 		position: absolute;
 		top: 34%;
-		left: -119px;
-		border: 13px solid transparent;
-		border-right: 58px solid #1eb9ee;
-		border-left: 58px solid transparent;
+		left: -90px;
+		border-top: 34px solid transparent;
+		border-left: 38px solid transparent;
+		border-right: 50px solid #1eb9ee;
+		transform: rotate(-2deg);
 		z-index: 1;
 	}
 }

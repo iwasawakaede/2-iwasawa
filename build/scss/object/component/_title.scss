@@ -122,6 +122,10 @@
 		@media #{$pointM} {
 			text-align: center;
 			display: block;
+			padding-top: get_vw(30, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(30);
 		}
 	}
 }

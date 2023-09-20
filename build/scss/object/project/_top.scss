@@ -719,12 +719,13 @@
 		}
 		&-content {
 			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 			width: 1445px;
 			min-width: 1440px;
 			padding: 0 30px;
 			margin: 45px auto 0;
 			@media #{$pointM} {
-				justify-content: space-between;
 				align-items: center;
 				width: 100%;
 				min-width: initial;

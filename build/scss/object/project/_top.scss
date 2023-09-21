@@ -782,7 +782,7 @@
 		background-size: cover;
 	}
 	&-half {
-		background: linear-gradient(90deg, #fff5e7 0%, #f0bc68 50%, #ebf4ea 50%, #c4d7d1 100%);
+		background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1243,4 +1243,51 @@
 .p-topBlockFlexBox {
 	display: flex;
 	justify-content: space-between;
+}
+.p-topBlockConceptBlock {
+	width: 600px;
+}
+.p-topDiffrenceTitle {
+	background-color: #f6ab00;
+	border-radius: 10px 10px 0 0;
+	&::after {
+		content: "";
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    margin-left: -15px;
+    border: 8px solid transparent;
+    border-top: 14px solid #f6ab00;
+	}
+	&-merit {
+		background-color: #ff5267;
+		background-image: url(/htdocs/common/img/top/difference-icon1.png);
+		background-size: auto;
+		background-position: left 10px top 20px;
+	}
+	&-demerit {
+		background-color: #2e59a7;
+		border-radius: 10px 10px 0 0;
+		background-image: url(/htdocs/common/img/top/difference-icon2.png);
+		background-size: auto;
+		background-position: left 10px top 20px;
+	}
+}
+.p-topBlockConceptListBox {
+	background-color: #fff;
+	border-radius: 0 0 10px 10px;
+}
+.p-topBlockConceptList {
+	color: #4d78b9;
+	font-weight: bold;
+	font-size: 1.8rem;
+	&_item {
+		border: 1px dashed #ff5267;
+		&-change {
+			color: #4d78b9;
+		}
+		&-third {
+			color: #333333;
+		}
+	}
 }

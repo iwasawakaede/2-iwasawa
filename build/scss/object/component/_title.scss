@@ -80,6 +80,12 @@
 				padding-top: get_vw(12);
 			}
 		}
+		&-change {
+			color: #fff;
+			font-size: 2.4rem;
+			text-align: center;
+			font-weight: bold;
+		}
 	}
 	// アンダーラインがあるバージョン
 	&-line {

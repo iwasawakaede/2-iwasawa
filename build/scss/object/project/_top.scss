@@ -825,6 +825,13 @@
 				width: 100%;
 			}
 		}
+		&-widthS {
+			width: 1324px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
 	}
 	&_pic {
 		width: 479px;
@@ -1225,4 +1232,8 @@
 			transform: none;
 		}
 	}
+}
+.p-topBlockFlexBox {
+	display: flex;
+	justify-content: space-between;
 }

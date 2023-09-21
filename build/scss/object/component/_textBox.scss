@@ -74,6 +74,12 @@
 			color: #ff5267;
 			font-weight: bold;
 			font-size: 2.4rem;
+			text-align: center;
+		}
+		&-boldL {
+			color: #333333;
+			font-weight: bold;
+			font-size: 2.4rem;
 		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。

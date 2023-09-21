@@ -320,6 +320,9 @@
 				padding: 0 get_vw(20, $vwMd);
 			}
 		}
+		&-topspaceL {
+			padding-top: 89px;
+		}
 	}
 }
 .p-topPoint{
@@ -553,6 +556,13 @@
 // PRICE
 // -----------------------------------------------
 .p-topTitile {
+	&-bg {
+		background-color: #fff;
+    width: 100vw;
+    height: 314px;
+    padding-top: 84px;
+    margin: 0 calc(50% - 50vw);
+	} 
 	&_text {
 		color: #1eb9ee;
 		font-size: 9rem;
@@ -838,6 +848,9 @@
 			@media #{$pointM} {
 				width: 100%;
 			}
+		}
+		&-notopspace {
+			padding-top: 0;
 		}
 	}
 	&_pic {
@@ -1244,12 +1257,17 @@
 	display: flex;
 	justify-content: space-between;
 }
+.p-topBlockConcept {
+	margin-top: 58px;
+}
 .p-topBlockConceptBlock {
 	width: 600px;
 }
 .p-topDiffrenceTitle {
 	background-color: #f6ab00;
 	border-radius: 10px 10px 0 0;
+	padding: 14px 0 13px;
+
 	&::after {
 		content: "";
     position: absolute;
@@ -1262,6 +1280,7 @@
 	&-merit {
 		background-color: #ff5267;
 		background-image: url(/htdocs/common/img/top/difference-icon1.png);
+		background-repeat: no-repeat;
 		background-size: auto;
 		background-position: left 10px top 20px;
 	}
@@ -1269,6 +1288,7 @@
 		background-color: #2e59a7;
 		border-radius: 10px 10px 0 0;
 		background-image: url(/htdocs/common/img/top/difference-icon2.png);
+		background-repeat: no-repeat;
 		background-size: auto;
 		background-position: left 10px top 20px;
 	}
@@ -1276,6 +1296,13 @@
 .p-topBlockConceptListBox {
 	background-color: #fff;
 	border-radius: 0 0 10px 10px;
+	padding: 61px 0 33px;
+	&-spaceM {
+		padding: 30px 19px;
+	}
+	&-spaceS {
+		padding: 29px 137px;
+	}
 }
 .p-topBlockConceptList {
 	color: #4d78b9;
@@ -1288,6 +1315,9 @@
 		}
 		&-third {
 			color: #333333;
+		}
+		&-line {
+			border: 1px dashed #ff5267;
 		}
 	}
 }

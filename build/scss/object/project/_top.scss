@@ -322,7 +322,7 @@
 			}
 		}
 		&-topspaceL {
-			padding-top: 47px;
+			padding-top: 91px;
 		}
 	}
 }
@@ -1278,11 +1278,26 @@
 			height: 100px;
 		}
 	}
+	&-demerit {
+		&::before {
+			content: "";
+			background-image: url(/htdocs/common/img/top/difference-icon2.png);
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: left 20px top 20px;
+			position: absolute;
+			z-index: 999;
+			top: 22px;
+			left: -2px;
+			width: 90px;
+			height: 100px;
+		}
+	}
 }
 .p-topDiffrenceTitle {
 	background-color: #f6ab00;
 	border-radius: 10px 10px 0 0;
-	padding: 14px 0 13px;
+	padding: 6px 0 8px;
 	position: relative;
 	&::after {
 		content: "";
@@ -1293,25 +1308,41 @@
     border: 18px solid transparent;
     border-top: 33px solid #f6ab00;
 	}
+	&-bg {
+		background-color: #69c08a;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -15px;
+			border: 18px solid transparent;
+			border-top: 33px solid #69c08a;
+		}
+	}
 	&-merit {
 		background-color: #ff5267;
+		padding: 3px 0 5px;
+		&::after {
+			display: none;
+		}
 	}
-
 	&-demerit {
 		background-color: #2e59a7;
-		border-radius: 10px 10px 0 0;
-		background-image: url(/htdocs/common/img/top/difference-icon2.png);
-		background-repeat: no-repeat;
-		background-size: auto;
-		background-position: left 10px top 20px;
+			&::after {
+				display: none;
+		}
 	}
+}
+.p-topBlockConceptList {
+	color: #ff5267;
 }
 .p-topBlockConceptListBox {
 	background-color: #fff;
 	border-radius: 0 0 10px 10px;
-	padding: 61px 0 33px;
+	padding: 49px 79px 17px 86px;
 	&-spaceM {
-		padding: 30px 19px;
+		padding: 24px 27px 31px;
 	}
 	&-spaceS {
 		padding: 29px 137px;
@@ -1322,9 +1353,14 @@
 	font-weight: bold;
 	font-size: 1.8rem;
 	&_item {
-		border: 1px dashed #ff5267;
+		color: #4d78b9;
+		line-height: 1.8;
+		&-top {
+			margin-top: 14px;
+			border-top: 1px dashed #ff5267;
+		}
 		&-change {
-			color: #4d78b9;
+			color: #ff5267;
 		}
 		&-third {
 			color: #333333;
@@ -1333,4 +1369,8 @@
 			border: 1px dashed #ff5267;
 		}
 	}
+}
+.p-topBlockConceptList_item:last-child {
+	border-bottom: 1px dashed #ff5267;
+
 }

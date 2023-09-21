@@ -781,6 +781,13 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+	&-half {
+		background: linear-gradient(90deg, #fff5e7 0%, #f0bc68 50%, #ebf4ea 50%, #c4d7d1 100%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
 	&_inner {
 		width: 1248px;
 		margin: 0 auto;

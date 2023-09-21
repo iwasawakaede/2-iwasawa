@@ -1334,9 +1334,6 @@
 		}
 	}
 }
-.p-topBlockConceptList {
-	color: #ff5267;
-}
 .p-topBlockConceptListBox {
 	background-color: #fff;
 	border-radius: 0 0 10px 10px;
@@ -1345,7 +1342,11 @@
 		padding: 24px 27px 31px;
 	}
 	&-spaceS {
-		padding: 29px 137px;
+		padding: 0px 30px 142px 32px;
+    margin-top: -10px;
+	}
+	&-spaceL {
+		padding: 18px 54px 36px 28px;
 	}
 }
 .p-topBlockConceptList {
@@ -1356,21 +1357,23 @@
 		color: #4d78b9;
 		line-height: 1.8;
 		&-top {
+			padding-top: 10px;
 			margin-top: 14px;
-			border-top: 1px dashed #ff5267;
+		}
+		&-lineM {
+			border-bottom: 2px dashed #ff5267;
 		}
 		&-change {
 			color: #ff5267;
 		}
-		&-third {
+		&-change2 {
 			color: #333333;
 		}
-		&-line {
-			border: 1px dashed #ff5267;
+		&-lineD {
+			border-bottom: 2px dashed #2e59a7;
 		}
 	}
 }
-.p-topBlockConceptList_item:last-child {
-	border-bottom: 1px dashed #ff5267;
-
+.p-topBlockConceptList_item:first-child {
+	border-bottom: 2px dashed #ff5267;
 }

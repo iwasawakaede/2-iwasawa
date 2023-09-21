@@ -287,6 +287,7 @@
 }
 .p-topBlockList {
 	&_item {
+		position: relative;
 		&-second {
 			padding-top: 47px;
 			@media #{$pointM} {
@@ -321,7 +322,7 @@
 			}
 		}
 		&-topspaceL {
-			padding-top: 89px;
+			padding-top: 47px;
 		}
 	}
 }
@@ -1262,29 +1263,40 @@
 }
 .p-topBlockConceptBlock {
 	width: 600px;
+	&-merit {
+		&::before {
+			content: "";
+			background-image: url(/htdocs/common/img/top/difference-icon1.png);
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: left 20px top 20px;
+			position: absolute;
+			z-index: 999;
+			top: 22px;
+			left: -2px;
+			width: 90px;
+			height: 100px;
+		}
+	}
 }
 .p-topDiffrenceTitle {
 	background-color: #f6ab00;
 	border-radius: 10px 10px 0 0;
 	padding: 14px 0 13px;
+	position: relative;
 	&::after {
 		content: "";
     position: absolute;
     top: 100%;
-    left: 35%;
+    left: 50%;
     margin-left: -15px;
-    border: 8px solid transparent;
-    border-top: 14px solid #f6ab00;
+    border: 18px solid transparent;
+    border-top: 33px solid #f6ab00;
 	}
 	&-merit {
-		&::after {
-			background-color: #ff5267;
-			background-image: url(/htdocs/common/img/top/difference-icon1.png);
-			background-repeat: no-repeat;
-			background-size: auto;
-			background-position: left 10px top 20px;
-		}
+		background-color: #ff5267;
 	}
+
 	&-demerit {
 		background-color: #2e59a7;
 		border-radius: 10px 10px 0 0;

@@ -8,9 +8,9 @@
 // バナー・お申込み部分
 // -----------------------------------------------
 
- body * {
-	outline: red 1px solid;
-} 
+//  body * {
+// 	outline: red 1px solid;
+// } 
 
 .p-topBanner {
 	margin:110px auto 60px;
@@ -323,6 +323,9 @@
 		}
 		&-topspaceL {
 			padding-top: 91px;
+			@media #{$pointM} {
+				padding-top: get_vw(45, $vwMd);
+			}
 		}
 	}
 }
@@ -1261,15 +1264,16 @@
 .p-topBlockFlexBox {
 	display: flex;
 	justify-content: space-between;
+	@media #{$pointM} {
+		display: block;
+	}
 	&_item {
-		// column-gap: get_vw(10, $vwMd);
 		width: 100%;
 	}
 }
 .p-topBlockConcept {
 	margin-top: 58px;
 	@media #{$pointM} {
-		// width: 100%;
 		margin-top: get_vw(20, $vwMd);
 
 	}
@@ -1279,9 +1283,14 @@
 	@media #{$pointM} {
 		width: 100%;
 	}
+	&-tabspace {
+		@media #{$pointM} {
+			padding-top: get_vw(25, $vwMd);
+		}
+	}
 	&-merit {
 		@media #{$pointM} {
-			width: 100%;
+			// width: 100%;
 		}
 		&::before {
 			content: "";
@@ -1346,7 +1355,7 @@
     border: 18px solid transparent;
     border-top: 33px solid #f6ab00;
 		@media #{$pointM} {
-			margin-left: get_vw(-15, $vwSm);
+			margin-left: get_vw(-15, $vwMd);
 			border: 15px solid transparent;
 			border-top: 30px solid #f6ab00;
 		}
@@ -1362,13 +1371,16 @@
 			border: 18px solid transparent;
 			border-top: 33px solid #69c08a;
 			@media #{$pointM} {
-				margin-left: get_vw(-15, $vwSm);
+				margin-left: get_vw(-15, $vwMd);
 			}
 		}
 	}
 	&-merit {
 		background-color: #ff5267;
 		padding: 3px 0 5px;
+		@media #{$pointM} {
+			padding: get_vw(3, $vwMd) 0;
+		}
 		&::after {
 			display: none;
 		}
@@ -1386,31 +1398,31 @@
 	padding: 49px 79px 17px 86px;
 	@media #{$pointM} {
 		border-radius: 0 0 5px 5px;
-		padding: get_vw(10, $vwSm);
+		padding: get_vw(10, $vwMd);
 		}
 	&-spaceM {
 		padding: 24px 27px 31px;
 		@media #{$pointM} {
-			padding: get_vw(10, $vwSm);
+			padding: get_vw(10, $vwMd);
 		}
 	}
 	&-spaceS {
 		padding: 21px 38px 142px 41px;
 		@media #{$pointM} {
-			padding: get_vw(10, $vwSm);
+			padding: get_vw(10, $vwMd);
 		}
 	}
 	&-spaceL {
 		padding: 12px 37px 135px 44px;
 		@media #{$pointM} {
 			border-radius: 0 0 5px 5px;
-			padding: get_vw(10, $vwSm);
+			padding: get_vw(10, $vwMd);
 		}
 	}
 	&-spaceD {
 		padding: 20px 37px 137px 41px;
 		@media #{$pointM} {
-			padding: get_vw(10, $vwSm);
+			padding: get_vw(10, $vwMd);
 			}
 	}
 }
@@ -1426,6 +1438,9 @@
 		display: flex;
 		&-top {
 			padding: 10px 0 9px;
+			@media #{$pointM} {
+				padding: get_vw(10, $vwMd);
+				}
 		}
 		&-lineM {
 			border-bottom: 2px dashed #ff5267;

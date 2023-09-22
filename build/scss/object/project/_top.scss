@@ -562,13 +562,14 @@
 .p-topTitile {
 	&-bg {
 		background-color: #fff;
-    width: 100vw;
-    height: 314px;
-    padding-top: 84px;
-    height: 179px;
+    width: 100%;
+    // height: 314px;
+    padding: 0 84px;
+		margin: 0 auto 50px;
+		// margin-left: -50px;
 		@media #{$pointM} {
-			height: get_vw(314, $vwMd);
-			padding-top: 0px;
+			height: 0;
+			padding: 0 0 get_vw(190, $vwMd) 0;
 			margin: 0 calc(50% - 50vw);
 		}
 		@media #{$pointS} {
@@ -804,13 +805,13 @@
 		background-size: cover;
 	}
 	&-half {
-		background: linear-gradient(90deg, #fff5e7 56%, #ebf4ea 50%);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
+		// background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		// width: 100vw;
 		@media #{$pointM} {
-			background: linear-gradient(180deg, #fff5e7 56%, #ebf4ea 56%);
+			// background: linear-gradient(180deg, #fff5e7 56%, #ebf4ea 56%);
 			width: 100%;
 		}
 	}
@@ -871,6 +872,9 @@
 			@media #{$pointM} {
 				padding-bottom: get_vw(20, $vwMd);
 			}
+		}
+		&-nonespace {
+			padding-top: 0;
 		}
 	}
 	&_pic {
@@ -1276,18 +1280,33 @@
 .p-topBlockFlexBox {
 	display: flex;
 	justify-content: space-between;
+	width: 1440px;
+  margin: 0 auto;
 	@media #{$pointM} {
 		display: block;
+		width: 100%;
 	}
 	&_item {
-		width: 100%;
+		// width: 100%;
+		background-color: #fff5e7;
+		// width: 600px;
+    padding: 0 60px;
+		&-bg2 {
+			background-color: #ebf4ea;
+		}
 	}
 }
 .p-topBlockConcept {
-	margin-top: 58px;
+	padding: 50px 0;
+	background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
+	// background-color: #ebf4ea;
+	// background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
 	@media #{$pointM} {
-		margin-top: get_vw(20, $vwMd);
+		background: linear-gradient(180deg, #fff5e7 50%, #ebf4ea 50%);
 
+		margin-top: get_vw(20, $vwMd);
 	}
 }
 .p-topBlockConceptBlock {

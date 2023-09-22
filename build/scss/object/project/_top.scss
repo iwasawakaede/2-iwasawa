@@ -1342,29 +1342,36 @@
 		padding: 24px 27px 31px;
 	}
 	&-spaceS {
-		padding: 0px 30px 142px 32px;
-    margin-top: -10px;
+		padding: 21px 38px 142px 41px;
 	}
 	&-spaceL {
-		padding: 18px 54px 36px 28px;
+		padding: 12px 37px 135px 44px;
+	}
+	&-spaceD {
+		padding: 20px 37px 137px 41px;
 	}
 }
 .p-topBlockConceptList {
 	color: #4d78b9;
 	font-weight: bold;
 	font-size: 1.8rem;
+	line-height: 1.8;
 	&_item {
-		color: #4d78b9;
-		line-height: 1.8;
+		display: flex;
 		&-top {
-			padding-top: 10px;
-			margin-top: 14px;
+			padding: 10px 0 9px;
 		}
 		&-lineM {
 			border-bottom: 2px dashed #ff5267;
 		}
 		&-change {
 			color: #ff5267;
+		}
+		&-top1 {
+			padding-bottom: 24px;
+		}
+		&-top2 {
+			padding: 10px 0 11px;
 		}
 		&-change2 {
 			color: #333333;
@@ -1375,5 +1382,8 @@
 	}
 }
 .p-topBlockConceptList_item:first-child {
-	border-bottom: 2px dashed #ff5267;
+	padding-top: 0;
 }
+// .p-topBlockConceptList :not(.-lineM) {
+// 	border-bottom: 2px dashed #2e59a7;
+// }

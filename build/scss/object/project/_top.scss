@@ -565,7 +565,15 @@
     width: 100vw;
     height: 314px;
     padding-top: 84px;
-    margin: 0 calc(50% - 50vw);
+    height: 179px;
+		@media #{$pointM} {
+			height: get_vw(314, $vwMd);
+			padding-top: 0px;
+			margin: 0 calc(50% - 50vw);
+		}
+		@media #{$pointS} {
+			height: get_vw(100, $vwSm);
+		}
 	} 
 	&_text {
 		color: #1eb9ee;
@@ -796,12 +804,13 @@
 		background-size: cover;
 	}
 	&-half {
-		background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
+		background: linear-gradient(90deg, #fff5e7 56%, #ebf4ea 50%);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		@media #{$pointM} {
+			background: linear-gradient(180deg, #fff5e7 56%, #ebf4ea 56%);
 			width: 100%;
 		}
 	}
@@ -857,8 +866,11 @@
 				width: 100%;
 			}
 		}
-		&-notopspace {
-			padding-top: 0;
+		&-bottomspace {
+			padding-bottom: 20px;
+			@media #{$pointM} {
+				padding-bottom: get_vw(20, $vwMd);
+			}
 		}
 	}
 	&_pic {
@@ -1305,10 +1317,18 @@
 			width: 90px;
 			height: 100px;
 			@media #{$pointM} {
-				top: get_vw(22, $vwMd);
+				background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
+				background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
+				top: get_vw(-14, $vwMd);
 				left: get_vw(-2, $vwMd);
-				width: get_vw(90, $vwMd);
-				height: get_vw(100, $vwMd);
+				width: 20%;
+				height: 70%;
+			}
+			@media #{$pointS} {
+				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);
+				background-position: left get_vw(10, $vwSm) top get_vw(10, $vwSm);
+				top: get_vw(-14, $vwSm);
+				left: get_vw(-2, $vwSm);
 			}
 		}
 	}
@@ -1329,10 +1349,18 @@
 			width: 90px;
 			height: 100px;
 			@media #{$pointM} {
-				top: get_vw(22, $vwMd);
+				background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
+				background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
+				top: get_vw(-14, $vwMd);
 				left: get_vw(-2, $vwMd);
-				width: get_vw(90, $vwMd);
-				height: get_vw(100, $vwMd);
+				width: 20%;
+				height: 70%;
+			}
+			@media #{$pointS} {
+				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);
+				background-position: left get_vw(10, $vwSm) top get_vw(10, $vwSm);
+				top: get_vw(-14, $vwSm);
+				left: get_vw(-2, $vwSm);
 			}
 		}
 	}
@@ -1356,8 +1384,9 @@
     border-top: 33px solid #f6ab00;
 		@media #{$pointM} {
 			margin-left: get_vw(-15, $vwMd);
-			border: 15px solid transparent;
-			border-top: 30px solid #f6ab00;
+			top: 98%;
+			border: get_vw(15, $vwMd) solid transparent;
+			border-top: get_vw(30, $vwMd) solid #f6ab00;
 		}
 	}
 	&-bg {
@@ -1372,6 +1401,9 @@
 			border-top: 33px solid #69c08a;
 			@media #{$pointM} {
 				margin-left: get_vw(-15, $vwMd);
+				top: 98%;
+				border: get_vw(15, $vwMd) solid transparent;
+				border-top: get_vw(30, $vwMd) solid #69c08a;
 			}
 		}
 	}

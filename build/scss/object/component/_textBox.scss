@@ -75,11 +75,17 @@
 			font-weight: bold;
 			font-size: 2.4rem;
 			text-align: center;
+			@media #{$pointM} {
+				font-size: get_vw(20, $vwMd);
+			}
 		}
 		&-boldL {
 			color: #333333;
 			font-weight: bold;
 			font-size: 2.4rem;
+			@media #{$pointM} {
+				font-size: get_vw(20, $vwMd);
+			}
 		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。

@@ -8,9 +8,9 @@
 // バナー・お申込み部分
 // -----------------------------------------------
 
-//  body * {
-// 	outline: red 1px solid;
-// } 
+ body * {
+	outline: red 1px solid;
+} 
 
 .p-topBanner {
 	margin:110px auto 60px;
@@ -798,6 +798,9 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		@media #{$pointM} {
+			width: 100%;
+		}
 	}
 	&_inner {
 		width: 1248px;
@@ -805,6 +808,7 @@
 		padding: 30px 0;
 		@media #{$pointM} {
 			width: 100%;
+			padding: 0 get_vw(10, $vwSm);
 		}
 		&-frame {
 			width: 1445px;
@@ -1257,13 +1261,28 @@
 .p-topBlockFlexBox {
 	display: flex;
 	justify-content: space-between;
+	&_item {
+		// column-gap: get_vw(10, $vwMd);
+		width: 100%;
+	}
 }
 .p-topBlockConcept {
 	margin-top: 58px;
+	@media #{$pointM} {
+		// width: 100%;
+		margin-top: get_vw(20, $vwMd);
+
+	}
 }
 .p-topBlockConceptBlock {
 	width: 600px;
+	@media #{$pointM} {
+		width: 100%;
+	}
 	&-merit {
+		@media #{$pointM} {
+			width: 100%;
+		}
 		&::before {
 			content: "";
 			background-image: url(/htdocs/common/img/top/difference-icon1.png);
@@ -1271,14 +1290,23 @@
 			background-size: auto;
 			background-position: left 20px top 20px;
 			position: absolute;
-			z-index: 999;
+			z-index: 10;
 			top: 22px;
 			left: -2px;
 			width: 90px;
 			height: 100px;
+			@media #{$pointM} {
+				top: get_vw(22, $vwMd);
+				left: get_vw(-2, $vwMd);
+				width: get_vw(90, $vwMd);
+				height: get_vw(100, $vwMd);
+			}
 		}
 	}
 	&-demerit {
+		@media #{$pointM} {
+			width: 100%;
+		}
 		&::before {
 			content: "";
 			background-image: url(/htdocs/common/img/top/difference-icon2.png);
@@ -1286,11 +1314,17 @@
 			background-size: auto;
 			background-position: left 20px top 20px;
 			position: absolute;
-			z-index: 999;
+			z-index: 10;
 			top: 22px;
 			left: -2px;
 			width: 90px;
 			height: 100px;
+			@media #{$pointM} {
+				top: get_vw(22, $vwMd);
+				left: get_vw(-2, $vwMd);
+				width: get_vw(90, $vwMd);
+				height: get_vw(100, $vwMd);
+			}
 		}
 	}
 }
@@ -1299,6 +1333,10 @@
 	border-radius: 10px 10px 0 0;
 	padding: 6px 0 8px;
 	position: relative;
+	@media #{$pointM} {
+		border-radius: 5px 5px 0 0;
+		padding: get_vw(5, $vwMd);
+	}
 	&::after {
 		content: "";
     position: absolute;
@@ -1307,6 +1345,11 @@
     margin-left: -15px;
     border: 18px solid transparent;
     border-top: 33px solid #f6ab00;
+		@media #{$pointM} {
+			margin-left: get_vw(-15, $vwSm);
+			border: 15px solid transparent;
+			border-top: 30px solid #f6ab00;
+		}
 	}
 	&-bg {
 		background-color: #69c08a;
@@ -1318,6 +1361,9 @@
 			margin-left: -15px;
 			border: 18px solid transparent;
 			border-top: 33px solid #69c08a;
+			@media #{$pointM} {
+				margin-left: get_vw(-15, $vwSm);
+			}
 		}
 	}
 	&-merit {
@@ -1338,17 +1384,34 @@
 	background-color: #fff;
 	border-radius: 0 0 10px 10px;
 	padding: 49px 79px 17px 86px;
+	@media #{$pointM} {
+		border-radius: 0 0 5px 5px;
+		padding: get_vw(10, $vwSm);
+		}
 	&-spaceM {
 		padding: 24px 27px 31px;
+		@media #{$pointM} {
+			padding: get_vw(10, $vwSm);
+		}
 	}
 	&-spaceS {
 		padding: 21px 38px 142px 41px;
+		@media #{$pointM} {
+			padding: get_vw(10, $vwSm);
+		}
 	}
 	&-spaceL {
 		padding: 12px 37px 135px 44px;
+		@media #{$pointM} {
+			border-radius: 0 0 5px 5px;
+			padding: get_vw(10, $vwSm);
+		}
 	}
 	&-spaceD {
 		padding: 20px 37px 137px 41px;
+		@media #{$pointM} {
+			padding: get_vw(10, $vwSm);
+			}
 	}
 }
 .p-topBlockConceptList {
@@ -1356,6 +1419,9 @@
 	font-weight: bold;
 	font-size: 1.8rem;
 	line-height: 1.8;
+	@media #{$pointM} {
+		font-size: get_vw(18, $vwMd);
+	}
 	&_item {
 		display: flex;
 		&-top {

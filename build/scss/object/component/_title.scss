@@ -85,6 +85,9 @@
 			font-size: 2.4rem;
 			text-align: center;
 			font-weight: bold;
+			@media #{$pointM} {
+				font-size: get_vw(20, $vwMd);
+			}
 		}
 	}
 	// アンダーラインがあるバージョン

@@ -14,7 +14,7 @@ $(function () {
 function ScrollAnime() {
 	//console.log("1");
     var elemTop = $('.l-contents').offset().top;//.l-contentsのスクロール位置を取得する
-	// ① 
+	// ①
 		console.log(elemTop);
 	var scroll = $(window).scrollTop();
 	// ②
@@ -73,5 +73,23 @@ $(window).resize(function(){
 });
 // 初回チェック
 checkBreakPoint();
+
+		//アコーディオンをクリックした時の動作
+		$('.js-syousai').on('click', function () {//イベント（クリックする）の処理を実行する
+			console.log('hoge');
+			var findElm = $(this).next(".js-accordion");//.js-syousaiの次に配置されてる.boxを取得する。
+			console.log(findElm);
+			$(findElm).slideToggle();//変数名findElmが表示されているときは隠し、隠れているときは表示する
+			if ($(this).hasClass('close')) {//クラスjs-syousaiにクラス名closeがあれば
+				console.log('1');
+				$(this).removeClass('close');//クラス名closeを除去し
+				$('.js-title').removeClass('show');//クラス名closeを除去し
+				console.log('2');
+			} else {//それ以外は
+				$(this).addClass('close');//クラスjs-syousaiにクラス名closeを追加する
+				$('.js-title').addClass('show');//クラスjs-syousaiにクラス名closeを追加する
+				console.log('3');
+			}
+		});
 
 });

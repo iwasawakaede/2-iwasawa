@@ -10,7 +10,7 @@
 
 //  body * {
 // 	outline: red 1px solid;
-// } 
+// }
 
 .p-topBanner {
 	margin:110px auto 60px;
@@ -119,7 +119,7 @@
 		}
 		@media #{$pointS} {
 			width: 90%;
-			padding-top: get_vw(20,$vwSm);	
+			padding-top: get_vw(20,$vwSm);
 			margin: 0 auto;
 		}
 	}
@@ -359,7 +359,7 @@
 			@media #{$pointM} {
 				width: 100%;
 			}
-		} 
+		}
 		&-second {
 			width: 898px;
 			@media #{$pointM} {
@@ -575,7 +575,7 @@
 		@media #{$pointS} {
 			height: get_vw(100, $vwSm);
 		}
-	} 
+	}
 	&_text {
 		color: #1eb9ee;
 		font-size: 9rem;
@@ -884,10 +884,10 @@
 		@media #{$pointM} {
 			width: 50%;
 			padding-top: get_vw(20, $vwMd);
-		} 
+		}
 		@media #{$pointS} {
 			padding-top: get_vw(18);
-		} 
+		}
 	}
 }
 .p-topBlockOption {
@@ -1455,6 +1455,11 @@
 		padding: 24px 27px 31px;
 		@media #{$pointM} {
 			padding: get_vw(10, $vwMd);
+		}
+	}
+	&-js {
+		@media #{$pointM} {
+			display: none;
 		}
 	}
 	&-spaceS {

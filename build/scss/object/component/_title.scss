@@ -10,22 +10,22 @@
 				@media #{$pointM} {
 					position: absolute;
 					content: '';
-					width: 4.8vw;
-					height: 0.27vw;
-					background-color: #50b1b2;
+					width: get_vw(20, $vwMd);
+					height: 3px;
+					background-color: #fff;
 				}
 			}
 			&::before {
 				@media #{$pointM} {
 					top: 46%;
-					left: 41.6vw;
+					right: 2%;
 					transform: rotate(0deg);
 				}
 			}
 			&::after {
 				@media #{$pointM} {
 					top: 46%;
-					left: 41.6vw;
+					right: 2%;
 					transform: rotate(90deg);
 				}
 			}
@@ -121,6 +121,7 @@
 			font-weight: bold;
 			@media #{$pointM} {
 				font-size: get_vw(20, $vwMd);
+				text-align: left;
 			}
 		}
 

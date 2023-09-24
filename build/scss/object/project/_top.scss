@@ -1332,12 +1332,13 @@
 			width: 90px;
 			height: 100px;
 			@media #{$pointM} {
-				background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
-				background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
-				top: get_vw(-14, $vwMd);
-				left: get_vw(-2, $vwMd);
-				width: 20%;
-				height: 70%;
+				background-image: none;
+				// background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
+				// background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
+				// top: get_vw(-14, $vwMd);
+				// left: get_vw(-2, $vwMd);
+				// width: 20%;
+				// height: 70%;
 			}
 			@media #{$pointS} {
 				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);
@@ -1364,12 +1365,13 @@
 			width: 90px;
 			height: 100px;
 			@media #{$pointM} {
-				background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
-				background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
-				top: get_vw(-14, $vwMd);
-				left: get_vw(-2, $vwMd);
-				width: 20%;
-				height: 70%;
+				background-image: none;
+				// background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
+				// background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
+				// top: get_vw(-14, $vwMd);
+				// left: get_vw(-2, $vwMd);
+				// width: 20%;
+				// height: 70%;
 			}
 			@media #{$pointS} {
 				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);
@@ -1400,6 +1402,7 @@
 		@media #{$pointM} {
 			margin-left: get_vw(-15, $vwMd);
 			top: 98%;
+			left: 6%;
 			border: get_vw(15, $vwMd) solid transparent;
 			border-top: get_vw(30, $vwMd) solid #f6ab00;
 		}

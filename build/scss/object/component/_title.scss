@@ -2,6 +2,40 @@
 /* title
 ----------------------------------------------------------------- */
 .c-title {
+	position: relative;
+	&-icon {
+		/*アイコンの＋と×*/
+			&::before,
+			&::after {
+				@media #{$pointM} {
+					position: absolute;
+					content: '';
+					width: 4.8vw;
+					height: 0.27vw;
+					background-color: #50b1b2;
+				}
+			}
+			&::before {
+				@media #{$pointM} {
+					top: 46%;
+					left: 41.6vw;
+					transform: rotate(0deg);
+				}
+			}
+			&::after {
+				@media #{$pointM} {
+					top: 46%;
+					left: 41.6vw;
+					transform: rotate(90deg);
+				}
+			}
+			/*　closeというクラスがついたら形状変化　*/
+			&.show::after {
+				@media #{$pointM} {
+					display: none;
+				}
+			}
+		}
 	// デフォルトのタイトル
 	&_text {
 		color: #2e59a7;
@@ -89,6 +123,7 @@
 				font-size: get_vw(20, $vwMd);
 			}
 		}
+
 	}
 	// アンダーラインがあるバージョン
 	&-line {

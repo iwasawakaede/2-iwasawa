@@ -1287,9 +1287,7 @@
 		width: 100%;
 	}
 	&_item {
-		// width: 100%;
 		background-color: #fff5e7;
-		// width: 600px;
     padding: 0 60px;
 		&-bg2 {
 			background-color: #ebf4ea;
@@ -1299,8 +1297,6 @@
 .p-topBlockConcept {
 	padding: 50px 0;
 	background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
-	// background-color: #ebf4ea;
-	// background-color: #fff;
 	background-repeat: no-repeat;
 	background-size: cover;
 	@media #{$pointM} {
@@ -1521,6 +1517,3 @@
 .p-topBlockConceptList_item:first-child {
 	padding-top: 0;
 }
-// .p-topBlockConceptList :not(.-lineM) {
-// 	border-bottom: 2px dashed #2e59a7;
-// }

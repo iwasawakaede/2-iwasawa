@@ -880,33 +880,70 @@
 		</div>
 
 		<!-- フォーム -->
-		<form action="#" method="post" class="form-enrty">
-
-
-
-			<!-- 写真選択部分 -->
-			<div>
-				<div></div>
-				<div></div>
+		<form action="#" method="post" class="p-topBlockForm">
+			<div class="c-textBox">
+				<p class="c-textBox_text">
+					※入力欄は全て必須です。
+				</p>
 			</div>
-
+			<table class="p-topBlockFormTable">
+				<tr>
+					<th class="p-topBlockFormTable_thText">お名前</th>
+					<td class="p-topBlockFormTable_tdText">性：
+						<input type="text" name="lastname" class="p-topBlockFormTable_tdText-input">
+					</td>
+					<td class="p-topBlockFormTable_tdText">名：
+						<input type="text" name="firstname" class="p-topBlockFormTable_tdText-input">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBlockFormTable_thText">電話番号</th>
+					<td class="p-topBlockFormTable_tdText">
+						<input type="number" name="tel" class="p-topBlockFormTable_tdText-input">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBlockFormTable_thText">住所</th>
+					<td class="p-topBlockFormTable_tdText">
+						<input type="text" name="address" class="p-topBlockFormTable_tdText-input">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBlockFormTable_thText">マンション名・部屋番号</th>
+					<td class="p-topBlockFormTable_tdText">
+						<input type="text" name="room" class="p-topBlockFormTable_tdText-input">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBlockFormTable_thText">メールアドレス</th>
+					<td class="p-topBlockFormTable_tdText">
+						<input type="email" name="e-mail" class="p-topBlockFormTable_tdText-input">
+					</td>
+				</tr>
+				<!-- 写真選択部分 -->
+				<div class="p-topBlockFormTableBlock">
+					<div div class="p-topBlockFormTableBlock_textBlock">
+					</div>
+					<div>
+						<label for="img">写真を選択</label>
+						<input id="img" type="file" name="image">
+					</div>
+				</div>
+			</table>
 			<!-- 写真選択について -->
+			<div class="p-topBlockFormSelect">
+				<img src="./common/img/top/contact-img.png" alt="">
+			</div>
 			<div>
+				<p>写真撮影割引には室内側・室外側の写真が必要です。</p>
 				<div>
-					<img src="./common/img/top/contact-img.png" alt="">
-				</div>
-
-				<div>
-					<p></p>
-					<p></p>
+					<p>撮影割引の写真について</p>
 				</div>
 			</div>
-
 				<!-- ボタン -->
 				<div>
-					<p></p>
+					<p>送信する</p>
 				</div>
-
 		</form>
 	</div>
 </section>

@@ -597,6 +597,14 @@
 				padding-top: get_vw(25);
 			}
 		}
+		&-topM {
+			@media #{$pointM} {
+				padding-top: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(10);
+			}
+		}
 	}
 	&_titile {
 		color: #1c4ca6;
@@ -813,6 +821,12 @@
 		@media #{$pointM} {
 			// background: linear-gradient(180deg, #fff5e7 56%, #ebf4ea 56%);
 			width: 100%;
+		}
+	}
+	&-top {
+		padding: 138px 0 78px;
+		@media #{$pointM} {
+			padding: 0 0 get_vw(30, $vwSm);
 		}
 	}
 	&_inner {

@@ -1285,10 +1285,14 @@
 	@media #{$pointM} {
 		display: block;
 		width: 100%;
+		margin: 0 auto;
 	}
 	&_item {
 		background-color: #fff5e7;
     padding: 0 60px;
+		@media #{$pointM} {
+			padding: get_vw(50, $vwMd) get_vw(15, $vwMd);
+		}
 		&-bg2 {
 			background-color: #ebf4ea;
 		}
@@ -1301,8 +1305,11 @@
 	background-size: cover;
 	@media #{$pointM} {
 		background: linear-gradient(180deg, #fff5e7 50%, #ebf4ea 50%);
-
+		padding: get_vw(20, $vwMd);
 		margin-top: get_vw(20, $vwMd);
+	}
+	@media #{$pointS} {
+		padding: get_vw(20, $vwSm);
 	}
 }
 .p-topBlockConceptBlock {
@@ -1366,12 +1373,6 @@
 			height: 100px;
 			@media #{$pointM} {
 				background-image: none;
-				// background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
-				// background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
-				// top: get_vw(-14, $vwMd);
-				// left: get_vw(-2, $vwMd);
-				// width: 20%;
-				// height: 70%;
 			}
 			@media #{$pointS} {
 				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);
@@ -1389,7 +1390,7 @@
 	position: relative;
 	@media #{$pointM} {
 		border-radius: 5px 5px 0 0;
-		padding: get_vw(5, $vwMd);
+		padding: get_vw(5, $vwMd) 0 get_vw(5, $vwMd) get_vw(15, $vwMd);
 	}
 	&::after {
 		content: "";
@@ -1420,6 +1421,7 @@
 			@media #{$pointM} {
 				margin-left: get_vw(-15, $vwMd);
 				top: 98%;
+				left: 6%;
 				border: get_vw(15, $vwMd) solid transparent;
 				border-top: get_vw(30, $vwMd) solid #69c08a;
 			}
@@ -1429,7 +1431,7 @@
 		background-color: #ff5267;
 		padding: 3px 0 5px;
 		@media #{$pointM} {
-			padding: get_vw(3, $vwMd) 0;
+			padding: get_vw(5, $vwMd) 0 get_vw(5, $vwMd) get_vw(15, $vwMd);
 		}
 		&::after {
 			display: none;

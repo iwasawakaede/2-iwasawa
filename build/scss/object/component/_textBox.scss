@@ -25,28 +25,15 @@
 	&_text {
 		color: #333333;
 		font-size: 1.6rem;
-		padding-top: 25px;
+		// padding-top: 25px;
 		// テキストを表示するためのcssは書いてOK！
 		// ある程度テキストが固まってるので、余白はセットで入れてよい
 		@media #{$pointM} {
 			font-size: get_vw(15, $vwMd);
 			line-height: 1.6;
-			padding-top: get_vw(20, $vwMd);
-		}
-		@media #{$pointS} {
-			@include fz_vw(15);
-			padding-top: get_vw(8);
 		}
 		&-weight {
 			font-weight: 600;
-		}
-		&-tabtop {
-			@media #{$pointM} {
-				padding-top: get_vw(10, $vwMd);
-			}
-			@media #{$pointS} {
-				padding-top: get_vw(10);
-			}
 		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。

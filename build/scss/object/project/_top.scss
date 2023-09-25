@@ -1323,9 +1323,6 @@
 		}
 	}
 	&-merit {
-		@media #{$pointM} {
-			// width: 100%;
-		}
 		&::before {
 			content: "";
 			background-image: url(/htdocs/common/img/top/difference-icon1.png);
@@ -1340,12 +1337,6 @@
 			height: 100px;
 			@media #{$pointM} {
 				background-image: none;
-				// background-size: get_vw(70, $vwMd) get_vw(70, $vwMd);
-				// background-position: left get_vw(10, $vwMd) top get_vw(10, $vwMd);
-				// top: get_vw(-14, $vwMd);
-				// left: get_vw(-2, $vwMd);
-				// width: 20%;
-				// height: 70%;
 			}
 			@media #{$pointS} {
 				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);

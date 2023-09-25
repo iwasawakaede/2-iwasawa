@@ -464,27 +464,26 @@
 	border: 4px solid #2e59a7;
 	border-radius: 10px;
 	width: 1250px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	padding: 25px 146px 20px 36px;
+	padding: 25px 33px 25px 33px;
 	@media #{$pointM} {
 		width: 100%;
 		display: block;
 		padding: get_vw(20, $vwMd);
 	}
 	&-second {
-		padding: 25px 33px 25px 33px;
+		padding: 25px 146px 20px 36px;
 		@media #{$pointM} {
 			padding: get_vw(20, $vwMd);
 		}
 	}
 	&-middle {
 		border: 4px solid #f6ab00;
-		border-radius: 10px;
 		width: 1000px;
-		padding: 37px 36px 0;
-		margin: 0 auto;
+		padding: 25px 33px 0;
 		@media #{$pointM} {
 			width: 100%;
 			padding: get_vw(20, $vwMd) get_vw(20, $vwMd) 0 get_vw(20, $vwMd);
@@ -516,21 +515,22 @@
 			}
 		}
 	}
+	// シン・ベース
 	&_img {
-		width: 458px;
-		margin: 0 auto;
-		@media #{$pointM} {
-			width: get_vw(458, $vwMd);
+		width: 427px;
+		@media #{$pointS} {
+			width: get_vw(213.5);
 			margin: 0 auto;
-			padding-top: get_vw(62, $vwMd);
 		}
 		&-second {
-			width: 427px;
-			@media #{$pointS} {
-				width: get_vw(213.5);
+			width: 458px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: get_vw(458, $vwMd);
 				margin: 0 auto;
+				padding-top: get_vw(62, $vwMd);
 			}
-		}
+	}
 		&_pic1 {
 			@media #{$pointS} {
 				width: get_vw(229);

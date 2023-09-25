@@ -40,13 +40,4 @@
 	&_text:first-child {
 		padding-top: 0;
 	}
-	&-tabtext {
-		padding-top: get_vw(10, $vwMd);
-	}
-	&-mgspace {
-		margin-top: 10px;
-		@media #{$pointM} {
-			padding-top: 0;
-		}
-	}
 }

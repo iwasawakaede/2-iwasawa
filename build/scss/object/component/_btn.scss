@@ -47,7 +47,7 @@
 .c-btnReserve {
 	background-color: #f6ab00;
 	border-radius: 20px;
-	width: 750px;
+	width: 745px;
 	margin: 0 auto;
 	margin-top: 60px;
 	@media #{$pointM} {
@@ -60,8 +60,8 @@
 	}
 	&_link {
 		display: flex;
-		justify-content: space-evenly;
-		padding: 10px 50px 10px 10px;
+		justify-content: space-between;
+		padding: 10px 45px 10px 10px;
 		@media #{$pointM}  {
 			padding: get_vw(5, $vwMd) get_vw(25, $vwMd) 0 get_vw(5, $vwMd);
 		}
@@ -73,14 +73,16 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		width: 468px;
 	}
-		&_textBoxText {
-			color: #ffffff;
-			font-family: "Noto Sans jp";
-			font-size: 54px;
-			font-weight: bold;
-			text-align: center;
-			line-height: 1;
+	&_textBoxText {
+		color: #ffffff;
+		font-family: "Noto Sans jp";
+		font-size: 53px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1;
+		letter-spacing: -2px;
 			@media #{$pointM} {
 				font-size: get_vw(40, $vwMd);
 			}
@@ -91,12 +93,14 @@
 				color: #ffffff;
 				font-family: "Noto Sans jp";
 				font-size: 28px;
-				text-align: center;
+				text-align: left;
 				letter-spacing: 3px;
 				line-height: 1;
+				letter-spacing: 1px;
 				margin-top: 8px;
 				@media #{$pointM} {
 					font-size: get_vw(20, $vwMd);
+					text-align: center;
 				}
 				@media #{$pointS} {
 					font-size: get_vw(10);
@@ -106,17 +110,16 @@
 }
 .c-btnReservePic {
 	&_picImage {
-		width: 198px;
+		width: 200px;
 		position: relative;
 		top: 10px;
 		padding-top: 8px;
 		@media #{$pointM} {
-			width: 70%;
+			width: 100%;
 			top: 0;
 		}
 		@media #{$pointS} {
 			position: unset;
-			width: get_vw(99);
 		}
 	}
 }

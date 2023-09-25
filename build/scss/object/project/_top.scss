@@ -10,7 +10,7 @@
 
 //  body * {
 // 	outline: red 1px solid;
-// } 
+// }
 
 .p-topVisual {
 	&_pic {
@@ -83,6 +83,7 @@
 	}
 }
 .p-topBlockList {
+	&-topM    { @include spaceTopM; }
 	&_item {
 		&-second {
 			padding-top: 47px;
@@ -316,6 +317,11 @@
 		&:nth-child(2) {
 			border-right: 3px dotted #1c4ca6;
 		}
+		&:nth-child(1) {
+			@media #{$pointM} {
+				border-radius: 5px 0 0 0;
+			}
+		}
 		&-bgcolor2 {
 			background-color: #1eb9ee;
 		}
@@ -443,15 +449,15 @@
 		@media #{$pointM} {
 			width: 50%;
 			padding-top: get_vw(20, $vwMd);
-		} 
+		}
 		@media #{$pointS} {
 			padding-top: get_vw(18);
-		} 
+		}
 	}
 	&_picImg {
 		@media #{$pointS} {
 			width: get_vw(229);
-		} 
+		}
 	}
 }
 .p-topBlockOption {

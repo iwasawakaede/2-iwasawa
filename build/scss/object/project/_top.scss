@@ -757,6 +757,17 @@
 		@media #{$pointS} {
 			font-size: get_vw(19);
 		}
+		&-small {
+			color: #333333;
+			font-size: 1.8rem;
+			font-weight: 500;
+			@media #{$pointM} {
+				font-size: get_vw(17, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18);
+			}
+		}
 	}
 	&_priceBoxTextBig {
 		color: #ff5267;
@@ -767,17 +778,6 @@
 		}
 		@media #{$pointS} {
 			font-size: get_vw(25);
-		}
-	}
-	&_priceBoxTextSmall {
-		color: #333333;
-		font-size: 1.8rem;
-		font-weight: 500;
-		@media #{$pointM} {
-			font-size: get_vw(17, $vwMd);
-		}
-		@media #{$pointS} {
-			font-size: get_vw(18);
 		}
 	}
 }

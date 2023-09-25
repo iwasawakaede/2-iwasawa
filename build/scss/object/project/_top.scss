@@ -890,6 +890,10 @@
 		&-nonespace {
 			padding-top: 0;
 		}
+		&-widthXS {
+			width: 1030px;
+			margin: 0 auto;
+		}
 	}
 	&_pic {
 		width: 479px;
@@ -1526,4 +1530,25 @@
 }
 .p-topBlockConceptList_item:first-child {
 	padding-top: 0;
+}
+.p-topBlockFormTable {
+	&_thText {
+		color: #333333;
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+	&_tdText {
+		color: #333333;
+		font-size: 1.6rem;
+		&-input {
+			margin-left: 35px;
+		}
+	}
+}
+.p-topBlockFormTable_tdText:nth-child(1) {
+	&-input  {
+		&:nth-child(1) {
+			margin: 0 10px 0 0;
+		}
+	}
 }

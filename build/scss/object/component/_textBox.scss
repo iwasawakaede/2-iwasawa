@@ -88,6 +88,16 @@
 				font-size: get_vw(20, $vwMd);
 			}
 		}
+		&-small {
+			color: #ff5267;
+			font-size: 1.4rem;
+			@media #{$pointM} {
+				font-size: get_vw(14, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(14, $vwSm);
+			}
+		}
 	}
 	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
 	&_text:first-child {

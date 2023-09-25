@@ -515,20 +515,19 @@
 			}
 		}
 	}
-	// シン・ベース
 	&_img {
-		width: 427px;
-		@media #{$pointS} {
-			width: get_vw(213.5);
+		width: 458px;
+		@media #{$pointM} {
+			width: get_vw(458, $vwMd);
 			margin: 0 auto;
+			padding-top: get_vw(62, $vwMd);
 		}
 		&-second {
-			width: 458px;
+			width: 427px;
 			margin: 0 auto;
-			@media #{$pointM} {
-				width: get_vw(458, $vwMd);
+			@media #{$pointS} {
+				width: get_vw(213.5);
 				margin: 0 auto;
-				padding-top: get_vw(62, $vwMd);
 			}
 	}
 		&_pic1 {
@@ -538,13 +537,13 @@
 		}
 	}
 	&_textBox {
-		width: 560px;
+		width: 690px;
 		@media #{$pointM} {
 			width: 100%;
 			margin: 0 auto;
 		}
 		&-width {
-			width: 690px;
+			width: 560px;
 			@media #{$pointM} {
 				width: 100%;
 				margin: 0 auto;
@@ -703,7 +702,7 @@
 	border-radius: 10px;
 	width: 507px;
 	display: flex;
-	margin: 72px 0 0 178px;
+	margin: 20px 0 0 198px;
 	@media #{$pointM} {
 		border-radius: 5px;
 		width: 65%;
@@ -714,10 +713,7 @@
 		margin: get_vw(21) auto get_vw(10);
 	}
 	&-second {
-		margin: 20px 0 0 198px;
-		@media #{$pointM} {
-			margin: get_vw(21, $vwMd) auto get_vw(10, $vwMd);
-		}
+		margin: 72px 0 0 178px;
 	}
 	&_textBolck {
 		background-color: #1eb9ee;

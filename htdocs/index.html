@@ -878,7 +878,6 @@
 			<p class="p-topTitile_text p-topTitile_text-topM">CONTACT</p>
 			<h2 class="p-topTitile_titile p-topTitile_titile-top">お申し込み</h2>
 		</div>
-
 		<!-- フォーム -->
 		<form action="#" method="post" class="p-topBlockForm">
 			<div class="c-textBox">
@@ -922,9 +921,36 @@
 				</tr>
 				<!-- 写真選択部分 -->
 				<div class="p-topBlockFormTableBlock">
-					<div div class="p-topBlockFormTableBlock_textBlock">
+					<div class="p-topBlockFormTableBlock_textBlock">
+						<div class="p-topBlockFormTableBlock_textBlockFrame">
+							<p class="p-topBlockFormTableBlock_textBlockFrame-text">
+								型番部分の写真について
+							</p>
+						</div>
+						<ul class="p-topBlockFormTableBlock_textBlockList">
+							<li class="p-topBlockFormTableBlock_textBlock-item">
+								<div class="c-textBox">
+									<span class="c-textBox_text-width">※</span>
+									<p class="c-textBox_text">室内機の型番部分を撮影した写真を添付してください。</p>
+								</div>
+							</li>
+							<li class="p-topBlockFormTableBlock_textBlock-item">
+								<div class="c-textBox">
+									<span class="c-textBox_text-width">※</span>
+									<p class="c-textBox_text">写真撮影割引用の写真もこちらに添付してください。</p>
+							</div>
+							</li>
+						</ul>
 					</div>
-					<div>
+					<div class="p-topBlockFormTableBlock_imgBlock">
+						<div class="c-textBox">
+							<p class="c-textBox_text">
+								写真をドラッグ＆ドロップするか、「写真を選択」より、複数の写真を添付できます。
+							</p>
+							<p class="c-textBox_text">
+								添付できる写真は「jpg、png」のみとなります。
+							</p>
+						</div>
 						<label for="img">写真を選択</label>
 						<input id="img" type="file" name="image">
 					</div>
@@ -932,18 +958,22 @@
 			</table>
 			<!-- 写真選択について -->
 			<div class="p-topBlockFormSelect">
-				<img src="./common/img/top/contact-img.png" alt="">
-			</div>
-			<div>
-				<p>写真撮影割引には室内側・室外側の写真が必要です。</p>
-				<div>
-					<p>撮影割引の写真について</p>
+				<div class="p-topBlockFormSelect_block">
+					<img src="./common/img/top/contact-img.png" alt="">
+				</div>
+				<div class="p-topBlockFormSelect_textBox">
+					<p class="p-topBlockFormSelect_textBox-text">
+						写真撮影割引には室内側・室外側の写真が必要です。
+					</p>
+					<div class="p-topBlockFormSelect_frame">
+						<p class="p-topBlockFormSelect_frame-text">撮影割引の写真について</p>
+					</div>
 				</div>
 			</div>
 				<!-- ボタン -->
-				<div>
-					<p>送信する</p>
-				</div>
+			<div class="p-topBlockForm_btn">
+				<input type="submit" value="送信する" class="p-topBlockForm_btn-text">
+			</div>
 		</form>
 	</div>
 </section>

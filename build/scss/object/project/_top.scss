@@ -1626,3 +1626,112 @@
 		display: none;
 	}
 }
+.p-topBlockFormSelect {
+	display: flex;
+	align-items: center;
+	&_block {
+		width: 265px;
+	}
+	&_textBox {
+		position: relative;
+		display: inline-block;
+		margin: 1.5em 0 1.5em 15px;
+		padding: 12px;
+		min-width: 120px;
+		max-width: 100%;
+		color: #1eb9ee;
+		font-size: 16px;
+		background: #FFF;
+		border: solid 1px #1c4ca6;
+		box-sizing: border-box;
+		border-radius: 10px;
+		@media #{$pointM} {
+			font-size: get_vw(14, $vwMd);
+			padding: get_vw(27, $vwMd) get_vw(10, $vwMd);
+			margin: get_vw(15, $vwMd) 0;
+		}
+		@media #{$pointS} {
+			font-size: get_vw(14);
+			display: block;
+			margin-top: 0;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 23%;
+			left: -48px;
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+			border-right: 50px solid #fff;
+			transform: rotate(0deg);
+			z-index: 2;
+			@media #{$pointM} {
+				border-top: get_vw(20, $vwMd) solid transparent;
+				border-left: get_vw(20, $vwMd) solid transparent;
+				border-right: get_vw(50, $vwMd) solid #fff;
+				left: get_vw(-89, $vwMd);
+			}
+			@media #{$pointS} {
+				top: -41px;
+				left: 44%;
+				border-top: get_vw(20, $vwSm) solid transparent;
+				border-left: get_vw(20, $vwSm) solid transparent;
+				border-right: get_vw(50, $vwSm) solid #fff;
+				margin-left: get_vw(-15, $vwSm);
+				transform: none;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 22%;
+			left: -50px;
+			border-top: 21px solid transparent;
+			border-bottom: 21px solid transparent;
+			border-right: 51px solid #1c4ca6;
+			transform: rotate(0deg);
+			z-index: 1;
+			@media #{$pointM} {
+				top: 34%;
+				left: get_vw(-90, $vwMd);
+				border-top: get_vw(21, $vwMd) solid transparent;
+				border-left: get_vw(21, $vwMd) solid transparent;
+				border-right: get_vw(51, $vwMd) solid #1c4ca6;
+			}
+			@media #{$pointS} {
+				top: -46px;
+				left: 42%;
+				border-top: get_vw(20, $vwSm) solid transparent;
+				border-left: get_vw(20, $vwSm) solid transparent;
+				border-right: get_vw(50, $vwSm) solid #1c4ca6;
+				margin-left: get_vw(-15, $vwSm);
+				transform: none;
+			}
+		}
+	}
+	&_textBoxText {
+		color: #ff5267;
+		font-size: 1.8rem;
+		font-weight: bold;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;left: 0;
+			text-decoration: underline;
+			text-decoration-thickness: 0.5em;
+			text-decoration-color: #ffff0f;
+			text-underline-offset: -0.3em;
+		}
+	}
+	&_frame {
+		background-color: #1c4ca6;
+		width: 240px;
+
+	}
+	&_frameText {
+		color: #ffffff;
+		font-size: 1.8rem;
+		text-align: center;
+	}
+}

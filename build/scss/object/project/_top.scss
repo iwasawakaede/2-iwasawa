@@ -1543,7 +1543,7 @@
 		font-size: 1.6rem;
 		font-weight: bold;
 		width: 33%;
-		padding-right: 163px;
+		padding-right: 130px;
 	}
 	&_thText:first-child {
 		padding-top: 38px;
@@ -1552,13 +1552,14 @@
 		color: #333333;
 		font-size: 1.6rem;
 		padding-top: 38px;
-		&-input {
-			background-color: #ffffff;
-			border-radius: 10px;
-			border: 1px solid #333333;
-			width: 689px;
-			margin-left: 35px;
-		}
+	}
+	&_tdTextInput {
+		background-color: #ffffff;
+		border-radius: 10px;
+		border: 1px solid #333333;
+		width: 689px;
+		padding: 7px;
+		margin-left: 35px;
 		&-text {
 			width: 307px;
 			margin-left: 0;
@@ -1570,5 +1571,34 @@
 		&-leftS   { @include spaceLeftS; }
 		&-leftM   { @include spaceLeftM; }
 		&-leftL   { @include spaceLeftL; }
+	}
+}
+.p-topBlockFormTableBlock {
+	&_textBlock {
+		width: 250px;
+	}
+	&_textBlockFrame {
+		background-color: #1eb9ee;
+		border-radius: 10px;
+	}
+	&_textBlockFrameText {
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+	}
+	&_textBlockItemFlex {
+		display: flex;
+		align-items: center;
+	}
+	&_textBlockItemFlexMg {
+		margin-top: -6px;
+	}
+	&_imgBlock {
+		background-color: #ffffff;
+		border-radius: 10px;
+		border: 1px solid #f6ab00;
+		width: 687px;
+		padding: 30px 0;
 	}
 }

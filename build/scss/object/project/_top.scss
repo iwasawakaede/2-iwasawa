@@ -1532,23 +1532,43 @@
 	padding-top: 0;
 }
 .p-topBlockFormTable {
+	&-leftXS  { @include spaceLeftXS; }
+	&-leftS   { @include spaceLeftS; }
+	&-leftM   { @include spaceLeftM; }
+	&-leftL   { @include spaceLeftL; }
+	width: 100%;
+  margin: 0 auto;
 	&_thText {
 		color: #333333;
 		font-size: 1.6rem;
 		font-weight: bold;
+		width: 33%;
+		padding-right: 163px;
+	}
+	&_thText:first-child {
+		padding-top: 38px;
 	}
 	&_tdText {
 		color: #333333;
 		font-size: 1.6rem;
+		padding-top: 38px;
 		&-input {
+			background-color: #ffffff;
+			border-radius: 10px;
+			border: 1px solid #333333;
+			width: 689px;
 			margin-left: 35px;
 		}
-	}
-}
-.p-topBlockFormTable_tdText:nth-child(1) {
-	&-input  {
-		&:nth-child(1) {
-			margin: 0 10px 0 0;
+		&-text {
+			width: 307px;
+			margin-left: 0;
 		}
+		&-leftspace {
+			margin-left: 35px;
+		}
+		&-leftXS  { @include spaceLeftXS; }
+		&-leftS   { @include spaceLeftS; }
+		&-leftM   { @include spaceLeftM; }
+		&-leftL   { @include spaceLeftL; }
 	}
 }

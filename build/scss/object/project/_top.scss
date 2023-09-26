@@ -1631,6 +1631,7 @@
 	align-items: center;
 	&_block {
 		width: 265px;
+		margin-right: 40px;
 	}
 	&_textBox {
 		position: relative;
@@ -1714,15 +1715,12 @@
 		font-size: 1.8rem;
 		font-weight: bold;
 		position: relative;
-		&::after {
-			content: '';
-			position: absolute;
-			top: 0;left: 0;
-			text-decoration: underline;
-			text-decoration-thickness: 0.5em;
-			text-decoration-color: #ffff0f;
-			text-underline-offset: -0.3em;
-		}
+	}
+	&_textBoxTextLine {
+		text-decoration: underline;
+		text-decoration-thickness: 0.5em;
+		text-decoration-color: #ffff0f;
+		text-underline-offset: -0.3em;
 	}
 	&_frame {
 		background-color: #1c4ca6;
@@ -1733,5 +1731,31 @@
 		color: #ffffff;
 		font-size: 1.8rem;
 		text-align: center;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0%;
+			right: -18px;
+			border-top: 18px solid transparent;
+			border-bottom: 18px solid transparent;
+			border-left: 18px solid #1c4ca6;
+			z-index: 3;
+		}
 	}
+}
+.p-topBlockFormBtn {
+	width: 600px;
+	padding-top: 38px;
+	margin: 0 auto;
+	&_text {
+		color: #ffffff;
+		font-size: 1.8rem;
+		font-weight: 500;
+		background-color: #f6ab00;
+		border-radius: 30px;
+		border: 1px solid #f6ab00;
+		width: 600px;
+		padding: 15px 0;
+		}
 }

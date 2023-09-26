@@ -893,6 +893,9 @@
 		&-widthXS {
 			width: 1030px;
 			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
 		}
 	}
 	&_pic {
@@ -1531,6 +1534,11 @@
 .p-topBlockConceptList_item:first-child {
 	padding-top: 0;
 }
+.p-topBlockForm {
+	@media #{$pointM} {
+		width: 100%;
+		}
+}
 .p-topBlockFormTable {
 	&-leftXS  { @include spaceLeftXS; }
 	&-leftS   { @include spaceLeftS; }
@@ -1544,14 +1552,36 @@
 		font-weight: bold;
 		width: 33%;
 		padding-right: 130px;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+			width: 100%;
+			display: block;
+			padding: 42px 0 0;
+		}
 	}
 	&_thText:first-child {
 		padding-top: 38px;
+		@media #{$pointM} {
+			padding-top: get_vw(15, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(16, $vwSm);
+		}
 	}
 	&_tdText {
 		color: #333333;
 		font-size: 1.6rem;
 		padding-top: 38px;
+		@media #{$pointM} {
+			font-size: get_vw(15, $vwMd);
+			width: 100%;
+			display: block;
+			padding-top: get_vw(13, $vwMd);
+			}
+			@media #{$pointS} {
+			font-size: get_vw(15, $vwSm);
+			padding-top: get_vw(38, $vwSm);
+			}
 	}
 	&_tdTextInput {
 		background-color: #ffffff;
@@ -1560,25 +1590,51 @@
 		width: 689px;
 		padding: 7px;
 		margin-left: 35px;
+		@media #{$pointM} {
+			width: 100%;
+			padding: get_vw(7, $vwMd);
+			margin-left: 0;
+			}
 		&-text {
 			width: 307px;
 			margin-left: 0;
+		@media #{$pointM} {
+			width: 44%;
+			}
 		}
 		&-leftspace {
 			margin-left: 35px;
+			@media #{$pointM} {
+				margin-left: 0;
+			}
 		}
 		&-leftXS  { @include spaceLeftXS; }
 		&-leftS   { @include spaceLeftS; }
 		&-leftM   { @include spaceLeftM; }
 		&-leftL   { @include spaceLeftL; }
+		&-tabwidth {
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
 	}
 }
 .p-topBlockFormTableBlock {
 	display: flex;
 	align-items: flex-start;
 	padding-top: 35px;
+	@media #{$pointM} {
+		justify-content: space-between;
+		padding-top: get_vw(17, $vwMd);
+	}
 	&_textBlock {
 		width: 250px;
+		@media #{$pointM} {
+			width: 40%;
+			@media #{$pointM} {
+				width: 47%;
+			}
+		}
 	}
 	&_textBlockFrame {
 		background-color: #1eb9ee;
@@ -1596,6 +1652,9 @@
 	}
 	&_textBlockItemFlexMg {
 		margin-top: -6px;
+		@media #{$pointM} {
+			margin-top: 0;
+		}
 	}
 	&_imgBlock {
 		background-color: #ffffff;
@@ -1604,6 +1663,12 @@
 		width: 687px;
 		padding: 30px 0;
 		margin: 0 auto;
+		@media #{$pointM} {
+			border-radius: 5px;
+			width: 50%;
+			padding: get_vw(15, $vwMd) get_vw(20, $vwMd);
+			margin: 0 0 0 get_vw(10, $vwMd);
+		}
 		&-none {
 			padding-top: 0;
 		}
@@ -1618,6 +1683,12 @@
 		padding: 5px 20px;
 		transition: .3s;
 		cursor: pointer;
+		@media #{$pointM} {
+			border-radius: 10px;
+			width: 97%;
+			margin: get_vw(13, $vwMd) auto 0;
+			padding: get_vw(5, $vwMd) get_vw(10, $vwMd);
+		}
 		&:hover {
 			opacity: 0.8;
 		}
@@ -1629,9 +1700,15 @@
 .p-topBlockFormSelect {
 	display: flex;
 	align-items: center;
+	@media #{$pointM} {
+		justify-content: space-between;
+	}
 	&_block {
 		width: 265px;
 		margin-right: 40px;
+		@media #{$pointM} {
+			width: get_vw(265, $vwMd);
+		}
 	}
 	&_textBox {
 		position: relative;
@@ -1715,6 +1792,12 @@
 		font-size: 1.8rem;
 		font-weight: bold;
 		position: relative;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18, $vwSm);
+			}
 	}
 	&_textBoxTextLine {
 		text-decoration: underline;
@@ -1732,6 +1815,12 @@
 		font-size: 1.8rem;
 		text-align: center;
 		position: relative;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18, $vwSm);
+			}
 		&::after {
 			content: "";
 			position: absolute;

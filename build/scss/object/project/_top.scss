@@ -1622,18 +1622,16 @@
 .p-topBlockFormTableBlock {
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 	padding-top: 35px;
 	@media #{$pointM} {
-		justify-content: space-between;
-		padding-top: get_vw(17, $vwMd);
+		display: block;
+		padding-top: get_vw(27, $vwMd);
 	}
 	&_textBlock {
 		width: 250px;
 		@media #{$pointM} {
-			width: 40%;
-			@media #{$pointM} {
-				width: 47%;
-			}
+			width: 100%;
 		}
 	}
 	&_textBlockFrame {
@@ -1662,10 +1660,9 @@
 		border: 1px solid #f6ab00;
 		width: 687px;
 		padding: 30px 0;
-		margin: 0 auto;
 		@media #{$pointM} {
 			border-radius: 5px;
-			width: 50%;
+			width: 58%;
 			padding: get_vw(15, $vwMd) get_vw(20, $vwMd);
 			margin: 0 0 0 get_vw(10, $vwMd);
 		}
@@ -1708,6 +1705,7 @@
 		margin-right: 40px;
 		@media #{$pointM} {
 			width: get_vw(265, $vwMd);
+			margin-right: 0;
 		}
 	}
 	&_textBox {
@@ -1725,8 +1723,9 @@
 		border-radius: 10px;
 		@media #{$pointM} {
 			font-size: get_vw(14, $vwMd);
-			padding: get_vw(27, $vwMd) get_vw(10, $vwMd);
-			margin: get_vw(15, $vwMd) 0;
+			width: 58%;
+			padding: get_vw(30, $vwMd) get_vw(22, $vwMd);
+			margin: 0;
 		}
 		@media #{$pointS} {
 			font-size: get_vw(14);
@@ -1744,19 +1743,20 @@
 			transform: rotate(0deg);
 			z-index: 2;
 			@media #{$pointM} {
-				border-top: get_vw(20, $vwMd) solid transparent;
-				border-left: get_vw(20, $vwMd) solid transparent;
-				border-right: get_vw(50, $vwMd) solid #fff;
-				left: get_vw(-89, $vwMd);
+				border-top: get_vw(17, $vwMd) solid transparent;
+				border-left: get_vw(17, $vwMd) solid transparent;
+				border-right: get_vw(81, $vwMd) solid #fff;
+				left: -20%;
+				top: 34%;
 			}
 			@media #{$pointS} {
-				top: -41px;
-				left: 44%;
-				border-top: get_vw(20, $vwSm) solid transparent;
-				border-left: get_vw(20, $vwSm) solid transparent;
-				border-right: get_vw(50, $vwSm) solid #fff;
-				margin-left: get_vw(-15, $vwSm);
+				border-top: get_vw(17, $vwSm) solid transparent;
+				border-left: get_vw(17, $vwSm) solid transparent;
+				border-right: get_vw(81, $vwSm) solid #fff;
+				// margin-left: get_vw(-15, $vwSm);
 				transform: none;
+				top: get_vw(-41, $vwMd);
+				left: 44%;
 			}
 		}
 		&::after {
@@ -1771,18 +1771,18 @@
 			z-index: 1;
 			@media #{$pointM} {
 				top: 34%;
-				left: get_vw(-90, $vwMd);
-				border-top: get_vw(21, $vwMd) solid transparent;
-				border-left: get_vw(21, $vwMd) solid transparent;
-				border-right: get_vw(51, $vwMd) solid #1c4ca6;
+				left: get_vw(-100
+				, $vwMd);
+				border-top: get_vw(18, $vwMd) solid transparent;
+				border-left: get_vw(18, $vwMd) solid transparent;
+				border-right: get_vw(82, $vwMd) solid #1c4ca6;
 			}
 			@media #{$pointS} {
 				top: -46px;
 				left: 42%;
-				border-top: get_vw(20, $vwSm) solid transparent;
-				border-left: get_vw(20, $vwSm) solid transparent;
-				border-right: get_vw(50, $vwSm) solid #1c4ca6;
-				margin-left: get_vw(-15, $vwSm);
+				border-top: get_vw(18, $vwSm) solid transparent;
+				border-left: get_vw(18, $vwSm) solid transparent;
+				border-right: get_vw(82, $vwSm) solid #1c4ca6;
 				transform: none;
 			}
 		}
@@ -1837,6 +1837,13 @@
 	width: 600px;
 	padding-top: 38px;
 	margin: 0 auto;
+	@media #{$pointM} {
+		width: get_vw(600, $vwMd);
+		padding-top: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(18, $vwSm);
+		}
 	&_text {
 		color: #ffffff;
 		font-size: 1.8rem;
@@ -1846,5 +1853,16 @@
 		border: 1px solid #f6ab00;
 		width: 600px;
 		padding: 15px 0;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			border-radius: 20px;
+			width: 100%;
+			padding-top: get_vw(17, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(16, $vwSm);
+				border-radius: 5px;
+				padding-top: get_vw(17, $vwSm);
+			}
 		}
 }

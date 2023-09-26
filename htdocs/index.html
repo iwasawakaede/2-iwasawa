@@ -921,7 +921,7 @@
 			</table>
 				<!-- 写真選択部分 -->
 				<div class="p-topBlockFormTableBlock">
-					<div class="p-topBlockFormTableBlock_textBlock u-mg-top3L">
+					<div class="p-topBlockFormTableBlock_textBlock">
 						<div class="p-topBlockFormTableBlock_textBlockFrame">
 							<p class="p-topBlockFormTableBlock_textBlockFrameText">
 								型番部分の写真について
@@ -931,13 +931,13 @@
 							<li class="p-topBlockFormTableBlock_textBlockItem">
 								<div class="c-textBox p-topBlockFormTableBlock_textBlockItemFlex">
 									<span class="c-textBox_text u-text-color1 p-topBlockFormTableBlock_textBlockItemFlexMg">※</span>
-									<p class="c-textBox_text u-text-color1">室内機の型番部分を撮影した写真を添付してください。</p>
+									<p class="c-textBox_text u-text-color1  p-topBlockFormTableBlock_imgBlock-none">室内機の型番部分を撮影した写真を添付してください。</p>
 								</div>
 							</li>
 							<li class="p-topBlockFormTableBlock_textBlockItem">
 								<div class="c-textBox  p-topBlockFormTableBlock_textBlockItemFlex">
 									<span class="c-textBox_text u-text-color1">※</span>
-									<p class="c-textBox_text u-text-color1">写真撮影割引用の写真もこちらに添付してください。</p>
+									<p class="c-textBox_text u-text-color1 p-topBlockFormTableBlock_imgBlock-none">写真撮影割引用の写真もこちらに添付してください。</p>
 							</div>
 							</li>
 						</ul>
@@ -951,8 +951,12 @@
 								添付できる写真は「jpg、png」のみとなります。
 							</p>
 						</div>
-						<label for="img">写真を選択</label>
-						<input id="img" type="file" name="image">
+						<div class="p-topBlockFormTableBlock_imgBlockFrame">
+							<label for="file" class="p-topBlockFormTableBlock_imgBlockLabel">
+								写真を選択
+								<input id="img" type="file" name="image" class="p-topBlockFormTableBlock_imgBlockInput">
+							</label>
+						</div>
 					</div>
 				</div>
 			<!-- 写真選択について -->

@@ -1644,12 +1644,26 @@
 		font-weight: bold;
 		text-align: center;
 	}
+	&_textBlockList {
+		@media #{$pointM} {
+			display: none;
+		}
+		&-tab {
+			display: none;
+			@media #{$pointM} {
+				display: block;
+			}
+		}
+	}
 	&_textBlockItemFlex {
 		display: flex;
 		align-items: flex-start;
+		@media #{$pointM} {
+			justify-content: center;
+			align-items: center;
+		}
 	}
 	&_textBlockItemFlexMg {
-		margin-top: -6px;
 		@media #{$pointM} {
 			margin-top: 0;
 		}
@@ -1662,9 +1676,9 @@
 		padding: 30px 0;
 		@media #{$pointM} {
 			border-radius: 5px;
-			width: 58%;
+			width: 100%;
 			padding: get_vw(15, $vwMd) get_vw(20, $vwMd);
-			margin: 0 0 0 get_vw(10, $vwMd);
+			margin: get_vw(20, $vwMd) auto;
 		}
 		&-none {
 			padding-top: 0;

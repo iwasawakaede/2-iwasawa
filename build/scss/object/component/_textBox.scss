@@ -19,15 +19,9 @@
 	&-spaceTopS    { @include spaceTopS; }
 	&-spaceTopM    { @include spaceTopM; }
 	&-spaceTopL    { @include spaceTopL; }
-		@media #{$pointM} {
-			padding-top: get_vw(20, $vwMd);
-		}
 	&_text {
 		color: #333333;
 		font-size: 1.6rem;
-		// padding-top: 25px;
-		// テキストを表示するためのcssは書いてOK！
-		// ある程度テキストが固まってるので、余白はセットで入れてよい
 		@media #{$pointM} {
 			font-size: get_vw(15, $vwMd);
 			line-height: 1.6;
@@ -36,7 +30,6 @@
 			font-weight: 600;
 		}
 	}
-	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
 	&_text:first-child {
 		padding-top: 0;
 	}

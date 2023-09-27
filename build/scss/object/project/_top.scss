@@ -83,7 +83,13 @@
 	}
 }
 .p-topBlockList {
-	&-topM    { @include spaceTopM; }
+	margin-top: 20px;
+	@media #{$pointM} {
+		margin-top: get_vw(20, $vwMd);
+	}
+	@media #{$pointS} {
+		margin-top: get_vw(10, $vwSm);
+	}
 	&_item {
 		&-second {
 			padding-top: 47px;
@@ -91,21 +97,8 @@
 				padding-top: get_vw(25, $vwMd);
 			}
 		}
-		&-topspace {
-			margin-top: 85px;
-			@media #{$pointM} {
-				margin-top: get_vw(25, $vwMd);
-			}
-			@media #{$pointS} {
-				margin-top: get_vw(10);
-			}
-		}
-		&-space {
-			margin-top: 52px;
-			@media #{$pointM} {
-				margin-top: get_vw(25, $vwMd);
-			}
-		}
+		&-top4L   { @include spaceTop4L; }
+		&-top6L   { @include spaceTop6L; }
 	}
 }
 .p-topPoint{
@@ -409,10 +402,11 @@
 		&-small {
 			color: #333333;
 			font-size: 1.8rem;
-			font-family: "Noto Sans jp";
 			text-align: right;
+			padding-left: 84px;
 			@media #{$pointM} {
 				font-size: get_vw(13, $vwMd);
+				padding-left: 0;
 				margin-right: get_vw(50, $vwMd);
 			}
 			@media #{$pointS} {
@@ -516,20 +510,20 @@
 		}
 	}
 	&_img {
-		width: 458px;
+		width: 427px;
+		margin: 0 auto;
 		@media #{$pointM} {
-			width: get_vw(458, $vwMd);
-			margin: 0 auto;
+			width: get_vw(427, $vwMd);
 			padding-top: get_vw(62, $vwMd);
 		}
 		&-second {
-			width: 427px;
+			width: 458px;
 			margin: 0 auto;
-			@media #{$pointS} {
-				width: get_vw(213.5);
-				margin: 0 auto;
+			@media #{$pointM} {
+				width: get_vw(458, $vwMd);
+				padding-top: get_vw(62, $vwMd);
 			}
-	}
+		}
 		&_pic1 {
 			@media #{$pointS} {
 				width: get_vw(229);
@@ -702,7 +696,7 @@
 	border-radius: 10px;
 	width: 507px;
 	display: flex;
-	margin: 20px 0 0 198px;
+	margin: 72px 0 0 178px;
 	@media #{$pointM} {
 		border-radius: 5px;
 		width: 65%;
@@ -713,7 +707,11 @@
 		margin: get_vw(21) auto get_vw(10);
 	}
 	&-second {
-		margin: 72px 0 0 178px;
+		margin: 20px 0 0 160px;
+		@media #{$pointM} {
+		width: 100%;
+		margin: 0 auto;
+		}
 	}
 	&_textBolck {
 		background-color: #1eb9ee;

@@ -1556,16 +1556,22 @@
 			font-size: get_vw(16, $vwMd);
 			width: 100%;
 			display: block;
-			padding: 42px 0 0;
-		}
-	}
-	&_thText:first-child {
-		padding-top: 38px;
-		@media #{$pointM} {
-			padding-top: get_vw(15, $vwMd);
+			padding: get_vw(42, $vwMd) 0 0;
 		}
 		@media #{$pointS} {
-			font-size: get_vw(16, $vwSm);
+			font-size: get_vw(18, $vwSm);
+			width: 100%;
+			display: block;
+			padding: 42px 0 0;
+		}
+		&:first-child {
+			padding-top: 38px;
+			@media #{$pointM} {
+				padding-top: get_vw(15, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(4, $vwSm);
+			}
 		}
 	}
 	&_tdText {
@@ -1579,8 +1585,8 @@
 			padding-top: get_vw(13, $vwMd);
 			}
 			@media #{$pointS} {
-			font-size: get_vw(15, $vwSm);
-			padding-top: get_vw(38, $vwSm);
+			font-size: get_vw(17, $vwSm);
+			padding-top: get_vw(5, $vwSm);
 			}
 	}
 	&_tdTextInput {
@@ -1599,7 +1605,10 @@
 			width: 307px;
 			margin-left: 0;
 		@media #{$pointM} {
-			width: 44%;
+			width: 42.5%;
+			}
+		@media #{$pointS} {
+			width: 37%;
 			}
 		}
 		&-leftspace {
@@ -1628,6 +1637,9 @@
 		display: block;
 		padding-top: get_vw(27, $vwMd);
 	}
+	@media #{$pointS} {
+		padding-top: get_vw(29, $vwSm);
+	}
 	&_textBlock {
 		width: 250px;
 		@media #{$pointM} {
@@ -1643,6 +1655,12 @@
 		font-size: 16px;
 		font-weight: bold;
 		text-align: center;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+		}
+		@media #{$pointM} {
+			font-size: get_vw(17, $vwSm);
+		}
 	}
 	&_textBlockList {
 		@media #{$pointM} {
@@ -1680,6 +1698,10 @@
 			padding: get_vw(15, $vwMd) get_vw(20, $vwMd);
 			margin: get_vw(20, $vwMd) auto;
 		}
+		@media #{$pointS} {
+			padding: get_vw(12, $vwSm) get_vw(20, $vwSm) get_vw(15, $vwSm);
+			margin: get_vw(25, $vwSm) auto;
+		}
 		&-none {
 			padding-top: 0;
 		}
@@ -1687,6 +1709,7 @@
 	&_imgBlockFrame {
 		color: #ffffff;
 		background-color: #f6ab00;
+		font-size: 17px;
 		text-align: center;
 		border-radius:20px;
 		width: 250px;
@@ -1700,8 +1723,22 @@
 			margin: get_vw(13, $vwMd) auto 0;
 			padding: get_vw(5, $vwMd) get_vw(10, $vwMd);
 		}
+		@media #{$pointS} {
+			width: 100%;
+			margin: get_vw(13 $vwSm) auto 0;
+			padding: get_vw(7, $vwSm) get_vw(12, $vwSm);
+		}
 		&:hover {
 			opacity: 0.8;
+		}
+	}
+	&_imgBlockLabel {
+		font-size: 13px;
+		@media #{$pointM} {
+			font-size: get_vw(13, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(13 $vwSm);
 		}
 	}
 	&_imgBlockInput {
@@ -1746,60 +1783,6 @@
 			display: block;
 			margin-top: 0;
 		}
-		&::before {
-			content: "";
-			position: absolute;
-			top: 23%;
-			left: -48px;
-			border-top: 20px solid transparent;
-			border-bottom: 20px solid transparent;
-			border-right: 50px solid #fff;
-			transform: rotate(0deg);
-			z-index: 2;
-			@media #{$pointM} {
-				border-top: get_vw(17, $vwMd) solid transparent;
-				border-left: get_vw(17, $vwMd) solid transparent;
-				border-right: get_vw(81, $vwMd) solid #fff;
-				left: -20%;
-				top: 34%;
-			}
-			@media #{$pointS} {
-				border-top: get_vw(17, $vwSm) solid transparent;
-				border-left: get_vw(17, $vwSm) solid transparent;
-				border-right: get_vw(81, $vwSm) solid #fff;
-				// margin-left: get_vw(-15, $vwSm);
-				transform: none;
-				top: get_vw(-41, $vwMd);
-				left: 44%;
-			}
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			top: 22%;
-			left: -50px;
-			border-top: 21px solid transparent;
-			border-bottom: 21px solid transparent;
-			border-right: 51px solid #1c4ca6;
-			transform: rotate(0deg);
-			z-index: 1;
-			@media #{$pointM} {
-				top: 34%;
-				left: get_vw(-100
-				, $vwMd);
-				border-top: get_vw(18, $vwMd) solid transparent;
-				border-left: get_vw(18, $vwMd) solid transparent;
-				border-right: get_vw(82, $vwMd) solid #1c4ca6;
-			}
-			@media #{$pointS} {
-				top: -46px;
-				left: 42%;
-				border-top: get_vw(18, $vwSm) solid transparent;
-				border-left: get_vw(18, $vwSm) solid transparent;
-				border-right: get_vw(82, $vwSm) solid #1c4ca6;
-				transform: none;
-			}
-		}
 	}
 	&_textBoxText {
 		color: #ff5267;
@@ -1822,7 +1805,9 @@
 	&_frame {
 		background-color: #1c4ca6;
 		width: 240px;
-
+		@media #{$pointM} {
+			width: 95%;
+		}
 	}
 	&_frameText {
 		color: #ffffff;
@@ -1838,12 +1823,19 @@
 		&::after {
 			content: "";
 			position: absolute;
-			top: 0%;
+			bottom: 0%;
 			right: -18px;
 			border-top: 18px solid transparent;
 			border-bottom: 18px solid transparent;
 			border-left: 18px solid #1c4ca6;
 			z-index: 3;
+			@media #{$pointM} {
+				bottom: get_vw(0, $vwMd);
+				right: get_vw(-19, $vwMd);
+				border-top: get_vw(20, $vwMd) solid transparent;
+				border-bottom: get_vw(20, $vwMd) solid transparent;
+				border-left: get_vw(20, $vwMd) solid #1c4ca6;
+			}
 		}
 	}
 }
@@ -1868,15 +1860,15 @@
 		width: 600px;
 		padding: 15px 0;
 		@media #{$pointM} {
-			font-size: get_vw(18, $vwMd);
+			font-size: get_vw(19, $vwMd);
 			border-radius: 20px;
 			width: 100%;
-			padding-top: get_vw(17, $vwMd);
+			padding: get_vw(17, $vwMd) 0;
 			}
 			@media #{$pointS} {
 				font-size: get_vw(16, $vwSm);
 				border-radius: 5px;
-				padding-top: get_vw(17, $vwSm);
+				padding: get_vw(17, $vwSm) 0;
 			}
 		}
 }

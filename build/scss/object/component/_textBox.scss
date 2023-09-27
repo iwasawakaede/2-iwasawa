@@ -95,7 +95,7 @@
 				font-size: get_vw(14, $vwMd);
 			}
 			@media #{$pointS} {
-				font-size: get_vw(14, $vwSm);
+				font-size: get_vw(15, $vwSm);
 			}
 		}
 		&-normal {
@@ -108,7 +108,7 @@
 				font-size: get_vw(14, $vwMd);
 			}
 			@media #{$pointS} {
-				font-size: get_vw(14, $vwSm);
+				font-size: get_vw(16, $vwSm);
 			}
 		}
 	}

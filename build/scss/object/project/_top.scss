@@ -1724,21 +1724,20 @@
 			padding: get_vw(5, $vwMd) get_vw(10, $vwMd);
 		}
 		@media #{$pointS} {
-			width: 100%;
-			margin: get_vw(13 $vwSm) auto 0;
-			padding: get_vw(7, $vwSm) get_vw(12, $vwSm);
+			margin: get_vw(15, $vwSm) auto 0;
+			padding: get_vw(5, $vwSm) get_vw(16, $vwSm);
 		}
 		&:hover {
 			opacity: 0.8;
 		}
 	}
 	&_imgBlockLabel {
-		font-size: 13px;
+		font-size: 16px;
 		@media #{$pointM} {
-			font-size: get_vw(13, $vwMd);
+			font-size: get_vw(16, $vwMd);
 		}
 		@media #{$pointS} {
-			font-size: get_vw(13 $vwSm);
+			font-size: get_vw(16, $vwSm);
 		}
 	}
 	&_imgBlockInput {

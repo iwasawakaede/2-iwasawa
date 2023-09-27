@@ -1813,7 +1813,7 @@
 		background-color: #1c4ca6;
 		width: 240px;
 		@media #{$pointM} {
-			width: 90%;
+			width: 100%;
 			margin: 0 auto;
 		}
 	}
@@ -1839,15 +1839,84 @@
 			z-index: 3;
 			@media #{$pointM} {
 				content: none;
-				// bottom: get_vw(0, $vwMd);
-				// right: get_vw(-19, $vwMd);
-				// border-top: get_vw(20, $vwMd) solid transparent;
-				// border-bottom: get_vw(20, $vwMd) solid transparent;
-				// border-left: get_vw(20, $vwMd) solid #1c4ca6;
 			}
 		}
 	}
 }
+
+.p-topBlockFormSelectOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: grey;
+  opacity: .6;
+  display: none;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+	&.open {
+		display: block;
+		}
+	}
+.p-topBlockFormSelectModal {
+  width: 65%;
+  height: 80%;
+  border: 1px solid #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  display: none;
+	&.open {
+		display: block;
+	}
+	&_img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+	}
+	&_box {
+		position: absolute;
+		right: 40px;
+		top: 20px;
+	}
+	&_boxClose {
+		background: transparent;
+		border-color: transparent;
+		padding: 0;
+		margin: 0;
+		cursor: pointer;
+		width: 28px;
+		display: block;
+		height: 28px;
+		&-span {
+			position: relative;
+			width: 100%;
+			height: 1px;
+			background: black;
+			display: block;
+		}
+		&:nth-child(1) {
+			transform: rotate(45deg);
+		}
+		&:nth-child(2) {
+			transform: rotate(-45deg);
+		}
+	}
+}
+.p-topBlockFormSelect_frame {
+  // cursor: pointer;
+  // background: orange;
+  // border: orange;
+  // color: #fff;
+  // padding: 10px 12px;
+}
+
+
 .p-topBlockFormBtn {
 	width: 600px;
 	padding-top: 38px;

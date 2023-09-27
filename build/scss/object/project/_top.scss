@@ -1812,6 +1812,7 @@
 	&_frame {
 		background-color: #1c4ca6;
 		width: 240px;
+		display: block;
 		@media #{$pointM} {
 			width: 100%;
 			margin: 0 auto;
@@ -1855,6 +1856,7 @@
   top: 0;
   left: 0;
   right: 0;
+	z-index: 10;
 	&.open {
 		display: block;
 		}
@@ -1869,6 +1871,7 @@
   transform: translate(-50%, -50%);
   background: #fff;
   display: none;
+	z-index: 10;
 	&.open {
 		display: block;
 	}
@@ -1899,23 +1902,15 @@
 			height: 1px;
 			background: black;
 			display: block;
-		}
-		&:nth-child(1) {
-			transform: rotate(45deg);
-		}
-		&:nth-child(2) {
-			transform: rotate(-45deg);
+			&:nth-child(1) {
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) {
+				transform: rotate(-45deg);
+			}
 		}
 	}
 }
-.p-topBlockFormSelect_frame {
-  // cursor: pointer;
-  // background: orange;
-  // border: orange;
-  // color: #fff;
-  // padding: 10px 12px;
-}
-
 
 .p-topBlockFormBtn {
 	width: 600px;

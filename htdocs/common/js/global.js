@@ -105,7 +105,8 @@ const overlay = $(".js-overlay");
 const close = $(".js-close");
 const open = $(".js-open");
 
-open.on('click', function () { //ボタンをクリックしたら
+	open.on('click', function () { //ボタンをクリックしたら
+		console.log('one!');
   modal.addClass("open"); // modalクラスにopenクラス付与
   overlay.addClass("open"); // overlayクラスにopenクラス付与
 });

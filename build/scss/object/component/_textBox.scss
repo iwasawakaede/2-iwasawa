@@ -25,6 +25,14 @@
 		@media #{$pointS} {
 			padding-top: get_vw(5);
 		}
+	&-smallbox {
+		width: 1077px;
+		padding: 19px 0 50px;
+		margin: 0 auto;
+		@media #{$pointM} {
+			width: 80%;
+		}
+	}
 	&_text {
 		color: #333333;
 		font-size: 1.6rem;
@@ -109,6 +117,16 @@
 			}
 			@media #{$pointS} {
 				font-size: get_vw(16, $vwSm);
+			}
+		}
+		&-subtitle {
+			color: #333333;
+			font-size: 1.6rem;
+			@media #{$pointM} {
+				font-size: get_vw(16, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18, $vwSm);
 			}
 		}
 	}

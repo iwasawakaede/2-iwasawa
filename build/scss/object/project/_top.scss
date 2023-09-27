@@ -86,6 +86,12 @@
 				padding: 0;
 			}
 		}
+		&-top2L {
+			padding-top: 40px;
+			@media #{$pointM} {
+				padding-top: get_vw(40, $vwMd);
+			}
+		}
 	}
 	&_textBoxText {
 		color: #333333;
@@ -829,6 +835,9 @@
 			padding: 0 0 get_vw(30, $vwSm);
 		}
 	}
+	&-bgcolor {
+		background-color: #f9f9f9;
+	}
 	&_inner {
 		width: 1248px;
 		margin: 0 auto;
@@ -897,6 +906,13 @@
 				width: 100%;
 			}
 		}
+		&-small {
+			width: 1202px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
 	}
 	&_pic {
 		width: 479px;
@@ -908,6 +924,18 @@
 		}
 		@media #{$pointS} {
 			padding-top: get_vw(18);
+		}
+	}
+	&_textBoxList {
+		&_item {
+			color: #2e59a7;
+			font-size: 1.6rem;
+			@media #{$pointM} {
+				font-size: get_vw(16, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18, $vwSm);
+			}
 		}
 	}
 }

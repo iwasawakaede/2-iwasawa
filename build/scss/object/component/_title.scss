@@ -36,6 +36,14 @@
 				}
 			}
 		}
+		&-subBox {
+			background-color: #ffffff;
+			border: 1px solid #c44659;
+			border-radius: 10px;
+			@media #{$pointM} {
+				border-radius: 5px;
+			}
+		}
 	// デフォルトのタイトル
 	&_text {
 		color: #2e59a7;
@@ -124,7 +132,25 @@
 				text-align: left;
 			}
 		}
-
+		&-topXS   { @include spaceTopXS; }
+		&-topS    { @include spaceTopS; }
+		&-topM    { @include spaceTopM; }
+		&-topL    { @include spaceTopL; }
+		&-top2L   { @include spaceTop2L; }
+		&-top3L   { @include spaceTop3L; }
+		&-top4L   { @include spaceTop4L; }
+		&-top6L   { @include spaceTop6L; }
+		&-small {
+			color: #ff5267;
+			font-size: 2rem;
+			text-align: center;
+		}
+		&-subtitle {
+			color: #c44659;
+			font-size: 1.8rem;
+			text-align: left;
+			padding: 16px 59px;
+		}
 	}
 	// アンダーラインがあるバージョン
 	&-line {

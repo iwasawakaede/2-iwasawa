@@ -19,30 +19,25 @@
 	&-spaceTopS    { @include spaceTopS; }
 	&-spaceTopM    { @include spaceTopM; }
 	&-spaceTopL    { @include spaceTopL; }
-		@media #{$pointM} {
-			padding-top: get_vw(20, $vwMd);
-		}
-		@media #{$pointS} {
-			padding-top: get_vw(5);
-		}
 	&-smallbox {
 		width: 1077px;
 		padding: 19px 0 50px;
 		margin: 0 auto;
 		@media #{$pointM} {
-			width: 80%;
+			width: 95%;
+			padding: get_vw(9, $vwMd) 0 get_vw(25, $vwMd);
 		}
 	}
 	&_text {
 		color: #333333;
 		font-size: 1.6rem;
-		padding-top: 25px;
+		padding-top: 0px;
 		// テキストを表示するためのcssは書いてOK！
 		// ある程度テキストが固まってるので、余白はセットで入れてよい
 		@media #{$pointM} {
 			font-size: get_vw(15, $vwMd);
 			line-height: 1.6;
-			padding-top: get_vw(20, $vwMd);
+			// padding-top: get_vw(20, $vwMd);
 		}
 		@media #{$pointS} {
 			@include fz_vw(15);

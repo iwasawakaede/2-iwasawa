@@ -144,12 +144,26 @@
 			color: #ff5267;
 			font-size: 2rem;
 			text-align: center;
+			@media #{$pointM} {
+				font-size: get_vw(22, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(22, $vwSm);
+			}
 		}
 		&-subtitle {
 			color: #c44659;
 			font-size: 1.8rem;
 			text-align: left;
 			padding: 16px 59px;
+			@media #{$pointM} {
+				font-size: get_vw(18, $vwMd);
+				padding: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18, $vwSm);
+				padding: get_vw(10, $vwSm);
+			}
 		}
 	}
 	// アンダーラインがあるバージョン

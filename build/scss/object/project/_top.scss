@@ -1553,7 +1553,7 @@
 		width: 33%;
 		padding-right: 130px;
 		@media #{$pointM} {
-			font-size: get_vw(16, $vwMd);
+			font-size: get_vw(22, $vwMd);
 			width: 100%;
 			display: block;
 			padding: get_vw(42, $vwMd) 0 0;
@@ -1579,7 +1579,7 @@
 		font-size: 1.6rem;
 		padding-top: 38px;
 		@media #{$pointM} {
-			font-size: get_vw(15, $vwMd);
+			font-size: get_vw(20, $vwMd);
 			width: 100%;
 			display: block;
 			padding-top: get_vw(13, $vwMd);
@@ -1656,9 +1656,9 @@
 		font-weight: bold;
 		text-align: center;
 		@media #{$pointM} {
-			font-size: get_vw(16, $vwMd);
+			font-size: get_vw(20, $vwMd);
 		}
-		@media #{$pointM} {
+		@media #{$pointS} {
 			font-size: get_vw(17, $vwSm);
 		}
 	}
@@ -1735,7 +1735,7 @@
 		font-size: 16px;
 		@media #{$pointM} {
 			vertical-align: text-bottom;
-			font-size: get_vw(16, $vwMd);
+			font-size: get_vw(19, $vwMd);
 		}
 		@media #{$pointS} {
 			font-size: get_vw(16, $vwSm);
@@ -1761,7 +1761,7 @@
 		}
 		@media #{$pointS} {
 			width: get_vw(265, $vwSm);
-			padding-top: 0;
+			padding-top: get_vw(12, $vwSm);
 		}
 	}
 	&_textBox {
@@ -1780,14 +1780,14 @@
 		@media #{$pointM} {
 			font-size: get_vw(14, $vwMd);
 			width: 100%;
-			padding: get_vw(30, $vwMd) get_vw(22, $vwMd);
+			padding: get_vw(15, $vwMd) get_vw(22, $vwMd) get_vw(20, $vwMd);
 			margin: get_vw(10, $vwMd) 0 0;
 		}
 		@media #{$pointS} {
 			font-size: get_vw(16, $vwSm);
 			display: block;
 			padding: get_vw(15, $vwSm) get_vw(20, $vwSm);
-			margin-top: get_vw(12, $vwSm) 0 0;
+			margin: get_vw(12, $vwSm) 0 0;
 
 		}
 	}

@@ -92,7 +92,7 @@
 			color: #ff5267;
 			font-size: 1.4rem;
 			@media #{$pointM} {
-				font-size: get_vw(14, $vwMd);
+				font-size: get_vw(18, $vwMd);
 			}
 			@media #{$pointS} {
 				font-size: get_vw(15, $vwSm);
@@ -105,7 +105,7 @@
 			font-weight: 600;
 			// padding-top: 0;
 			@media #{$pointM} {
-				font-size: get_vw(14, $vwMd);
+				font-size: get_vw(18, $vwMd);
 			}
 			@media #{$pointS} {
 				font-size: get_vw(16, $vwSm);

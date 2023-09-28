@@ -1,16 +1,57 @@
 @charset 'utf-8';
 /* textBox
 ----------------------------------------------------------------- */
+// 	line-height: 1.5;
+// 	&_text {
+	// 		font-size: 1.6rem;
+	// 		word-break: normal;
+	// 		@media #{$pointM} {
+		// 			font-size: get_vw(16, $vwMd);
+		// 		}
+		// 		@media #{$pointS} {
+			// 			@include fz_vw(14);
+			// 		}
+			// 	}
+			// }
+// space.scssからコピペしてもよい
 .c-textBox {
-	line-height: 1.5;
-	&_text {
-		font-size: 1.6rem;
-		word-break: normal;
+	&-spaceTopXS   { @include spaceTopXS; }
+	&-spaceTopS    { @include spaceTopS; }
+	&-spaceTopM    { @include spaceTopM; }
+	&-spaceTopL    { @include spaceTopL; }
+	&-smallbox {
+		width: 1077px;
+		padding: 19px 0 50px;
+		margin: 0 auto;
 		@media #{$pointM} {
-			font-size: get_vw(16, $vwMd);
+			width: 95%;
+			padding: get_vw(9, $vwMd) 0 get_vw(25, $vwMd);
 		}
-		@media #{$pointS} {
-			@include fz_vw(14);
+	}
+	&_text {
+		color: #333333;
+		font-size: 1.6rem;
+		@media #{$pointM} {
+			font-size: get_vw(15, $vwMd);
+			line-height: 1.6;
 		}
+		&-weight {
+			font-weight: 600;
+		}
+	}
+	&_text:first-child {
+		padding-top: 0;
+	}
+	&-tabtext {
+		padding-top: get_vw(10, $vwMd);
+	}
+	&-mgspace {
+		margin-top: 10px;
+		@media #{$pointM} {
+			padding-top: 0;
+		}
+	}
+	&-nothing {
+		padding-top: 0;
 	}
 }

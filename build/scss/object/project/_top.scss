@@ -4,3 +4,1299 @@
 .p-top {
 	width: 100%;
 }
+// -----------------------------------------------
+// バナー・お申込み部分
+// -----------------------------------------------
+
+//  body * {
+// 	outline: red 1px solid;
+// }
+
+.p-topVisual {
+	&_pic {
+		@media #{$pointS} {
+			width: get_vw(320);
+		}
+	}
+}
+// }
+
+.p-topBanner {
+	margin:110px auto 60px;
+	@media #{$pointM} {
+		margin: get_vw(50, $vwMd) auto get_vw(50, $vwMd);
+	}
+	&_inner {
+		width: 1002px;
+		padding: 20px 10px;
+		margin: 0 auto;
+		@media #{$pointM} {
+			width: 100%;
+			padding: 0 get_vw(10, $vwSm);
+		}
+	}
+}
+// -----------------------------------------------
+// ポイント部分
+// -----------------------------------------------
+.p-topBlock{
+	@media #{$pointM} {
+		width: 100%;
+	}
+	&-change {
+		background-color: #fffcf3;
+	}
+	&-topspace {
+		width: 1445px;
+		min-width: 1440px;
+		padding-top: 70px;
+		margin: 0 auto;
+		@media #{$pointM} {
+			min-width: initial;
+			width: 100%;
+			padding-top: get_vw(16, $vwMd);
+		}
+	}
+	&_inner {
+		width: 1440px;
+		padding: 30px 20px;
+		margin: 75px auto;
+		@media #{$pointM} {
+			width: 100%;
+			padding: 0 get_vw(20, $vwMd) get_vw(20, $vwMd);
+			margin: get_vw(50, $vwMd) auto get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			width: 100%;
+			padding: 0 get_vw(10);
+			margin: get_vw(-8) auto get_vw(12);
+		}
+		&-width {
+			width: 1220px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-top4L {
+			@media #{$pointM} {
+				padding-top: get_vw(20, $vwMd);
+				}
+				@media #{$pointS} {
+				padding-top: get_vw(18, $vwSm);
+				}
+		}
+	}
+	&_textBox {
+		padding-top: 17px;
+		@media #{$pointM} {
+			padding-top: get_vw(16, $vwMd);
+		}
+		&-line {
+			padding-left: 82px;
+			@media #{$pointM} {
+				width: 51%;
+				padding: 0;
+			}
+			@media #{$pointS} {
+				width: 88%;
+				padding: 0;
+			}
+		}
+		&-top2L {
+			padding-top: 40px;
+			@media #{$pointM} {
+				padding-top: get_vw(17, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(20, $vwSm);
+			}
+		}
+	}
+	&_textBoxText {
+		color: #333333;
+		font-size: 1.6rem;
+		font-family: "Noto Sans jp";
+		@media #{$pointM} {
+			font-size: get_vw(17, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(9);
+		}
+	}
+	&_innerBox {
+		width: 1445px;
+		min-width: 1440px;
+		margin: 0 auto;
+		padding-top: 65px;
+		@media #{$pointM} {
+			width: 100%;
+			min-width: initial;
+			padding-top: get_vw(65, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(35);
+		}
+	}
+	&_image {
+		width: 433px;
+		@media #{$pointM} {
+			width: 49%;
+		}
+		@media #{$pointS} {
+			width: 90%;
+			padding-top: get_vw(20,$vwSm);
+			margin: 0 auto;
+		}
+	}
+}
+.p-topBlockFlex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 95px 76px;
+	width: 1445px;
+	min-width: 1440px;
+	position: relative;
+	padding: 0 30px;
+	margin: 0 auto;
+	@media #{$pointM} {
+		min-width: initial;
+		width: 100%;
+		padding: 0;
+	}
+	@media #{$pointS} {
+		padding: 0 get_vw(10);
+	}
+	&_item {
+		background-color: #ffffff;
+		border: 3px solid #1eb9ee;
+		border-radius: 10px;
+		width: 47%;
+		padding: 20px 26px;
+		@media #{$pointM} {
+			width: 100%;
+			padding: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(10);
+		}
+		&.slick-slide {
+			@media #{$pointM} {
+			min-height: get_vw(700, $vwMd);
+			margin: 0 get_vw(90, $vwMd);
+			}
+			@media #{$pointS} {
+			min-height: get_vw(700,$vwSm);
+			}
+		}
+		.slick-track {
+			@media #{$pointM} {
+			height: 300px;
+			}
+		}
+	}
+	.slick-dots {
+		width: 98%;
+	}
+	&_content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media #{$pointM} {
+			height: get_vw(650, $vwMd);
+		}
+		@media #{$pointS} {
+			height: get_vw(650,$vwSm);
+		}
+	}
+	&_contentImg {
+		// width: 550px;
+		// margin: 0 auto;
+		@media #{$pointM} {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			margin: get_vw(10, $vwMd) auto;
+			height: get_vw(650, $vwMd);
+		}
+		@media #{$pointS} {
+			// height: get_vw(400, $vwSm);
+		}
+		// &-spimg1 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(275, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(275, $vwSm);
+		// 	}
+		// }
+		// &-spimg2 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(296.5, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(296.5, $vwSm);
+		// 	}
+		// }
+		// &-spimg3 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(304.5, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(304.5, $vwSm);
+		// 	}
+		// }
+		// &-spimg4 {
+		// 	@media #{$pointM} {
+		// 		width: get_vw(313, $vwMd);
+		// 	}
+		// 	@media #{$pointS} {
+		// 		width: get_vw(313, $vwSm);
+		// 	}
+		// }
+		&-image {
+			object-fit: contain;
+			width: 600px;
+			height: 300px;
+			@media #{$pointM} {
+				width: 100%;
+				// margin: 0 auto;
+				height: auto;
+			}
+		}
+	}
+	&_image {
+		min-width: 311px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		-webkit-transform: translate(-50%);
+		-ms-transform: translate(-50%);
+		@media #{$pointM} {
+			display: none;
+		}
+	}
+}
+.p-topBlockFlex {
+	// slickをハックするcss
+	.slick-prev {
+		@media #{$pointM} {
+			left: 2%;
+			z-index: 10;
+		}
+		&::before {
+			@media #{$pointM} {
+				color: #000;
+				font-size: get_vw(50, $vwMd);
+			}
+		}
+		.slick-track {
+			width: 600px;
+			height: 300px;
+		}
+	}
+	.slick-next {
+		@media #{$pointM} {
+			right: 5%;
+			z-index: 10;
+		}
+		&::before {
+			@media #{$pointM} {
+				color: #000;
+				font-size: get_vw(50, $vwMd);
+			}
+		}
+	}
+}
+.p-topBlockList {
+	margin-top: 20px;
+	@media #{$pointM} {
+		margin-top: get_vw(20, $vwMd);
+	}
+	@media #{$pointS} {
+		margin-top: get_vw(10, $vwSm);
+	}
+	&_item {
+		position: relative;
+		&-second {
+			padding-top: 47px;
+			@media #{$pointM} {
+				padding-top: get_vw(25, $vwMd);
+			}
+		}
+		&-top4L   { @include spaceTop4L; }
+		&-top6L   { @include spaceTop6L; }
+	}
+}
+.p-topPoint{
+	display: flex;
+	justify-content: space-between;
+	@media #{$pointM} {
+		display: block;
+	}
+	&-reverse {
+		flex-direction: row-reverse;
+		@media #{$pointM} {
+			display: block;
+		}
+	}
+	&_textBig {
+		width: 816px;
+		padding-left: 21px;
+		@media #{$pointM} {
+			width: 100%;
+			padding-left: 0;
+		}
+		&-reverse {
+			width: 600px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-width {
+			width: 894px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-second {
+			width: 898px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+	}
+	&_imgBox {
+		width: 525px;
+		@media #{$pointM} {
+			width: 100%;
+			margin: get_vw(27, $vwMd) auto 0;
+		}
+		@media #{$pointS} {
+			width: get_vw(262.5);
+			margin: 0 auto;
+		}
+		&-reverse {
+			width: 725px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-image3 {
+			width: 440px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-second {
+			width: 439px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+	}
+	&_rightImg {
+		@media #{$pointS} {
+			width: get_vw(262.5);
+		}
+	}
+		&_rightImg2 {
+		@media #{$pointS} {
+			width:  get_vw(362.5);
+	}
+}
+}
+// 吹き出し
+// 角丸長方形
+.p-topBlockObject{
+  color: #555;
+  background: #ff5267;
+	text-align: center;
+	border-radius: 10px;
+	position: relative;
+  display: inline-block;
+  margin: 0 0 1.5em -21px;
+  padding: 5px 10px 9px;
+  width: 165px;
+	@media #{$pointM} {
+		border-radius: get_vw(10, $vwMd);
+		margin: 0 0 get_vw(16, $vwMd) 0;
+		padding: get_vw(5, $vwMd) get_vw(10, $vwMd) get_vw(9, $vwMd);
+		width: get_vw(140, $vwMd);
+	}
+	@media #{$pointS} {
+		width: 20%;
+		padding: get_vw(2) get_vw(5) get_vw(2);
+	}
+	&_text {
+		color: #ffff00;
+		font-family: "Noto Sans jp";
+		font-size: 3.2rem;
+		font-weight: bold;
+		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(27, $vwMd);
+		}
+		&-number {
+			color: #fff;
+		}
+	}
+	&-just {
+    width: 190px;
+		padding: 4px 10px 9px;
+		margin: 0px 0 1.5em 3px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 58%;
+			left: 49%;
+			margin-left: -15px;
+			border-top: 70px solid #ff5267;
+			transform: rotate(-39deg);
+			border-left: 30px solid transparent;
+			z-index: -1;
+		}
+	}
+}
+// 三角部分
+.p-topBlockObject::before{
+	content: "";
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  margin-left: -15px;
+  border: 8px solid transparent;
+  border-top: 14px solid #ff5267;
+	@media #{$pointM} {
+		margin-left: get_vw(-15, $vwMd);
+		border: get_vw(7, $vwMd) solid transparent;
+		border-top: get_vw(13, $vwMd) solid #ff5267;
+	}
+}
+.p-topBlockObjectRoll {
+	color: #555;
+  background: #ff5267;
+	text-align: center;
+	border-radius: 10px;
+	position: relative;
+  display: inline-block;
+  margin: 0px 0 1.5em 3px;
+  padding: 4px 10px 9px;
+  width: 190px;
+	z-index: 1;
+	@media #{$pointM} {
+		border-radius: 5px;
+		margin: 0 0 get_vw(16, $vwMd) 0;
+		padding: get_vw(5, $vwMd) get_vw(10, $vwMd) get_vw(9, $vwMd);
+		width: get_vw(140, $vwMd);
+	}
+	@media #{$pointS} {
+		width: 30%;
+		padding: get_vw(5) get_vw(4) get_vw(6);
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 61%;
+		left: 31%;
+		margin-left: -15px;
+		border-top: 55px solid #ff5267;
+		border-left: 49px solid transparent;
+		transform: rotate(-20deg);
+		z-index: -1;
+		@media #{$pointM} {
+			border-top: get_vw(45, $vwMd) solid #ff5267;
+			border-left: get_vw(39, $vwMd) solid transparent;
+		}
+		@media #{$pointS} {
+			border-top: get_vw(35) solid #ff5267;
+			border-left: get_vw(29) solid transparent;
+		}
+	}
+	&-rev {
+		margin: 0px 0 1.5em 403px;
+		@media #{$pointM} {
+			border-radius: 5px;
+			margin: 0 0 get_vw(16, $vwMd) 0;
+			padding: get_vw(5, $vwMd) get_vw(10, $vwMd) get_vw(9, $vwMd);
+			width: get_vw(140, $vwMd);
+		}
+		@media #{$pointS} {
+			width: 30%;
+			padding: get_vw(5) get_vw(4) get_vw(6);
+		}
+		&::before {
+			border-right: 49px solid transparent;
+			top: 73%;
+			left: unset;
+			right: 31%;
+			transform: rotate(20deg);
+			margin-left: -55px;
+			border-top: 45px solid #ff5267;
+			border-right: 37px solid transparent;
+			border-left: none;
+			@media #{$pointM} {
+				left: 31%;
+				right: unset;
+				transform: rotate(-20deg);
+				border-top: get_vw(45, $vwMd) solid #ff5267;
+				border-left: get_vw(39, $vwMd) solid transparent;
+				border-right: none;
+				margin-left: get_vw(-15, $vwMd);
+			}
+			@media #{$pointS} {
+				border-top: get_vw(35) solid #ff5267;
+				border-left: get_vw(29) solid transparent;
+			}
+		}
+	}
+	&_text {
+		color: #ffff00;
+		font-size: 3.6rem;
+		font-weight: bold;
+		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(27, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(20);
+		}
+		&-sizeL {
+			font-size: 3.6rem;
+		}
+		&-number {
+			color: #fff;
+		}
+	}
+}
+// -----------------------------------------------
+// PRICE
+// -----------------------------------------------
+.p-topTitile {
+	&-bg {
+		background-color: #fff;
+    width: 100%;
+    // height: 314px;
+    padding: 0 84px;
+		margin: 0 auto 50px;
+		// margin-left: -50px;
+		@media #{$pointM} {
+			height: 0;
+			padding: 0 0 get_vw(190, $vwMd) 0;
+			margin: 0 calc(50% - 50vw);
+		}
+		@media #{$pointS} {
+			height: get_vw(100, $vwSm);
+		}
+	}
+	&_text {
+		color: #1eb9ee;
+		font-size: 9rem;
+		font-weight: 500;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(50, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(25);
+		}
+		&-speace {
+			@media #{$pointM} {
+				padding-top: get_vw(50, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(25);
+			}
+		}
+		&-topM {
+			@media #{$pointM} {
+				padding-top: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(10);
+			}
+		}
+	}
+	&_titile {
+		color: #1c4ca6;
+		font-size: 2.4rem;
+		font-weight: bold;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		line-height: 1;
+		@media #{$pointM} {
+			font-size: get_vw(22, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(22);
+			padding-top: get_vw(25);
+		}
+		&::after {
+			background-color: #f6ab00;
+			content: "";
+			display: block;
+			width: 60px;
+			height: 5px;
+			margin: 22px auto 0;
+			@media #{$pointM} {
+				width: get_vw(50, $vwMd);
+				height: get_vw(4, $vwMd);
+				margin: get_vw(17, $vwMd) auto 0;
+			}
+			@media #{$pointS} {
+				margin: get_vw(7) auto 0;
+			}
+		}
+		&-top {
+			padding-top: 20px;
+			@media #{$pointM} {
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(5);
+			}
+		}
+		&-topM {
+			padding-top: 15px;
+			@media #{$pointM} {
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(5);
+			}
+		}
+	}
+}
+.p-topTable {
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 10px;
+	border-collapse: separate;
+	border: 3px solid #1c4ca6;
+	width: 1195px;
+	@media #{$pointM} {
+		width: 100%;
+	}
+	&-speace {
+		margin-top: 60px;
+		@media #{$pointM} {
+			margin-top: get_vw(50, $vwMd);
+		}
+	}
+	&_thTitle {
+		color: #fff;
+		background-color: #69c08a;
+		font-family: "Noto Sans jp";
+		font-size: 3rem;
+		font-weight: bold;
+		text-align: center;
+		border-bottom: 3px solid #1c4ca6;
+		width: 394px;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+			width: 33%;
+			padding: get_vw(9, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(14);
+		}
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-right: 3px dotted #1c4ca6;
+		}
+		&:nth-child(1) {
+			@media #{$pointM} {
+				border-radius: 5px 0 0 0;
+			}
+		}
+		&-bgcolor2 {
+			background-color: #1eb9ee;
+		}
+		&-bgcolor3 {
+			background-color: #1c4ca6;
+		}
+		&-space {
+			@media #{$pointM} {
+			}
+		}
+		&-break {
+			display: none;
+			@media #{$pointS} {
+				display: block;
+			}
+		}
+	}
+	&_thText {
+		color: #333333;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		font-size: 3.5rem;
+		font-weight: 600;
+    line-height: 1;
+		padding: 50px 0px;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			padding: get_vw(25, $vwMd) 0;
+		}
+		@media #{$pointS} {
+			font-size: get_vw(18);
+			padding: 0 get_vw(5);
+		}
+		&-big {
+			font-size: 5.5rem;
+			font-weight: 800;
+			@media #{$pointM} {
+				font-size: get_vw(22, $vwMd);
+				padding: get_vw(25, $vwMd) 0;
+			}
+			@media #{$pointS} {
+				font-size: get_vw(22);
+				padding: get_vw(25) 0;
+			}
+		}
+	}
+	&_thText,
+	&_tdText {
+		border-bottom: 3px solid #1c4ca6;
+		&-decoration {
+			border-bottom: none;
+		}
+		&-none {
+		border-bottom: none;
+		}
+	}
+	&_tdText {
+		color: #333;
+		font-family: "Noto Sans jp";
+		text-align: center;
+		font-size: 3.5rem;
+		font-weight: 600;
+		line-height: 1;
+		padding: 32px 78px;
+		@media #{$pointM} {
+			font-size: get_vw(18, $vwMd);
+			padding: get_vw(9, $vwMd) get_vw(17, $vwMd) get_vw(8, $vwMd);
+		}
+		@media #{$pointS} {
+			padding: get_vw(5) 0 get_vw(10);
+		}
+		&-big {
+			color: #ff5267;
+			font-size: 5.5rem;
+			font-weight: 800;
+			font-family: "Noto Sans jp";
+			text-align: right;
+			@media #{$pointM} {
+				font-size: get_vw(30, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(24);
+			}
+		}
+		&-small {
+			color: #333333;
+			font-size: 1.8rem;
+			text-align: right;
+			padding-left: 84px;
+			@media #{$pointM} {
+				font-size: get_vw(13, $vwMd);
+				padding-left: 0;
+				margin-right: get_vw(50, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(13);
+				position: relative;
+				bottom: get_vw(-4);
+				margin-right: 0;
+			}
+		}
+		&-none {
+			border-bottom: none;
+			}
+	}
+	&_thText:nth-child(1),
+	&_tdText:nth-child(2) {
+		border-right: 3px dotted #1c4ca6;
+	}
+}
+// -----------------------------------------------
+// OPTION
+// -----------------------------------------------
+.p-topBlock{
+	&-bg {
+		background-color: #fffcf3;
+		background-image: url(/htdocs/common/img/top/guarantee-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&-half {
+		// background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		// width: 100vw;
+		@media #{$pointM} {
+			// background: linear-gradient(180deg, #fff5e7 56%, #ebf4ea 56%);
+			width: 100%;
+		}
+	}
+	&-top {
+		padding: 138px 0 78px;
+		@media #{$pointM} {
+			padding: 0 0 get_vw(30, $vwSm);
+		}
+	}
+	&-bgcolor {
+		background-color: #f9f9f9;
+	}
+	&_inner {
+		width: 1248px;
+		margin: 0 auto;
+		padding: 30px 0;
+		@media #{$pointM} {
+			width: 100%;
+			padding: 0 get_vw(10, $vwSm);
+		}
+		&-frame {
+			width: 1445px;
+			min-width: 1440px;
+			margin: 100px auto;
+			position: relative;
+			@media #{$pointM} {
+				min-width: initial;
+				width: 100%;
+				padding-top: 0;
+				margin: 0 auto;
+			}
+		}
+		&-content {
+			display: flex;
+			justify-content: space-evenly;
+			width: 1445px;
+			min-width: 1440px;
+			padding: 0 30px;
+			margin: 45px auto 0;
+			@media #{$pointM} {
+				align-items: center;
+				width: 100%;
+				min-width: initial;
+				padding: 0 get_vw(19, $vwMd);
+				margin-top: get_vw(7, $vwMd);
+			}
+			@media #{$pointS} {
+				flex-direction: column;
+				padding: 0;
+			}
+		}
+		&-widthL {
+			width: 1420px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-widthS {
+			width: 1324px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-bottomspace {
+			padding-bottom: 20px;
+			@media #{$pointM} {
+				padding-bottom: get_vw(20, $vwMd);
+			}
+		}
+		&-nonespace {
+			padding-top: 0;
+		}
+		&-widthXS {
+			width: 1030px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-small {
+			width: 1202px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(11, $vwSm);
+			}
+		}
+	}
+	&_pic {
+		width: 479px;
+		padding-top: 20px;
+		margin: 0 auto;
+		@media #{$pointM} {
+			width: 50%;
+			padding-top: get_vw(20, $vwMd);
+		}
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(18);
+		}
+		}
+	}
+	&_textBoxList {
+		&_item {
+			color: #2e59a7;
+			font-size: 1.6rem;
+			@media #{$pointM} {
+				font-size: get_vw(16, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(15, $vwSm);
+			}
+		}
+	}
+	&_picImg {
+		@media #{$pointS} {
+			width: get_vw(229);
+		}
+	}
+}
+.p-topBlockOption {
+	border: 4px solid #2e59a7;
+	border-radius: 10px;
+	width: 1250px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 25px 33px 25px 33px;
+	@media #{$pointM} {
+		width: 100%;
+		display: block;
+		padding: get_vw(20, $vwMd);
+	}
+	&-second {
+		padding: 25px 146px 20px 36px;
+		@media #{$pointM} {
+			padding: get_vw(20, $vwMd);
+		}
+	}
+	&-middle {
+		border: 4px solid #f6ab00;
+		width: 1000px;
+		padding: 25px 33px 0;
+		@media #{$pointM} {
+			width: 100%;
+			padding: get_vw(20, $vwMd) get_vw(20, $vwMd) 0 get_vw(20, $vwMd);
+		}
+	}
+	&_triangle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-bottom: 85px solid transparent;
+		border-right: 85px solid #2e59a7;
+		@media #{$pointM} {
+			border-bottom: 40px solid transparent;
+			border-right: 40px solid #2e59a7;
+		}
+		@media #{$pointS} {
+			border-bottom: 30px solid transparent;
+			border-right: 30px solid #2e59a7;
+		}
+		&-color {
+			border-right: 85px solid #f6ab00;
+			@media #{$pointM} {
+				border-bottom: 40px solid transparent;
+				border-right: 40px solid #f6ab00;
+			}
+			@media #{$pointS} {
+				border-bottom: 30px solid transparent;
+				border-right: 30px solid #f6ab00;
+			}
+		}
+	}
+	&_img {
+		width: 458px;
+		@media #{$pointM} {
+			width: get_vw(427, $vwMd);
+			padding-top: get_vw(62, $vwMd);
+		}
+		&-second {
+			width: 427px;
+			@media #{$pointM} {
+				width: get_vw(458, $vwMd);
+				padding-top: get_vw(62, $vwMd);
+			}
+		}
+		&_pic1 {
+			@media #{$pointS} {
+				width: get_vw(229);
+			}
+		}
+	}
+	&_textBox {
+		width: 690px;
+		@media #{$pointM} {
+			width: 100%;
+			margin: 0 auto;
+		}
+		&-width {
+			width: 560px;
+			@media #{$pointM} {
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+	&_sell {
+		display: flex;
+		align-items: center;
+		padding-top: 5px;
+		@media #{$pointM} {
+			padding-top: get_vw(15, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(5);
+		}
+	}
+	&_sellBlock {
+		color: #555;
+		background: #ff5267;
+		text-align: center;
+		border-radius: 10px;
+		width: 75px;
+		position: relative;
+		display: inline-block;
+		padding: 5px 10px 9px;
+		margin-right: 12px;
+		@media #{$pointM} {
+			border-radius: 5px;
+    	width: get_vw(75, $vwMd);
+    	padding: get_vw(2.5, $vwMd)get_vw(5, $vwMd)get_vw(4.5, $vwMd);
+		}
+		@media #{$pointS} {
+			width: get_vw(70);
+			padding: get_vw(5) get_vw(5) get_vw(8);
+		}
+	}
+	&_sellBlockText {
+		font-size: 2.2rem;
+		color: #ffff00;
+		font-weight: bold;
+		line-height: 1;
+		@media #{$pointM} {
+    	font-size: get_vw(18, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(18);
+		}
+	}
+	&_sellText {
+		color: #ff5267;
+		font-weight: 800;
+		font-size: 4.5rem;
+		line-height: 1;
+		@media #{$pointM} {
+    	font-size: get_vw(40, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(25);
+		}
+	}
+	&_sellTextSmall {
+		font-size: 20px;
+		font-weight: bold;
+		padding: 0 2px;
+		@media #{$pointM} {
+    	font-size: get_vw(18, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(18);
+		}
+	}
+	&_sellTextMIddle {
+		font-size: 3.1rem;
+		@media #{$pointM} {
+    	font-size: get_vw(28, $vwMd);
+		}
+		@media #{$pointS} {
+    	font-size: get_vw(20);
+		}
+	}
+	&_text {
+		width: 465px;
+		@media #{$pointM} {
+    	width: 100%;
+		}
+	}
+	&_image {
+		width: 444px;
+		@media #{$pointM} {
+			width: get_vw(222, $vwMd);
+			margin: 0 auto;
+		}
+		@media #{$pointS} {
+			width: get_vw(100);
+			margin: 0 auto;
+		}
+	}
+	&_icon {
+		width: 440px;
+		margin: 0 auto;
+		@media #{$pointM} {
+			width: get_vw(220, $vwMd);
+		}
+	}
+	&_frame {
+		background-color: #f5ab00;
+		border-radius: 25px;
+		width: 350px;
+		display: flex;
+		justify-content: center;
+    padding: 10px;
+		margin-top: 30px;
+		@media #{$pointM} {
+			width: 60%;
+			padding: get_vw(8, $vwMd);
+    	margin: get_vw(15, $vwMd) auto;
+		}
+		@media #{$pointS} {
+			padding: get_vw(8);
+    	margin: get_vw(15) auto;
+		}
+	}
+	&_frameBoxText {
+		color: #ffffff;
+		font-size: 1.6rem;
+		letter-spacing: 5px;
+		@media #{$pointM} {
+			font-size: get_vw(16, $vwMd);
+			letter-spacing: get_vw(5, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(14);
+		}
+	}
+	&_pic2 {
+		width: 24px;
+		margin-left: 18px;
+		@media #{$pointS} {
+			width: get_vw(24);
+		}
+	}
+	&_picImg {
+		width: 24px;
+		margin-bottom: 2px;
+		@media #{$pointM} {
+			margin-bottom: get_vw(2, $vwMd);
+		}
+		@media #{$pointS} {
+			margin-bottom: get_vw(2);
+		}
+	}
+}
+.p-topBlockOptionPrice {
+	border: 3px solid #1eb9ee;
+	border-radius: 10px;
+	width: 507px;
+	display: flex;
+	margin: 72px 0 0 178px;
+	@media #{$pointM} {
+		border-radius: 5px;
+		width: 65%;
+		margin: get_vw(21, $vwMd) auto get_vw(10, $vwMd);
+	}
+	@media #{$pointS} {
+		width: 95%;
+		margin: get_vw(21) auto get_vw(10);
+	}
+	&-second {
+		margin: 20px 0 0 160px;
+		@media #{$pointM} {
+		width: 100%;
+		margin: 0 auto;
+		}
+	}
+	&_textBolck {
+		background-color: #1eb9ee;
+		width: 157px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		@media #{$pointM} {
+			width: 30%;
+		}
+	}
+	&_textBolcktext {
+		color: #fff;
+		font-size: 2rem;
+		@media #{$pointM} {
+			font-size: get_vw(20, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(17);
+		}
+	}
+	&_priceBox {
+		color: #ff5267;
+		font-weight: 800;
+		width: 350px;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		@media #{$pointM} {
+			width: 70%;
+		}
+	}
+	&_priceBoxText {
+		color: #333333;
+		font-weight: 800;
+		font-size: 3rem;
+		line-height: 1.5;
+		@media #{$pointM} {
+			font-size: get_vw(28, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(19);
+		}
+		&-small {
+			color: #333333;
+			font-size: 1.8rem;
+			font-weight: 500;
+			@media #{$pointM} {
+				font-size: get_vw(17, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18);
+			}
+		}
+	}
+	&_priceBoxTextBig {
+		color: #ff5267;
+		font-weight: 800;
+		font-size: 4rem;
+		@media #{$pointM} {
+			font-size: get_vw(38, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(25);
+		}
+	}
+	&_priceBoxTextSmall {
+		color: #333333;
+		font-size: 1.8rem;
+		font-weight: 500;
+		@media #{$pointM} {
+			font-size: get_vw(17, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(18);
+		}
+	}
+}

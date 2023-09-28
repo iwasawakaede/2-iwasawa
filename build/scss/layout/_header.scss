@@ -245,13 +245,13 @@ a {
 }
 .l-headerLogo {
 	width: 280px;
-	margin-right: 35px;
+	margin: 0 20px 0 15px;
 	@media #{$pointM} {
 					width: get_vw(200, $vwMd);
 					margin: get_vw(10, $vwMd) get_vw(12, $vwMd) 0 0;
 				}
 	@media #{$pointS} {
-						width: get_vw(130);
+						width: get_vw(140);
 						margin-right: get_vw(6);
 					}
 					&_img {
@@ -264,18 +264,18 @@ a {
 		position: fixed;
 		/*ナビのスタート位置と形状*/
 		/*ナビの高さ*/
-		top: 118px;
+		top: 84px;
 		// 作成後にマイナスの値に変更して、表示しないようにする
 		right: -120%;
 		width: 100%;
-		height: calc(100vh - 117px);
+		height: calc(100vh - 84px);
 		background: #fff;
 		/*動き*/
 		transition: all 0.6s;
 	}
 	@media #{$pointS} {
-    height: calc(100vh - 86.5px);
-    top: 88px;
+		height: calc(100vh - 74px);
+		top: 74px;
 	}
 }
 .l-headerNumber {
@@ -286,8 +286,8 @@ a {
 		display: none;
 	}
 	&_img {
-    line-height: 0;
-    vertical-align: baseline;
+		line-height: 0;
+		vertical-align: baseline;
 		width: 42px;
 		height: 23px;
 	}

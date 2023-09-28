@@ -31,101 +31,14 @@
 	&_text {
 		color: #333333;
 		font-size: 1.6rem;
-		padding-top: 0px;
-		// テキストを表示するためのcssは書いてOK！
-		// ある程度テキストが固まってるので、余白はセットで入れてよい
 		@media #{$pointM} {
 			font-size: get_vw(15, $vwMd);
 			line-height: 1.6;
-			// padding-top: get_vw(20, $vwMd);
-		}
-		@media #{$pointS} {
-			@include fz_vw(15);
-			padding-top: get_vw(8);
 		}
 		&-weight {
 			font-weight: 600;
 		}
-		&-tabtop {
-			@media #{$pointM} {
-				padding-top: get_vw(10, $vwMd);
-			}
-			@media #{$pointS} {
-				padding-top: get_vw(10);
-			}
-		}
-		&-boldS {
-			font-weight: 600;
-			line-height: 1.8;
-			margin-top: 7px;
-			@media #{$pointM} {
-				margin-top: 0;
-			}
-		}
-		&-boldM {
-			font-size: 1.8rem;
-			font-weight: bold;
-			@media #{$pointM} {
-				font-size: get_vw(18, $vwMd);
-				line-height: 1.8;
-			}
-			@media #{$pointS} {
-				font-size: get_vw(18);
-			}
-		}
-		&-change {
-			color: #ff5267;
-			font-weight: bold;
-			font-size: 2.4rem;
-			text-align: center;
-			@media #{$pointM} {
-				font-size: get_vw(20, $vwMd);
-				text-align: left;
-			}
-		}
-		&-boldL {
-			color: #333333;
-			font-weight: bold;
-			font-size: 2.4rem;
-			@media #{$pointM} {
-				font-size: get_vw(20, $vwMd);
-			}
-		}
-		&-small {
-			color: #ff5267;
-			font-size: 1.4rem;
-			@media #{$pointM} {
-				font-size: get_vw(18, $vwMd);
-			}
-			@media #{$pointS} {
-				font-size: get_vw(15, $vwSm);
-			}
-		}
-		&-normal {
-			color: #333333;
-			font-size: 14px;
-			text-align: center;
-			font-weight: 600;
-			// padding-top: 0;
-			@media #{$pointM} {
-				font-size: get_vw(18, $vwMd);
-			}
-			@media #{$pointS} {
-				font-size: get_vw(16, $vwSm);
-			}
-		}
-		&-subtitle {
-			color: #333333;
-			font-size: 1.6rem;
-			@media #{$pointM} {
-				font-size: get_vw(16, $vwMd);
-			}
-			@media #{$pointS} {
-				font-size: get_vw(18, $vwSm);
-			}
-		}
 	}
-	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
 	&_text:first-child {
 		padding-top: 0;
 	}

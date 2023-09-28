@@ -1055,12 +1055,14 @@
 		width: 458px;
 		@media #{$pointM} {
 			width: get_vw(427, $vwMd);
+			margin: 0 auto;
 			padding-top: get_vw(62, $vwMd);
 		}
 		&-second {
 			width: 427px;
 			@media #{$pointM} {
 				width: get_vw(458, $vwMd);
+				margin: 0 auto;
 				padding-top: get_vw(62, $vwMd);
 			}
 		}
@@ -1294,6 +1296,17 @@
 		}
 		@media #{$pointS} {
 			font-size: get_vw(19);
+		}
+		&-big {
+			color: #ff5267;
+			font-size: 4rem;
+			font-weight: 800;
+			@media #{$pointM} {
+				font-size: get_vw(38, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(28, $vwSm);
+			}
 		}
 		&-small {
 			color: #333333;
@@ -1876,22 +1889,28 @@
 	&::before {
 		content: "";
     position: absolute;
-    bottom: 0%;
-    right: -18px;
-    border-top: 18px solid rgba(0,0,0,0);
-    border-bottom: 18px solid rgba(0,0,0,0);
-    border-right: 18px solid #1c4ca6;
+    bottom: 35px;
+    right: 452px;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 49px solid #fff;
     z-index: 3;
+		@media #{$pointM} {
+			display: none;
+			}
 		}
 	&::after {
 		content: "";
     position: absolute;
-    bottom: 0%;
-    right: -18px;
-    border-top: 18px solid rgba(0,0,0,0);
-    border-bottom: 18px solid rgba(0,0,0,0);
-    border-right: 18px solid #1c4ca6;
-    z-index: 3;
+    bottom: 35px;
+    right: 454px;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 50px solid #1c4ca6;
+    z-index: 2;
+		@media #{$pointM} {
+			display: none;
+			}
 		}
 	}
 	&_textBoxText {

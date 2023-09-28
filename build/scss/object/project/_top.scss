@@ -49,7 +49,6 @@
 	&-topspace {
 		width: 1445px;
 		min-width: 1440px;
-		padding-top: 70px;
 		margin: 0 auto;
 		@media #{$pointM} {
 			min-width: initial;
@@ -973,12 +972,11 @@
 			width: 50%;
 			padding-top: get_vw(20, $vwMd);
 		}
-		}
-		@media #{$pointS} {
-			padding-top: get_vw(18);
-		}
+			@media #{$pointS} {
+				padding-top: get_vw(18);
 		}
 	}
+
 	&_textBoxList {
 		&_item {
 			color: #2e59a7;
@@ -990,13 +988,14 @@
 				font-size: get_vw(15, $vwSm);
 			}
 		}
-	}
-	&_picImg {
-		@media #{$pointS} {
-			width: get_vw(229);
+		&_picImg {
+			@media #{$pointS} {
+				width: get_vw(229);
+			}
 		}
 	}
 }
+
 .p-topBlockOption {
 	border: 4px solid #2e59a7;
 	border-radius: 10px;
@@ -1308,6 +1307,7 @@
 			}
 		}
 	}
+}
 .p-topBlockWord {
 	position: relative;
 	display: inline-block;
@@ -1872,7 +1872,26 @@
 			display: block;
 			padding: get_vw(15, $vwSm) get_vw(20, $vwSm);
 			margin: get_vw(12, $vwSm) 0 0;
-
+		}
+	&::before {
+		content: "";
+    position: absolute;
+    bottom: 0%;
+    right: -18px;
+    border-top: 18px solid rgba(0,0,0,0);
+    border-bottom: 18px solid rgba(0,0,0,0);
+    border-right: 18px solid #1c4ca6;
+    z-index: 3;
+		}
+	&::after {
+		content: "";
+    position: absolute;
+    bottom: 0%;
+    right: -18px;
+    border-top: 18px solid rgba(0,0,0,0);
+    border-bottom: 18px solid rgba(0,0,0,0);
+    border-right: 18px solid #1c4ca6;
+    z-index: 3;
 		}
 	}
 	&_textBoxText {
@@ -1995,7 +2014,6 @@
 		}
 	}
 }
-
 .p-topBlockFormBtn {
 	width: 600px;
 	padding-top: 38px;
@@ -2003,12 +2021,12 @@
 	@media #{$pointM} {
 		width: get_vw(600, $vwMd);
 		padding-top: get_vw(20, $vwMd);
-		}
+	}
 		@media #{$pointS} {
 		font-size: get_vw(16, $vwSm);
 		width: 90%;
 		padding-top: get_vw(22, $vwSm);
-		}
+	}
 	&_text {
 		color: #ffffff;
 		font-size: 1.8rem;

@@ -5,45 +5,45 @@
 	position: relative;
 	&-icon {
 		/*アイコンの＋と×*/
-			&::before,
-			&::after {
-				@media #{$pointM} {
-					position: absolute;
-					content: '';
-					width: get_vw(20, $vwMd);
-					height: 3px;
-					background-color: #fff;
-				}
-			}
-			&::before {
-				@media #{$pointM} {
-					top: 46%;
-					right: 2%;
-					transform: rotate(0deg);
-				}
-			}
-			&::after {
-				@media #{$pointM} {
-					top: 46%;
-					right: 2%;
-					transform: rotate(90deg);
-				}
-			}
-			/*　closeというクラスがついたら形状変化　*/
-			&.show::after {
-				@media #{$pointM} {
-					display: none;
-				}
-			}
-		}
-		&-subBox {
-			background-color: #ffffff;
-			border: 1px solid #c44659;
-			border-radius: 10px;
+		&::before,
+		&::after {
 			@media #{$pointM} {
-				border-radius: 5px;
+				position: absolute;
+				content: '';
+				width: get_vw(20, $vwMd);
+				height: 3px;
+				background-color: #fff;
 			}
 		}
+		&::before {
+			@media #{$pointM} {
+				top: 46%;
+				right: 2%;
+				transform: rotate(0deg);
+			}
+		}
+		&::after {
+			@media #{$pointM} {
+				top: 46%;
+				right: 2%;
+				transform: rotate(90deg);
+			}
+		}
+		/*　closeというクラスがついたら形状変化　*/
+		&.show::after {
+			@media #{$pointM} {
+				display: none;
+			}
+		}
+	}
+	&-subBox {
+		background-color: #ffffff;
+		border: 1px solid #c44659;
+		border-radius: 10px;
+		@media #{$pointM} {
+			border-radius: 5px;
+		}
+	}
 	// デフォルトのタイトル
 	&_text {
 		color: #2e59a7;
@@ -78,7 +78,6 @@
 			@media #{$pointM} {
 				font-size: get_vw(32, $vwMd);
 				padding-top: get_vw(10, $vwMd);
-
 			}
 			@media #{$pointS} {
 				font-size: get_vw(20);
@@ -185,16 +184,16 @@
 			position: absolute;
 			bottom: 15px;
 			left: 0px;
-				@media #{$pointM} {
+			@media #{$pointM} {
 				width: get_vw(60, $vwMd);
 				height: 4px;
 				bottom: get_vw(5, $vwMd);
-				}
-				@media #{$pointS} {
-					width: get_vw(60);
-					height: 3px;
-					bottom: get_vw(5);
-					}
+			}
+			@media #{$pointS} {
+				width: get_vw(60);
+				height: 3px;
+				bottom: get_vw(5);
+			}
 		}
 	}
 	&-pc {

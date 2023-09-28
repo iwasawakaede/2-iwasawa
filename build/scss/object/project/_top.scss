@@ -436,8 +436,8 @@
 		&_rightImg2 {
 		@media #{$pointS} {
 			width:  get_vw(362.5);
+		}
 	}
-}
 }
 // 吹き出し
 // 角丸長方形
@@ -447,10 +447,10 @@
 	text-align: center;
 	border-radius: 10px;
 	position: relative;
-  display: inline-block;
-  margin: 0 0 1.5em -21px;
-  padding: 5px 10px 9px;
-  width: 165px;
+	display: inline-block;
+	margin: 0 0 1.5em -21px;
+	padding: 5px 10px 9px;
+	width: 165px;
 	@media #{$pointM} {
 		border-radius: get_vw(10, $vwMd);
 		margin: 0 0 get_vw(16, $vwMd) 0;
@@ -865,13 +865,7 @@
 		background-size: cover;
 	}
 	&-half {
-		// background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
-		// display: flex;
-		// justify-content: center;
-		// align-items: center;
-		// width: 100vw;
 		@media #{$pointM} {
-			// background: linear-gradient(180deg, #fff5e7 56%, #ebf4ea 56%);
 			width: 100%;
 		}
 	}
@@ -1191,16 +1185,16 @@
 		width: 350px;
 		display: flex;
 		justify-content: center;
-    padding: 10px;
+		padding: 10px;
 		margin-top: 30px;
 		@media #{$pointM} {
 			width: 60%;
 			padding: get_vw(8, $vwMd);
-    	margin: get_vw(15, $vwMd) auto;
+			margin: get_vw(15, $vwMd) auto;
 		}
 		@media #{$pointS} {
 			padding: get_vw(8);
-    	margin: get_vw(15) auto;
+			margin: get_vw(15) auto;
 		}
 	}
 	&_frameBoxText {

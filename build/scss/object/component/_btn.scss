@@ -83,30 +83,30 @@
 		text-align: center;
 		line-height: 1;
 		letter-spacing: -2px;
+		@media #{$pointM} {
+			font-size: get_vw(40, $vwMd);
+		}
+		@media #{$pointS} {
+			font-size: get_vw(20);
+		}
+		&-sub {
+			color: #ffffff;
+			font-family: "Noto Sans jp";
+			font-size: 28px;
+			text-align: left;
+			letter-spacing: 3px;
+			line-height: 1;
+			letter-spacing: 1px;
+			margin-top: 8px;
 			@media #{$pointM} {
-				font-size: get_vw(40, $vwMd);
+				font-size: get_vw(20, $vwMd);
+				text-align: center;
 			}
 			@media #{$pointS} {
-				font-size: get_vw(20);
-			}
-			&-sub {
-				color: #ffffff;
-				font-family: "Noto Sans jp";
-				font-size: 28px;
-				text-align: left;
-				letter-spacing: 3px;
-				line-height: 1;
-				letter-spacing: 1px;
-				margin-top: 8px;
-				@media #{$pointM} {
-					font-size: get_vw(20, $vwMd);
-					text-align: center;
-				}
-				@media #{$pointS} {
-					font-size: get_vw(10);
-				}
+				font-size: get_vw(10);
 			}
 		}
+	}
 }
 .c-btnReservePic {
 	&_picImage {

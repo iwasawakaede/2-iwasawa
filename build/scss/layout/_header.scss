@@ -137,13 +137,14 @@
 // }
 body {
 	font-family: "Noto Sans jp";
-  position: relative;
+	position: relative;
 }
-.is-fixed {
+.js-fixed {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
+
 a {
 	color: inherit;
 }
@@ -192,28 +193,28 @@ a {
 	animation: UpAnime 0.5s forwards;
 }
 @keyframes UpAnime{
-  from {
+	from {
 		opacity: 1;
 		margin-top: 0;
-  }
-  to {
+	}
+	to {
 		opacity: 0;
 		margin-top: -24px;
-  }
+	}
 }
 /*　下に出てくる動き　*/
 .l-headerTop.is-downMove{
 	animation: DownAnime 0.5s forwards;
 }
 @keyframes DownAnime{
-  from {
-  	opacity: 0;
+	from {
+		opacity: 0;
 		margin-top: -24px;
-  }
-  to {
+	}
+	to {
 		opacity: 1;
 		margin-top: 0;
-  }
+	}
 }
 .l-headerMain {
 	display: flex;
@@ -221,7 +222,7 @@ a {
 	width: 1440px;
 	height: 95px;
 	margin: 0 auto;
-  transition: top 300ms;
+	transition: top 300ms;
 	@media #{$pointM} {
 		justify-content: space-between;
 		align-items: center;
@@ -236,27 +237,27 @@ a {
 }
 .l-headerMain.sticky {
 	position: fixed;/* 上に固定 */
-  top: 0;/* 上からスッと表示させる（重要！） */
-  margin-top: 0;/* 0にすることでtopで上に配置 */
-  height: 50px;/* 小さく変化させる */
+	top: 0;/* 上からスッと表示させる（重要！） */
+	margin-top: 0;/* 0にすることでtopで上に配置 */
+	height: 50px;/* 小さく変化させる */
 }
 .is-animation{
-  height: 174px;
+	height: 174px;
 }
 .l-headerLogo {
 	width: 280px;
 	margin: 0 20px 0 15px;
 	@media #{$pointM} {
-					width: get_vw(200, $vwMd);
-					margin: get_vw(10, $vwMd) get_vw(12, $vwMd) 0 0;
-				}
+		width: get_vw(200, $vwMd);
+		margin: get_vw(10, $vwMd) get_vw(12, $vwMd) 0 0;
+	}
 	@media #{$pointS} {
-						width: get_vw(140);
-						margin-right: get_vw(6);
-					}
-					&_img {
-						vertical-align: baseline;
-					}
+		width: get_vw(140);
+		margin-right: get_vw(6);
+	}
+	&_img {
+		vertical-align: baseline;
+	}
 }
 .l-headerNav {
 	@media #{$pointM} {
@@ -298,7 +299,7 @@ a {
 		font-weight: 800;
 		line-height: 0;
 	}
-	&_textS {
+	&-textS {
 		color: #333;
 		font-family: "Noto Sans CJ jp";
 		font-size: 1.4rem;
@@ -318,8 +319,8 @@ a {
 	&.is-panelactive {
 	@media #{$pointM} {
 		right: 0;
+		}
 	}
-}
 }
 .l-headerList {
 	display: flex;
@@ -353,15 +354,15 @@ a {
 	&_textLink:hover {
 		opacity: 0.6;
 	}
-		.fa-regular,
-		.fa-solid {
-				display: none;
-			@media #{$pointM} {
-				color: #1eb9ee;
-				display: inline-block;
-				padding-right: get_vw(10, $vwMd);
-			}
+	.fa-regular,
+	.fa-solid {
+		display: none;
+		@media #{$pointM} {
+			color: #1eb9ee;
+			display: inline-block;
+			padding-right: get_vw(10, $vwMd);
 		}
+	}
 }
 .l-headerFixed {
 	display: none;
@@ -386,10 +387,10 @@ a {
 		list-style: none;
 		width:100%;
 	}
-		&_link {
-		@media #{$pointM} {
-			display: block;
-			padding: get_vw(10, $vwMd);
+	&_link {
+	@media #{$pointM} {
+		display: block;
+		padding: get_vw(10, $vwMd);
 		}
 	}
 }
@@ -410,15 +411,15 @@ a {
 		color: #fff;
 		font-size: get_vw(32, $vwMd);
 	}
-	}
+}
 
 .l-headerButton {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		width: 266px;
-		margin-top: 11px;
-		margin: 11px 0 0 220px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 266px;
+	margin-top: 11px;
+	margin: 11px 0 0 220px;
 	@media #{$pointM} {
 		display: none;
 	}
@@ -450,21 +451,21 @@ a {
 		padding-top: 6px;
 	}
 }
-	.l-headerButtonOpenbtn {
-		display: none;
-		@media #{$pointM} {
+.l-headerButtonOpenbtn {
+	display: none;
+	@media #{$pointM} {
 		display: block;
 		position: relative;
 		cursor: pointer;
-    width: 40px;
-    height: 40px;
+		width: 40px;
+		height: 40px;
 		border-radius: get_vw(5, $vwMd);
 		display: flex;
 	}
-	}
-	.l-headerButtonOpenbtn_line {
+}
+.l-headerButtonOpenbtn_line {
 		display: none;
-		@media #{$pointM} {
+	@media #{$pointM} {
 		display: inline-block;
 		transition: all .4s;
 		position: absolute;
@@ -477,31 +478,31 @@ a {
 	@media #{$pointS} {
 		height: get_vw(3, $vwMd);
 	}
-	}
-	.l-headerButtonOpenbtn_line:nth-child(1) {
+}
+.l-headerButtonOpenbtn_line:nth-child(1) {
 		display: none;
-		@media #{$pointM} {
+	@media #{$pointM} {
 		background: #757777;
 		display: block;
 		top: 9px;
-    left: 5px;
-    width: 30px;
+		left: 5px;
+		width: 30px;
 	}
-	}
-	.l-headerButtonOpenbtn_line:nth-child(2) {
-		display: none;
-		@media #{$pointM} {
+}
+.l-headerButtonOpenbtn_line:nth-child(2) {
+	display: none;
+	@media #{$pointM} {
 		background: #757777;
 		display: block;
 		top: 19px;
-    left: 5px;
-    width: 30px;
+		left: 5px;
+		width: 30px;
 	}
-	}
+}
 
-	.l-headerButtonOpenbtn_line:nth-child(3) {
-		display: none;
-		@media #{$pointM} {
+.l-headerButtonOpenbtn_line:nth-child(3) {
+	display: none;
+	@media #{$pointM} {
 		background: #757777;
 		display: block;
 		top: 30px;
@@ -509,25 +510,25 @@ a {
 		width: 30px;
 	}
 }
-	.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(1) {
-		@media #{$pointM} {
-			top: 10px;
-			left: 6px;
-			transform: translateY(10px) rotate(-45deg);
-		}
-		@media #{$pointS} {
-			top: 17px;
-			left: 5px;
-			transform: translateY(3px) rotate(-45deg);
-			}
+.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(1) {
+	@media #{$pointM} {
+		top: 10px;
+		left: 6px;
+		transform: translateY(10px) rotate(-45deg);
 	}
-	.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(2) {
-		@media #{$pointM} {
+	@media #{$pointS} {
+		top: 17px;
+		left: 5px;
+		transform: translateY(3px) rotate(-45deg);
+	}
+}
+.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(2) {
+	@media #{$pointM} {
 		opacity: 0;
 	}
-	}
-	.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(3) {
-		@media #{$pointM} {
+}
+.l-headerButtonOpenbtn.is-active .l-headerButtonOpenbtn_line:nth-child(3) {
+	@media #{$pointM} {
 		top: 18px;
 		left: 6px;
 		transform: translateY(2px) rotate(45deg);
@@ -535,6 +536,6 @@ a {
 	@media #{$pointS} {
 		top: 23px;
 		left: 5px;
- 		transform: translateY(-3px) rotate(45deg);
-		}
+		transform: translateY(-3px) rotate(45deg);
 	}
+}

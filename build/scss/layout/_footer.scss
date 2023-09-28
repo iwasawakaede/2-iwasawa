@@ -85,6 +85,7 @@
 			padding: get_vw(12);
 		}
 	}
+}
 .l-footerImage {
 	width: 350px;
 	margin: 0 auto;
@@ -173,8 +174,8 @@
 			@media #{$pointM} {
 				display: inline-block;
 			}
+		}
 	}
-}
 }
 .l-footerTell {
 	background-color: #f6ab00;
@@ -190,10 +191,10 @@
 		width: 100%;
 		padding: get_vw(12, $vwMd) get_vw(10, $vwMd) get_vw(15, $vwMd);
 		margin-bottom: 0;
-	}
-	@media #{$pointS} {
-		width: 100%;
-		padding: get_vw(13) get_vw(5) get_vw(12);
+		@media #{$pointS} {
+			width: 100%;
+			padding: get_vw(13) get_vw(5) get_vw(12);
+		}
 	}
 	&_text {
 		color: #ffffff;
@@ -210,6 +211,7 @@
 			font-size: get_vw(15);
 		}
 	}
+}
 .l-footerTellBlock {
 	display: flex;
 	align-items: center;
@@ -264,7 +266,7 @@
 		}
 	}
 }
-}
+
 .l-footerTellBlockInner {
 	display: flex;
 	justify-content: space-between;
@@ -337,7 +339,6 @@
 		text-align: center;
 		@media #{$pointM} {
 			font-size: get_vw(12, $vwMd);
-			}
 		}
 	}
 }

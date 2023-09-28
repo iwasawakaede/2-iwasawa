@@ -19,6 +19,15 @@
 	&-spaceTopS    { @include spaceTopS; }
 	&-spaceTopM    { @include spaceTopM; }
 	&-spaceTopL    { @include spaceTopL; }
+	&-smallbox {
+		width: 1077px;
+		padding: 19px 0 50px;
+		margin: 0 auto;
+		@media #{$pointM} {
+			width: 95%;
+			padding: get_vw(9, $vwMd) 0 get_vw(25, $vwMd);
+		}
+	}
 	&_text {
 		color: #333333;
 		font-size: 1.6rem;
@@ -31,6 +40,18 @@
 		}
 	}
 	&_text:first-child {
+		padding-top: 0;
+	}
+	&-tabtext {
+		padding-top: get_vw(10, $vwMd);
+	}
+	&-mgspace {
+		margin-top: 10px;
+		@media #{$pointM} {
+			padding-top: 0;
+		}
+	}
+	&-nothing {
 		padding-top: 0;
 	}
 }

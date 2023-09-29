@@ -81,32 +81,6 @@
 			}
 		}
 	}
-	&_textBox {
-		padding-top: 17px;
-		@media #{$pointM} {
-			padding-top: get_vw(16, $vwMd);
-		}
-		&-line {
-			padding-left: 82px;
-			@media #{$pointM} {
-				width: 51%;
-				padding: 0;
-			}
-			@media #{$pointS} {
-				width: 88%;
-				padding: 0;
-			}
-		}
-		&-top2L {
-			padding-top: 40px;
-			@media #{$pointM} {
-				padding-top: get_vw(17, $vwMd);
-			}
-			@media #{$pointS} {
-				padding-top: get_vw(20, $vwSm);
-			}
-		}
-	}
 	&_textBoxText {
 		color: #333333;
 		font-size: 1.6rem;
@@ -322,6 +296,12 @@
 		&-sidespaceM {
 			@media #{$pointM} {
 				padding: 0 get_vw(20, $vwMd);
+			}
+		}
+		&-topspaceL {
+			padding-top: 91px;
+			@media #{$pointM} {
+				padding-top: get_vw(45, $vwMd);
 			}
 		}
 	}
@@ -951,6 +931,32 @@
 			padding-top: get_vw(35);
 		}
 	}
+	&_textBox {
+		padding-top: 17px;
+		@media #{$pointM} {
+			padding-top: get_vw(16, $vwMd);
+		}
+		&-line {
+			padding-left: 82px;
+			@media #{$pointM} {
+				width: 51%;
+				padding: 0;
+			}
+			@media #{$pointS} {
+				width: 88%;
+				padding: 0;
+			}
+		}
+		&-top2L {
+			padding-top: 40px;
+			@media #{$pointM} {
+				padding-top: get_vw(17, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(20, $vwSm);
+			}
+		}
+	}
 	// 注意事項ページ
 	// _textBoxList_item書き換え後
 	&_textBoxListItem {
@@ -1304,11 +1310,11 @@
 				margin-top: get_vw(10);
 			}
 		}
-	}
-	&-topspaceL {
-		padding-top: 91px;
-		@media #{$pointM} {
-			padding-top: get_vw(45, $vwMd);
+		&-topspaceL {
+			padding-top: 91px;
+			@media #{$pointM} {
+				padding-top: get_vw(45, $vwMd);
+			}
 		}
 	}
 }
@@ -1424,6 +1430,7 @@
 }
 .p-topBoxConceptBlock {
 	width: 600px;
+	position: relative;
 	@media #{$pointM} {
 		width: 100%;
 	}
@@ -1441,18 +1448,12 @@
 			background-position: left 20px top 20px;
 			position: absolute;
 			z-index: 10;
-			top: 22px;
+			top: -72px;
 			left: -2px;
 			width: 90px;
 			height: 100px;
 			@media #{$pointM} {
 				background-image: none;
-			}
-			@media #{$pointS} {
-				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);
-				background-position: left get_vw(10, $vwSm) top get_vw(10, $vwSm);
-				top: get_vw(-14, $vwSm);
-				left: get_vw(-2, $vwSm);
 			}
 		}
 	}
@@ -1468,18 +1469,12 @@
 			background-position: left 20px top 20px;
 			position: absolute;
 			z-index: 10;
-			top: 22px;
+			top: -72px;
 			left: -2px;
 			width: 90px;
 			height: 100px;
 			@media #{$pointM} {
 				background-image: none;
-			}
-			@media #{$pointS} {
-				background-size: get_vw(40, $vwSm) get_vw(40, $vwSm);
-				background-position: left get_vw(10, $vwSm) top get_vw(10, $vwSm);
-				top: get_vw(-14, $vwSm);
-				left: get_vw(-2, $vwSm);
 			}
 		}
 	}
@@ -1584,9 +1579,6 @@
 			}
 	}
 }
-
-
-
 .p-topBoxConceptList {
 	color: #4d78b9;
 	font-weight: bold;

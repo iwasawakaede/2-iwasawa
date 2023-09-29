@@ -4,7 +4,7 @@ $(function () {
 	$(".js-button").click(function () {//ボタンがクリックされたら
 		$(this).toggleClass('is-active');//ボタン自身に activeクラスを付与し
 		$(".l-headerNav").toggleClass('is-panelactive');//ナビゲーションにpanelactiveクラスを付与
-		$("body").toggleClass('fixed');//bodyにfixedクラスを付与
+		$("body").toggleClass('is-fixed');//bodyにfixedクラスを付与
 		$(".l-header").toggleClass('bgcolor');
 	});
 

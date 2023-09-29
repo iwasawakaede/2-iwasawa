@@ -135,10 +135,11 @@
 // body * {
 // 	outline: red 1px solid;
 // }
-body {
-	font-family: "Noto Sans jp";
-	position: relative;
-}
+
+// a {
+// 	color: inherit;
+// }
+
 
 .l-header {
 	background-color: rgba(255,255,255,0.6);
@@ -168,7 +169,6 @@ body {
 		font-size: 1.2rem;
 		color: #fffcf3;
 		font-weight: bold;
-		font-family: "Noto Sans jp";
 		@media #{$pointM} {
 			font-size: get_vw(10, $vwMd);
 		}
@@ -374,17 +374,19 @@ body {
 		width:100%;
 	}
 	&_link {
+		&-text {
 	@media #{$pointM} {
+		color: #fff;
 		display: block;
 		padding: get_vw(10, $vwMd);
+			}
 		}
 	}
 }
-.l-headerFixedList_link-text {
+.l-headerFixedList_link {
 	@media #{$pointM} {
 		color: #fff;
 		background-color: #1eb9ee;
-		font-family: "Noto Sans jp";
 		font-size: get_vw(24, $vwMd);
 		font-weight: bold;
 		line-height: 1;

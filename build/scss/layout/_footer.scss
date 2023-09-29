@@ -137,7 +137,6 @@
 	}
 	&_textLink {
 		color: #333333;
-		font-family: "Noto Sans jp";
 		font-weight: 500;
 		font-size: 1.8rem;
 		text-align: center;
@@ -200,7 +199,6 @@
 		color: #ffffff;
 		font-size: 2.6rem;
 		font-weight: bold;
-		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
 		@media #{$pointM} {
@@ -257,7 +255,6 @@
 		color: #ffffff;
 		font-size: 5.8rem;
 		font-weight: 800;
-		font-family: "Noto Sans jp";
 		@media #{$pointM} {
 			font-size: get_vw(45, $vwMd);
 		}
@@ -287,7 +284,6 @@
 	&_text {
 		color: #ffffff;
 		font-size: 1.6rem;
-		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
 		padding: 12px 20px;
@@ -317,7 +313,6 @@
 		color: #ffffff;
 		font-size: 2rem;
 		font-weight: bold;
-		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
 		padding: 12px 10px;

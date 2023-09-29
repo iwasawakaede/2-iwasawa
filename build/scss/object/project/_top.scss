@@ -84,7 +84,6 @@
 	&_textBoxText {
 		color: #333333;
 		font-size: 1.6rem;
-		font-family: "Noto Sans jp";
 		@media #{$pointM} {
 			font-size: get_vw(17, $vwMd);
 		}
@@ -408,7 +407,6 @@
 	}
 	&_text {
 		color: #ffff00;
-		font-family: "Noto Sans jp";
 		font-size: 3.2rem;
 		font-weight: bold;
 		line-height: 1;
@@ -571,7 +569,6 @@
 		color: #1eb9ee;
 		font-size: 9rem;
 		font-weight: 500;
-		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
 		@media #{$pointM} {
@@ -601,7 +598,6 @@
 		color: #1c4ca6;
 		font-size: 2.4rem;
 		font-weight: bold;
-		font-family: "Noto Sans jp";
 		text-align: center;
 		line-height: 1;
 		@media #{$pointM} {
@@ -666,7 +662,6 @@
 	&_thTitle {
 		color: #fff;
 		background-color: #69c08a;
-		font-family: "Noto Sans jp";
 		font-size: 3rem;
 		font-weight: bold;
 		text-align: center;
@@ -708,7 +703,6 @@
 	}
 	&_thText {
 		color: #333333;
-		font-family: "Noto Sans jp";
 		text-align: center;
 		font-size: 3.5rem;
 		font-weight: 600;
@@ -747,7 +741,6 @@
 	}
 	&_tdText {
 		color: #333;
-		font-family: "Noto Sans jp";
 		text-align: center;
 		font-size: 3.5rem;
 		font-weight: 600;
@@ -764,7 +757,6 @@
 			color: #ff5267;
 			font-size: 5.5rem;
 			font-weight: 800;
-			font-family: "Noto Sans jp";
 			text-align: right;
 			@media #{$pointM} {
 				font-size: get_vw(30, $vwMd);

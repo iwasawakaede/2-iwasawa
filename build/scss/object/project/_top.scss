@@ -130,7 +130,7 @@
 		}
 	}
 }
-.p-topBlockFlex {
+.p-topBoxFlex {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -291,7 +291,7 @@
 		}
 	}
 }
-.p-topBoxList {
+.p-topBlockList {
 	margin-top: 20px;
 	@media #{$pointM} {
 		margin-top: get_vw(20, $vwMd);
@@ -305,16 +305,6 @@
 			padding-top: 47px;
 			@media #{$pointM} {
 				padding-top: get_vw(25, $vwMd);
-			}
-		}
-		&-topspace {
-			margin-top: 85px;
-			@media #{$pointM} {
-				width: 100%;
-				margin-top: get_vw(25, $vwMd);
-			}
-			@media #{$pointS} {
-				margin-top: get_vw(10);
 			}
 		}
 		&-space {
@@ -332,12 +322,6 @@
 		&-sidespaceM {
 			@media #{$pointM} {
 				padding: 0 get_vw(20, $vwMd);
-			}
-		}
-		&-topspaceL {
-			padding-top: 91px;
-			@media #{$pointM} {
-				padding-top: get_vw(45, $vwMd);
 			}
 		}
 	}
@@ -865,8 +849,8 @@
 			justify-content: space-evenly;
 			width: 1445px;
 			min-width: 1440px;
-			padding: 0 30px;
-			margin: 45px auto 0;
+			padding: 50px 0 0;
+			margin: 0 auto;
 			@media #{$pointM} {
 				align-items: center;
 				width: 100%;
@@ -952,7 +936,7 @@
 				padding-top: get_vw(18);
 		}
 	}
-// FLOWページ
+	// FLOWページ
 	&_innerBox {
 		width: 1445px;
 		min-width: 1440px;
@@ -967,7 +951,7 @@
 			padding-top: get_vw(35);
 		}
 	}
-// 注意事項ページ
+	// 注意事項ページ
 	// _textBoxList_item書き換え後
 	&_textBoxListItem {
 		color: #2e59a7;
@@ -1307,7 +1291,29 @@
 		}
 	}
 }
-.p-topBlockWord {
+
+.p-topBoxList {
+	&_item {
+		&-topspace {
+			margin-top: 85px;
+			@media #{$pointM} {
+				width: 100%;
+				margin-top: get_vw(25, $vwMd);
+			}
+			@media #{$pointS} {
+				margin-top: get_vw(10);
+			}
+		}
+	}
+	&-topspaceL {
+		padding-top: 91px;
+		@media #{$pointM} {
+			padding-top: get_vw(45, $vwMd);
+		}
+	}
+}
+
+.p-topBoxWord {
 	position: relative;
 	display: inline-block;
 	margin: 1.5em 0 1.5em 15px;
@@ -1381,7 +1387,7 @@
 		}
 	}
 }
-.p-topBlockFlexBox {
+.p-topBoxFlexBox {
 	display: flex;
 	justify-content: space-between;
 	width: 1440px;
@@ -1578,6 +1584,9 @@
 			}
 	}
 }
+
+
+
 .p-topBoxConceptList {
 	color: #4d78b9;
 	font-weight: bold;
@@ -1617,12 +1626,12 @@
 .p-topBoxConceptList_item:first-child {
 	padding-top: 0;
 }
-.p-topBlockForm {
+.p-topBoxForm {
 	@media #{$pointM} {
 		width: 100%;
 		}
 }
-.p-topBlockFormTable {
+.p-topBoxFormTable {
 	&-leftXS  { @include spaceLeftXS; }
 	&-leftS   { @include spaceLeftS; }
 	&-leftM   { @include spaceLeftM; }
@@ -1711,7 +1720,7 @@
 		}
 	}
 }
-.p-topBlockFormTableBlock {
+.p-topBoxFormTableBlock {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -1828,7 +1837,7 @@
 		display: none;
 	}
 }
-.p-topBlockFormSelect {
+.p-topBoxFormSelect {
 	display: flex;
 	align-items: center;
 	@media #{$pointM} {
@@ -1953,7 +1962,7 @@
 	}
 }
 
-.p-topBlockFormSelectOverlay {
+.p-topBoxFormSelectOverlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1969,7 +1978,7 @@
 		display: block;
 		}
 	}
-.p-topBlockFormSelectModal {
+.p-topBoxFormSelectModal {
   width: 65%;
   height: 80%;
   border: 1px solid #000;
@@ -2019,7 +2028,7 @@
 		}
 	}
 }
-.p-topBlockFormBtn {
+.p-topBoxFormBtn {
 	width: 600px;
 	padding-top: 38px;
 	margin: 0 auto;

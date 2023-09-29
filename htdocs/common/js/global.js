@@ -4,7 +4,7 @@ $(function () {
 	$(".js-button").click(function () {//ボタンがクリックされたら
 		$(this).toggleClass('is-active');//ボタン自身に activeクラスを付与し
 		$(".l-headerNav").toggleClass('is-panelactive');//ナビゲーションにpanelactiveクラスを付与
-		$("body").toggleClass('js-fixed');//bodyにfixedクラスを付与
+		$("body").toggleClass('fixed');//bodyにfixedクラスを付与
 		$(".l-header").toggleClass('bgcolor');
 	});
 
@@ -51,7 +51,7 @@ $(window).scroll(function () {
 function checkBreakPoint() {
 	w = $(window).width();
 	if (w <= 896) {
-		// タブレット・スマホ向け（767px以下のとき）
+		// タブレット・スマホ向け（896px以下のとき）
 		$('.js-slick').not('.slick-initialized').slick({
 			//スライドさせる
 			dots: true,

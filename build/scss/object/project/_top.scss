@@ -80,71 +80,6 @@
 				width: 100%;
 			}
 		}
-		// (元：２番目	＆_inner)
-		&-second {
-			width: 1248px;
-			margin: 0 auto;
-			padding: 30px 0;
-			@media #{$pointM} {
-				width: 100%;
-				padding: 0 get_vw(10, $vwSm);
-			}
-		}
-		&-frame {
-			width: 1445px;
-			min-width: 1440px;
-			margin: 100px auto;
-			position: relative;
-			@media #{$pointM} {
-				min-width: initial;
-				width: 100%;
-				padding-top: 0;
-				margin: 0 auto;
-			}
-		}
-		&-content {
-			display: flex;
-			justify-content: space-evenly;
-			width: 1445px;
-			min-width: 1440px;
-			padding: 0 30px;
-			margin: 45px auto 0;
-			@media #{$pointM} {
-				align-items: center;
-				width: 100%;
-				min-width: initial;
-				padding: 0 get_vw(19, $vwMd);
-				margin-top: get_vw(7, $vwMd);
-			}
-			@media #{$pointS} {
-				flex-direction: column;
-				padding: 0;
-			}
-		}
-		&-widthL {
-			width: 1420px;
-			@media #{$pointM} {
-				width: 100%;
-			}
-		}
-		&-widthXS {
-			width: 1030px;
-			margin: 0 auto;
-			@media #{$pointM} {
-				width: 100%;
-			}
-		}
-		&-small {
-			width: 1202px;
-			margin: 0 auto;
-			@media #{$pointM} {
-				width: 100%;
-				padding-top: get_vw(10, $vwMd);
-			}
-			@media #{$pointS} {
-				padding-top: get_vw(11, $vwSm);
-			}
-		}
 	}
 	&_textBox {
 		padding-top: 17px;
@@ -181,20 +116,6 @@
 		}
 		@media #{$pointS} {
 			font-size: get_vw(9);
-		}
-	}
-	&_innerBox {
-		width: 1445px;
-		min-width: 1440px;
-		margin: 0 auto;
-		padding-top: 65px;
-		@media #{$pointM} {
-			width: 100%;
-			min-width: initial;
-			padding-top: get_vw(65, $vwMd);
-		}
-		@media #{$pointS} {
-			padding-top: get_vw(35);
 		}
 	}
 	&_image {
@@ -339,7 +260,7 @@
 		}
 	}
 }
-.p-topBlockFlex {
+.p-topBoxFlex {
 	// slickをハックするcss
 	.slick-prev {
 		@media #{$pointM} {
@@ -370,7 +291,7 @@
 		}
 	}
 }
-.p-topBlockList {
+.p-topBoxList {
 	margin-top: 20px;
 	@media #{$pointM} {
 		margin-top: get_vw(20, $vwMd);
@@ -566,7 +487,7 @@
 		border-top: get_vw(13, $vwMd) solid #ff5267;
 	}
 }
-.p-topBlockObjectRoll {
+.p-topBoxObjectRoll {
 	color: #555;
   background: #ff5267;
 	text-align: center;
@@ -918,7 +839,87 @@
 // OPTION
 // -----------------------------------------------
 
-.p-topBlock{
+.p-topBox{
+	&_inner {
+		width: 1248px;
+		margin: 0 auto;
+		padding: 30px 0;
+		@media #{$pointM} {
+			width: 100%;
+			padding: 0 get_vw(10, $vwSm);
+		}
+		&-frame {
+			width: 1445px;
+			min-width: 1440px;
+			margin: 100px auto;
+			position: relative;
+			@media #{$pointM} {
+				min-width: initial;
+				width: 100%;
+				padding-top: 0;
+				margin: 0 auto;
+			}
+		}
+		&-content {
+			display: flex;
+			justify-content: space-evenly;
+			width: 1445px;
+			min-width: 1440px;
+			padding: 0 30px;
+			margin: 45px auto 0;
+			@media #{$pointM} {
+				align-items: center;
+				width: 100%;
+				min-width: initial;
+				padding: 0 get_vw(19, $vwMd);
+				margin-top: get_vw(7, $vwMd);
+			}
+			@media #{$pointS} {
+				flex-direction: column;
+				padding: 0;
+			}
+		}
+		&-widthL {
+			width: 1420px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-widthS {
+			width: 1324px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-bottomspace {
+			padding-bottom: 20px;
+			@media #{$pointM} {
+				padding-bottom: get_vw(20, $vwMd);
+			}
+		}
+		&-nonespace {
+			padding-top: 0;
+		}
+		&-widthXS {
+			width: 1030px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-small {
+			width: 1202px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(11, $vwSm);
+			}
+		}
+	}
 	&-bg {
 		background-color: #fffcf3;
 		background-image: url(/htdocs/common/img/top/guarantee-bg.png);
@@ -951,19 +952,22 @@
 				padding-top: get_vw(18);
 		}
 	}
+// FLOWページ
+	&_innerBox {
+		width: 1445px;
+		min-width: 1440px;
+		margin: 0 auto;
+		padding-top: 65px;
+		@media #{$pointM} {
+			width: 100%;
+			min-width: initial;
+			padding-top: get_vw(65, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(35);
+		}
+	}
 // 注意事項ページ
-	// &_textBoxList {
-	// 	&_item {
-	// 		color: #2e59a7;
-	// 		font-size: 1.6rem;
-	// 		@media #{$pointM} {
-	// 			font-size: get_vw(16, $vwMd);
-	// 		}
-	// 		@media #{$pointS} {
-	// 			font-size: get_vw(15, $vwSm);
-	// 		}
-	// 	}
-	// }
 	// _textBoxList_item書き換え後
 	&_textBoxListItem {
 		color: #2e59a7;
@@ -977,7 +981,7 @@
 	}
 }
 // OPTION内で使用
-.p-topBlockOption {
+.p-topBoxOption {
 	border: 4px solid #2e59a7;
 	border-radius: 10px;
 	width: 1250px;
@@ -1215,7 +1219,7 @@
 	}
 }
 // OPTION内料金部分で使用
-.p-topBlockOptionPrice {
+.p-topBoxOptionPrice {
 	border: 3px solid #1eb9ee;
 	border-radius: 10px;
 	width: 507px;
@@ -1398,7 +1402,7 @@
 		}
 	}
 }
-.p-topBlockConcept {
+.p-topBoxConcept {
 	padding: 50px 0;
 	background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
 	background-repeat: no-repeat;
@@ -1412,7 +1416,7 @@
 		padding: get_vw(20, $vwSm);
 	}
 }
-.p-topBlockConceptBlock {
+.p-topBoxConceptBlock {
 	width: 600px;
 	@media #{$pointM} {
 		width: 100%;
@@ -1535,7 +1539,7 @@
 		}
 	}
 }
-.p-topBlockConceptListBox {
+.p-topBoxConceptListBox {
 	background-color: #fff;
 	border-radius: 0 0 10px 10px;
 	padding: 49px 79px 17px 86px;
@@ -1574,7 +1578,7 @@
 			}
 	}
 }
-.p-topBlockConceptList {
+.p-topBoxConceptList {
 	color: #4d78b9;
 	font-weight: bold;
 	font-size: 1.8rem;
@@ -1610,7 +1614,7 @@
 		}
 	}
 }
-.p-topBlockConceptList_item:first-child {
+.p-topBoxConceptList_item:first-child {
 	padding-top: 0;
 }
 .p-topBlockForm {

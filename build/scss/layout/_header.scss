@@ -140,7 +140,6 @@
 // 	color: inherit;
 // }
 
-
 .l-header {
 	background-color: rgba(255,255,255,0.6);
 	top: 0;
@@ -176,6 +175,9 @@
 			font-size: get_vw(10);
 		}
 	}
+}
+.l-header.bgcolor {
+	background-color: rgba(255,255,255);
 }
 /*　上に消える動き*/
 .l-headerTop.is-upMove {
@@ -304,6 +306,7 @@
 .l-headerNav {
 	&.is-panelactive {
 	@media #{$pointM} {
+		// top: 60px;
 		right: 0;
 		}
 	}

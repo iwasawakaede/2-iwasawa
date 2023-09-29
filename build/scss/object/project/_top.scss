@@ -67,19 +67,83 @@
 			margin: get_vw(-8) auto get_vw(12);
 		}
 		&-width {
+			width: 1450px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-widthS {
 			width: 1220px;
 			margin: 0 auto;
 			@media #{$pointM} {
 				width: 100%;
 			}
 		}
-		&-top4L {
+		// (元：２番目	＆_inner)
+		&-second {
+			width: 1248px;
+			margin: 0 auto;
+			padding: 30px 0;
 			@media #{$pointM} {
-				padding-top: get_vw(20, $vwMd);
-				}
-				@media #{$pointS} {
-				padding-top: get_vw(18, $vwSm);
-				}
+				width: 100%;
+				padding: 0 get_vw(10, $vwSm);
+			}
+		}
+		&-frame {
+			width: 1445px;
+			min-width: 1440px;
+			margin: 100px auto;
+			position: relative;
+			@media #{$pointM} {
+				min-width: initial;
+				width: 100%;
+				padding-top: 0;
+				margin: 0 auto;
+			}
+		}
+		&-content {
+			display: flex;
+			justify-content: space-evenly;
+			width: 1445px;
+			min-width: 1440px;
+			padding: 0 30px;
+			margin: 45px auto 0;
+			@media #{$pointM} {
+				align-items: center;
+				width: 100%;
+				min-width: initial;
+				padding: 0 get_vw(19, $vwMd);
+				margin-top: get_vw(7, $vwMd);
+			}
+			@media #{$pointS} {
+				flex-direction: column;
+				padding: 0;
+			}
+		}
+		&-widthL {
+			width: 1420px;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-widthXS {
+			width: 1030px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+			}
+		}
+		&-small {
+			width: 1202px;
+			margin: 0 auto;
+			@media #{$pointM} {
+				width: 100%;
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				padding-top: get_vw(11, $vwSm);
+			}
 		}
 	}
 	&_textBox {
@@ -873,86 +937,6 @@
 	}
 	&-bgcolor {
 		background-color: #f9f9f9;
-	}
-	&_inner {
-		width: 1248px;
-		margin: 0 auto;
-		padding: 30px 0;
-		@media #{$pointM} {
-			width: 100%;
-			padding: 0 get_vw(10, $vwSm);
-		}
-		&-frame {
-			width: 1445px;
-			min-width: 1440px;
-			margin: 100px auto;
-			position: relative;
-			@media #{$pointM} {
-				min-width: initial;
-				width: 100%;
-				padding-top: 0;
-				margin: 0 auto;
-			}
-		}
-		&-content {
-			display: flex;
-			justify-content: space-evenly;
-			width: 1445px;
-			min-width: 1440px;
-			padding: 0 30px;
-			margin: 45px auto 0;
-			@media #{$pointM} {
-				align-items: center;
-				width: 100%;
-				min-width: initial;
-				padding: 0 get_vw(19, $vwMd);
-				margin-top: get_vw(7, $vwMd);
-			}
-			@media #{$pointS} {
-				flex-direction: column;
-				padding: 0;
-			}
-		}
-		&-widthL {
-			width: 1420px;
-			@media #{$pointM} {
-				width: 100%;
-			}
-		}
-		&-widthS {
-			width: 1324px;
-			margin: 0 auto;
-			@media #{$pointM} {
-				width: 100%;
-			}
-		}
-		&-bottomspace {
-			padding-bottom: 20px;
-			@media #{$pointM} {
-				padding-bottom: get_vw(20, $vwMd);
-			}
-		}
-		&-nonespace {
-			padding-top: 0;
-		}
-		&-widthXS {
-			width: 1030px;
-			margin: 0 auto;
-			@media #{$pointM} {
-				width: 100%;
-			}
-		}
-		&-small {
-			width: 1202px;
-			margin: 0 auto;
-			@media #{$pointM} {
-				width: 100%;
-				padding-top: get_vw(10, $vwMd);
-			}
-			@media #{$pointS} {
-				padding-top: get_vw(11, $vwSm);
-			}
-		}
 	}
 	&_pic {
 		width: 479px;

@@ -23,7 +23,6 @@
 	<script src="common/js/lazysizes.min.js"></script>
 	<script src="common/js/common/jquery-3.6.0.min.js"></script>
 	<script src="common/js/global.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
@@ -34,12 +33,12 @@
 		</div>
 		<div class="l-headerMain">
 			<div class="l-headerLogo">
-				<img src="./common/img/firstview.gif" data-srcset="./common/img/header-logo.png" alt="ブンクリ" class="l-headerLogo_img lazyload" loading="lazy">
+				<img src="./common/img/firstview.gif" data-src="./common/img/header-logo.png" alt="ブンクリ" class="l-headerLogo_img lazyload" loading="lazy">
 			</div>
 			<div class="l-headerNav">
 				<div class="l-headerNumber">
 					<div class="l-headerNumber_tel">
-						<img src="./common/img/firstview.gif" data-srcset="./common/img/header-icon1.png" alt="" class="l-headerNumber_img lazyload" loading="lazy">
+						<img src="./common/img/firstview.gif" data-src="./common/img/header-icon1.png" alt="" class="l-headerNumber_img lazyload" loading="lazy">
 					</div>
 					<p class="l-headerNumber_text">0120-79-5959
 						<small class="l-headerNumber-textS">受付時間 9:00～19:00（年中無休）</small>
@@ -116,7 +115,7 @@
 				<source type="image/webp" media="(min-width:429px)" data-srcset="./common/img/top/main-hero-tab.webp">
 				<source media="(min-width:429px)" data-srcset="./common/img/top/main-hero-tab.png">
 				<source type="image/webp" data-srcset="./common/img/top/main-hero-sp.webp">
-				<img class="lazyload" src="./common/img/firstview.gif" data-srcset="./common/img/top/main-hero-sp.png" alt="エアコンを分解し徹底洗浄！！エアコンをオーバーホールして、ニオイ・カビなどのトラブルを解決します！東京都近郊対応 賃貸の清掃可能！" loading="lazy">
+				<img class="lazyload" src="./common/img/firstview.gif" data-src="./common/img/top/main-hero-sp.png" alt="エアコンを分解し徹底洗浄！！エアコンをオーバーホールして、ニオイ・カビなどのトラブルを解決します！東京都近郊対応 賃貸の清掃可能！" loading="lazy">
 			</picture>
 		</div>
 		<section class="p-topBanner">
@@ -410,7 +409,9 @@
 			</div>
 			<div class="c-btnReserve">
 				<a href="#" class="c-btnReserve_link">
-					<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+					<div class="c-btnReserve_pic">
+						<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+					</div>
 				<div class="c-btnReserve_textBox">
 					<p class="c-btnReserve_textBoxText">お申し込みはこちら</p>
 					<p class="c-btnReserve_textBoxTe
@@ -774,7 +775,9 @@
 
 		<div class="c-btnReserve">
 			<a href="#" class="c-btnReserve_link">
-				<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+				<div class="c-btnReserve_pic">
+					<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+				</div>
 				<div class="c-btnReserve_textBox">
 					<p class="c-btnReserve_textBoxText">お申し込みはこちら</p>
 					<p class="c-btnReserve_textBoxTe
@@ -790,7 +793,10 @@
 		<h2 class="p-topTitile_titile p-topTitile_titile-top">対応エリア</h2>
 	</div>
 	<div class="p-topBoxMap u-mg-topL">
-		<img src="./common/img/firstview.gif" data-src="./common/img/top/area-img.png" class="p-topBoxMap_img lazyload" alt="" loading="lazy">
+		<picture>
+			<source type="image/webp" data-srcset="./common/img/top/area-img.png.webp">
+			<img src="./common/img/firstview.gif" data-src="./common/img/top/area-img.png" class="p-topBoxMap_img lazyload" alt="" loading="lazy">
+		</picture>
 	</div>
 </section>
 
@@ -1034,7 +1040,7 @@
 				<div class="l-footerTellBlock">
 					<div class="l-footerTellBlock_tellnumber">
 						<div class="l-footerTellBlock_icon">
-							<img src="./common/img/firstview.gif" data-src="./common/img/footer-icon.png" alt="" class="l-footerTellBlock_iconImg lazyload" loading="lazy" width="70" height="40">
+							<img src="./common/img/firstview.gif" data-src="./common/img/footer-icon.png" alt="" class="l-footerTellBlock_iconImg lazyload" loading="lazy">
 						</div>
 						<p class="l-footerTellBlock_number">0120-79-5959</p>
 					</div>

@@ -386,8 +386,8 @@
 // 吹き出し
 // 角丸長方形
 .p-topBlockObject{
-  color: #555;
-  background: #ff5267;
+	color: #555;
+	background: #ff5267;
 	text-align: center;
 	border-radius: 10px;
 	position: relative;
@@ -418,7 +418,7 @@
 		}
 	}
 	&-just {
-    width: 190px;
+		width: 190px;
 		padding: 4px 10px 9px;
 		margin: 0px 0 1.5em 3px;
 		&::before {
@@ -437,12 +437,12 @@
 // 三角部分
 .p-topBlockObject::before{
 	content: "";
-  position: absolute;
-  top: 100%;
-  left: 35%;
-  margin-left: -15px;
-  border: 8px solid transparent;
-  border-top: 14px solid #ff5267;
+	position: absolute;
+	top: 100%;
+	left: 35%;
+	margin-left: -15px;
+	border: 8px solid transparent;
+	border-top: 14px solid #ff5267;
 	@media #{$pointM} {
 		margin-left: get_vw(-15, $vwMd);
 		border: get_vw(7, $vwMd) solid transparent;
@@ -451,14 +451,14 @@
 }
 .p-topBoxObjectRoll {
 	color: #555;
-  background: #ff5267;
+	background: #ff5267;
 	text-align: center;
 	border-radius: 10px;
 	position: relative;
-  display: inline-block;
-  margin: 0px 0 1.5em 3px;
-  padding: 4px 10px 9px;
-  width: 190px;
+	display: inline-block;
+	margin: 0px 0 1.5em 3px;
+	padding: 4px 10px 9px;
+	width: 190px;
 	z-index: 1;
 	@media #{$pointM} {
 		border-radius: 5px;
@@ -551,9 +551,9 @@
 .p-topTitile {
 	&-bg {
 		background-color: #fff;
-    width: 100%;
-    // height: 314px;
-    padding: 0 84px;
+		width: 100%;
+		// height: 314px;
+		padding: 0 84px;
 		margin: 0 auto 50px;
 		// margin-left: -50px;
 		@media #{$pointM} {
@@ -706,7 +706,7 @@
 		text-align: center;
 		font-size: 3.5rem;
 		font-weight: 600;
-    line-height: 1;
+		line-height: 1;
 		padding: 50px 0px;
 		@media #{$pointM} {
 			font-size: get_vw(18, $vwMd);
@@ -1076,8 +1076,8 @@
 		margin-right: 12px;
 		@media #{$pointM} {
 			border-radius: 5px;
-    	width: get_vw(75, $vwMd);
-    	padding: get_vw(2.5, $vwMd)get_vw(5, $vwMd)get_vw(4.5, $vwMd);
+			width: get_vw(75, $vwMd);
+			padding: get_vw(2.5, $vwMd)get_vw(5, $vwMd)get_vw(4.5, $vwMd);
 		}
 		@media #{$pointS} {
 			width: get_vw(70);
@@ -1090,10 +1090,10 @@
 		font-weight: bold;
 		line-height: 1;
 		@media #{$pointM} {
-    	font-size: get_vw(18, $vwMd);
+			font-size: get_vw(18, $vwMd);
 		}
 		@media #{$pointS} {
-    	font-size: get_vw(18);
+			font-size: get_vw(18);
 		}
 	}
 	&_sellText {
@@ -1102,10 +1102,10 @@
 		font-size: 4.5rem;
 		line-height: 1;
 		@media #{$pointM} {
-    	font-size: get_vw(40, $vwMd);
+			font-size: get_vw(40, $vwMd);
 		}
 		@media #{$pointS} {
-    	font-size: get_vw(25);
+			font-size: get_vw(25);
 		}
 	}
 	&_sellTextSmall {
@@ -1113,25 +1113,25 @@
 		font-weight: bold;
 		padding: 0 2px;
 		@media #{$pointM} {
-    	font-size: get_vw(18, $vwMd);
+			font-size: get_vw(18, $vwMd);
 		}
 		@media #{$pointS} {
-    	font-size: get_vw(18);
+			font-size: get_vw(18);
 		}
 	}
 	&_sellTextMIddle {
 		font-size: 3.1rem;
 		@media #{$pointM} {
-    	font-size: get_vw(28, $vwMd);
+			font-size: get_vw(28, $vwMd);
 		}
 		@media #{$pointS} {
-    	font-size: get_vw(20);
+			font-size: get_vw(20);
 		}
 	}
 	&_text {
 		width: 465px;
 		@media #{$pointM} {
-    	width: 100%;
+			width: 100%;
 		}
 	}
 	&_image {
@@ -1389,7 +1389,7 @@
 	display: flex;
 	justify-content: space-between;
 	width: 1440px;
-  margin: 0 auto;
+	margin: 0 auto;
 	@media #{$pointM} {
 		display: block;
 		width: 100%;
@@ -1397,7 +1397,7 @@
 	}
 	&_item {
 		background-color: #fff5e7;
-    padding: 0 60px;
+		padding: 0 60px;
 		@media #{$pointM} {
 			padding: get_vw(50, $vwMd) get_vw(15, $vwMd);
 		}
@@ -1482,12 +1482,12 @@
 	}
 	&::after {
 		content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -15px;
-    border: 18px solid transparent;
-    border-top: 33px solid #f6ab00;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -15px;
+		border: 18px solid transparent;
+		border-top: 33px solid #f6ab00;
 		@media #{$pointM} {
 			margin-left: get_vw(-15, $vwMd);
 			top: 98%;
@@ -1621,7 +1621,7 @@
 	&-leftM   { @include spaceLeftM; }
 	&-leftL   { @include spaceLeftL; }
 	width: 100%;
-  margin: 0 auto;
+	margin: 0 auto;
 	&_thText {
 		color: #333333;
 		font-size: 1.6rem;
@@ -1825,7 +1825,7 @@
 	display: flex;
 	align-items: center;
 	@media #{$pointM} {
-    flex-direction: column-reverse;
+		flex-direction: column-reverse;
 		}
 	&_block {
 		width: 265px;
@@ -1867,26 +1867,26 @@
 		}
 	&::before {
 		content: "";
-    position: absolute;
-    bottom: 35px;
-    right: 452px;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    border-right: 49px solid #fff;
-    z-index: 3;
+		position: absolute;
+		bottom: 35px;
+		right: 452px;
+		border-top: 18px solid transparent;
+		border-bottom: 18px solid transparent;
+		border-right: 49px solid #fff;
+		z-index: 3;
 		@media #{$pointM} {
 			display: none;
 			}
 		}
 	&::after {
 		content: "";
-    position: absolute;
-    bottom: 35px;
-    right: 454px;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    border-right: 50px solid #1c4ca6;
-    z-index: 2;
+		position: absolute;
+		bottom: 35px;
+		right: 454px;
+		border-top: 18px solid transparent;
+		border-bottom: 18px solid transparent;
+		border-right: 50px solid #1c4ca6;
+		z-index: 2;
 		@media #{$pointM} {
 			display: none;
 			}
@@ -1947,31 +1947,31 @@
 }
 
 .p-topBoxFormSelectOverlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: grey;
-  opacity: .6;
-  display: none;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: grey;
+	opacity: .6;
+	display: none;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 10;
 	&.open {
 		display: block;
 		}
 	}
 .p-topBoxFormSelectModal {
-  width: 65%;
-  height: 80%;
-  border: 1px solid #000;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  display: none;
+	width: 65%;
+	height: 80%;
+	border: 1px solid #000;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	display: none;
 	z-index: 10;
 	&.open {
 		display: block;

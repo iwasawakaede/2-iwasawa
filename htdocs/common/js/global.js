@@ -93,12 +93,6 @@ checkBreakPoint();
 			}
 		});
 
-	// 	$('.js-click').click(function () {
-	// 		console.log("css追加を追加しました。");
-	// 		$(this).toggleClass(".is-radius");
-	// 		console.log("下の丸みを消しました。");
-	// });
-
 	//fileを変更したら
 $('input').on('change', function () {
 	//propを使って、file[0]にアクセスする

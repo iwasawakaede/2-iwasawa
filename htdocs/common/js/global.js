@@ -33,10 +33,10 @@ if(elemTop < scroll){
 		$('.js-headerTop').addClass('is-upMove');//.js-headerTopに.is-upMove.opacityのクラス名を追加(上に上がる動き)
 	// console.log("9");
 
-	$('.js-updown').removeClass('is-downMove');
-		console.log("Wow!");
+	// $('.js-updown').removeClass('is-downMove');
+	// 	console.log("Wow!");
 
-	$('.js-updown').addClass('is-upMove');
+	// $('.js-updown').addClass('is-upMove');
 
     }else {
 		// 4（小さい）→（下にスクロールすると、）ヘッダーが上から出現する
@@ -45,8 +45,8 @@ if(elemTop < scroll){
 		$('.js-headerTop').addClass('is-downMove');//.js-headerTopに.is-downMove.opacityのクラス名を追加
 	// console.log("7");
 
-	$('.js-updown').removeClass('is-downMove');
-	$('.js-updown').addClass('is-downMove');
+	// $('.js-updown').removeClass('is-downMove');
+	// $('.js-updown').addClass('is-downMove');
 
     }
     beforePos = scroll;//５→現在のスクロール値として、比較用のbeforePosに格納される（１へ戻り、繰り返し）
@@ -94,10 +94,12 @@ checkBreakPoint();
 				console.log('1');
 				$(this).removeClass('close');//クラス名closeを除去し
 				$('.js-title').removeClass('show');//クラス名closeを除去し
+				// $('.js-title-Merit').removeClass('show');
 				console.log('2');
 			} else {//それ以外は
 				$(this).addClass('close');//クラスjs-syousaiにクラス名closeを追加する
 				$('.js-title').addClass('show');//クラスjs-syousaiにクラス名closeを追加する
+
 				console.log('3');
 			}
 		});

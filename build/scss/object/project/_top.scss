@@ -1289,7 +1289,6 @@
 		}
 	}
 }
-
 .p-topBoxList {
 	&_item {
 		&-topspace {
@@ -1305,7 +1304,7 @@
 		&-topspaceL {
 			padding-top: 91px;
 			@media #{$pointM} {
-				padding-top: get_vw(45, $vwMd);
+				padding-top: 0;
 			}
 		}
 	}
@@ -1480,8 +1479,13 @@
 	padding: 6px 0 8px;
 	position: relative;
 	@media #{$pointM} {
-		border-radius: 5px 5px 0 0;
+		border-radius: 0;
 		padding: get_vw(5, $vwMd) 0 get_vw(5, $vwMd) get_vw(15, $vwMd);
+	}
+	&:first-child {
+		@media #{$pointM} {
+			border-radius: 5px 5px 0 0;
+		}
 	}
 	&::after {
 		content: "";

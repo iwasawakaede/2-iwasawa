@@ -1533,6 +1533,47 @@
 				display: none;
 		}
 	}
+	&-icon {
+		/*アイコンの＋と×*/
+		&::after {
+			@media #{$pointM} {
+				position: absolute;
+				content: '';
+				width: get_vw(20, $vwMd);
+				height: 3px;
+				background-color: #fff;
+			}
+		}
+		&::before {
+			@media #{$pointM} {
+				position: absolute;
+				content: '';
+				width: get_vw(20, $vwMd);
+				height: 3px;
+				background-color: #fff;
+			}
+		}
+		&::before {
+			@media #{$pointM} {
+				top: 46%;
+				right: 2%;
+				transform: rotate(0deg);
+			}
+		}
+		&::after {
+			@media #{$pointM} {
+				top: 46%;
+				right: 2%;
+				transform: rotate(90deg);
+			}
+		}
+		/*　closeというクラスがついたら形状変化　*/
+		&.show::after {
+			@media #{$pointM} {
+				display: none;
+			}
+		}
+	}
 }
 .p-topBoxConceptListBox {
 	background-color: #fff;

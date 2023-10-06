@@ -1,6 +1,6 @@
 $(function () {
 	// alert('OK!');
-	console.log("start");
+	// console.log("start");
 	$(".js-button").click(function () {//ボタンがクリックされたら
 		$(this).toggleClass('is-active');//ボタン自身に activeクラスを付与し
 		$(".l-headerNav").toggleClass('is-panelactive');//ナビゲーションにpanelactiveクラスを付与
@@ -15,13 +15,13 @@ function ScrollAnime() {
 	//console.log("1");
     var elemTop = $('.l-contents').offset().top;//.l-contentsのスクロール位置を取得する
 	// ①
-		console.log(elemTop);
+		// console.log(elemTop);
 	var scroll = $(window).scrollTop();
 	// ②
-	console.log('これはスクロールの値',scroll);
+	// console.log('これはスクロールの値',scroll);
 	// ③
     //ヘッダーの出し入れをする（画面のスクロール位置を取得する）
-		console.log('beforePosの値',beforePos)
+		// console.log('beforePosの値',beforePos)
 // ３→現在のスクロール値がl-contentsのスクロール値より大きいと？（分岐点）
 if(elemTop < scroll){
 // (elemTop > scroll || 0 > scrollPos)→これは、elemTop（固定値202）よりスクロール値が小さいかゼロより小さいときという意味
@@ -85,22 +85,22 @@ $(window).resize(function(){
 checkBreakPoint();
 
 		//アコーディオンをクリックした時の動作
-		$('.js-syousai').on('click', function () {//イベント（クリックする）の処理を実行する
-			console.log('hoge');
+		$('.js-syousai').click(function () {//イベント（クリックする）の処理を実行する
+			// console.log('hoge');
 			var findElm = $(this).next(".js-accordion");//.js-syousaiの次に配置されてる.boxを取得する。
 			console.log(findElm);
 			$(findElm).slideToggle();//変数名findElmが表示されているときは隠し、隠れているときは表示する
+			// console.log('Wow!');
 			if ($(this).hasClass('close')) {//クラスjs-syousaiにクラス名closeがあれば
 				console.log('1');
 				$(this).removeClass('close');//クラス名closeを除去し
-				$('.js-title').removeClass('show');//クラス名closeを除去し
+				$(this).find('.js-title').removeClass('show');//クラス名closeを除去し
 				// $('.js-title-Merit').removeClass('show');
-				console.log('2');
 			} else {//それ以外は
 				$(this).addClass('close');//クラスjs-syousaiにクラス名closeを追加する
-				$('.js-title').addClass('show');//クラスjs-syousaiにクラス名closeを追加する
-
+				$(this).find('.js-title').addClass('show');//クラスjs-syousaiにクラス名closeを追加する
 				console.log('3');
+
 			}
 		});
 
@@ -118,7 +118,7 @@ const close = $(".js-close");
 const open = $(".js-open");
 
 	open.on('click', function () { //ボタンをクリックしたら
-		console.log('one!');
+		// console.log('one!');
   modal.addClass("open"); // modalクラスにopenクラス付与
   overlay.addClass("open"); // overlayクラスにopenクラス付与
 });

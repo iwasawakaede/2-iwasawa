@@ -1426,6 +1426,7 @@
 	@media #{$pointM} {
 		width: 100%;
 	}
+
 	&-tabspace {
 		@media #{$pointM} {
 			padding-top: get_vw(25, $vwMd);
@@ -1436,14 +1437,14 @@
 			content: "";
 			background-image: url(/htdocs/common/img/top/difference-icon1.png);
 			background-repeat: no-repeat;
-			background-size: auto;
-			background-position: left 20px top 20px;
+			background-size: cover;
+			background-position: cover;
 			position: absolute;
 			z-index: 10;
 			top: -72px;
-			left: -2px;
-			width: 90px;
-			height: 100px;
+			left: 5px;
+			width: 66px;
+			height: 79px;
 			@media #{$pointM} {
 				background-image: none;
 				z-index: -1;
@@ -1458,14 +1459,14 @@
 			content: "";
 			background-image: url(/htdocs/common/img/top/difference-icon2.png);
 			background-repeat: no-repeat;
-			background-size: auto;
-			background-position: left 20px top 20px;
+			background-size: cover;
+			background-position: cover;
 			position: absolute;
 			z-index: 10;
 			top: -72px;
-			left: -2px;
-			width: 90px;
-			height: 100px;
+			left: 5px;
+			width: 66px;
+			height: 79px;
 			@media #{$pointM} {
 				background-image: none;
 				z-index: -1;
@@ -1533,8 +1534,7 @@
 				display: none;
 		}
 	}
-	&-icon {
-		/*アイコンの＋と×*/
+	&_icon {
 		&::after {
 			@media #{$pointM} {
 				position: absolute;
@@ -1542,6 +1542,7 @@
 				width: get_vw(20, $vwMd);
 				height: 3px;
 				background-color: #fff;
+				z-index: 999;
 			}
 		}
 		&::before {
@@ -1551,6 +1552,7 @@
 				width: get_vw(20, $vwMd);
 				height: 3px;
 				background-color: #fff;
+				z-index: 999;
 			}
 		}
 		&::before {

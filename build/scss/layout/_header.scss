@@ -267,6 +267,30 @@
 		top: 74px;
 	}
 }
+
+.l-headerNav.is-upMove {
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+	from {
+		margin-top: 0;
+	}
+	to {
+		margin-top: -24px;
+	}
+}
+.l-headerNav.is-downMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+	from {
+		margin-top: -24px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
 .l-headerNumber {
 	display: flex;
 	align-items: center;

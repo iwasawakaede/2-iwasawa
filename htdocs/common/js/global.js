@@ -32,12 +32,16 @@ if(elemTop < scroll){
 		// console.log("8");
 		$('.js-headerTop').addClass('is-upMove');//.js-headerTopに.is-upMove.opacityのクラス名を追加(上に上がる動き)
 	// console.log("9");
+	$('.js-updown').addClass('is-upMove');
+	$('.js-updown').removeClass('is-downMove');
     }else {
 		// 4（小さい）→（下にスクロールすると、）ヘッダーが上から出現する
 		$('.js-headerTop').removeClass('is-upMove');	//.js-headerTopにis-upMoveというクラス名を除き
 		// console.log("6");
 		$('.js-headerTop').addClass('is-downMove');//.js-headerTopに.is-downMove.opacityのクラス名を追加
 	// console.log("7");
+	$('.js-updown').removeClass('is-upMove');
+	$('.js-updown').addClass('is-downMove');
     }
     beforePos = scroll;//５→現在のスクロール値として、比較用のbeforePosに格納される（１へ戻り、繰り返し）
 }

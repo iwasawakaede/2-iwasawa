@@ -1,35 +1,59 @@
 $(function () {
-	$(".js-button").click(function () {
-		$(this).toggleClass('is-active');
-		$(".l-headerNav").toggleClass('is-panelactive');
-		$("body").toggleClass('is-fixed');
+	// alert('OK!');
+	// console.log("start");
+	$(".js-button").click(function () {//ボタンがクリックされたら
+		$(this).toggleClass('is-active');//ボタン自身に activeクラスを付与し
+		$(".l-headerNav").toggleClass('is-panelactive');//ナビゲーションにpanelactiveクラスを付与
+		$("body").toggleClass('is-fixed');//bodyにfixedクラスを付与
 		$(".l-header").toggleClass('bgcolor');
 	});
-	var beforePos = 0;
+
+	var beforePos = 0;//スクロールの値の比較用の設定
+
+//２→（１でスクロールすると呼び出される）スクロール途中でヘッダーが消え、上にスクロールすると復活する設定を関数にまとめる
 function ScrollAnime() {
-  var elemTop = $('.l-contents').offset().top;
+	//console.log("1");
+    var elemTop = $('.l-contents').offset().top;//.l-contentsのスクロール位置を取得する
+	// ①
+		// console.log(elemTop);
 	var scroll = $(window).scrollTop();
+	// ②
+	// console.log('これはスクロールの値',scroll);
+	// ③
+    //ヘッダーの出し入れをする（画面のスクロール位置を取得する）
+		// console.log('beforePosの値',beforePos)
+// ３→現在のスクロール値がl-contentsのスクロール値より大きいと？（分岐点）
 if(elemTop < scroll){
-	$('.js-headerTop').removeClass('is-downMove');
-	$('.js-headerTop').addClass('is-upMove');
-	$('.js-updown').removeClass('is-downMove');
-	$('.js-updown').addClass('is-upMove');
-  }else {
-		$('.js-headerTop').removeClass('is-upMove');
-		$('.js-headerTop').addClass('is-downMove');
-	$('.js-updown').removeClass('is-upMove');
-	$('.js-updown').addClass('is-downMove');
-  }
-  beforePos = scroll;
+// (elemTop > scroll || 0 > scrollPos)→これは、elemTop（固定値202）よりスクロール値が小さいかゼロより小さいときという意味
+// ↑上の式だと下の分岐点にはどちらも当てはまらない×ので、結果は何も起こらない・・・
+			// console.log("5");
+		//4（大きい）→ヘッダーが上に消えて、見えなくなる
+		$('.js-headerTop').removeClass('is-downMove');//.js-headerTopにis-downMoveというクラス名を除き(下に下がる動き)
+		// console.log("8");
+		$('.js-headerTop').addClass('is-upMove');//.js-headerTopに.is-upMove.opacityのクラス名を追加(上に上がる動き)
+	// console.log("9");
+    }else {
+		// 4（小さい）→（下にスクロールすると、）ヘッダーが上から出現する
+		$('.js-headerTop').removeClass('is-upMove');	//.js-headerTopにis-upMoveというクラス名を除き
+		// console.log("6");
+		$('.js-headerTop').addClass('is-downMove');//.js-headerTopに.is-downMove.opacityのクラス名を追加
+	// console.log("7");
+    }
+    beforePos = scroll;//５→現在のスクロール値として、比較用のbeforePosに格納される（１へ戻り、繰り返し）
 }
+
+// 1→マウスを1回スクロールすると、2の関数を呼び出す（）
 $(window).scroll(function () {
 	ScrollAnime();
 });
+
+// スライドさせる
 function checkBreakPoint() {
 	w = $(window).width();
 	if (w <= 896) {
 		// タブレット・スマホ向け（896px以下のとき）
 		$('.js-slick').not('.slick-initialized').slick({
+			//スライドさせる
 			dots: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -43,23 +67,28 @@ function checkBreakPoint() {
 		$('.js-slick.slick-initialized').slick('unslick');
 	}
 }
+// ウインドウがリサイズする度にチェック
 $(window).resize(function(){
 	checkBreakPoint();
 });
+// 初回チェック
 checkBreakPoint();
 
 		//アコーディオンをクリックした時の動作
-		$('.js-syousai').click(function () {
-			var findElm = $(this).next(".js-accordion");
+		$('.js-syousai').click(function () {//イベント（クリックする）の処理を実行する
+			// console.log('hoge');
+			var findElm = $(this).next(".js-accordion");//.js-syousaiの次に配置されてる.boxを取得する。
 			console.log(findElm);
-			$(findElm).slideToggle();
-			if ($(this).hasClass('close')) {
+			$(findElm).slideToggle();//変数名findElmが表示されているときは隠し、隠れているときは表示する
+			// console.log('Wow!');
+			if ($(this).hasClass('close')) {//クラスjs-syousaiにクラス名closeがあれば
 				console.log('1');
-				$(this).removeClass('close');
-				$(this).find('.js-title').removeClass('show');
-			} else {
-				$(this).addClass('close');
-				$(this).find('.js-title').addClass('show');
+				$(this).removeClass('close');//クラス名closeを除去し
+				$(this).find('.js-title').removeClass('show');//クラス名closeを除去し
+				// $('.js-title-Merit').removeClass('show');
+			} else {//それ以外は
+				$(this).addClass('close');//クラスjs-syousaiにクラス名closeを追加する
+				$(this).find('.js-title').addClass('show');//クラスjs-syousaiにクラス名closeを追加する
 				console.log('3');
 			}
 		});

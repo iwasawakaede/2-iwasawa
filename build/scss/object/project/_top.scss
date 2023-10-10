@@ -7,7 +7,6 @@
 // -----------------------------------------------
 // バナー・お申込み部分
 // -----------------------------------------------
-
 .p-topVisual {
 	&_pic {
 		@media #{$pointS} {
@@ -15,8 +14,6 @@
 		}
 	}
 }
-// }
-
 .p-topBanner {
 	margin:110px auto 60px;
 	@media #{$pointM} {
@@ -175,40 +172,7 @@
 			height: get_vw(650, $vwMd);
 		}
 		@media #{$pointS} {
-			// height: get_vw(400, $vwSm);
 		}
-		// &-spimg1 {
-		// 	@media #{$pointM} {
-		// 		width: get_vw(275, $vwMd);
-		// 	}
-		// 	@media #{$pointS} {
-		// 		width: get_vw(275, $vwSm);
-		// 	}
-		// }
-		// &-spimg2 {
-		// 	@media #{$pointM} {
-		// 		width: get_vw(296.5, $vwMd);
-		// 	}
-		// 	@media #{$pointS} {
-		// 		width: get_vw(296.5, $vwSm);
-		// 	}
-		// }
-		// &-spimg3 {
-		// 	@media #{$pointM} {
-		// 		width: get_vw(304.5, $vwMd);
-		// 	}
-		// 	@media #{$pointS} {
-		// 		width: get_vw(304.5, $vwSm);
-		// 	}
-		// }
-		// &-spimg4 {
-		// 	@media #{$pointM} {
-		// 		width: get_vw(313, $vwMd);
-		// 	}
-		// 	@media #{$pointS} {
-		// 		width: get_vw(313, $vwSm);
-		// 	}
-		// }
 		&-image {
 			object-fit: contain;
 			width: 600px;
@@ -552,10 +516,8 @@
 	&-bg {
 		background-color: #fff;
 		width: 100%;
-		// height: 314px;
 		padding: 0 84px;
 		margin: 0 auto 50px;
-		// margin-left: -50px;
 		@media #{$pointM} {
 			height: 0;
 			padding: 0 0 get_vw(190, $vwMd) 0;
@@ -794,7 +756,6 @@
 // -----------------------------------------------
 // OPTION
 // -----------------------------------------------
-
 .p-topBox{
 	&_inner {
 		width: 1248px;
@@ -950,7 +911,6 @@
 		}
 	}
 	// 注意事項ページ
-	// _textBoxList_item書き換え後
 	&_textBoxListItem {
 		color: #2e59a7;
 		font-size: 1.6rem;

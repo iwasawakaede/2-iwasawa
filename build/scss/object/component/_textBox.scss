@@ -32,12 +32,9 @@
 		color: #333333;
 		font-size: 1.6rem;
 		padding-top: 0px;
-		// テキストを表示するためのcssは書いてOK！
-		// ある程度テキストが固まってるので、余白はセットで入れてよい
 		@media #{$pointM} {
 			font-size: get_vw(15, $vwMd);
 			line-height: 1.6;
-			// padding-top: get_vw(20, $vwMd);
 		}
 		@media #{$pointS} {
 			@include fz_vw(15);
@@ -106,7 +103,6 @@
 			font-size: 14px;
 			text-align: center;
 			font-weight: 600;
-			// padding-top: 0;
 			@media #{$pointM} {
 				font-size: get_vw(18, $vwMd);
 			}
@@ -125,7 +121,6 @@
 			}
 		}
 	}
-	// Cがクラスが多くなることはよくない。無駄なクラスを作らないようにセレクタで書く。
 	&_text:first-child {
 		padding-top: 0;
 	}

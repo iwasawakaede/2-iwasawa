@@ -1397,10 +1397,9 @@
 			background-image: url(/htdocs/common/img/top/difference-icon1.png);
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-position: cover;
 			position: absolute;
 			z-index: 10;
-			top: -72px;
+			top: -55px;
 			left: 5px;
 			width: 66px;
 			height: 79px;
@@ -1419,10 +1418,9 @@
 			background-image: url(/htdocs/common/img/top/difference-icon2.png);
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-position: cover;
 			position: absolute;
 			z-index: 10;
-			top: -72px;
+			top: -55px;
 			left: 5px;
 			width: 66px;
 			height: 79px;
@@ -1533,14 +1531,14 @@
 			}
 		}
 		/*　closeというクラスがついたら形状変化　*/
-		&.show::after {
+		&.is-show::after {
 			@media #{$pointM} {
 				display: none;
 			}
 		}
 	}
 }
-.js-syousai.close .p-topDiffrenceTitle-demerit {
+.js-syousai.is-close .p-topDiffrenceTitle-demerit {
 	@media #{$pointM} {
 		border-radius: 0;
 		color: #2e59a7;

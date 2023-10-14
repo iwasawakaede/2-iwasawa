@@ -48,16 +48,13 @@ $(window).resize(function(){
 	checkBreakPoint();
 		$('.js-syousai').click(function () {
 			var findElm = $(this).next(".js-accordion");
-			console.log(findElm);
 			$(findElm).slideToggle();
-			if ($(this).hasClass('close')) {
-				console.log('1');
-				$(this).removeClass('close');
-				$(this).find('.js-title').removeClass('show');
+			if ($(this).hasClass('is-close')) {
+				$(this).removeClass('is-close');
+				$(this).find('.js-title').removeClass('is-show');
 			} else {
-				$(this).addClass('close');
-				$(this).find('.js-title').addClass('show');
-				console.log('3');
+				$(this).addClass('is-close');
+				$(this).find('.js-title').addClass('is-show');
 			}
 		});
 $('input').on('change', function () {

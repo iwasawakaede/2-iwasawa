@@ -229,6 +229,7 @@
 	}
 }
 .p-topBlockList {
+	background-color: #fff;
 	margin-top: 20px;
 	@media #{$pointM} {
 		margin-top: get_vw(20, $vwMd);

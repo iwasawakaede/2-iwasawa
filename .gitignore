@@ -1,0 +1,15 @@
+.vscode/
+# 実際に使う際は、このファイルを複製し、ファイル名「.gitignore.sample」の「.sample」を外して使ってください
+/vendor/*
+.DS_Store
+env.ini
+public/.htaccess
+.python-version
+*.bk
+*.origin
+
+# front
+#-------------------------
+node_modules/
+package-lock.json
+node_modules

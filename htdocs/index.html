@@ -4,29 +4,1064 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>sample-02</title>
+	<title>ブンクリ</title>
+	<link rel="icon" href="./common/img/favicon.ico" type="image/ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 	<!-- style sheet -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 	<link rel="stylesheet" href="common/css/style.css">
 	<!-- font awesome -->
 	<script src="https://kit.fontawesome.com/7b6f40b1bc.js" crossorigin="anonymous"></script>
-  <!-- jQuery -->
-  <script src="common/js/common/jquery-3.6.0.min.js"></script>
+	<!-- jQuery -->
+	<script src="common/js/lazysizes.min.js"></script>
+	<script src="common/js/common/jquery-3.6.0.min.js"></script>
 	<script src="common/js/global.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
 <div class="l-wrapper"><!-- / WRAPPER  -->
 	<header class="l-header">
-		ヘッダー部分
+		<div class="l-headerTop js-headerTop">
+			<p class="l-headerTop_text">エアコンを隅々まで徹底的に洗浄してカビを撃退します！</p>
+		</div>
+		<div class="l-headerMain">
+			<div class="l-headerLogo">
+				<img src="./common/img/firstview.gif" data-src="./common/img/header-logo.png" alt="ブンクリ" class="l-headerLogo_img lazyload" loading="lazy">
+			</div>
+			<div class="l-headerNav js-updown">
+				<div class="l-headerNumber">
+					<div class="l-headerNumber_tel">
+						<img src="./common/img/firstview.gif" data-src="./common/img/header-icon1.png" alt="" class="l-headerNumber_img lazyload" loading="lazy">
+					</div>
+					<p class="l-headerNumber_text">0120-79-5959
+						<small class="l-headerNumber-textS">受付時間 9:00～19:00（年中無休）</small>
+					</p>
+				</div>
+				<div class="l-headerBlock">
+					<nav class="l-headerMenu">
+						<ul class="l-headerList">
+							<li class="l-headerList_item">
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-regular fa-credit-card"></i>
+									料金
+								</a>
+							</li>
+							<li class="l-headerList_item">
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-solid fa-gear"></i>
+									ブンクリの流れ
+								</a>
+							</li>
+							<li class="l-headerList_item">
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-solid fa-soap"></i>
+									壁掛け洗浄と分解洗浄の違い
+								</a>
+							</li>
+							<li class="l-headerList_item">
+								<a class="l-headerList_itemLink" href="#">
+									<i class="fa-solid fa-broom"></i>
+									作業完了までの流れ
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="l-headerFixed">
+						<ul class="l-headerFixedList">
+							<li class="l-headerFixedList_link">
+								<a href="#" class="l-headerFixedList_link-text">
+									申し込みはこちら
+								</a>
+							</li>
+							<li class="l-headerFixedList_link">
+								<a href="#" class="l-headerFixedList_link-text">
+									お問い合わせはこちら
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="l-headerButton">
+				<div class="l-headerButtonImg">
+					<img src="./common/img/firstview.gif" data-srcset="./common/img/header-icon2.png" alt="" class="lazyload" loading="lazy">
+				</div>
+				<div class="l-headerButtonBlock">
+					<a class="l-headerButtonBlock_link">
+						<p class="l-headerButtonBlock_linkForm">お申し込み</p>
+					</a>
+					<p class="l-headerButtonBlock_text">RESERVE INSTALLATION</p>
+				</div>
+			</div>
+			<div class="l-headerButtonOpenbtn js-button">
+				<span class="l-headerButtonOpenbtn_line"></span>
+				<span class="l-headerButtonOpenbtn_line"></span>
+				<span class="l-headerButtonOpenbtn_line"></span>
+			</div>
+		</div>
 	</header>
 	<div class="l-contents"><!-- CONTENTS -->
-		コンテンツ部分
+		<div class="p-topVisual">
+			<picture class="p-topVisual_pic">
+				<source type="image/webp" media="(min-width:897px)" data-srcset="./common/img/top/main-hero-pc.webp">
+				<source media="(min-width:897px)" data-srcset="./common/img/top/main-hero-pc.png">
+				<source type="image/webp" media="(min-width:429px)" data-srcset="./common/img/top/main-hero-tab.webp">
+				<source media="(min-width:429px)" data-srcset="./common/img/top/main-hero-tab.png">
+				<source type="image/webp" data-srcset="./common/img/top/main-hero-sp.webp">
+				<img class="lazyload" src="./common/img/firstview.gif" data-src="./common/img/top/main-hero-sp.png" alt="エアコンを分解し徹底洗浄！！エアコンをオーバーホールして、ニオイ・カビなどのトラブルを解決します！東京都近郊対応 賃貸の清掃可能！" loading="lazy">
+			</picture>
+		</div>
+		<section class="p-topBanner">
+			<div class="p-topBanner_inner">
+				<div class="p-topBanner_innerImage">
+					<img src="./common/img/firstview.gif" data-src="./common/img/top/campaign-banner.png" alt="" class="lazyload" loading="lazy">
+				</div>
+				<div class="c-btnReserve">
+					<a href="#" class="c-btnReserve_link">
+						<div class="c-btnReserve_pic">
+							<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+						</div>
+						<div class="c-btnReserve_textBox">
+							<p class="c-btnReserve_textBoxText">お申し込みはこちら</p>
+							<p class="c-btnReserve_textBoxText c-btnReserve_textBoxText-sub">RESERVE INSTALLATION</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="p-topBlock">
+			<div class="p-topBlock_inner p-topBlock_inner-width">
+				<ul class="p-topBlockList">
+					<li class="p-topBlockList_item">
+						<div class="p-topPoint">
+							<div class="p-topPoint_textBig">
+								<div class="p-topBlockObject">
+									<p class="p-topBlockObject_text">
+										POINT
+										<span class="p-topBlockObject_text-number">
+											&#10102;
+										</span>
+									</p>
+								</div>
+								<div class="c-title c-title-line">
+									<h2 class="c-title_text">
+										スプレー洗浄、壁掛け洗浄では<br class="c-title_text-break">取れないエアコン内部の汚れ
+									</h2>
+								</div>
+								<div class="c-textBox">
+									<p class="c-textBox_text">
+										エアコンの簡単なお掃除なら市販のエアコンクリーナーなどを使ってスプレー洗浄ができますが、しっかりと清掃していくのなら業者にクリーニングをお願いすると安心でしょう。
+									</p>
+									<p class="c-textBox_text">
+										しかし、一般的に業者にエアコンのクリーニングを頼むと壁にエアコンを取り付けたままの壁掛け洗浄になってきます。壁掛け洗浄は簡単に取り外せるパネル・フィルターなどの部品は外すものの、ほとんどの部品はそのままに高圧洗浄することがほとんどです。これではエアコン内部の汚れ、ニオイの元やカビを完全に除去することは難しいです。スプレー洗浄も壁掛け洗浄も簡易的なクリーニングとしては問題ありませんが、エアコン内部の汚れを完全に洗浄するには部品を分解してクリーニングする必要があります。
+									</p>
+								</div>
+							</div>
+							<div class="p-topPoint_imgBox">
+								<img src="./common/img/firstview.gif" data-src="./common/img/top/point-img1.png" alt="THE INSIDE IS DIFFICULT TO CLEAN" class="p-topPoint_rightImg lazyload" loading="lazy">
+							</div>
+						</div>
+					</li>
+					<li class="p-topBlockList_item p-topBlockList_item-second">
+						<div class="p-topPoint p-topPoint-reverse" style="flex-direction: row-reverse;">
+							<div class="p-topPoint_textBig p-topPoint_textBig-reverse">
+								<div class="p-topBlockObject">
+									<p class="p-topBlockObject_text">
+										POINT
+										<span class="p-topBlockObject_text-number">
+											&#10103;
+										</span>
+									</p>
+								</div>
+								<div class="c-title c-title-line">
+									<h2 class="c-title_text">
+										ブンクリならエアコン内部の汚れも<br class="c-title_text-break">除去できます！
+									</h2>
+								</div>
+								<div class="c-textBox">
+									<p class="c-textBox_text">
+										エアコン分解クリーニング「ブンクリ」は、お客様宅から取り外したエアコンを専用工場に持ち帰り、部品単位で分解し、フィルターはもちろん、エアコン内部の細かいところすべてを特殊な洗浄液を使って洗浄し、完全に乾燥させることで汚れ、ニオイの元やカビなどを綺麗に除菌します。
+									</p>
+								</div>
+							</div>
+							<div class="p-topPoint_imgBox p-topPoint_imgBox-reverse">
+								<img src="./common/img/firstview.gif" data-src="./common/img/top/point-img2.png" alt="ALLOWS YOU TO A COMFORTABLE BREEZE" class="p-topPoint_rightImg2 lazyload" loading="lazy">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="p-topBlock p-topBox p-topBlock-change">
+			<div class="p-topBlock_inner p-topBlock_inner-widthS">
+				<div class="p-topTitile">
+					<p class="p-topTitile_text p-topTitile_text-speace">PRICE</p>
+					<h2 class="p-topTitile_titile p-topTitile_titile-top">分解クリーニングの料金</h2>
+				</div>
+				<table class="p-topTable p-topTable-speace">
+					<thead>
+						<tr>
+							<th class="p-topTable_thTitle">エアコン能力<br class="p-topTable_thTitle-break">(kw)</th>
+							<th class="p-topTable_thTitle p-topTable_thTitle-bgcolor2">通常のエアコン</th>
+							<th class="p-topTable_thTitle p-topTable_thTitle-bgcolor3">お掃除機能付きの<br class="p-topTable_thTitle-break">エアコン</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="p-topTable_thText">
+								<b class="p-topTable_thText-big">
+									4.9kw
+								</b>
+								以下
+							</th>
+							<td class="p-topTable_tdText">
+								<b class="p-topTable_tdText-big">29,800</b>
+									円<br>
+								<small class="p-topTable_tdText-small">（税込 32,780円）</small>
+							</td>
+							<td class="p-topTable_tdText">
+								<b class="p-topTable_tdText-big">34,800</b>
+									円<br>
+								<small class="p-topTable_tdText-small">（税込 38,280円）</small>
+							</td>
+						</tr>
+						<tr>
+							<th class="p-topTable_thText">
+								<b class="p-topTable_thText-big">
+									5.0～6.3kw
+								</b>
+							</th>
+							<td class="p-topTable_tdText">
+								<b class="p-topTable_tdText-big">36,800</b>
+									円<br>
+								<small class="p-topTable_tdText-small">（税込 40,480円）</small>
+							</td>
+							<td class="p-topTable_tdText">
+								<b class="p-topTable_tdText-big">41,800</b>
+									円<br>
+								<small class="p-topTable_tdText-small">（税込 45,980円）</small>
+							</td>
+						</tr>
+						<tr>
+							<th class="p-topTable_thText p-topTable_thText-none">
+								<b class="p-topTable_thText-big">6.3kw</b>
+								以上
+							</th>
+							<td class="p-topTable_tdText p-topTable_tdText-none">
+								<b class="p-topTable_tdText-big">
+									41,800
+								</b>
+									円<br>
+								<small class="p-topTable_tdText-small">（税込 45,980円）</small>
+							</td>
+							<td class="p-topTable_tdText p-topTable_tdText-none">
+								<b class="p-topTable_tdText-big">46,800</b>
+									円<br>
+								<small class="p-topTable_tdText-small">（税込 51,480円）</small>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="p-topBlock_textBox">
+					<p class="p-topBlock_textBoxText">
+						※上記の価格は同一場所・位置での取り外し・分解クリーニング・取り付けの料金です。
+					</p>
+				</div>
+				<div class="c-btnReserve">
+					<a href="#" class="c-btnReserve_link">
+						<div class="c-btnReserve_pic">
+							<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+						</div>
+						<div class="c-btnReserve_textBox">
+							<p class="c-btnReserve_textBoxText">お申し込みはこちら</p>
+							<p class="c-btnReserve_textBoxText c-btnReserve_textBoxText-sub">
+								RESERVE INSTALLATION
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="p-topBox">
+			<div class="p-topBox_inner p-topBox_inner-second">
+				<div class="c-title">
+					<p class="p-topBox_pic">
+						<img src="./common/img/firstview.gif" data-src="./common/img/top/option-title.png" alt="OPTION" class="p-topBox_picImg lazyload" loading="lazy">
+					</p>
+					<h2 class="c-title_text c-title_text-content">オプション料金</h2>
+				</div>
+				<ul class="p-topBoxList">
+					<li class="p-topBoxList_item">
+						<div class="p-topBoxOption p-topBoxOption-second">
+							<span class="p-topBoxOption_triangle"></span>
+							<p class="p-topBox_img p-topBoxOption_img-second">
+								<img src="./common/img/firstview.gif" data-src="./common/img/top/option-img1.png" alt="CLEAN AND PROTECT 抗菌・消臭・防臭・防カビ・除菌" class="p-topBoxOption_pic1 lazyload" loading="lazy">
+							</p>
+							<div class="p-topBoxOption_textBox p-topBoxOption_textBox-width">
+								<div class="c-title c-title-line">
+									<h2 class="c-title_text c-title_text-tabtext">
+										防カビ・抗菌コート
+									</h2>
+								</div>
+								<div class="c-textBox u-mg-topM">
+									<p class="c-textBox_text">
+										エアコンの分解クリーニング後にエアコン内部に<span class="u-text-color1">抗菌加工と防カビ加工のコーティング</span>を行います。これにより<span class="u-text-color1">防臭・防菌・防カビ</span>の高い効果があり、<span class="u-text-color1">エアコンを細菌やカビから守り、快適な空気を維持</span>することができます。
+									</p>
+									<p class="c-textBox_text">エアコン分解クリーニングをする際にこちらのオプションもお試しください。</p>
+								</div>
+								<div class="p-topBoxOptionPrice p-topBoxOptionPrice-second">
+									<div class="p-topBoxOptionPrice_textBolck">
+										<p class="p-topBoxOptionPrice_textBolcktext">料金</p>
+									</div>
+									<div class="p-topBoxOptionPrice_priceBox">
+										<p class="p-topBoxOptionPrice_priceBoxText">
+											<b class="p-topBoxOptionPrice_priceBoxText-big">5,000</b>
+												円
+										</p>
+										<p class="p-topBoxOptionPrice_priceBoxText-small">（税込 5,500円）</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="p-topBoxList_item p-topBoxList_item-topspace">
+						<div class="p-topBoxOption">
+							<span class="p-topBoxOption_triangle"></span>
+							<p class="p-topBoxOption_img">
+								<img src="./common/img/firstview.gif" data-src="./common/img/top/option-img2.png" alt="SHEELD BLOCK!防止弁 虫の侵入を防ぎます" class="p-topBoxOption_pic lazyload" loading="lazy">
+							</p>
+							<div class="p-topBoxOption_textBox">
+								<div class="c-title c-title-line">
+									<h2 class="c-title_text">
+										エアーカットバルブで防虫対策！
+									</h2>
+								</div>
+								<div class="c-textBox">
+									<p class="c-textBox_text">
+										エアコンの排水ホース（ドレンホース）は屋外に出ており、室内のエアコンと繋がっています。<br class="c-title_text-break">排水管口は内径14～16mm程度あるため、それより小さい虫が入ることができ、<span class="u-text-color1">排水ホースから入った虫はエアコンを通り室内へ侵入すること</span>があります。<br class="c-title_text-break">
+										虫の室内侵入を防ぐために<span class="u-text-color1">エアーカットバルブを排水ホースの中間に<br class="c-title_text-break">取り付ける
+										</span>事で、エアコンの排水時に弁が開き、屋外からは弁が閉まっている状態になるため<span class="u-text-color1">虫の侵入を防ぐことができます</span>。<br class="c-title_text-break">
+										ブンクリのオプションで分解クリーニング後、お客様宅へ再度取付を行う際にエアーカットバルブの取り付けを行うことができます。
+									</p>
+								</div>
+								<div class="p-topBoxOptionPrice">
+									<div class="p-topBoxOptionPrice_textBolck">
+										<p class="p-topBoxOptionPrice_textBolcktext">料金</p>
+									</div>
+									<div class="p-topBoxOptionPrice_priceBox">
+										<p class="p-topBoxOptionPrice_priceBoxText">
+											<b class="p-topBoxOptionPrice_priceBoxText-big">3,000</b>
+												円
+										</p>
+										<p class="p-topBoxOptionPrice_priceBoxText-small">（税込 3,300円）
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="p-topBoxList_item p-topBoxList_item-topspace">
+						<div class="p-topBoxOption p-topBoxOption-middle">
+							<span class="p-topBoxOption_triangle p-topBoxOption_triangle-color"></span>
+							<div class="p-topBoxOption_text">
+								<div class="c-title c-title-line">
+									<h2 class="c-title_text c-title_text-color">写真撮影割引</h2>
+								</div>
+								<div class="p-topBoxOption_sell">
+									<div class="p-topBoxOption_sellBlock">
+										<p class="p-topBoxOption_sellBlockText">最大</p>
+									</div>
+									<p class="p-topBoxOption_sellText">2,000<small class="p-topBoxOption_sellTextSmall">円</small><span class="p-topBoxOption_sellTextMIddle">割引!!</span></p>
+								</div>
+								<div class="c-textBox c-textBox-mgspace">
+									<p class="c-textBox_text c-textBox_text-weight">事前にエアコン設置箇所の室内側・室外側を撮影していただくと
+										2,000円割引いたします。</p>
+									</div>
+									<div class="p-topBoxOption_frame">
+										<div class="p-topBoxOption_frameBox">
+											<p class="p-topBoxOption_frameBoxText">詳しく見る</p>
+										</div>
+									<div class="p-topBoxOption_pic2">
+										<img src="./common/img/firstview.gif" data-src="./common/img/top/arrow-icon.png" alt="" class="p-topBoxOption_picImg lazyload" loading="lazy">
+									</div>
+								</div>
+							</div>
+							<div class="p-topBoxOption_image">
+								<picture>
+									<source type="image/webp" media="(min-width:897px)" data-srcset="./common/img/top/option-img3.webp">
+									<source media="(min-width:897px)" data-srcset="./common/img/top/option-img3.png">
+									<source type="image/webp" data-src="./common/img/top/option-img3-sp.png">
+									<img src="./common/img/firstview.gif" data-src="./common/img/top/option-img3-sp.png" class="p-topBoxOption_icon lazyload" alt="" loading="lazy">
+								</picture>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="c-btnReserve">
+				<a href="#" class="c-btnReserve_link">
+					<div class="c-btnReserve_pic">
+						<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+					</div>
+				<div class="c-btnReserve_textBox">
+					<p class="c-btnReserve_textBoxText">お申し込みはこちら</p>
+					<p class="c-btnReserve_textBoxTe
+					xt c-btnReserve_textBoxText-sub">RESERVE INSTALLATION</p>
+				</div>
+			</a>
+		</div>
+	</div>
+
+<section class="p-topBox p-topBox-topspace">
+	<div class="p-topBox_inner p-topBox_inner-frame">
+		<div class="p-topTitile">
+			<p class="p-topTitile_text p-topTitile_text-speace">FLOW</p>
+			<h2 class="p-topTitile_titile p-topTitile_titile-topM">ブンクリの流れ</h2>
+		</div>
+		<div class="p-topBox_innerBox">
+			<ol class="p-topBoxFlex js-slick">
+				<li class="p-topBoxFlex_item">
+					<div class="p-topBoxFlex_content">
+						<div class="p-topBoxObjectRoll">
+							<p class="p-topBoxObjectRoll_text">
+								STEP
+								<span class="p-topBoxObjectRoll_text-number">
+									&#10102;
+								</span>
+							</p>
+						</div>
+						<div class="c-title">
+							<h2 class="c-title_text c-title_text-sizeS">
+								エアコンの状況を確認をして持ち帰ります。
+							</h2>
+						</div>
+						<div class="c-textBox">
+							<p class="c-textBox_text c-textBox_text-boldS">
+								お客様宅に訪問しエアコンの状況を確認します。<br>作業内容を提示しご納得いただけましたら、エアコンの室内機を取り外して専門工場に持ち帰ります。確認作業はすぐに終わるのでわずかな時間で立ち合いが終わります。※クリーニングお預かり期間：7日〜
+							</p>
+						</div>
+						<div class="p-topBoxFlex_contentImg p-topBoxFlex_contentImg-spimg1">
+							<img src="./common/img/firstview.gif" data-src="./common/img/top/flow-img1.png" class="p-topBoxFlex_contentImg-image lazyload" loading="lazy">
+						</div>
+					</div>
+				</li>
+				<li class="p-topBoxFlex_item">
+					<div class="p-topBoxFlex_content">
+						<div class="p-topBoxObjectRoll p-topBoxObjectRoll-rev">
+							<p class="p-topBoxObjectRoll_text">
+								STEP
+								<span class="p-topBoxObjectRoll_text-number">
+									&#10103;
+								</span>
+							</p>
+						</div>
+						<div class="p-topBoxFlex_contentText">
+							<div class="c-title">
+								<h2 class="c-title_text c-title_text-sizeS">
+									専門工場で部品を分解して洗浄します。
+								</h2>
+							</div>
+							<div class="c-textBox">
+								<p class="c-textBox_text c-textBox_text-boldS">
+									取り外したエアコンを専門工場へ持ち帰ったあと、まずは部品ごとに分解し、特殊な洗浄液に浸して汚れやカビなどのニオイの元を分解していきます。<br>次に、強力な水圧で細かい部分に残ったゴミなどを吹き飛ばし、熱交換器の目詰まりを解消します。
+								</p>
+							</div>
+						</div>
+						<div class="p-topBoxFlex_contentImg p-topBoxFlex_contentImg-spimg2">
+							<img src="./common/img/firstview.gif" data-src="./common/img/top/flow-img2.png" class="p-topBoxFlex_contentImg-image lazyload" loading="lazy">
+						</div>
+					</div>
+				</li>
+				<li class="p-topBoxFlex_item">
+					<div class="p-topBoxFlex_content">
+						<div class="p-topBoxObjectRoll">
+							<p class="p-topBoxObjectRoll_text">
+								STEP
+								<span class="p-topBoxObjectRoll_text-number">
+									&#10104;
+								</span>
+							</p>
+						</div>
+						<div class="p-topBoxFlex_contentText">
+							<div class="c-title">
+								<h2 class="c-title_text c-title_text-sizeS">
+									洗浄後は完全に乾燥させてから組み立てます。
+								</h2>
+							</div>
+							<div class="c-textBox">
+								<p class="c-textBox_text c-textBox_text-boldS">
+									洗い流したあとにすぐに組み立ててしまうと、カビが繁殖してしまう原因になるので、完全に乾くまでしっかりと乾燥させていきます。<br>乾燥したのを確認したら組み立てて、ワックスがけをして仕上げます。
+								</p>
+						</div>
+						</div>
+						<div class="p-topBoxFlex_contentImg p-topBoxFlex_contentImg-spimg3">
+							<img src="./common/img/firstview.gif" data-src="./common/img/top/flow-img3.png" class="p-topBoxFlex_contentImg-image lazyload" loading="lazy">
+						</div>
+					</div>
+				</li>
+				<li class="p-topBoxFlex_item">
+					<div class="p-topBoxFlex_content">
+						<div class="p-topBoxObjectRoll p-topBoxObjectRoll-rev">
+							<p class="p-topBoxObjectRoll_text">
+								STEP
+								<span class="p-topBoxObjectRoll_text-number">
+									&#10105;
+								</span>
+							</p>
+						</div>
+						<div class="p-topBoxFlex_contentText">
+							<div class="c-title">
+								<h2 class="c-title_text c-title_text-sizeS">
+									エアコンを取り付けて動作確認。
+								</h2>
+							</div>
+							<div class="c-textBox">
+								<p class="c-textBox_text c-textBox_text-boldS">
+									お客様のご希望日時に合わせてお客様宅へと取り付けに行きます。<br>取り付け後にお客様立ち合いのもと動作に問題がないかを、確認をしていただいて作業は無事に完了となります。
+								</p>
+							</div>
+						</div>
+						<div class="p-topBoxFlex_contentImg p-topBoxFlex_contentImg-spimg4">
+							<img src="./common/img/firstview.gif" data-src="./common/img/top/flow-img4.png" class="p-topBoxFlex_contentImg-image lazyload" loading="lazy">
+						</div>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="p-topBoxFlex_image">
+			<img src="./common/img/firstview.gif" data-src="./common/img/top/flow-circle.png" alt="" class="lazyload" loading="lazy">
+		</div>
+	</div>
+</section>
+
+<section class="p-topBox p-topBox-bg">
+	<div class="c-title-tab">
+		<h2 class="c-title_text c-title_text-sizeM c-title_text-sizeM">
+			当社で取り付けをしたエアコンには、<br>すべて1年取付保証が付きます！
+		</h2>
+	</div>
+	<div class="p-topBox_inner p-topBox_inner-content">
+		<div class="p-topBox_image">
+			<img src="./common/img/firstview.gif" data-src="./common/img/top/guarantee-img.png" alt="" class="lazyload" loading="lazy">
+		</div>
+		<div class="p-topBox_textBox p-topBox_textBox-line">
+			<div class="c-title-pc">
+				<h2 class="c-title_text c-title_text-sizeM">
+					当社で取り付けをしたエアコンには、<br>すべて1年取付保証が付きます！
+				</h2>
+			</div>
+			<div class="p-topBoxWord">
+				<div class="c-textBox c-textBox-nothing">
+					<p class="c-textBox_text c-textBox_text-boldM">
+						ブンクリで取り付けたエアコンには取付保証がつきます。<br>当社の施工が原因で不具合が起きた場合は、当社にて無料で取付工事を再度行います。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="p-topBlock">
+	<div class="p-topBlock_inner p-topBlock_inner-width">
+		<ul class="p-topBlockList">
+			<li class="p-topBlockList_item">
+				<div class="p-topPoint p-topBlockList_item-sidespaceM">
+					<div class="p-topPoint_textBig p-topPoint_textBig-width">
+						<div class="p-topBlockObject">
+							<p class="p-topBlockObject_text">
+								POINT
+								<span class="p-topBlockObject_text-number">
+									&#10102;
+								</span>
+							</p>
+						</div>
+						<div class="c-title c-title-line">
+							<h2 class="c-title_text">
+								取り付けたままの洗浄では<br class="u-display-noneSpBlockv">除去できない汚れや<br class="u-display-noneSpBlock"><br class="u-display-tabBlockSpNone">乾燥させないと新たなカビの繁殖も。
+							</h2>
+						</div>
+						<div class="c-textBox">
+							<p class="c-textBox_text">
+								エアコンでカビが生えやすい場所は、ドレンパン・ファン・風の吹き出し口であるフィンです。ドレンパンやファンはエアコン内部にあるためここをお掃除するためには取り付けたままでは難しく、分解して作業をする必要があります。<br class="c-title_text-break">そのためエアコンを壁に取り付けたままのエアコンクリーニングではすべてのカビのもとを除去することはできません。また洗浄してもしっかりと乾燥させないとそこから新たなカビが繁殖する可能性があります。
+							</p>
+							<p class="c-textBox_text">
+								「ブンクリ」なら部品を分解して部品単位で分解して洗うので、エアコン内部、裏側までしっかりと汚れやカビを洗浄することができます。そのあとにしっかりと乾燥させて組み立てを行いますのでカビの繁殖対策も問題ありません。
+							</p>
+						</div>
+					</div>
+					<div class="p-topPoint_imgBox p-topPoint_imgBox-image3">
+						<img src="./common/img/firstview.gif" data-src="./common/img/top/point-img3.png" alt="" class="p-topPoint_rightImg lazyload" loading="lazy">
+					</div>
+				</div>
+			</li>
+			<li class="p-topBlockList_item p-topBlockList_item-topspaceM p-topBlockList_item-sidespaceM">
+				<div class="p-topPoint p-topPoint-reverse">
+					<div class="p-topPoint_textBig p-topPoint_textBig-second">
+						<div class="p-topBlockObject">
+							<p class="p-topBlockObject_text">
+								POINT
+								<span class="p-topBlockObject_text-number">
+									&#10103;
+								</span>
+							</p>
+						</div>
+						<div class="c-title c-title-line">
+							<h2 class="c-title_text">
+								リビングやキッチン近くにある<br class="u-display-noneSpBlockv">エアコンは汚れやすく、<br class="u-display-tabBlock">ご家族への健康被害も。
+							</h2>
+						</div>
+						<div class="c-textBox">
+							<p class="c-textBox_text">
+								リビング近くにキッチンがある場合、エアコンは汚れやすく注意が必要です。<br class="c-title_text-tabbr">キッチンで油を熱した調理をすると、油煙となり空気中を漂っていきます。その油煙をエアコンが吸い込むことでエアコンがべたつく原因となり、その部分にホコリが付着してさらに汚れていき、カビが発生することがあります。<br class="c-title_text-tabbr">カビが発生したまま使用すると、不快なニオイだけでなく、鼻炎やアトピーを始めとした様々なアレルギー症状を起こす原因の「アレルゲン」となりご家族に健康に被害出てくる可能性があります。<br class="c-title_text-tabbr">ご家族の中でもとくに配慮をしてあげたいのが赤ちゃんとなります。大人よりもアレルギーに弱くデリケートなのでアレルゲンの影響を受けやすいです。<br class="c-title_text-tabbr">リビングは家族が集まる大切な空間なので、ご家族や赤ちゃんの健康を守るためにもエアコンはしっかりとクリーニングをしていきたいところですね。
+							</p>
+						</div>
+					</div>
+					<div class="p-topPoint_imgBox p-topPoint_imgBox-second">
+						<img src="./common/img/firstview.gif" data-src="./common/img/top/point-img4.png" alt="" class="p-topPoint_rightImg lazyload" loading="lazy">
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="p-topBox p-topBox-half">
+		<div class="p-topTitile p-topTitile-bg">
+			<h2 class="p-topTitile_text p-topTitile_text-speace">DIFFERENCE</h2>
+			<p class="p-topTitile_titile p-topTitile_titile-topM">壁掛け洗浄と分解洗浄の違い</p>
+		</div>
+		<div class="p-topBoxConcept">
+			<ul class="p-topBoxFlexBox">
+				<li class="p-topBoxFlexBox_item">
+					<ul class="p-topBoxList">
+						<li class="p-topBoxList_item">
+							<div class="p-topBoxConceptBlock">
+								<div class="p-topDiffrenceTitle">
+									<div class="c-title">
+										<h3 class="c-title_text c-title_text-change">分解洗浄</h3>
+									</div>
+								</div>
+								<div class="p-topBoxConceptListBox">
+									<div class="c-textBox">
+										<p class="c-textBox_text c-textBox_text-change">
+											部品を分解して隅々までクリーニング！<br class="u-display-none">洗い残しがない‼
+										</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="p-topBoxList_item p-topBoxList_item-topspaceL">
+							<!-- 上のタイトルのパーツ -->
+							<div class="p-topBoxConceptBlock p-topBoxConceptBlock-merit p-topBoxConceptBlock-icon">
+								<div class="p-topBoxConceptTitle js-syousai">
+									<div class="p-topDiffrenceTitle p-topDiffrenceTitle-merit">
+										<div class="c-title">
+											<h3 class="c-title_text c-title_text-change js-title">メリット</h3>
+										</div>
+										<span class="p-topDiffrenceTitle_icon js-title"></span>
+									</div>
+								</div>
+								<!-- 下のテキストパーツ -->
+								<div class="p-topBoxConceptListBox p-topBoxConceptListBox-spaceM p-topBoxConceptListBox-js js-accordion">
+									<ul class="p-topBoxConceptList">
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-top p-topBoxConceptList_item-lineM">
+											<span>・</span><p>分解して洗浄するので<span class="p-topBoxConceptList_item-change">エアコン内部の細かい部分まで汚れや<br class="u-display-none">カビを除去</span>できる。</p>
+										</li>
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-top p-topBoxConceptList_item-lineM">
+											<span>・</span><p>分解した部品ひとつひとつ洗浄するので<span class="p-topBoxConceptList_item-change">傷をつけない</span>。</p>
+										</li>
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-top p-topBoxConceptList_item-lineM">
+											<span>・</span><p>業者の不注意で損害が出た場合の<span class="p-topBoxConceptList_item-change">補償期間が長く1年間</span>ある。</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="p-topBoxList_item p-topBoxList_item-topspaceL">
+							<div class="p-topBoxConceptBlock p-topBoxConceptBlock-demerit">
+								<div class="p-topBoxConceptTitle js-syousai">
+									<div class="p-topDiffrenceTitle p-topDiffrenceTitle-demerit js-click">
+										<div class="c-title">
+											<h3 class="c-title_text c-title_text-change js-title">
+												デメリット
+											</h3>
+										</div>
+										<span class="p-topDiffrenceTitle_icon js-title"></span>
+									</div>
+								</div>
+								<div class="p-topBoxConceptListBox p-topBoxConceptListBox-spaceS p-topBoxConceptListBox-js js-accordion">
+									<ul class="p-topBoxConceptList">
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-change2 p-topBoxConceptList_item-lineD p-topBoxConceptList_item-top1"><span>・</span><p>費用が掛かる。</p></li>
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-change2 p-topBoxConceptList_item-lineD p-topBoxConceptList_item-top2"><span>・</span><p>専用工場に持ち帰り、分解して洗浄するので1週間ほど日数が<br class="u-display-none">掛かる。</p></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="p-topBoxFlexBox_item p-topBoxFlexBox_item-bg2">
+					<ul class="p-topBoxList">
+						<li class="p-topBoxList_item">
+							<div class="p-topBoxConceptBlock p-topBoxConceptBlock-tabspace">
+								<div class="p-topDiffrenceTitle p-topDiffrenceTitle-bg">
+									<div class="c-title">
+										<h3 class="c-title_text c-title_text-change">壁掛け洗浄</h3>
+									</div>
+								</div>
+								<div class="p-topBoxConceptListBox">
+									<div class="c-textBox">
+										<p class="c-textBox_text c-textBox_text-change"><span class="c-textBox_text-boldL">壁に掛けたまま高圧洗浄でクリーニング。</span><br class="u-display-none">その場で終わる。</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="p-topBoxList_item p-topBoxList_item-topspaceL">
+							<div class="p-topBoxConceptBlock p-topBoxConceptBlock-merit">
+								<div class="p-topBoxConceptTitle js-syousai">
+									<div class="p-topDiffrenceTitle p-topDiffrenceTitle-merit">
+										<div class="c-title">
+											<h3 class="c-title_text c-title_text-change js-title">メリット</h3>
+										</div>
+										<span class="p-topDiffrenceTitle_icon js-title"></span>
+									</div>
+								</div>
+								<div class="p-topBoxConceptListBox p-topBoxConceptListBox-spaceL p-topBoxConceptListBox-js js-accordion">
+									<ul class="p-topBoxConceptList">
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-top p-topBoxConceptList_item-lineM">
+											<span>・</span><p>費用が抑えられる。</p>
+										</li>
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-top p-topBoxConceptList_item-lineM">
+											<span>・</span><p>その場で作業をするので<span class="p-topBoxConceptList_item-change">2,3時間ほどで作業が終了</span>する。</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="p-topBoxList_item p-topBoxList_item-topspaceL">
+							<div class="p-topBoxConceptBlock p-topBoxConceptBlock-demerit">
+								<div class="p-topBoxConceptTitle js-syousai">
+									<div class="p-topDiffrenceTitle p-topDiffrenceTitle-demerit">
+										<div class="c-title">
+											<h3 class="c-title_text c-title_text-change js-title js-title">デメリット
+											</h3>
+										</div>
+										<span class="p-topDiffrenceTitle_icon js-title"></span>
+									</div>
+								</div>
+								<div class="p-topBoxConceptListBox p-topBoxConceptListBox-spaceD p-topBoxConceptListBox-js js-accordion">
+									<ul class="p-topBoxConceptList">
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-change2 p-topBoxConceptList_item-lineD p-topBoxConceptList_item-top1">
+											<span>・</span><p>エアコン内部の細かい部分まで洗浄できないので汚れやカビを<br class="u-display-none">完全には除去できない。</p>
+										</li>
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-change2 p-topBoxConceptList_item-lineD p-topBoxConceptList_item-top2">
+											<span>・</span>業者の不注意で損害が出た場合の補償期間が短い。<br class="u-display-none">3日以内、長い所でも7日以内の所が多い。
+										</li>
+										<li class="p-topBoxConceptList_item p-topBoxConceptList_item-change2 p-topBoxConceptList_item-lineD p-topBoxConceptList_item-top2">
+											<span>・</span><p>壁に掛けた状態で高圧洗浄機で洗い流すので、その振動によって部品に傷がつくことがある。</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="c-btnReserve">
+			<a href="#" class="c-btnReserve_link">
+				<div class="c-btnReserve_pic">
+					<img src="./common/img/firstview.gif" data-src="./common/img/top/main-btn.png" alt="" class="c-btnReservePic_picImage lazyload" loading="lazy">
+				</div>
+				<div class="c-btnReserve_textBox">
+					<p class="c-btnReserve_textBoxText">お申し込みはこちら</p>
+					<p class="c-btnReserve_textBoxTe
+				xt c-btnReserve_textBoxText-sub">RESERVE INSTALLATION</p>
+				</div>
+			</a>
+		</div>
+</section>
+
+<section class="p-topBox p-topBox-top">
+	<div class="p-topTitile">
+		<p class="p-topTitile_text p-topTitile_text-topM">AREA</p>
+		<h2 class="p-topTitile_titile p-topTitile_titile-top">対応エリア</h2>
+	</div>
+	<div class="p-topBoxMap u-mg-topL">
+		<picture>
+			<source type="image/webp" data-srcset="./common/img/top/area-img.webp">
+			<img src="./common/img/firstview.gif" data-src="./common/img/top/area-img.png" class="p-topBoxMap_img lazyload" alt="" loading="lazy">
+		</picture>
+	</div>
+</section>
+
+<section class="p-topBox">
+	<div class="p-topBox_inner p-topBox_inner-widthXS">
+		<div class="p-topTitile">
+			<p class="p-topTitile_text p-topTitile_text-topM">CONTACT</p>
+			<h2 class="p-topTitile_titile p-topTitile_titile-top">お申し込み</h2>
+		</div>
+		<!-- フォーム -->
+		<form action="#" method="post" class="p-topBoxForm">
+			<div class="c-textBox">
+				<p class="c-textBox_text c-textBox_text-small">
+					※入力欄は全て必須です。
+				</p>
+			</div>
+			<table class="p-topBoxFormTable">
+				<tr>
+					<th class="p-topBoxFormTable_thText">お名前</th>
+					<td class="p-topBoxFormTable_tdText">性：
+						<input type="text" name="lastname" class="p-topBoxFormTable_tdTextInput p-topBoxFormTable_tdTextInput-text">
+						<span class="p-topBoxFormTable_tdTextInput-leftL">名：</span>
+						<input type="text" name="firstname" class="p-topBoxFormTable_tdTextInput p-topBoxFormTable_tdTextInput-text">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBoxFormTable_thText">電話番号</th>
+					<td class="p-topBoxFormTable_tdText">
+						<input type="number" name="tel" class="p-topBoxFormTable_tdTextInput p-topBoxFormTable_tdTextInput-text p-topBoxFormTable_tdTextInput-leftspace p-topBoxFormTable_tdTextInput-tabwidth">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBoxFormTable_thText">住所</th>
+					<td class="p-topBoxFormTable_tdText">
+						<input type="text" name="address" class="p-topBoxFormTable_tdTextInput">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBoxFormTable_thText">マンション名・部屋番号</th>
+					<td class="p-topBoxFormTable_tdText">
+						<input type="text" name="room" class="p-topBoxFormTable_tdTextInput">
+					</td>
+				</tr>
+				<tr>
+					<th class="p-topBoxFormTable_thText">メールアドレス</th>
+					<td class="p-topBoxFormTable_tdText">
+						<input type="email" name="e-mail" class="p-topBoxFormTable_tdTextInput">
+					</td>
+				</tr>
+			</table>
+				<!-- 写真選択部分 -->
+				<div class="p-topBoxFormTableBlock">
+					<div class="p-topBoxFormTableBlock_textBlock">
+						<div class="p-topBoxFormTableBlock_textBlockFrame">
+							<p class="p-topBoxFormTableBlock_textBlockFrameText">
+								型番部分の写真について
+							</p>
+						</div>
+						<ul class="p-topBoxFormTableBlock_textBlockList">
+							<li class="p-topBoxFormTableBlock_textBlockItem">
+								<div class="c-textBox p-topBoxFormTableBlock_textBlockItemFlex u-align-tabCenter">
+									<span class="c-textBox_text u-text-color1 p-topBoxFormTableBlock_textBlockItemFlexMg">※</span>
+									<p class="c-textBox_text u-text-color1  p-topBoxFormTableBlock_imgBlock-none">室内機の型番部分を撮影した写真を添付してください。</p>
+								</div>
+							</li>
+							<li class="p-topBoxFormTableBlock_textBlockItem">s
+								<div class="c-textBox  p-topBoxFormTableBlock_textBlockItemFlex u-align-tabCenter">
+									<span class="c-textBox_text u-text-color1">※</span>
+									<p class="c-textBox_text u-text-color1 p-topBoxFormTableBlock_imgBlock-none">写真撮影割引用の写真もこちらに添付してください。</p>
+							</div>
+							</li>
+						</ul>
+					</div>
+					<div class="p-topBoxFormTableBlock_imgBlock">
+						<div class="c-textBox">
+							<p class="c-textBox_text c-textBox_text-normal">
+								写真をドラッグ＆ドロップするか、「写真を選択」より、複数の写真を添付できます。
+							</p>
+							<p class="c-textBox_text c-textBox_text-normal">
+								添付できる写真は「jpg、png」のみとなります。
+							</p>
+						</div>
+						<div class="p-topBoxFormTableBlock_imgBlockFrame">
+							<label for="file" class="p-topBoxFormTableBlock_imgBlockLabel">
+								写真を選択
+								<input id="img" type="file" name="image" class="p-topBoxFormTableBlock_imgBlockInput">
+							</label>
+						</div>
+					</div>
+				</div>
+				<ul class="p-topBoxFormTableBlock_textBlockList p-topBoxFormTableBlock_textBlockList-tab">
+					<li class="p-topBoxFormTableBlock_textBlockItem">
+						<div class="c-textBox p-topBoxFormTableBlock_textBlockItemFlex">
+							<span class="c-textBox_text u-text-color1 u-align-tabCenter p-topBoxFormTableBlock_textBlockItemFlexMg">※</span>
+							<p class="c-textBox_text u-text-color1  p-topBoxFormTableBlock_imgBlock-none">室内機の型番部分を撮影した写真を添付してください。</p>
+						</div>
+					</li>
+					<li class="p-topBoxFormTableBlock_textBlockItem">
+						<div class="c-textBox p-topBoxFormTableBlock_textBlockItemFlex">
+							<span class="c-textBox_text u-text-color1">※</span>
+							<p class="c-textBox_text u-text-color1 p-topBoxFormTableBlock_imgBlock-none">写真撮影割引用の写真もこちらに添付してください。</p>
+					</div>
+					</li>
+				</ul>
+			<!-- 写真選択について -->
+			<div class="p-topBoxFormSelect">
+				<div class="p-topBoxFormSelect_block">
+					<img src="./common/img/firstview.gif" data-src="./common/img/top/contact-img.png" alt="" class="lazyload" loading="lazy">
+				</div>
+				<div class="p-topBoxFormSelect_textBox">
+					<p class="p-topBoxFormSelect_textBoxText u-align-tabCenter">
+						<span class="p-topBoxFormSelect_textBoxTextLine">写真撮影割引には室内側・室外側の写真が必要です。</span>
+					</p>
+<!-- モーダルウィンドウ -->
+					<div class="p-topBoxFormSelectOverlay js-overlay"></div>
+					<div class="p-topBoxFormSelectModal js-modal">
+						<div class="p-topBoxFormSelectModal_box">
+							<a class="p-topBoxFormSelectModal_boxClose js-close">
+								<span class="p-topBoxFormSelectModal_boxClose-span"></span>
+								<span class="p-topBoxFormSelectModal_boxClose-span"></span>
+							</a>
+						</div>
+						<!-- <p>aaaaaa</p> -->
+						<img src="./common/img/firstview.gif" data-src="./common/img/top/contact-img.png" alt="" class="lazyload p-topBoxFormSelectModal_img" loading="lazy">
+					</div>
+
+					<a class="p-topBoxFormSelect_frame js-open">
+						<p class="p-topBoxFormSelect_frameText">撮影割引の写真について</p>
+					</a>
+
+				</div>
+			</div>
+				<!-- ボタン -->
+			<div class="p-topBoxFormBtn">
+				<input type="submit" value="送信する" class="p-topBoxFormBtn_text">
+			</div>
+		</form>
+	</div>
+</section>
+
+<section class="p-topBox p-topBox-bgcolor">
+	<div class="p-topBox_inner p-topBox_inner-small p-topBox_inner-space">
+		<div class="c-title">
+			<h2 class="c-title_text c-title_text-small">分解クリーニングの注意事項</h2>
+		</div>
+		<div class="p-topBox_textBox p-topBox_textBox-top2L">
+			<div class="c-title c-title-subBox">
+				<h3 class="c-title_text c-title_text-subtitle">製造されてから10年以上経過しているエアコンをお持ちのお客様へ</h3>
+			</div>
+			<div class="c-textBox c-textBox-smallbox">
+				<p class="c-textBox_text">お客様からお預かりしたエアコンの分解・組み立て作業中に不具合が発覚し部品交換が必要となる場合があります。
+					その際に製造されてから10年以上経過したエアコンは、メーカー側で部品供給が終了している場合が多く、満足に部品交換ができない場合があります。
+					その場合、洗浄後の動作について保証ができないので、エアコンのお預かり自体をお断りす場合がございます。
+					また、洗浄後に経年劣化によるエアコン自体の不具合が発生した場合も、弊社では責任を負いかねますのであしからずご了承ください。</p>
+			</div>
+		</div>
+		<div class="p-topBox_textBox">
+			<div class="c-title c-title-subBox">
+				<h3 class="c-title_text c-title_text-subtitle">対応できないエアコン</h3>
+			</div>
+			<div class="c-textBox c-textBox-smallbox">
+				<p class="c-textBox_text">
+					パッケージエアコン、業務用エアコンの受付は行っておりません。<br>エアコンの室内機に本体シールが付いていないのはパッケージエアコンになります。
+				</p>
+			</div>
+		</div>
+		<div class="p-topBox_textBox">
+			<div class="c-title c-title-subBox">
+				<h3 class="c-title_text c-title_text-subtitle">クリーニングお預かり期間：7日間〜</h3>
+			</div>
+			<div class="c-textBox c-textBox-smallbox">
+				<p class="c-textBox_text">お客様宅からエアコンを取り外して専用工場に持ち帰り、分解クリーニングしてから再度お客様宅に取り付けの訪問をするまでの日数となります。
+					※お預かり期間は時期によって異なるため、あくまで目安となります。
+				</p>
+			</div>
+		</div>
+		<div class="p-topBox_textBox">
+			<div class="c-title c-title-subBox">
+				<h3 class="c-title_text c-title_text-subtitle">別途料金について</h3>
+			</div>
+			<div class="c-textBox c-textBox-smallbox">
+				<p class="c-textBox_text">
+					別途作業料金（現地の状況を確認後、作業員よりご案内させていただきます。）
+				</p>
+				<ul class="p-topBox_textBoxList">
+					<li class="p-topBox_textBoxListItem">・隠蔽配管</li>
+					<li class="p-topBox_textBoxListItem">・高所・難所（取り外し・取り付けを行う時）</li>
+					<li class="p-topBox_textBoxListItem">・エアコン専用のコンセントがない場合</li>
+					<li class="p-topBox_textBoxListItem">・同一場所・位置ではない場合</li>
+				</ul>
+				<p class="c-textBox_text">詳しくは、お気軽にお問い合わせください。</p>
+			</div>
+		</div>
+	</div>
+</section>
+
 	</div><!-- CONTENTS -->
+
 	<footer class="l-footer">
-		フッター部分
+		<div class="l-footer_inner">
+			<div class="l-footerImage">
+				<div class="l-footerImage_picture">
+					<img src="./common/img/firstview.gif" data-src="./common/img/footer-logo.png" alt="エアコン名人ブンクリ" class="l-footerImage_pictureImg lazyload" loading="lazy">
+				</div>
+				<p class="l-footeImage_text">ブンクリ</p>
+			</div>
+			<ul class="l-footerList">
+				<li class="l-footerList_text">
+					<a href="#" class="l-footerList_textLink">料金
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerList_text">
+					<a href="#" class="l-footerList_textLink">ブンクリの流れ
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerList_text">
+					<a href="#" class="l-footerList_textLink">壁掛け洗浄と分解洗浄の違い
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerList_text">
+					<a href="#" class="l-footerList_textLink">作業完了までの流れ
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerList_text">
+					<a href="#" class="l-footerList_textLink">お申し込み
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</a>
+				</li>
+				<li class="l-footerList_text">
+					<a href="#" class="l-footerList_textLink">エアコン名人会社概要
+						<i class="fa-solid fa-up-right-from-square"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="l-footerTell">
+				<p class="l-footerTell_text">お電話でのお問い合わせ</p>
+				<div class="l-footerTellBlock">
+					<div class="l-footerTellBlock_tellnumber">
+						<div class="l-footerTellBlock_icon">
+							<img src="./common/img/firstview.gif" data-src="./common/img/footer-icon.png" alt="" class="l-footerTellBlock_iconImg lazyload" loading="lazy">
+						</div>
+						<p class="l-footerTellBlock_number">0120-79-5959</p>
+					</div>
+					<div class="l-footerTellBlockInner">
+						<p class="l-footerTellBlockInner_text">
+							受付時間
+						</p>
+						<p class="l-footerTellBlockInner_time">9:00～19:00（年中無休）</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="l-footerCopy">
+			<p class="l-footerCopy_text">
+				Copyright©2021 ブンクリ Co.,Ltd.All rights reserved
+			</p>
+		</div>
 	</footer>
 </div><!-- / WRAPPER  -->
 </body>

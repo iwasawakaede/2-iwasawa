@@ -74,15 +74,36 @@ close.on('click', function () {
 	overlay.removeClass("open");
 });
 
-$(function() {
-  $('.js-scroll').on('click',(e) => {
-    e.preventDefault();
-    let $target = $($(e.currentTarget).attr('href'));
-    if ($target.length > 0) {
-      $('html, body').animate({
-        scrollTop: $target.offset().top
-      }, 500, 'swing');
-    }
-  })
-})
+// $(function() {
+//   $('.js-scroll').on('click',(e) => {
+//     e.preventDefault();
+//     let $target = $($(e.currentTarget).attr('href'));
+//     if ($target.length > 0) {
+//       $('html, body').animate({
+//         scrollTop: $target.offset().top
+//       }, 500, 'swing');
+//     }
+//   })
+// })
+
+	// ヘッダーの高さ分だけコンテンツを下げる
+$(function () {
+  const height = $(".js-header").height();
+  $(".js-headerheight").css("margin-top", height);
+});
+// ページ内スクロール
+$(function () {
+  // ヘッダーの高さ取得
+  const headerHeight = $(".js-header").height();
+  $('a[href^="#"]').click(function () {
+    const speed = 600;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    // ヘッダーの高さ分下げる
+    let position = target.offset().top - headerHeight;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+});
+
 });

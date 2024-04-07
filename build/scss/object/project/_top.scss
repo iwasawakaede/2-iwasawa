@@ -100,6 +100,21 @@
 		}
 	}
 }
+.p-topBoxPosition {
+	position: relative;
+	&_image {
+		min-width: 311px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+		@media #{$pointM} {
+			display: none;
+		}
+	}
+}
 .p-topBoxFlex {
 	display: flex;
 	flex-wrap: wrap;
@@ -162,8 +177,6 @@
 		}
 	}
 	&_contentImg {
-		// width: 550px;
-		// margin: 0 auto;
 		@media #{$pointM} {
 			display: flex;
 			align-items: center;
@@ -179,23 +192,22 @@
 			height: 300px;
 			@media #{$pointM} {
 				width: 100%;
-				// margin: 0 auto;
 				height: auto;
 			}
 		}
 	}
-	&_image {
-		min-width: 311px;
-		position: absolute;
-		top: 48%;
-		left: 50%;
-		transform: translate(-50%);
-		-webkit-transform: translate(-50%);
-		-ms-transform: translate(-50%);
-		@media #{$pointM} {
-			display: none;
-		}
-	}
+	// &_image {
+	// 	min-width: 311px;
+	// 	position: absolute;
+	// 	top: 48%;
+	// 	left: 50%;
+	// 	transform: translate(-50%);
+	// 	-webkit-transform: translate(-50%);
+	// 	-ms-transform: translate(-50%);
+	// 	@media #{$pointM} {
+	// 		display: none;
+	// 	}
+	// }
 }
 .p-topBoxFlex {
 	// slickをハックするcss
@@ -766,7 +778,7 @@
 			width: 1445px;
 			min-width: 1440px;
 			margin: 100px auto;
-			position: relative;
+			// position: relative;
 			@media #{$pointM} {
 				min-width: initial;
 				width: 100%;

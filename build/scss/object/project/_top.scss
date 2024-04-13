@@ -102,17 +102,17 @@
 }
 .p-topBoxPosition {
 	position: relative;
-	&_image {
-		min-width: 311px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-		@media #{$pointM} {
-			display: none;
-		}
+}
+.p-topBoxImage {
+	min-width: 311px;
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	@media #{$pointM} {
+		display: none;
 	}
 }
 .p-topBoxFlex {
@@ -134,11 +134,7 @@
 		padding: 0 get_vw(10);
 	}
 	&_item {
-		background-color: #ffffff;
-		border: 3px solid #1eb9ee;
-		border-radius: 10px;
 		width: 47%;
-		padding: 20px 26px;
 		@media #{$pointM} {
 			width: 100%;
 			padding: get_vw(20, $vwMd);
@@ -169,6 +165,13 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+
+		background-color: #ffffff;
+		border: 3px solid #1eb9ee;
+		border-radius: 10px;
+		width: 100%;
+		padding: 20px 26px;
+
 		@media #{$pointM} {
 			height: get_vw(650, $vwMd);
 		}
@@ -185,6 +188,7 @@
 			height: get_vw(650, $vwMd);
 		}
 		@media #{$pointS} {
+			height: auto;
 		}
 		&-image {
 			object-fit: contain;
@@ -196,18 +200,6 @@
 			}
 		}
 	}
-	// &_image {
-	// 	min-width: 311px;
-	// 	position: absolute;
-	// 	top: 48%;
-	// 	left: 50%;
-	// 	transform: translate(-50%);
-	// 	-webkit-transform: translate(-50%);
-	// 	-ms-transform: translate(-50%);
-	// 	@media #{$pointM} {
-	// 		display: none;
-	// 	}
-	// }
 }
 .p-topBoxFlex {
 	// slickをハックするcss

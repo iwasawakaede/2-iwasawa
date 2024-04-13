@@ -74,11 +74,6 @@ close.on('click', function () {
 	overlay.removeClass("open");
 });
 
-	// ヘッダーの高さ分だけコンテンツを下げる
-$(function () {
-  const height = $(".js-header").height();
-  $(".js-headerheight").css("margin-top", height);
-});
 // ページ内スクロール
 $(function () {
   // ヘッダーの高さ取得

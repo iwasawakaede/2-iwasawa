@@ -574,20 +574,22 @@
 			font-size: get_vw(22);
 			padding-top: get_vw(25);
 		}
-		&::after {
-			background-color: #f6ab00;
-			content: "";
-			display: block;
-			width: 60px;
-			height: 5px;
-			margin: 22px auto 0;
-			@media #{$pointM} {
-				width: get_vw(50, $vwMd);
-				height: get_vw(4, $vwMd);
-				margin: get_vw(17, $vwMd) auto 0;
-			}
-			@media #{$pointS} {
-				margin: get_vw(7) auto 0;
+		&-line {
+			&::after {
+				background-color: #f6ab00;
+				content: "";
+				display: block;
+				width: 60px;
+				height: 5px;
+				margin: 22px auto 0;
+				@media #{$pointM} {
+					width: get_vw(50, $vwMd);
+					height: get_vw(4, $vwMd);
+					margin: get_vw(17, $vwMd) auto 0;
+				}
+				@media #{$pointS} {
+					margin: get_vw(7) auto 0;
+				}
 			}
 		}
 		&-top {

@@ -77,16 +77,47 @@ close.on('click', function () {
 // ページ内スクロール
 $(function () {
   // ヘッダーの高さ取得
-  const headerHeight = $(".js-header").height();
+	const headerHeight = $(".js-header").height();
   $('a[href^="#"]').click(function () {
     const speed = 600;
     let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? "html" : href);
+    let target = $(href === "#" || href === "" ? "html" : href);
     // ヘッダーの高さ分下げる
-    let position = target.offset().top - headerHeight;
+		let position = target.offset().top - headerHeight;
+		console.log(position);
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
 });
+
+// $(function () {
+//   // ページが読み込まれたときにスクロール位置を調整
+//   adjustScrollPosition();
+
+//   $('a[href^="#"]').click(function () {
+//     const speed = 600;
+//     let href = $(this).attr("href");
+//     let target = $(href === "#" || href === "" ? "html" : href);
+//     let headerHeight = $(".js-header").height(); // リンクがクリックされるたびにヘッダーの高さを取得
+//     let position = target.offset().top - headerHeight;
+//     $("body,html").animate({ scrollTop: position }, speed, "swing");
+//     return false;
+//   });
+
+//   function adjustScrollPosition() {
+//     const hash = window.location.hash;
+//     let target;
+//     if (hash) {
+//       target = $(hash === "#" || hash === "" ? "html" : hash);
+//     } else {
+//       // ページが読み込まれたときに最初のリンク先を取得する
+//       target = $('a[href^="#"]:first').attr("href");
+//       target = $(target === "#" || target === "" ? "html" : target);
+//     }
+//     let headerHeight = $(".js-header").height();
+//     let position = target.offset().top - headerHeight;
+//     $("body,html").scrollTop(position); // 即時スクロール
+//   }
+// });
 
 });

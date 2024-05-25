@@ -77,6 +77,12 @@
 				width: 100%;
 			}
 		}
+		&-background {
+			background: linear-gradient(91deg, #fff5e7 50%, #ebf4ea 50%);
+			@media #{$pointM} {
+				background: linear-gradient(181deg, #fff5e7 50%, #ebf4ea 50%);
+			}
+		}
 	}
 	&_textBoxText {
 		color: #333333;
@@ -1359,8 +1365,8 @@
 }
 .p-topBoxFlexBox {
 	display: flex;
-	justify-content: space-between;
-	width: 1440px;
+	justify-content: space-around;
+	width: 1420px;
 	margin: 0 auto;
 	@media #{$pointM} {
 		display: block;
@@ -1369,7 +1375,6 @@
 	}
 	&_item {
 		background-color: #fff5e7;
-		padding: 0 60px;
 		@media #{$pointM} {
 			padding: get_vw(50, $vwMd) get_vw(15, $vwMd);
 		}
@@ -1380,11 +1385,11 @@
 }
 .p-topBoxConcept {
 	padding: 50px 0;
-	background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
-	background-repeat: no-repeat;
-	background-size: cover;
+	// background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
+	// background-repeat: no-repeat;
+	// background-size: cover;
 	@media #{$pointM} {
-		background: linear-gradient(180deg, #fff5e7 50%, #ebf4ea 50%);
+		// background: linear-gradient(180deg, #fff5e7 50%, #ebf4ea 50%);
 		padding: get_vw(20, $vwMd);
 		margin-top: get_vw(20, $vwMd);
 	}

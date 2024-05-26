@@ -77,12 +77,6 @@
 				width: 100%;
 			}
 		}
-		&-background {
-			background: linear-gradient(91deg, #fff5e7 50%, #ebf4ea 50%);
-			@media #{$pointM} {
-				background: linear-gradient(181deg, #fff5e7 50%, #ebf4ea 50%);
-			}
-		}
 	}
 	&_textBoxText {
 		color: #333333;
@@ -1384,12 +1378,12 @@
 	}
 }
 .p-topBoxConcept {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	background: linear-gradient(91deg, #fff5e7 50%, #ebf4ea 50%);
 	padding: 50px 0;
-	// background: linear-gradient(90deg, #fff5e7 50%, #ebf4ea 50%);
-	// background-repeat: no-repeat;
-	// background-size: cover;
 	@media #{$pointM} {
-		// background: linear-gradient(180deg, #fff5e7 50%, #ebf4ea 50%);
+		background: linear-gradient(180deg, #fff5e7 50%, #ebf4ea 50%);
 		padding: get_vw(20, $vwMd);
 		margin-top: get_vw(20, $vwMd);
 	}

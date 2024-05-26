@@ -85,9 +85,21 @@ $(function () {
     // ヘッダーの高さ分下げる
 		let position = target.offset().top - headerHeight;
 		console.log(position);
-    $("body,html").animate({ scrollTop: position }, speed, "swing");
+		$("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
+});
+
+	// Lazy Load対策
+window.addEventListener("scroll", function() {
+
+  const targets = document.querySelectorAll('[data-src]');
+  for (const target of targets) {
+    target.setAttribute('src', target.getAttribute('data-src'));
+    target.addEventListener('load', () => {
+      target.removeAttribute('data-src');
+    });
+  }
 });
 
 });

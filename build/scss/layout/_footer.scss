@@ -70,9 +70,10 @@
 // 	}
 // }
 
+// 1440px以降、比率で縮小する
 .l-footer {
 	background-color: #fff;
-	width: 100%;
+	width: 1920px;
 	@media #{$pointM} {
 		padding-bottom: get_vw(80, $vwMd);
 	}

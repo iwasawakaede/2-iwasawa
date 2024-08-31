@@ -25,9 +25,9 @@ body {
 	}
 	@media #{$pointS} {@include fz_vw(14);}
 	// レスポンシブ用アウトライン
-//   * {
-// 	outline: red 1px solid;
-// }
+  * {
+	outline: red 1px solid;
+}
 }
 body.is-fixed {
 	width: 100%;

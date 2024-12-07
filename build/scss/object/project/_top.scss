@@ -1590,20 +1590,23 @@
 		}
 	}
 	&-spaceS {
-		padding: 21px 38px 142px 41px;
+		// padding: 21px 38px 142px 41px;
+		padding: 21px 38px;
 		@media #{$pointM} {
 			padding: get_vw(10, $vwMd);
 		}
 	}
 	&-spaceL {
-		padding: 12px 37px 135px 44px;
+		// padding: 12px 37px 135px 44px;
+		padding: 12px 37px;
 		@media #{$pointM} {
 			border-radius: 0 0 5px 5px;
 			padding: get_vw(10, $vwMd);
 		}
 	}
 	&-spaceD {
-		padding: 20px 37px 137px 41px;
+		// padding: 20px 37px 137px 41px;
+		padding: 20px 38px;
 		@media #{$pointM} {
 			padding: get_vw(10, $vwMd);
 			}

@@ -1369,10 +1369,13 @@
 		margin: 0 auto;
 	}
 	&_item {
-		background-color: #fff5e7;
+		// background-color: #fff5e7;
 		flex: 2;
 		@media #{$pointM} {
 			padding: get_vw(50, $vwMd) get_vw(15, $vwMd);
+		}
+		&-bg1 {
+			background-color: #fff5e7;
 		}
 		&-bg2 {
 			background-color: #ebf4ea;

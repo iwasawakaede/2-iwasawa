@@ -2,15 +2,181 @@
 /* title
 ----------------------------------------------------------------- */
 .c-title {
-	text-align: center;
-	&_text {
-		font-size: 2.0rem;
-		font-weight: bold;
+	position: relative;
+	&-subBox {
+		background-color: #ffffff;
+		border: 1px solid #c44659;
+		border-radius: 10px;
 		@media #{$pointM} {
-			font-size: get_vw(42, $vwMd);
+			border-radius: 5px;
+		}
+	}
+	// デフォルトのタイトル
+	&_text {
+		color: #2e59a7;
+		font-size: 3.3rem;
+		font-weight: bold;
+		line-height: 1.4;
+		@media #{$pointM} {
+			font-size: get_vw(27, $vwMd);
 		}
 		@media #{$pointS} {
-			@include fz_vw(21);
+			@include fz_vw(20);
+		}
+		&-break {
+			@media #{$pointM} {
+				display: none;
+			}
+		}
+		&-content {
+			font-size: 2.4rem;
+			text-align: center;
+			padding-top: 10px;
+			@media #{$pointM} {
+				font-size: get_vw(40, $vwMd);
+				padding-top: get_vw(12, $vwMd);
+			}
+			@media #{$pointS} {
+				@include fz_vw(25);
+			}
+		}
+		&-tabtext {
+			font-size: 3rem;
+			@media #{$pointM} {
+				font-size: get_vw(32, $vwMd);
+				padding-top: get_vw(10, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(20);
+			}
+		}
+		&-color {
+			color: #ff5267;
+			font-weight: bold;
+			font-size: 3rem;
+			@media #{$pointM} {
+				font-size: get_vw(27, $vwMd);
+			}
+			@media #{$pointS} {
+				@include fz_vw(20);
+			}
+		}
+		&-sizeS {
+			font-size: 2.5rem;
+			padding-top: 6.5px;
+			@media #{$pointM} {
+				font-size: get_vw(27, $vwMd);
+				padding-top: get_vw(12, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(20);
+				padding-top: get_vw(12);
+			}
+		}
+		&-sizeM {
+			color: #ff5267;
+			font-size: 3rem;
+			display: inline;
+			padding-top: 6.5px;
+			background: linear-gradient(transparent 79%, #ffff00 60%);
+			@media #{$pointM} {
+				font-size: get_vw(27, $vwMd);
+				padding-top: get_vw(12, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(20);
+				padding-top: get_vw(12);
+			}
+		}
+		&-change {
+			color: #fff;
+			font-size: 2.4rem;
+			text-align: center;
+			font-weight: bold;
+			@media #{$pointM} {
+				font-size: get_vw(20, $vwMd);
+				text-align: left;
+			}
+		}
+		&-topXS   { @include spaceTopXS; }
+		&-topS    { @include spaceTopS; }
+		&-topM    { @include spaceTopM; }
+		&-topL    { @include spaceTopL; }
+		&-top2L   { @include spaceTop2L; }
+		&-top3L   { @include spaceTop3L; }
+		&-top4L   { @include spaceTop4L; }
+		&-top6L   { @include spaceTop6L; }
+		&-small {
+			color: #ff5267;
+			font-size: 2rem;
+			text-align: center;
+			@media #{$pointM} {
+				font-size: get_vw(22, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(22, $vwSm);
+			}
+		}
+		&-subtitle {
+			color: #c44659;
+			font-size: 1.8rem;
+			text-align: left;
+			padding: 16px 59px;
+			@media #{$pointM} {
+				font-size: get_vw(18, $vwMd);
+				padding: get_vw(20, $vwMd);
+			}
+			@media #{$pointS} {
+				font-size: get_vw(18, $vwSm);
+				padding: get_vw(10, $vwSm);
+			}
+		}
+	}
+	// アンダーラインがあるバージョン
+	&-line {
+		position: relative;
+		padding-bottom: 38px;
+		@media #{$pointM} {
+			padding-bottom: get_vw(15, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-bottom: get_vw(15);
+		}
+		&::after {
+			background-color: #f6ab00;
+			content: "";
+			display: block;
+			width: 60px;
+			height: 5px;
+			position: absolute;
+			bottom: 15px;
+			left: 0px;
+			@media #{$pointM} {
+				width: get_vw(60, $vwMd);
+				height: 4px;
+				bottom: get_vw(5, $vwMd);
+			}
+			@media #{$pointS} {
+				width: get_vw(60);
+				height: 3px;
+				bottom: get_vw(5);
+			}
+		}
+	}
+	&-pc {
+		@media #{$pointM} {
+			display: none;
+		}
+	}
+	&-tab {
+		display: none;
+		@media #{$pointM} {
+			text-align: center;
+			display: block;
+			padding-top: get_vw(30, $vwMd);
+		}
+		@media #{$pointS} {
+			padding-top: get_vw(32,$vwSm);
 		}
 	}
 }

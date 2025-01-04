@@ -37,7 +37,7 @@
 }
 @mixin spaceTopL {
 	margin-top: 30px;
-	@media #{$pointM} { margin-top: get_vw(40, $vwMd); }
+	@media #{$pointM} { margin-top: get_vw(30, $vwMd); }
 	@media #{$pointS} { margin-top: get_vw(20); }
 }
 // top ヘッダーロゴ
@@ -54,12 +54,12 @@
 // top
 @mixin spaceTop4L {
 	margin-top: 60px;
-	@media #{$pointM} { margin-top: get_vw(80, $vwMd); }
+	@media #{$pointM} { margin-top: get_vw(60, $vwMd); }
 	@media #{$pointS} { margin-top: get_vw(40); }
 }
 @mixin spaceTop5L {
 	margin-top: 70px;
-	@media #{$pointM} { margin-top: get_vw(70, $vwMd); }
+	@media #{$pointM} { margin-top: get_vw(65, $vwMd); }
 	@media #{$pointS} { margin-top: get_vw(50); }
 }
 @mixin spaceTop6L {
